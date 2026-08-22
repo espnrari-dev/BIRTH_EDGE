@@ -1,0 +1,914 @@
+================================================================================
+BIRTH_EDGE — DEFINITIVE ARCHITECTURE TEST
+================================================================================
+Actual miner: /data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py
+Seeds: 20
+Features: ['liquidity_usd', 'holder_score', 'dev_score', 'lp_lock_score', 'tax_score', 'overall_score']
+
+================================================================================
+WORLD: LIQUIDITY
+================================================================================
+Seed 00 | discover=True | train=0.9925 | heldout=0.995 | rule=(liquidity_usd > 15155.4)
+Seed 01 | discover=True | train=0.9975 | heldout=0.997 | rule=(liquidity_usd > 15076.6)
+Seed 02 | discover=True | train=0.9825 | heldout=0.971 | rule=(liquidity_usd > 14190)
+Seed 03 | discover=True | train=0.985 | heldout=0.978 | rule=(liquidity_usd > 14494.4)
+Seed 04 | discover=True | train=0.9975 | heldout=0.999 | rule=(liquidity_usd > 15108)
+Seed 05 | discover=True | train=0.99 | heldout=0.999 | rule=(liquidity_usd > 14938.1)
+Seed 06 | discover=True | train=0.99 | heldout=0.986 | rule=(liquidity_usd > 15381.7)
+Seed 07 | discover=True | train=0.9975 | heldout=0.999 | rule=(liquidity_usd > 14961.5)
+Seed 08 | discover=True | train=1.0 | heldout=1.0 | rule=(liquidity_usd > 14970.8)
+Seed 09 | discover=True | train=0.9875 | heldout=0.99 | rule=(liquidity_usd > 15376.8)
+Seed 10 | discover=True | train=0.995 | heldout=0.992 | rule=(liquidity_usd > 14802.1)
+Seed 11 | discover=True | train=0.9825 | heldout=0.991 | rule=(liquidity_usd > 14591.1)
+Seed 12 | discover=True | train=0.985 | heldout=0.973 | rule=(liquidity_usd > 14250.4)
+Seed 13 | discover=True | train=0.995 | heldout=0.992 | rule=(liquidity_usd > 15195.7)
+Seed 14 | discover=True | train=0.995 | heldout=0.996 | rule=(liquidity_usd > 14765.6)
+Seed 15 | discover=True | train=0.985 | heldout=0.986 | rule=(liquidity_usd > 14566.8)
+Seed 16 | discover=True | train=0.98 | heldout=0.97 | rule=(liquidity_usd > 15804.4)
+Seed 17 | discover=True | train=0.9875 | heldout=0.989 | rule=(liquidity_usd > 14629.3)
+Seed 18 | discover=True | train=0.9875 | heldout=0.995 | rule=(liquidity_usd > 14787.6)
+Seed 19 | discover=True | train=0.9975 | heldout=0.99 | rule=(liquidity_usd > 14694.4)
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.9905,
+  "mean_held_out_accuracy": 0.9894,
+  "mean_held_out_balanced_accuracy": 0.9894024531330611,
+  "min_held_out_accuracy": 0.97
+}
+
+================================================================================
+WORLD: REVERSE_HOLDER
+================================================================================
+Seed 00 | discover=True | train=0.9875 | heldout=0.983 | rule=(holder_score < 9.4263)
+Seed 01 | discover=True | train=0.9875 | heldout=0.988 | rule=(holder_score < 10.3983)
+Seed 02 | discover=True | train=0.98 | heldout=0.968 | rule=(holder_score < 9.1261)
+Seed 03 | discover=True | train=0.9875 | heldout=0.985 | rule=(holder_score < 9.61005)
+Seed 04 | discover=True | train=0.99 | heldout=0.98 | rule=(holder_score < 9.46301)
+Seed 05 | discover=True | train=0.9775 | heldout=0.986 | rule=(holder_score < 10.4406)
+Seed 06 | discover=True | train=0.98 | heldout=0.976 | rule=(holder_score < 9.33126)
+Seed 07 | discover=True | train=0.99 | heldout=0.988 | rule=(holder_score < 10.4683)
+Seed 08 | discover=True | train=0.9775 | heldout=0.968 | rule=(holder_score < 10.7788)
+Seed 09 | discover=True | train=0.9725 | heldout=0.964 | rule=(holder_score < 8.76176)
+Seed 10 | discover=True | train=0.98 | heldout=0.968 | rule=(holder_score < 9.25735)
+Seed 11 | discover=True | train=1.0 | heldout=0.999 | rule=(holder_score < 10.0195)
+Seed 12 | discover=True | train=0.9925 | heldout=0.992 | rule=(holder_score < 9.68141)
+Seed 13 | discover=True | train=0.975 | heldout=0.956 | rule=(holder_score < 8.98726)
+Seed 14 | discover=True | train=0.9975 | heldout=0.994 | rule=(holder_score < 9.9338)
+Seed 15 | discover=True | train=0.9975 | heldout=0.998 | rule=(holder_score < 10.061)
+Seed 16 | discover=True | train=0.9825 | heldout=0.979 | rule=(holder_score < 10.6553)
+Seed 17 | discover=True | train=0.9775 | heldout=0.982 | rule=(holder_score < 9.6338)
+Seed 18 | discover=True | train=0.975 | heldout=0.976 | rule=(holder_score < 9.16251)
+Seed 19 | discover=True | train=0.9975 | heldout=0.999 | rule=(holder_score < 10.0494)
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.9852500000000001,
+  "mean_held_out_accuracy": 0.9814499999999999,
+  "mean_held_out_balanced_accuracy": 0.9760468490655128,
+  "min_held_out_accuracy": 0.956
+}
+
+================================================================================
+WORLD: DEV
+================================================================================
+Seed 00 | discover=True | train=0.9775 | heldout=0.978 | rule=(dev_score > 20.6602)
+Seed 01 | discover=True | train=0.98 | heldout=0.976 | rule=(dev_score > 20.5654)
+Seed 02 | discover=True | train=0.985 | heldout=0.983 | rule=(dev_score > 19.5225)
+Seed 03 | discover=True | train=0.9975 | heldout=0.995 | rule=(dev_score > 20.1742)
+Seed 04 | discover=True | train=0.9975 | heldout=1.0 | rule=(dev_score > 20.0168)
+Seed 05 | discover=True | train=0.9975 | heldout=0.991 | rule=(dev_score > 19.8274)
+Seed 06 | discover=True | train=0.9825 | heldout=0.984 | rule=(dev_score > 20.345)
+Seed 07 | discover=True | train=0.98 | heldout=0.978 | rule=(dev_score > 20.8496)
+Seed 08 | discover=True | train=0.975 | heldout=0.974 | rule=(dev_score > 20.9293)
+Seed 09 | discover=True | train=0.9775 | heldout=0.985 | rule=(dev_score > 19.3252)
+Seed 10 | discover=True | train=0.985 | heldout=0.99 | rule=(dev_score > 20.3987)
+Seed 11 | discover=True | train=0.985 | heldout=0.987 | rule=(dev_score > 20.3157)
+Seed 12 | discover=True | train=0.98 | heldout=0.988 | rule=(dev_score > 19.6649)
+Seed 13 | discover=True | train=0.9825 | heldout=0.974 | rule=(dev_score > 20.5446)
+Seed 14 | discover=True | train=0.99 | heldout=0.994 | rule=(dev_score > 19.8684)
+Seed 15 | discover=True | train=0.975 | heldout=0.973 | rule=(dev_score > 20.8907)
+Seed 16 | discover=True | train=0.9925 | heldout=0.996 | rule=(dev_score > 20.1413)
+Seed 17 | discover=True | train=0.9875 | heldout=0.988 | rule=(dev_score > 20.4699)
+Seed 18 | discover=True | train=0.985 | heldout=0.975 | rule=(dev_score > 19.2961)
+Seed 19 | discover=True | train=0.9775 | heldout=0.984 | rule=(dev_score > 20.3825)
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.9845,
+  "mean_held_out_accuracy": 0.98465,
+  "mean_held_out_balanced_accuracy": 0.9798743789724041,
+  "min_held_out_accuracy": 0.973
+}
+
+================================================================================
+WORLD: LP
+================================================================================
+Seed 00 | discover=True | train=0.9875 | heldout=0.98 | rule=(lp_lock_score > 18.7537)
+Seed 01 | discover=True | train=0.985 | heldout=0.974 | rule=(lp_lock_score > 17.2724)
+Seed 02 | discover=True | train=0.985 | heldout=0.984 | rule=(lp_lock_score > 17.6163)
+Seed 03 | discover=True | train=0.9825 | heldout=0.982 | rule=(lp_lock_score > 17.1558)
+Seed 04 | discover=True | train=0.9975 | heldout=0.997 | rule=(lp_lock_score > 18.0903)
+Seed 05 | discover=True | train=0.99 | heldout=0.986 | rule=(lp_lock_score > 18.2982)
+Seed 06 | discover=True | train=0.98 | heldout=0.976 | rule=(lp_lock_score > 17.3588)
+Seed 07 | discover=True | train=0.9775 | heldout=0.978 | rule=(lp_lock_score > 17.2348)
+Seed 08 | discover=True | train=0.99 | heldout=0.991 | rule=(lp_lock_score > 17.7847)
+Seed 09 | discover=True | train=0.975 | heldout=0.99 | rule=(lp_lock_score > 18.4585)
+Seed 10 | discover=True | train=0.9925 | heldout=0.996 | rule=(lp_lock_score > 17.7978)
+Seed 11 | discover=True | train=0.985 | heldout=0.983 | rule=(lp_lock_score > 17.3902)
+Seed 12 | discover=True | train=0.9825 | heldout=0.988 | rule=(lp_lock_score > 18.6231)
+Seed 13 | discover=True | train=0.995 | heldout=0.988 | rule=(lp_lock_score > 18.2618)
+Seed 14 | discover=True | train=0.975 | heldout=0.975 | rule=(lp_lock_score > 19.0421)
+Seed 15 | discover=True | train=0.975 | heldout=0.969 | rule=(lp_lock_score > 18.9066)
+Seed 16 | discover=True | train=0.9875 | heldout=0.991 | rule=(lp_lock_score > 18.3667)
+Seed 17 | discover=True | train=0.995 | heldout=0.996 | rule=(lp_lock_score > 18.1033)
+Seed 18 | discover=True | train=0.975 | heldout=0.981 | rule=(lp_lock_score > 18.4665)
+Seed 19 | discover=True | train=0.995 | heldout=0.994 | rule=(lp_lock_score > 18.3015)
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.985375,
+  "mean_held_out_accuracy": 0.98495,
+  "mean_held_out_balanced_accuracy": 0.9837576674401582,
+  "min_held_out_accuracy": 0.969
+}
+
+================================================================================
+WORLD: OVERALL
+================================================================================
+Seed 00 | discover=True | train=0.975 | heldout=0.964 | rule=(overall_score > 66.9107)
+Seed 01 | discover=True | train=0.995 | heldout=0.989 | rule=(overall_score > 68.7924)
+Seed 02 | discover=True | train=0.975 | heldout=0.963 | rule=(overall_score > 67.217)
+Seed 03 | discover=True | train=0.98 | heldout=0.98 | rule=(overall_score > 67.4025)
+Seed 04 | discover=True | train=0.9975 | heldout=0.997 | rule=(overall_score > 69.5111)
+Seed 05 | discover=True | train=0.995 | heldout=0.987 | rule=(overall_score > 68.8974)
+Seed 06 | discover=True | train=0.975 | heldout=0.979 | rule=(overall_score > 72.2853)
+Seed 07 | discover=True | train=0.995 | heldout=0.998 | rule=(overall_score > 69.7226)
+Seed 08 | discover=True | train=0.975 | heldout=0.978 | rule=(overall_score > 72.9174)
+Seed 09 | discover=True | train=0.975 | heldout=0.964 | rule=(overall_score > 66.5356)
+Seed 10 | discover=True | train=0.98 | heldout=0.982 | rule=(overall_score > 68.039)
+Seed 11 | discover=True | train=0.98 | heldout=0.99 | rule=(overall_score > 68.5468)
+Seed 12 | discover=True | train=0.9825 | heldout=0.995 | rule=(overall_score > 69.0954)
+Seed 13 | discover=True | train=0.98 | heldout=0.986 | rule=(overall_score > 68.2254)
+Seed 14 | discover=True | train=0.98 | heldout=0.967 | rule=(overall_score > 67.4352)
+Seed 15 | discover=True | train=0.9975 | heldout=0.994 | rule=(overall_score > 70.3548)
+Seed 16 | discover=True | train=0.9825 | heldout=0.983 | rule=(overall_score > 67.2355)
+Seed 17 | discover=True | train=0.9825 | heldout=0.982 | rule=(overall_score > 67.8143)
+Seed 18 | discover=True | train=0.985 | heldout=0.987 | rule=(overall_score > 68.8132)
+Seed 19 | discover=True | train=0.9825 | heldout=0.989 | rule=(overall_score > 70.9431)
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.9835,
+  "mean_held_out_accuracy": 0.9827,
+  "mean_held_out_balanced_accuracy": 0.984762443023564,
+  "min_held_out_accuracy": 0.963
+}
+
+================================================================================
+WORLD: AND
+================================================================================
+Seed 00 | discover=True | train=0.9775 | heldout=0.986 | rule=((holder_score > 15.6674) AND (liquidity_usd > 15155.4))
+Seed 01 | discover=True | train=0.9925 | heldout=0.989 | rule=((liquidity_usd > 15076.6) AND (holder_score > 15.7624))
+Seed 02 | discover=True | train=0.99 | heldout=0.983 | rule=((holder_score > 14.8107) AND (liquidity_usd > 14190))
+Seed 03 | discover=True | train=0.985 | heldout=0.977 | rule=((holder_score > 15.4893) AND (liquidity_usd > 14494.4))
+Seed 04 | discover=True | train=0.9975 | heldout=0.996 | rule=((holder_score > 15.29) AND (liquidity_usd > 15108))
+Seed 05 | discover=True | train=0.985 | heldout=0.994 | rule=((liquidity_usd > 14938.1) AND (holder_score > 15.5111))
+Seed 06 | discover=True | train=0.9975 | heldout=0.99 | rule=((liquidity_usd > 15381.7) AND (holder_score > 14.7976))
+Seed 07 | discover=True | train=0.9925 | heldout=0.997 | rule=((liquidity_usd > 14961.5) AND (holder_score > 15.2939))
+Seed 08 | discover=True | train=1.0 | heldout=0.998 | rule=((holder_score > 15.078) AND (liquidity_usd > 14970.8))
+Seed 09 | discover=True | train=0.9925 | heldout=0.994 | rule=((holder_score > 14.9249) AND (liquidity_usd > 15376.8))
+Seed 10 | discover=True | train=1.0 | heldout=0.997 | rule=((holder_score > 14.9923) AND (liquidity_usd > 14802.1))
+Seed 11 | discover=True | train=0.9875 | heldout=0.979 | rule=((holder_score > 14.5015) AND (liquidity_usd > 14591.1))
+Seed 12 | discover=True | train=0.9925 | heldout=0.984 | rule=((holder_score > 14.8561) AND (liquidity_usd > 14250.4))
+Seed 13 | discover=True | train=0.985 | heldout=0.98 | rule=((liquidity_usd > 15195.7) AND (holder_score > 15.5848))
+Seed 14 | discover=True | train=0.9975 | heldout=0.987 | rule=((liquidity_usd > 14765.6) AND (holder_score > 14.2382))
+Seed 15 | discover=True | train=0.9825 | heldout=0.977 | rule=((holder_score > 15.9075) AND (liquidity_usd > 14566.8))
+Seed 16 | discover=True | train=0.98 | heldout=0.98 | rule=((liquidity_usd > 15804.4) AND (holder_score > 14.8542))
+Seed 17 | discover=True | train=0.985 | heldout=0.993 | rule=((holder_score > 15.4857) AND (liquidity_usd > 14629.3))
+Seed 18 | discover=True | train=0.985 | heldout=0.987 | rule=((liquidity_usd > 14787.6) AND (holder_score > 14.2762))
+Seed 19 | discover=True | train=0.9925 | heldout=0.991 | rule=((liquidity_usd > 14694.4) AND (holder_score > 15.2207))
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.9898750000000001,
+  "mean_held_out_accuracy": 0.98795,
+  "mean_held_out_balanced_accuracy": 0.9837913289412871,
+  "min_held_out_accuracy": 0.977
+}
+
+================================================================================
+WORLD: AND_REVERSE
+================================================================================
+Seed 00 | discover=True | train=0.985 | heldout=0.987 | rule=((holder_score < 15.6674) AND (liquidity_usd > 15155.4))
+Seed 01 | discover=True | train=0.995 | heldout=0.988 | rule=((holder_score < 15.7624) AND (liquidity_usd > 15076.6))
+Seed 02 | discover=True | train=0.9975 | heldout=0.989 | rule=((holder_score < 14.8107) AND (liquidity_usd > 15549.7))
+Seed 03 | discover=True | train=0.985 | heldout=0.983 | rule=((holder_score < 15.4893) AND (liquidity_usd > 14494.4))
+Seed 04 | discover=True | train=0.995 | heldout=0.997 | rule=((holder_score < 15.29) AND (liquidity_usd > 15108))
+Seed 05 | discover=True | train=0.985 | heldout=0.995 | rule=((liquidity_usd > 14938.1) AND (holder_score < 15.5111))
+Seed 06 | discover=True | train=0.9875 | heldout=0.988 | rule=((holder_score < 14.7976) AND (liquidity_usd > 15381.7))
+Seed 07 | discover=True | train=0.99 | heldout=0.996 | rule=((liquidity_usd > 14961.5) AND (holder_score < 15.2939))
+Seed 08 | discover=True | train=1.0 | heldout=0.998 | rule=((liquidity_usd > 14970.8) AND (holder_score < 15.078))
+Seed 09 | discover=True | train=0.99 | heldout=0.996 | rule=((holder_score < 14.9249) AND (liquidity_usd > 15376.8))
+Seed 10 | discover=True | train=0.995 | heldout=0.995 | rule=((liquidity_usd > 14802.1) AND (holder_score < 14.9923))
+Seed 11 | discover=True | train=0.985 | heldout=0.986 | rule=((liquidity_usd > 14591.1) AND (holder_score < 14.5015))
+Seed 12 | discover=True | train=0.9875 | heldout=0.985 | rule=((holder_score < 14.8561) AND (liquidity_usd > 14250.4))
+Seed 13 | discover=True | train=0.99 | heldout=0.984 | rule=((liquidity_usd > 15195.7) AND (holder_score < 15.5848))
+Seed 14 | discover=True | train=0.9925 | heldout=0.987 | rule=((liquidity_usd > 14765.6) AND (holder_score < 14.2382))
+Seed 15 | discover=True | train=0.98 | heldout=0.973 | rule=((liquidity_usd > 14566.8) AND (holder_score < 13.8225))
+Seed 16 | discover=True | train=0.99 | heldout=0.984 | rule=((holder_score < 14.8542) AND (liquidity_usd > 15804.4))
+Seed 17 | discover=True | train=0.9775 | heldout=0.976 | rule=((holder_score < 14.3528) AND (liquidity_usd > 14629.3))
+Seed 18 | discover=True | train=0.9775 | heldout=0.99 | rule=((liquidity_usd > 14787.6) AND (holder_score < 14.2762))
+Seed 19 | discover=True | train=0.99 | heldout=0.993 | rule=((liquidity_usd > 14694.4) AND (holder_score < 15.2207))
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.98875,
+  "mean_held_out_accuracy": 0.9884999999999999,
+  "mean_held_out_balanced_accuracy": 0.9845124448573737,
+  "min_held_out_accuracy": 0.973
+}
+
+================================================================================
+STRUCTURAL GENERALIZATION: THREE_WAY
+================================================================================
+Seed 00 | discover=True | train=0.88 | heldout=0.884 | rule=((holder_score > 15.6674) AND (liquidity_usd > 15155.4))
+Seed 01 | discover=True | train=0.8925 | heldout=0.859 | rule=((dev_score > 15.4153) AND (liquidity_usd > 15076.6))
+Seed 02 | discover=True | train=0.8875 | heldout=0.888 | rule=((dev_score > 15.9439) AND (holder_score > 14.8107))
+Seed 03 | discover=True | train=0.895 | heldout=0.908 | rule=((dev_score > 17.3601) AND (liquidity_usd > 15807.5))
+Seed 04 | discover=True | train=0.8725 | heldout=0.878 | rule=((dev_score > 15.0524) AND (holder_score > 15.29))
+Seed 05 | discover=True | train=0.8875 | heldout=0.865 | rule=((liquidity_usd > 14938.1) AND (dev_score > 16.1597))
+Seed 06 | discover=True | train=0.915 | heldout=0.883 | rule=((dev_score > 17.1195) AND (liquidity_usd > 15381.7))
+Seed 07 | discover=True | train=0.89 | heldout=0.868 | rule=((liquidity_usd > 14961.5) AND (dev_score > 15.894))
+Seed 08 | discover=True | train=0.925 | heldout=0.889 | rule=((liquidity_usd > 17727.3) AND (holder_score > 15.078))
+Seed 09 | discover=True | train=0.885 | heldout=0.892 | rule=((holder_score > 16.5078) AND (liquidity_usd > 16704.4))
+Seed 10 | discover=True | train=0.8925 | heldout=0.888 | rule=((holder_score > 14.9923) AND (liquidity_usd > 14802.1))
+Seed 11 | discover=True | train=0.88 | heldout=0.845 | rule=((dev_score > 14.3546) AND (holder_score > 14.5015))
+Seed 12 | discover=True | train=0.91 | heldout=0.866 | rule=((dev_score > 16.131) AND (holder_score > 16.3224))
+Seed 13 | discover=True | train=0.885 | heldout=0.891 | rule=((holder_score > 15.5848) AND (liquidity_usd > 15195.7))
+Seed 14 | discover=True | train=0.885 | heldout=0.872 | rule=((liquidity_usd > 14765.6) AND (holder_score > 15.966))
+Seed 15 | discover=True | train=0.8925 | heldout=0.881 | rule=((holder_score > 15.9075) AND (dev_score > 15.5131))
+Seed 16 | discover=True | train=0.8675 | heldout=0.866 | rule=((dev_score > 15.6386) AND (holder_score > 18.6936))
+Seed 17 | discover=True | train=0.8925 | heldout=0.873 | rule=((holder_score > 15.4857) AND (liquidity_usd > 14629.3))
+Seed 18 | discover=True | train=0.8875 | heldout=0.859 | rule=((liquidity_usd > 14787.6) AND (holder_score > 15.6561))
+Seed 19 | discover=True | train=0.8975 | heldout=0.881 | rule=((holder_score > 15.2207) AND (liquidity_usd > 14694.4))
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.891,
+  "mean_held_out_accuracy": 0.8768,
+  "mean_held_out_balanced_accuracy": 0.8949503272875472,
+  "min_held_out_accuracy": 0.845
+}
+
+================================================================================
+STRUCTURAL GENERALIZATION: MULTI_SIGNAL
+================================================================================
+Seed 00 | discover=True | train=0.895 | heldout=0.874 | rule=((holder_score > 20.3824) AND (liquidity_usd > 19658.5))
+Seed 01 | discover=True | train=0.9075 | heldout=0.899 | rule=((dev_score > 20.5654) AND (liquidity_usd > 24022.1))
+Seed 02 | discover=True | train=0.9 | heldout=0.878 | rule=((lp_lock_score > 23.6611) AND (dev_score > 17.7269))
+Seed 03 | discover=True | train=0.8925 | heldout=0.858 | rule=((holder_score > 20.1579) AND (dev_score > 18.6288))
+Seed 04 | discover=True | train=0.93 | heldout=0.894 | rule=((liquidity_usd > 22694.1) AND (lp_lock_score > 20.8602))
+Seed 05 | discover=True | train=0.86 | heldout=0.829 | rule=((lp_lock_score > 17.0532) AND (liquidity_usd > 16355.5))
+Seed 06 | discover=True | train=0.9025 | heldout=0.879 | rule=((dev_score > 18.9854) AND (lp_lock_score > 19.2264))
+Seed 07 | discover=True | train=0.8775 | heldout=0.859 | rule=((holder_score > 18.779) AND (lp_lock_score > 17.2348))
+Seed 08 | discover=True | train=0.9275 | heldout=0.885 | rule=((liquidity_usd > 17727.3) AND (lp_lock_score > 21.2903))
+Seed 09 | discover=True | train=0.935 | heldout=0.925 | rule=((holder_score > 22.7234) AND (liquidity_usd > 21919.2))
+Seed 10 | discover=True | train=0.89 | heldout=0.898 | rule=((liquidity_usd > 18440.3) AND (holder_score > 18.2484))
+Seed 11 | discover=True | train=0.885 | heldout=0.869 | rule=((dev_score > 20.3157) AND (holder_score > 17.6081))
+Seed 12 | discover=True | train=0.915 | heldout=0.894 | rule=((holder_score > 22.3604) AND (dev_score > 20.989))
+Seed 13 | discover=True | train=0.875 | heldout=0.869 | rule=((dev_score > 19.341) AND (liquidity_usd > 17961.2))
+Seed 14 | discover=True | train=0.92 | heldout=0.886 | rule=((lp_lock_score > 19.0421) AND (holder_score > 21.6499))
+Seed 15 | discover=True | train=0.8925 | heldout=0.859 | rule=((holder_score > 17.917) AND (dev_score > 18.915))
+Seed 16 | discover=True | train=0.935 | heldout=0.908 | rule=((holder_score > 26.9625) AND (dev_score > 17.017))
+Seed 17 | discover=True | train=0.915 | heldout=0.892 | rule=((liquidity_usd > 23832.6) AND (dev_score > 16.4256))
+Seed 18 | discover=True | train=0.865 | heldout=0.845 | rule=((liquidity_usd > 15835.3) AND (lp_lock_score > 18.4665))
+Seed 19 | discover=True | train=0.9075 | heldout=0.876 | rule=((liquidity_usd > 19290.1) AND (holder_score > 18.8289))
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.901375,
+  "mean_held_out_accuracy": 0.8788,
+  "mean_held_out_balanced_accuracy": 0.6845788414344169,
+  "min_held_out_accuracy": 0.829
+}
+
+================================================================================
+STRUCTURAL GENERALIZATION: OR
+================================================================================
+Seed 00 | discover=True | train=0.8925 | heldout=0.912 | rule=(liquidity_usd > 15155.4)
+Seed 01 | discover=True | train=0.8925 | heldout=0.913 | rule=(liquidity_usd > 15076.6)
+Seed 02 | discover=True | train=0.915 | heldout=0.901 | rule=(liquidity_usd > 14190)
+Seed 03 | discover=True | train=0.9125 | heldout=0.895 | rule=(liquidity_usd > 14494.4)
+Seed 04 | discover=True | train=0.915 | heldout=0.921 | rule=(liquidity_usd > 15108)
+Seed 05 | discover=True | train=0.915 | heldout=0.92 | rule=(liquidity_usd > 14938.1)
+Seed 06 | discover=True | train=0.89 | heldout=0.909 | rule=(liquidity_usd > 15381.7)
+Seed 07 | discover=True | train=0.9125 | heldout=0.908 | rule=(liquidity_usd > 14961.5)
+Seed 08 | discover=True | train=0.9175 | heldout=0.926 | rule=(liquidity_usd > 14970.8)
+Seed 09 | discover=True | train=0.9125 | heldout=0.903 | rule=(liquidity_usd > 15376.8)
+Seed 10 | discover=True | train=0.9325 | heldout=0.895 | rule=(liquidity_usd > 14802.1)
+Seed 11 | discover=True | train=0.9025 | heldout=0.913 | rule=(liquidity_usd > 14591.1)
+Seed 12 | discover=True | train=0.9125 | heldout=0.892 | rule=(liquidity_usd > 14250.4)
+Seed 13 | discover=True | train=0.8975 | heldout=0.911 | rule=(liquidity_usd > 15195.7)
+Seed 14 | discover=True | train=0.885 | heldout=0.92 | rule=(liquidity_usd > 14765.6)
+Seed 15 | discover=True | train=0.9225 | heldout=0.912 | rule=(liquidity_usd > 14566.8)
+Seed 16 | discover=True | train=0.8925 | heldout=0.89 | rule=(liquidity_usd > 15804.4)
+Seed 17 | discover=True | train=0.8975 | heldout=0.911 | rule=(liquidity_usd > 14629.3)
+Seed 18 | discover=True | train=0.9 | heldout=0.926 | rule=(liquidity_usd > 14787.6)
+Seed 19 | discover=True | train=0.8925 | heldout=0.913 | rule=(liquidity_usd > 14694.4)
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.9055,
+  "mean_held_out_accuracy": 0.9095500000000001,
+  "mean_held_out_balanced_accuracy": 0.9204242088765532,
+  "min_held_out_accuracy": 0.89
+}
+
+================================================================================
+STRUCTURAL GENERALIZATION: XOR
+================================================================================
+Seed 00 | discover=False | train=None | heldout=None | rule=None
+Seed 01 | discover=False | train=None | heldout=None | rule=None
+Seed 02 | discover=False | train=None | heldout=None | rule=None
+Seed 03 | discover=False | train=None | heldout=None | rule=None
+Seed 04 | discover=True | train=0.6875 | heldout=0.661 | rule=((holder_score < 15.29) AND (liquidity_usd > 10215.7))
+Seed 05 | discover=False | train=None | heldout=None | rule=None
+Seed 06 | discover=True | train=0.615 | heldout=0.582 | rule=((holder_score > 24.1097) AND (liquidity_usd < 15381.7))
+Seed 07 | discover=True | train=0.5775 | heldout=0.491 | rule=((holder_score < 2.611) AND (liquidity_usd > 11746))
+Seed 08 | discover=False | train=None | heldout=None | rule=None
+Seed 09 | discover=False | train=None | heldout=None | rule=None
+Seed 10 | discover=True | train=0.5875 | heldout=0.532 | rule=((liquidity_usd > 16663) AND (holder_score < 3.09015))
+Seed 11 | discover=True | train=0.71 | heldout=0.62 | rule=((liquidity_usd > 15641.1) AND (holder_score < 10.0195))
+Seed 12 | discover=False | train=None | heldout=None | rule=None
+Seed 13 | discover=False | train=None | heldout=None | rule=None
+Seed 14 | discover=False | train=None | heldout=None | rule=None
+Seed 15 | discover=False | train=None | heldout=None | rule=None
+Seed 16 | discover=False | train=None | heldout=None | rule=None
+Seed 17 | discover=False | train=None | heldout=None | rule=None
+Seed 18 | discover=True | train=0.625 | heldout=0.602 | rule=((holder_score > 15.6561) AND (liquidity_usd < 6953.63))
+Seed 19 | discover=True | train=0.595 | heldout=0.467 | rule=(lp_lock_score > 16.5751)
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 0.35,
+  "mean_train_accuracy": 0.6282142857142857,
+  "mean_held_out_accuracy": 0.565,
+  "mean_held_out_balanced_accuracy": 0.5786879718093232,
+  "min_held_out_accuracy": 0.467
+}
+
+================================================================================
+STRUCTURAL GENERALIZATION: ABSOLUTE_NONLINEAR
+================================================================================
+Seed 00 | discover=True | train=0.765 | heldout=0.778 | rule=(holder_score < 6.96393)
+Seed 01 | discover=True | train=0.7825 | heldout=0.756 | rule=(holder_score > 22.9354)
+Seed 02 | discover=True | train=0.765 | heldout=0.767 | rule=(holder_score < 6.97862)
+Seed 03 | discover=True | train=0.7625 | heldout=0.734 | rule=(holder_score < 6.40008)
+Seed 04 | discover=True | train=0.75 | heldout=0.775 | rule=(holder_score < 6.70468)
+Seed 05 | discover=True | train=0.7875 | heldout=0.759 | rule=(holder_score < 6.60851)
+Seed 06 | discover=True | train=0.765 | heldout=0.776 | rule=(holder_score > 22.7804)
+Seed 07 | discover=True | train=0.75 | heldout=0.753 | rule=(holder_score > 22.2779)
+Seed 08 | discover=True | train=0.7675 | heldout=0.762 | rule=(holder_score < 7.22482)
+Seed 09 | discover=True | train=0.7675 | heldout=0.745 | rule=(holder_score < 5.9978)
+Seed 10 | discover=True | train=0.775 | heldout=0.737 | rule=(holder_score < 6.20218)
+Seed 11 | discover=True | train=0.765 | heldout=0.778 | rule=(holder_score < 7.23844)
+Seed 12 | discover=True | train=0.755 | heldout=0.74 | rule=(holder_score > 22.3604)
+Seed 13 | discover=True | train=0.7525 | heldout=0.754 | rule=(holder_score < 7.49056)
+Seed 14 | discover=True | train=0.7625 | heldout=0.782 | rule=(holder_score < 6.97128)
+Seed 15 | discover=True | train=0.7925 | heldout=0.752 | rule=(holder_score < 7.47871)
+Seed 16 | discover=True | train=0.765 | heldout=0.735 | rule=(holder_score > 22.1116)
+Seed 17 | discover=True | train=0.7725 | heldout=0.733 | rule=(holder_score > 22.1811)
+Seed 18 | discover=True | train=0.765 | heldout=0.745 | rule=(holder_score < 6.28943)
+Seed 19 | discover=True | train=0.7525 | heldout=0.752 | rule=(holder_score < 6.66304)
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.766,
+  "mean_held_out_accuracy": 0.75565,
+  "mean_held_out_balanced_accuracy": 0.7377708813733967,
+  "min_held_out_accuracy": 0.733
+}
+
+================================================================================
+STRUCTURAL GENERALIZATION: PRODUCT
+================================================================================
+Seed 00 | discover=True | train=0.975 | heldout=0.947 | rule=((holder_score > 20.3824) AND (liquidity_usd > 16898.5))
+Seed 01 | discover=True | train=0.96 | heldout=0.954 | rule=((liquidity_usd > 20306.3) AND (holder_score > 18.1663))
+Seed 02 | discover=True | train=0.9775 | heldout=0.951 | rule=((liquidity_usd > 18787.7) AND (holder_score > 16.3226))
+Seed 03 | discover=True | train=0.97 | heldout=0.96 | rule=((holder_score > 20.1579) AND (liquidity_usd > 17505.9))
+Seed 04 | discover=True | train=0.97 | heldout=0.954 | rule=((holder_score > 16.8129) AND (liquidity_usd > 18203))
+Seed 05 | discover=True | train=0.955 | heldout=0.955 | rule=((liquidity_usd > 19731) AND (holder_score > 15.5111))
+Seed 06 | discover=True | train=0.9625 | heldout=0.956 | rule=((liquidity_usd > 18620) AND (holder_score > 16.8961))
+Seed 07 | discover=True | train=0.97 | heldout=0.951 | rule=((liquidity_usd > 18136.7) AND (holder_score > 16.8737))
+Seed 08 | discover=True | train=0.97 | heldout=0.962 | rule=((liquidity_usd > 17727.3) AND (holder_score > 18.0627))
+Seed 09 | discover=True | train=0.9625 | heldout=0.962 | rule=((holder_score > 17.7811) AND (liquidity_usd > 17722.2))
+Seed 10 | discover=True | train=0.965 | heldout=0.967 | rule=((holder_score > 18.2484) AND (liquidity_usd > 16663))
+Seed 11 | discover=True | train=0.9625 | heldout=0.955 | rule=((holder_score > 19.5023) AND (liquidity_usd > 15641.1))
+Seed 12 | discover=True | train=0.97 | heldout=0.959 | rule=((liquidity_usd > 17998.9) AND (holder_score > 17.9197))
+Seed 13 | discover=True | train=0.9625 | heldout=0.958 | rule=((liquidity_usd > 19964.7) AND (holder_score > 17.0547))
+Seed 14 | discover=True | train=0.965 | heldout=0.967 | rule=((liquidity_usd > 18288.2) AND (holder_score > 19.2882))
+Seed 15 | discover=True | train=0.97 | heldout=0.958 | rule=((holder_score > 19.5325) AND (liquidity_usd > 16248.7))
+Seed 16 | discover=True | train=0.965 | heldout=0.956 | rule=((holder_score > 19.9963) AND (liquidity_usd > 15804.4))
+Seed 17 | discover=True | train=0.9675 | heldout=0.949 | rule=((holder_score > 18.401) AND (liquidity_usd > 17956.6))
+Seed 18 | discover=True | train=0.9875 | heldout=0.968 | rule=((liquidity_usd > 19139.4) AND (holder_score > 17.5533))
+Seed 19 | discover=True | train=0.95 | heldout=0.947 | rule=((liquidity_usd > 16478) AND (holder_score > 17.3199))
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.966875,
+  "mean_held_out_accuracy": 0.9568,
+  "mean_held_out_balanced_accuracy": 0.9271282740765205,
+  "min_held_out_accuracy": 0.947
+}
+
+================================================================================
+STRUCTURAL GENERALIZATION: RATIO
+================================================================================
+Seed 00 | discover=True | train=0.83 | heldout=0.799 | rule=((holder_score < 17.4949) AND (liquidity_usd > 12360.9))
+Seed 01 | discover=True | train=0.8425 | heldout=0.807 | rule=((holder_score < 16.7342) AND (liquidity_usd > 10677.1))
+Seed 02 | discover=True | train=0.8325 | heldout=0.8 | rule=((holder_score < 14.8107) AND (liquidity_usd > 7563.89))
+Seed 03 | discover=True | train=0.82 | heldout=0.801 | rule=((holder_score < 17.1805) AND (liquidity_usd > 11151.5))
+Seed 04 | discover=True | train=0.8775 | heldout=0.836 | rule=((liquidity_usd > 11767) AND (holder_score < 22.2597))
+Seed 05 | discover=True | train=0.845 | heldout=0.826 | rule=((liquidity_usd > 10882.3) AND (holder_score < 19.896))
+Seed 06 | discover=True | train=0.8275 | heldout=0.826 | rule=((liquidity_usd > 12587.1) AND (holder_score < 22.7804))
+Seed 07 | discover=True | train=0.8375 | heldout=0.836 | rule=((holder_score < 16.8737) AND (liquidity_usd > 6889.84))
+Seed 08 | discover=True | train=0.8325 | heldout=0.844 | rule=((holder_score < 18.0627) AND (liquidity_usd > 8861.09))
+Seed 09 | discover=True | train=0.8175 | heldout=0.826 | rule=((holder_score < 17.7811) AND (liquidity_usd > 10274.4))
+Seed 10 | discover=True | train=0.82 | heldout=0.847 | rule=((liquidity_usd > 10895.9) AND (holder_score < 19.5959))
+Seed 11 | discover=True | train=0.8425 | heldout=0.85 | rule=((liquidity_usd > 12672.3) AND (holder_score < 21.7053))
+Seed 12 | discover=True | train=0.8475 | heldout=0.84 | rule=((liquidity_usd > 8767.89) AND (holder_score < 17.9197))
+Seed 13 | discover=True | train=0.8475 | heldout=0.833 | rule=((holder_score < 18.396) AND (liquidity_usd > 12462.7))
+Seed 14 | discover=True | train=0.8475 | heldout=0.807 | rule=((liquidity_usd > 12237.7) AND (holder_score < 20.3454))
+Seed 15 | discover=True | train=0.8125 | heldout=0.838 | rule=((liquidity_usd > 11318.7) AND (holder_score < 21.0868))
+Seed 16 | discover=True | train=0.845 | heldout=0.828 | rule=((liquidity_usd > 10526.4) AND (holder_score < 19.9963))
+Seed 17 | discover=True | train=0.8375 | heldout=0.83 | rule=((liquidity_usd > 14629.3) AND (holder_score < 23.5642))
+Seed 18 | discover=True | train=0.8325 | heldout=0.821 | rule=((holder_score < 17.5533) AND (liquidity_usd > 10304.9))
+Seed 19 | discover=True | train=0.855 | heldout=0.846 | rule=((holder_score < 18.8289) AND (liquidity_usd > 9879.68))
+AGGREGATE: {
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.8375,
+  "mean_held_out_accuracy": 0.82705,
+  "mean_held_out_balanced_accuracy": 0.8270623288187618,
+  "min_held_out_accuracy": 0.799
+}
+
+================================================================================
+NOISE: 0.05
+================================================================================
+{
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.943125,
+  "mean_held_out_accuracy": 0.93875,
+  "mean_held_out_balanced_accuracy": 0.9385708347320858,
+  "min_held_out_accuracy": 0.919
+}
+
+================================================================================
+NOISE: 0.1
+================================================================================
+{
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.89525,
+  "mean_held_out_accuracy": 0.88835,
+  "mean_held_out_balanced_accuracy": 0.8881945912717538,
+  "min_held_out_accuracy": 0.861
+}
+
+================================================================================
+NOISE: 0.2
+================================================================================
+{
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.79675,
+  "mean_held_out_accuracy": 0.7927500000000001,
+  "mean_held_out_balanced_accuracy": 0.792548587715956,
+  "min_held_out_accuracy": 0.769
+}
+
+================================================================================
+NOISE: 0.3
+================================================================================
+{
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.702375,
+  "mean_held_out_accuracy": 0.6952499999999999,
+  "mean_held_out_balanced_accuracy": 0.6951000564547323,
+  "min_held_out_accuracy": 0.664
+}
+
+================================================================================
+DISTRACTORS: 10
+================================================================================
+{
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.988125,
+  "mean_held_out_accuracy": 0.9874499999999999,
+  "mean_held_out_balanced_accuracy": 0.9875763254426434,
+  "min_held_out_accuracy": 0.962
+}
+
+================================================================================
+DISTRACTORS: 50
+================================================================================
+{
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.986,
+  "mean_held_out_accuracy": 0.9868,
+  "mean_held_out_balanced_accuracy": 0.9866357977926368,
+  "min_held_out_accuracy": 0.97
+}
+
+================================================================================
+DISTRACTORS: 100
+================================================================================
+{
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.98775,
+  "mean_held_out_accuracy": 0.98425,
+  "mean_held_out_balanced_accuracy": 0.9842024737258772,
+  "min_held_out_accuracy": 0.968
+}
+
+================================================================================
+DISTRACTORS: 250
+================================================================================
+{
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.987125,
+  "mean_held_out_accuracy": 0.98515,
+  "mean_held_out_balanced_accuracy": 0.9852637334770062,
+  "min_held_out_accuracy": 0.947
+}
+
+================================================================================
+RARE / IMBALANCED: RARE
+================================================================================
+{
+  "runs": 20,
+  "discovery_rate": 0.85,
+  "mean_train_accuracy": 0.9623529411764706,
+  "mean_held_out_accuracy": 0.9650588235294117,
+  "mean_held_out_balanced_accuracy": 0.9573412732911843,
+  "min_held_out_accuracy": 0.941
+}
+
+================================================================================
+RARE / IMBALANCED: IMBALANCED
+================================================================================
+{
+  "runs": 20,
+  "discovery_rate": 1.0,
+  "mean_train_accuracy": 0.991125,
+  "mean_held_out_accuracy": 0.99065,
+  "mean_held_out_balanced_accuracy": 0.9575250402238793,
+  "min_held_out_accuracy": 0.98
+}
+
+================================================================================
+NULL REALITY
+================================================================================
+Seed 00 | discovered=False | rule=None
+Seed 01 | discovered=False | rule=None
+Seed 02 | discovered=False | rule=None
+Seed 03 | discovered=False | rule=None
+Seed 04 | discovered=False | rule=None
+Seed 05 | discovered=False | rule=None
+Seed 06 | discovered=False | rule=None
+Seed 07 | discovered=False | rule=None
+Seed 08 | discovered=False | rule=None
+Seed 09 | discovered=False | rule=None
+Seed 10 | discovered=False | rule=None
+Seed 11 | discovered=False | rule=None
+Seed 12 | discovered=False | rule=None
+Seed 13 | discovered=False | rule=None
+Seed 14 | discovered=False | rule=None
+Seed 15 | discovered=False | rule=None
+Seed 16 | discovered=False | rule=None
+Seed 17 | discovered=False | rule=None
+Seed 18 | discovered=False | rule=None
+Seed 19 | discovered=False | rule=None
+
+================================================================================
+DISTRIBUTION SHIFT
+================================================================================
+Seed 00 | discover=False | heldout=None | rule=None
+Seed 01 | discover=False | heldout=None | rule=None
+Seed 02 | discover=False | heldout=None | rule=None
+Seed 03 | discover=False | heldout=None | rule=None
+Seed 04 | discover=False | heldout=None | rule=None
+Seed 05 | discover=False | heldout=None | rule=None
+Seed 06 | discover=False | heldout=None | rule=None
+Seed 07 | discover=False | heldout=None | rule=None
+Seed 08 | discover=False | heldout=None | rule=None
+Seed 09 | discover=False | heldout=None | rule=None
+Seed 10 | discover=False | heldout=None | rule=None
+Seed 11 | discover=False | heldout=None | rule=None
+Seed 12 | discover=False | heldout=None | rule=None
+Seed 13 | discover=False | heldout=None | rule=None
+Seed 14 | discover=False | heldout=None | rule=None
+Seed 15 | discover=False | heldout=None | rule=None
+Seed 16 | discover=False | heldout=None | rule=None
+Seed 17 | discover=False | heldout=None | rule=None
+Seed 18 | discover=False | heldout=None | rule=None
+Seed 19 | discover=False | heldout=None | rule=None
+
+================================================================================
+OUT-OF-RANGE GENERALIZATION
+================================================================================
+Seed 00 | discover=True | heldout=1.0 | rule=(liquidity_usd > 7312.59)
+Seed 01 | discover=True | heldout=1.0 | rule=(liquidity_usd > 6901.05)
+Seed 02 | discover=True | heldout=1.0 | rule=(liquidity_usd > 7034.37)
+Seed 03 | discover=True | heldout=1.0 | rule=(liquidity_usd > 6916.41)
+Seed 04 | discover=True | heldout=1.0 | rule=(liquidity_usd > 7014.62)
+Seed 05 | discover=True | heldout=1.0 | rule=(liquidity_usd > 6879.94)
+Seed 06 | discover=True | heldout=1.0 | rule=(liquidity_usd > 7030.22)
+Seed 07 | discover=True | heldout=1.0 | rule=(liquidity_usd > 6952.02)
+Seed 08 | discover=True | heldout=1.0 | rule=(liquidity_usd > 7008.86)
+Seed 09 | discover=True | heldout=1.0 | rule=(liquidity_usd > 7034.43)
+Seed 10 | discover=True | heldout=1.0 | rule=(liquidity_usd > 6882.81)
+Seed 11 | discover=True | heldout=1.0 | rule=(liquidity_usd > 6748.43)
+Seed 12 | discover=True | heldout=1.0 | rule=(liquidity_usd > 6983.7)
+Seed 13 | discover=True | heldout=1.0 | rule=(liquidity_usd > 6665.13)
+Seed 14 | discover=True | heldout=1.0 | rule=(liquidity_usd > 6765.82)
+Seed 15 | discover=True | heldout=1.0 | rule=(liquidity_usd > 6804.96)
+Seed 16 | discover=True | heldout=1.0 | rule=(liquidity_usd > 6870.88)
+Seed 17 | discover=True | heldout=1.0 | rule=(liquidity_usd > 7148.73)
+Seed 18 | discover=True | heldout=1.0 | rule=(liquidity_usd > 6980.61)
+Seed 19 | discover=True | heldout=1.0 | rule=(liquidity_usd > 7116.92)
+
+================================================================================
+RULE STABILITY
+================================================================================
+LIQUIDITY
+{
+  "runs": 50,
+  "unique_rules": 50,
+  "rules": [
+    [
+      "(liquidity_usd > 14190)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14250.4)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14295.9)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14363.5)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14390.3)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14494.4)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14566.8)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14591.1)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14613.5)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14629.3)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14694.4)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14750.2)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14765.6)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14787.6)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14802.1)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14819.1)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14858.6)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14938.1)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14956.2)",
+      1
+    ],
+    [
+      "(liquidity_usd > 14960.8)",
+      1
+    ]
+  ]
+}
+
+REVERSE_HOLDER
+{
+  "runs": 50,
+  "unique_rules": 50,
+  "rules": [
+    [
+      "(holder_score < 10.0195)",
+      1
+    ],
+    [
+      "(holder_score < 10.0201)",
+      1
+    ],
+    [
+      "(holder_score < 10.032)",
+      1
+    ],
+    [
+      "(holder_score < 10.0487)",
+      1
+    ],
+    [
+      "(holder_score < 10.0494)",
+      1
+    ],
+    [
+      "(holder_score < 10.061)",
+      1
+    ],
+    [
+      "(holder_score < 10.2361)",
+      1
+    ],
+    [
+      "(holder_score < 10.3983)",
+      1
+    ],
+    [
+      "(holder_score < 10.4406)",
+      1
+    ],
+    [
+      "(holder_score < 10.4487)",
+      1
+    ],
+    [
+      "(holder_score < 10.4683)",
+      1
+    ],
+    [
+      "(holder_score < 10.4723)",
+      1
+    ],
+    [
+      "(holder_score < 10.4806)",
+      1
+    ],
+    [
+      "(holder_score < 10.6198)",
+      1
+    ],
+    [
+      "(holder_score < 10.6553)",
+      1
+    ],
+    [
+      "(holder_score < 10.7788)",
+      1
+    ],
+    [
+      "(holder_score < 8.76176)",
+      1
+    ],
+    [
+      "(holder_score < 8.98726)",
+      1
+    ],
+    [
+      "(holder_score < 9.1261)",
+      1
+    ],
+    [
+      "(holder_score < 9.13157)",
+      1
+    ]
+  ]
+}
+
+AND
+{
+  "runs": 50,
+  "unique_rules": 50,
+  "rules": [
+    [
+      "((holder_score > 14.3214) AND (liquidity_usd > 15028.1))",
+      1
+    ],
+    [
+      "((holder_score > 14.3296) AND (liquidity_usd > 14442.4))",
+      1
+    ],
+    [
+      "((holder_score > 14.5015) AND (liquidity_usd > 14591.1))",
+      1
+    ],
+    [
+      "((holder_score > 14.7129) AND (liquidity_usd > 14390.3))",
+      1
+    ],
+    [
+      "((holder_score > 14.7556) AND (liquidity_usd > 14300.1))",
+      1
+    ],
+    [
+      "((holder_score > 14.8107) AND (liquidity_usd > 14190))",
+      1
+    ],
+    [
+      "((holder_score > 14.8561) AND (liquidity_usd > 14250.4))",
+      1
+    ],
+    [
+      "((holder_score > 14.8833) AND (liquidity_usd > 14295.9))",
+      1
+    ],
+    [
+      "((holder_score > 14.9249) AND (liquidity_usd > 15376.8))",
+      1
+    ],
+    [
+      "((holder_score > 14.9838) AND (liquidity_usd > 15511.7))",
+      1
+    ],
+    [
+      "((holder_score > 14.9923) AND (liquidity_usd > 14802.1))",
+      1
+    ],
+    [
+      "((holder_score > 14.9979) AND (liquidity_usd > 15653))",
+      1
+    ],
+    [
+      "((holder_score > 15.0569) AND (liquidity_usd > 15182.9))",
+      1
+    ],
+    [
+      "((holder_score > 15.078) AND (liquidity_usd > 14970.8))",
+      1
+    ],
+    [
+      "((holder_score > 15.2031) AND (liquidity_usd > 14977))",
+      1
+    ],
+    [
+      "((holder_score > 15.2387) AND (liquidity_usd > 15247.6))",
+      1
+    ],
+    [
+      "((holder_score > 15.29) AND (liquidity_usd > 15108))",
+      1
+    ],
+    [
+      "((holder_score > 15.3228) AND (liquidity_usd > 15148.1))",
+      1
+    ],
+    [
+      "((holder_score > 15.3354) AND (liquidity_usd > 15848.2))",
+      1
+    ],
+    [
+      "((holder_score > 15.3582) AND (liquidity_usd > 15404.7))",
+      1
+    ]
+  ]
+}
+

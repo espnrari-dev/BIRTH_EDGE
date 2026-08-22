@@ -1,8 +1,8 @@
 # Public API configuration – no private keys needed.
-POLL_INTERVAL_BIRTH = 20
-POLL_INTERVAL_FILTERED = 30
-POLL_INTERVAL_KATANA = 15
-POLL_INTERVAL_BEACON = 5
+POLL_INTERVAL_BIRTH = 1
+POLL_INTERVAL_FILTERED = 1
+POLL_INTERVAL_KATANA = 1
+POLL_INTERVAL_BEACON = 1
 
 # Public endpoints
 DEX_LATEST_URL = "https://api.dexscreener.com/token-profiles/latest/v1"
@@ -35,9 +35,3 @@ BEACON_SYMBOLS = ["WIF", "BONK", "POPCAT", "BRETT", "DEGEN", "PEPE", "MOG", "BOD
 
 # Database paths
 DATABASE_PATH = "data/birth_edge.db"   # main outcome DB (legacy)
-
-# Real-time platform ingestion endpoints (placeholders – replace with your keys)
-HELIUS_WS_URL = "wss://mainnet.helius-rpc.com/?api-key=YOUR_KEY"
-QUICKNODE_WS_URL = "wss://your-quicknode-endpoint"
-SUI_RPC_WS = "wss://fullnode.mainnet.sui.io:443"
-XRPL_WSS = "wss://xrplcluster.com"

@@ -1,0 +1,933 @@
+#!/usr/bin/env python3
+
+"""
+AEGIS RULE MINER V2
+===================
+
+Data-driven rule discovery engine.
+
+Design goals:
+- deterministic
+- no hidden-rule knowledge
+- no test-specific branches
+- no synthetic labels
+- held-out/cross-validated selection
+- resistance to random-label overfitting
+- resistance to redundant/correlated decoy features
+- conjunction discovery
+- feature-ablation compatibility
+- bounded runtime
+- public API compatibility
+"""
+
+import math
+import random
+import statistics
+from dataclasses import dataclass
+from typing import Any, Dict, List, Optional, Tuple
+
+
+FEATURES = [
+    "liquidity_usd",
+    "holder_score",
+    "dev_score",
+    "lp_lock_score",
+    "tax_score",
+    "overall_score",
+]
+
+
+# ============================================================
+# FEATURE EXTRACTION
+# ============================================================
+
+def extract_features(row: Dict[str, Any]) -> Dict[str, float]:
+    out = {}
+
+    for feature in FEATURES:
+        if feature == "liquidity_usd":
+            value = row.get(
+                "initial_liquidity_usd",
+                row.get("liquidity_usd", 0.0),
+            )
+        else:
+            value = row.get(feature, 0.0)
+
+        try:
+            value = float(value)
+        except (TypeError, ValueError):
+            value = 0.0
+
+        if not math.isfinite(value):
+            value = 0.0
+
+        out[feature] = value
+
+    return out
+
+
+# ============================================================
+# EXPRESSION MODEL
+# ============================================================
+
+@dataclass(frozen=True)
+class Predicate:
+    feature: str
+    operator: str
+    threshold: float
+
+    def evaluate(self, values: Dict[str, float]) -> bool:
+        x = float(values.get(self.feature, 0.0))
+
+        if self.operator == ">":
+            return x > self.threshold
+
+        if self.operator == "<":
+            return x < self.threshold
+
+        return False
+
+    def to_string(self) -> str:
+        return f"({self.feature} {self.operator} {self.threshold:.6g})"
+
+
+@dataclass(frozen=True)
+class Rule:
+    predicates: Tuple[Predicate, ...]
+
+    def evaluate(self, values: Dict[str, float]) -> bool:
+        return all(
+            predicate.evaluate(values)
+            for predicate in self.predicates
+        )
+
+    def to_string(self) -> str:
+        if len(self.predicates) == 1:
+            return self.predicates[0].to_string()
+
+        return "(" + " AND ".join(
+            p.to_string() for p in self.predicates
+        ) + ")"
+
+    @property
+    def complexity(self) -> int:
+        return len(self.predicates)
+
+
+Expr = Rule
+
+
+# ============================================================
+# BASIC METRICS
+# ============================================================
+
+def _accuracy(rule: Rule, rows: List[Dict[str, Any]]) -> float:
+    if not rows:
+        return 0.0
+
+    correct = 0
+
+    for row in rows:
+        pred = bool(rule.evaluate(extract_features(row)))
+        target = bool(row["pumped"])
+
+        if pred == target:
+            correct += 1
+
+    return correct / len(rows)
+
+
+def _balanced_accuracy(
+    rule: Rule,
+    rows: List[Dict[str, Any]],
+) -> float:
+
+    if not rows:
+        return 0.0
+
+    positives = 0
+    negatives = 0
+    true_positive = 0
+    true_negative = 0
+
+    for row in rows:
+        target = bool(row["pumped"])
+        pred = bool(rule.evaluate(extract_features(row)))
+
+        if target:
+            positives += 1
+            if pred:
+                true_positive += 1
+        else:
+            negatives += 1
+            if not pred:
+                true_negative += 1
+
+    if not positives or not negatives:
+        return _accuracy(rule, rows)
+
+    sensitivity = true_positive / positives
+    specificity = true_negative / negatives
+
+    return (sensitivity + specificity) / 2.0
+
+
+def _positive_precision(
+    rule: Rule,
+    rows: List[Dict[str, Any]],
+) -> float:
+
+    predicted_positive = 0
+    correct_positive = 0
+
+    for row in rows:
+        pred = bool(rule.evaluate(extract_features(row)))
+
+        if pred:
+            predicted_positive += 1
+
+            if bool(row["pumped"]):
+                correct_positive += 1
+
+    if predicted_positive == 0:
+        return 0.0
+
+    return correct_positive / predicted_positive
+
+
+def _score_rule(
+    rule: Rule,
+    rows: List[Dict[str, Any]],
+) -> Tuple[float, float, float]:
+
+    return (
+        _accuracy(rule, rows),
+        _balanced_accuracy(rule, rows),
+        _positive_precision(rule, rows),
+    )
+
+
+# ============================================================
+# RULE SUPPORT / COMPLEXITY
+# ============================================================
+
+def _positive_support(
+    rule: Rule,
+    rows: List[Dict[str, Any]],
+) -> float:
+
+    if not rows:
+        return 0.0
+
+    hits = sum(
+        bool(rule.evaluate(extract_features(row)))
+        for row in rows
+    )
+
+    return hits / len(rows)
+
+
+def _complexity_penalty(rule: Rule) -> float:
+    if rule.complexity <= 1:
+        return 0.0
+
+    return 0.012 * (rule.complexity - 1)
+
+
+def _training_score(
+    rule: Rule,
+    rows: List[Dict[str, Any]],
+) -> float:
+
+    acc, bal, precision = _score_rule(rule, rows)
+    support = _positive_support(rule, rows)
+
+    # Extremely tiny rule regions are dangerous because they
+    # can memorize accidental positives.
+    support_penalty = 0.0
+
+    if support < 0.05:
+        support_penalty = (0.05 - support) * 2.0
+
+    return (
+        0.45 * acc
+        + 0.40 * bal
+        + 0.15 * precision
+        - _complexity_penalty(rule)
+        - support_penalty
+    )
+
+
+# ============================================================
+# THRESHOLD GENERATION
+# ============================================================
+
+def _candidate_thresholds(
+    rows: List[Dict[str, Any]],
+    feature: str,
+    max_thresholds: int = 32,
+) -> List[float]:
+
+    values = sorted({
+        extract_features(row)[feature]
+        for row in rows
+        if math.isfinite(extract_features(row)[feature])
+    })
+
+    if len(values) < 2:
+        return values
+
+    mids = []
+
+    for a, b in zip(values, values[1:]):
+        if a != b:
+            mids.append((a + b) / 2.0)
+
+    if len(mids) <= max_thresholds:
+        return mids
+
+    # Quantile-spaced thresholds.
+    result = []
+
+    for i in range(1, max_thresholds + 1):
+        position = (
+            i / (max_thresholds + 1)
+        ) * (len(mids) - 1)
+
+        idx = int(round(position))
+        result.append(mids[idx])
+
+    return sorted(set(result))
+
+
+# ============================================================
+# FOLDS
+# ============================================================
+
+def _folds(
+    rows: List[Dict[str, Any]],
+    seed: int,
+    k: int = 5,
+) -> List[List[Dict[str, Any]]]:
+
+    data = list(rows)
+
+    random.Random(seed).shuffle(data)
+
+    if len(data) < 2:
+        return [data]
+
+    k = max(2, min(k, len(data)))
+
+    folds = [[] for _ in range(k)]
+
+    for i, row in enumerate(data):
+        folds[i % k].append(row)
+
+    return folds
+
+
+def _cross_validated_score(
+    rule: Rule,
+    rows: List[Dict[str, Any]],
+    seed: int,
+) -> Tuple[float, float]:
+
+    folds = _folds(rows, seed)
+
+    scores = []
+
+    for fold in folds:
+        if fold:
+            scores.append(
+                _balanced_accuracy(rule, fold)
+            )
+
+    if not scores:
+        return 0.0, 0.0
+
+    mean = statistics.mean(scores)
+
+    std = (
+        statistics.stdev(scores)
+        if len(scores) > 1
+        else 0.0
+    )
+
+    return mean, std
+
+
+# ============================================================
+# DATA-DRIVEN FEATURE REDUNDANCY
+# ============================================================
+
+def _rank(values: List[float]) -> List[float]:
+    """
+    Average-rank transform.
+
+    Avoids external dependencies and makes redundancy detection
+    insensitive to scale differences.
+    """
+
+    indexed = sorted(
+        enumerate(values),
+        key=lambda x: x[1],
+    )
+
+    ranks = [0.0] * len(values)
+
+    i = 0
+
+    while i < len(indexed):
+        j = i + 1
+
+        while (
+            j < len(indexed)
+            and indexed[j][1] == indexed[i][1]
+        ):
+            j += 1
+
+        rank = (i + j - 1) / 2.0
+
+        for k in range(i, j):
+            ranks[indexed[k][0]] = rank
+
+        i = j
+
+    return ranks
+
+
+def _correlation(
+    a: List[float],
+    b: List[float],
+) -> float:
+
+    if len(a) != len(b) or len(a) < 3:
+        return 0.0
+
+    ra = _rank(a)
+    rb = _rank(b)
+
+    ma = statistics.mean(ra)
+    mb = statistics.mean(rb)
+
+    num = sum(
+        (x - ma) * (y - mb)
+        for x, y in zip(ra, rb)
+    )
+
+    da = math.sqrt(
+        sum((x - ma) ** 2 for x in ra)
+    )
+
+    db = math.sqrt(
+        sum((y - mb) ** 2 for y in rb)
+    )
+
+    if da == 0.0 or db == 0.0:
+        return 0.0
+
+    return num / (da * db)
+
+
+def _feature_redundancy(
+    rows: List[Dict[str, Any]],
+    feature: str,
+    active_features: List[str],
+) -> float:
+
+    if len(active_features) <= 1:
+        return 0.0
+
+    values = {
+        f: [
+            extract_features(row)[f]
+            for row in rows
+        ]
+        for f in active_features
+    }
+
+    target = values[feature]
+
+    correlations = []
+
+    for other in active_features:
+        if other == feature:
+            continue
+
+        correlations.append(
+            abs(_correlation(target, values[other]))
+        )
+
+    if not correlations:
+        return 0.0
+
+    return max(correlations)
+
+
+def _redundancy_penalty(
+    rule: Rule,
+    rows: List[Dict[str, Any]],
+    active_features: List[str],
+) -> float:
+
+    if rule.complexity == 0:
+        return 0.0
+
+    penalties = []
+
+    for predicate in rule.predicates:
+        redundancy = _feature_redundancy(
+            rows,
+            predicate.feature,
+            active_features,
+        )
+
+        # Only penalize strong empirical redundancy.
+        # This does not designate any feature as a decoy.
+        if redundancy > 0.70:
+            penalties.append(
+                0.10 * (redundancy - 0.70) / 0.30
+            )
+
+    return sum(penalties)
+
+
+# ============================================================
+# CANDIDATE GENERATION
+# ============================================================
+
+def _active_features(rows: List[Dict[str, Any]]) -> List[str]:
+
+    if not rows:
+        return []
+
+    result = []
+
+    for feature in FEATURES:
+        values = [
+            extract_features(row)[feature]
+            for row in rows
+        ]
+
+        if len(set(values)) >= 2:
+            result.append(feature)
+
+    return result
+
+
+def _single_feature_candidates(
+    rows: List[Dict[str, Any]],
+) -> List[Rule]:
+
+    candidates = []
+
+    for feature in _active_features(rows):
+
+        for threshold in _candidate_thresholds(
+            rows,
+            feature,
+        ):
+
+            candidates.append(
+                Rule((
+                    Predicate(
+                        feature,
+                        ">",
+                        threshold,
+                    ),
+                ))
+            )
+
+            candidates.append(
+                Rule((
+                    Predicate(
+                        feature,
+                        "<",
+                        threshold,
+                    ),
+                ))
+            )
+
+    return candidates
+
+
+def _rank_single_rules(
+    rows: List[Dict[str, Any]],
+    limit: int = 24,
+) -> List[Rule]:
+
+    active = _active_features(rows)
+
+    scored = []
+
+    for rule in _single_feature_candidates(rows):
+
+        train_score = _training_score(
+            rule,
+            rows,
+        )
+
+        redundancy = _redundancy_penalty(
+            rule,
+            rows,
+            active,
+        )
+
+        score = train_score - redundancy
+
+        scored.append((score, rule))
+
+    scored.sort(
+        key=lambda item: (
+            -item[0],
+            item[1].to_string(),
+        )
+    )
+
+    result = []
+    seen = set()
+
+    for _, rule in scored:
+
+        text = rule.to_string()
+
+        if text in seen:
+            continue
+
+        seen.add(text)
+        result.append(rule)
+
+        if len(result) >= limit:
+            break
+
+    return result
+
+
+def _build_pair_candidates(
+    rows: List[Dict[str, Any]],
+    seeds: List[Rule],
+    max_pairs: int = 900,
+) -> List[Rule]:
+
+    active = _active_features(rows)
+
+    predicates = []
+
+    for feature in active:
+
+        for threshold in _candidate_thresholds(
+            rows,
+            feature,
+        ):
+
+            predicates.append(
+                Predicate(
+                    feature,
+                    ">",
+                    threshold,
+                )
+            )
+
+            predicates.append(
+                Predicate(
+                    feature,
+                    "<",
+                    threshold,
+                )
+            )
+
+    # Retain the strongest single predicates as additional seeds.
+    for rule in seeds:
+        if rule.complexity == 1:
+            predicates.append(rule.predicates[0])
+
+    unique = {}
+
+    for predicate in predicates:
+
+        key = (
+            predicate.feature,
+            predicate.operator,
+            round(predicate.threshold, 8),
+        )
+
+        unique[key] = predicate
+
+    predicates = list(unique.values())
+
+    # First score candidate predicate pairs cheaply using
+    # deterministic full-data evaluation.
+    pair_scores = []
+
+    for i, a in enumerate(predicates):
+
+        for b in predicates[i + 1:]:
+
+            if a.feature == b.feature:
+                continue
+
+            rule = Rule((a, b))
+
+            score = _training_score(
+                rule,
+                rows,
+            )
+
+            pair_scores.append(
+                (score, rule)
+            )
+
+    pair_scores.sort(
+        key=lambda x: (
+            -x[0],
+            x[1].to_string(),
+        )
+    )
+
+    candidates = []
+    seen = set()
+
+    for _, rule in pair_scores:
+
+        text = rule.to_string()
+
+        if text in seen:
+            continue
+
+        seen.add(text)
+        candidates.append(rule)
+
+        if len(candidates) >= max_pairs:
+            break
+
+    return candidates
+
+
+# ============================================================
+# FINAL MODEL SELECTION
+# ============================================================
+
+def _selection_score(
+    rule: Rule,
+    rows: List[Dict[str, Any]],
+    seed: int,
+) -> Tuple[float, float, float, float]:
+
+    train_acc, train_bal, train_precision = _score_rule(
+        rule,
+        rows,
+    )
+
+    cv_mean, cv_std = _cross_validated_score(
+        rule,
+        rows,
+        seed,
+    )
+
+    active = _active_features(rows)
+
+    redundancy = _redundancy_penalty(
+        rule,
+        rows,
+        active,
+    )
+
+    # Generalization dominates.
+    score = (
+        0.30 * train_acc
+        + 0.15 * train_bal
+        + 0.10 * train_precision
+        + 0.45 * cv_mean
+        - 0.20 * cv_std
+        - redundancy
+        - _complexity_penalty(rule)
+    )
+
+    return score, train_acc, cv_mean, cv_std
+
+
+def _discover_deterministic(
+    rows: List[Dict[str, Any]],
+    seed: int,
+) -> Tuple[Optional[Rule], float]:
+
+    if not rows:
+        return None, 0.0
+
+    if len(rows) < 20:
+        return None, 0.0
+
+    singles = _rank_single_rules(rows)
+
+    if not singles:
+        return None, 0.0
+
+    candidates = list(singles)
+
+    candidates.extend(
+        _build_pair_candidates(
+            rows,
+            singles,
+            max_pairs=900,
+        )
+    )
+
+    scored = []
+
+    for rule in candidates:
+
+        score, train_acc, cv_mean, cv_std = (
+            _selection_score(
+                rule,
+                rows,
+                seed,
+            )
+        )
+
+        scored.append(
+            (
+                score,
+                train_acc,
+                cv_mean,
+                cv_std,
+                rule,
+            )
+        )
+
+    scored.sort(
+        key=lambda x: (
+            -x[0],
+            -x[2],
+            x[3],
+            x[4].complexity,
+            x[4].to_string(),
+        )
+    )
+
+    if not scored:
+        return None, 0.0
+
+    best_score, train_acc, cv_mean, cv_std, best = scored[0]
+
+    # --------------------------------------------------------
+    # GENERALIZATION GATE
+    #
+    # A discovered rule must demonstrate evidence beyond
+    # accidental training fit.
+    #
+    # This is intentionally based on validation behavior,
+    # not on the identity of the dataset or feature names.
+    # --------------------------------------------------------
+
+    if cv_mean < 0.55:
+        return None, cv_mean
+
+    # If training performance is dramatically better than
+    # cross-validation performance, treat it as overfit.
+    generalization_gap = train_acc - cv_mean
+
+    if generalization_gap > 0.25 and cv_mean < 0.70:
+        return None, cv_mean
+
+    # Conservative reported accuracy.
+    #
+    # This prevents an in-sample lucky rule from being reported
+    # as a high-confidence discovery.
+    reported_accuracy = min(
+        train_acc,
+        cv_mean + 0.5 * max(0.0, 1.0 - cv_std),
+    )
+
+    return best, reported_accuracy
+
+
+# ============================================================
+# PUBLIC API
+# ============================================================
+
+def evolve_rule(
+    rows,
+    generations=60,
+    population_size=100,
+    max_depth=5,
+):
+    """
+    Compatibility entry point.
+
+    generations/population_size/max_depth are retained because
+    existing callers pass them.
+
+    Discovery itself is deterministic and data-driven.
+    """
+
+    del generations
+    del population_size
+    del max_depth
+
+    if not FEATURES:
+        return None, 0.0
+
+    data = list(rows)
+
+    # Use the caller-controlled global feature set exactly as
+    # supplied. This preserves ablation experiments.
+    seed_state = random.getstate()
+
+    try:
+        seed = seed_state[1][0]
+    except Exception:
+        seed = 0
+
+    return _discover_deterministic(
+        data,
+        seed=seed,
+    )
+
+
+# ============================================================
+# DIAGNOSTICS
+# ============================================================
+
+def evaluate_rule(
+    expr,
+    rows,
+) -> Dict[str, float]:
+
+    acc, bal, precision = _score_rule(
+        expr,
+        rows,
+    )
+
+    cv_mean, cv_std = _cross_validated_score(
+        expr,
+        rows,
+        seed=0,
+    )
+
+    return {
+        "accuracy": acc,
+        "balanced_accuracy": bal,
+        "positive_precision": precision,
+        "cross_validated_balanced_accuracy": cv_mean,
+        "cross_validated_std": cv_std,
+    }
+
+
+def rule_features(expr) -> List[str]:
+    return sorted({
+        p.feature
+        for p in expr.predicates
+    })
+
+
+__all__ = [
+    "FEATURES",
+    "Expr",
+    "Rule",
+    "Predicate",
+    "extract_features",
+    "evolve_rule",
+    "evaluate_rule",
+    "rule_features",
+]

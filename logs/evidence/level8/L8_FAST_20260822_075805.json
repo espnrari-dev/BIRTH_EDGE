@@ -1,0 +1,1013 @@
+{
+  "audit": "BIRTH_EDGE_L8_FAST_ADVERSARIAL_DIAGNOSTIC",
+  "version": "L8-FAST",
+  "timestamp": "2026-08-22T07:58:05-0400",
+  "world": "MULTI_SIGNAL",
+  "train_n": 400,
+  "test_n": 1000,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "features": [
+    "dev_score",
+    "holder_score",
+    "liquidity_usd",
+    "lp_lock_score"
+  ],
+  "source_test": "/data/data/com.termux/files/home/BIRTH_EDGE/definitive_architecture_test.py",
+  "miner_modified": false,
+  "definitive_test_modified": false,
+  "results": [
+    {
+      "seed": 0,
+      "success": true,
+      "discovery": {
+        "rule": "((dev_score > 18.6203) AND (liquidity_usd > 16898.5)) AND ((holder_score > 15.6674) AND (lp_lock_score > 15.3534))",
+        "fingerprint": "5ef34e6799b902d3",
+        "features": [
+          "dev_score",
+          "holder_score",
+          "liquidity_usd",
+          "lp_lock_score"
+        ],
+        "score": 0.9825,
+        "seconds": 13.23736572265625
+      },
+      "baseline": {
+        "accuracy": 0.975,
+        "balanced_accuracy": 0.8046875,
+        "precision": 1.0,
+        "recall": 0.609375,
+        "specificity": 1.0,
+        "tp": 39,
+        "tn": 936,
+        "fp": 0,
+        "fn": 25
+      },
+      "ablation": {
+        "dev_score": {
+          "accuracy": 0.936,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 936,
+          "fp": 0,
+          "fn": 64
+        },
+        "holder_score": {
+          "accuracy": 0.936,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 936,
+          "fp": 0,
+          "fn": 64
+        },
+        "liquidity_usd": {
+          "accuracy": 0.936,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 936,
+          "fp": 0,
+          "fn": 64
+        },
+        "lp_lock_score": {
+          "accuracy": 0.936,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 936,
+          "fp": 0,
+          "fn": 64
+        }
+      },
+      "permutation": {
+        "dev_score": {
+          "accuracy": 0.941,
+          "balanced_accuracy": 0.6264022435897436,
+          "precision": 0.5862068965517241,
+          "recall": 0.265625,
+          "specificity": 0.9871794871794872,
+          "tp": 17,
+          "tn": 924,
+          "fp": 12,
+          "fn": 47
+        },
+        "holder_score": {
+          "accuracy": 0.935,
+          "balanced_accuracy": 0.6377537393162394,
+          "precision": 0.48717948717948717,
+          "recall": 0.296875,
+          "specificity": 0.9786324786324786,
+          "tp": 19,
+          "tn": 916,
+          "fp": 20,
+          "fn": 45
+        },
+        "liquidity_usd": {
+          "accuracy": 0.941,
+          "balanced_accuracy": 0.6336805555555556,
+          "precision": 0.5806451612903226,
+          "recall": 0.28125,
+          "specificity": 0.9861111111111112,
+          "tp": 18,
+          "tn": 923,
+          "fp": 13,
+          "fn": 46
+        },
+        "lp_lock_score": {
+          "accuracy": 0.933,
+          "balanced_accuracy": 0.6512419871794872,
+          "precision": 0.4666666666666667,
+          "recall": 0.328125,
+          "specificity": 0.9743589743589743,
+          "tp": 21,
+          "tn": 912,
+          "fp": 24,
+          "fn": 43
+        }
+      },
+      "label_null": {
+        "accuracy": 0.897,
+        "balanced_accuracy": 0.4791666666666667,
+        "precision": 0.0,
+        "recall": 0.0,
+        "specificity": 0.9583333333333334,
+        "tp": 0,
+        "tn": 897,
+        "fp": 39,
+        "fn": 64
+      },
+      "threshold_perturbation": {
+        "accuracy": 0.977,
+        "balanced_accuracy": 0.8203125,
+        "precision": 1.0,
+        "recall": 0.640625,
+        "specificity": 1.0,
+        "tp": 41,
+        "tn": 936,
+        "fp": 0,
+        "fn": 23
+      },
+      "range_shift": {
+        "accuracy": 0.971,
+        "balanced_accuracy": 0.7734375,
+        "precision": 1.0,
+        "recall": 0.546875,
+        "specificity": 1.0,
+        "tp": 35,
+        "tn": 936,
+        "fp": 0,
+        "fn": 29
+      },
+      "signal_contrast": {
+        "dev_score": {
+          "baseline_balanced_accuracy": 0.8046875,
+          "permuted_balanced_accuracy": 0.6264022435897436,
+          "drop": 0.1782852564102564
+        },
+        "holder_score": {
+          "baseline_balanced_accuracy": 0.8046875,
+          "permuted_balanced_accuracy": 0.6377537393162394,
+          "drop": 0.16693376068376065
+        },
+        "liquidity_usd": {
+          "baseline_balanced_accuracy": 0.8046875,
+          "permuted_balanced_accuracy": 0.6336805555555556,
+          "drop": 0.17100694444444442
+        },
+        "lp_lock_score": {
+          "baseline_balanced_accuracy": 0.8046875,
+          "permuted_balanced_accuracy": 0.6512419871794872,
+          "drop": 0.15344551282051277
+        }
+      },
+      "elapsed_seconds": 13.454257488250732
+    },
+    {
+      "seed": 1,
+      "success": true,
+      "discovery": {
+        "rule": "((dev_score > 15.4153) AND (holder_score > 15.7624)) AND ((liquidity_usd > 16281.9) AND (lp_lock_score > 14.6929))",
+        "fingerprint": "0bdb267aa52a6641",
+        "features": [
+          "dev_score",
+          "holder_score",
+          "liquidity_usd",
+          "lp_lock_score"
+        ],
+        "score": 0.99,
+        "seconds": 11.844058275222778
+      },
+      "baseline": {
+        "accuracy": 0.992,
+        "balanced_accuracy": 0.9344262295081966,
+        "precision": 1.0,
+        "recall": 0.8688524590163934,
+        "specificity": 1.0,
+        "tp": 53,
+        "tn": 939,
+        "fp": 0,
+        "fn": 8
+      },
+      "ablation": {
+        "dev_score": {
+          "accuracy": 0.939,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 939,
+          "fp": 0,
+          "fn": 61
+        },
+        "holder_score": {
+          "accuracy": 0.939,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 939,
+          "fp": 0,
+          "fn": 61
+        },
+        "liquidity_usd": {
+          "accuracy": 0.939,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 939,
+          "fp": 0,
+          "fn": 61
+        },
+        "lp_lock_score": {
+          "accuracy": 0.939,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 939,
+          "fp": 0,
+          "fn": 61
+        }
+      },
+      "permutation": {
+        "dev_score": {
+          "accuracy": 0.933,
+          "balanced_accuracy": 0.6807468705808412,
+          "precision": 0.4444444444444444,
+          "recall": 0.39344262295081966,
+          "specificity": 0.9680511182108626,
+          "tp": 24,
+          "tn": 909,
+          "fp": 30,
+          "fn": 37
+        },
+        "holder_score": {
+          "accuracy": 0.936,
+          "balanced_accuracy": 0.7130012744635905,
+          "precision": 0.4745762711864407,
+          "recall": 0.45901639344262296,
+          "specificity": 0.966986155484558,
+          "tp": 28,
+          "tn": 908,
+          "fp": 31,
+          "fn": 33
+        },
+        "liquidity_usd": {
+          "accuracy": 0.934,
+          "balanced_accuracy": 0.7042720717889628,
+          "precision": 0.4576271186440678,
+          "recall": 0.4426229508196721,
+          "specificity": 0.9659211927582535,
+          "tp": 27,
+          "tn": 907,
+          "fp": 32,
+          "fn": 34
+        },
+        "lp_lock_score": {
+          "accuracy": 0.935,
+          "balanced_accuracy": 0.6818118333071457,
+          "precision": 0.46153846153846156,
+          "recall": 0.39344262295081966,
+          "specificity": 0.9701810436634718,
+          "tp": 24,
+          "tn": 911,
+          "fp": 28,
+          "fn": 37
+        }
+      },
+      "label_null": {
+        "accuracy": 0.896,
+        "balanced_accuracy": 0.5154245011260672,
+        "precision": 0.09433962264150944,
+        "recall": 0.08196721311475409,
+        "specificity": 0.9488817891373802,
+        "tp": 5,
+        "tn": 891,
+        "fp": 48,
+        "fn": 56
+      },
+      "threshold_perturbation": {
+        "accuracy": 0.993,
+        "balanced_accuracy": 0.9426229508196722,
+        "precision": 1.0,
+        "recall": 0.8852459016393442,
+        "specificity": 1.0,
+        "tp": 54,
+        "tn": 939,
+        "fp": 0,
+        "fn": 7
+      },
+      "range_shift": {
+        "accuracy": 0.988,
+        "balanced_accuracy": 0.9246320641072644,
+        "precision": 0.9454545454545454,
+        "recall": 0.8524590163934426,
+        "specificity": 0.9968051118210862,
+        "tp": 52,
+        "tn": 936,
+        "fp": 3,
+        "fn": 9
+      },
+      "signal_contrast": {
+        "dev_score": {
+          "baseline_balanced_accuracy": 0.9344262295081966,
+          "permuted_balanced_accuracy": 0.6807468705808412,
+          "drop": 0.2536793589273555
+        },
+        "holder_score": {
+          "baseline_balanced_accuracy": 0.9344262295081966,
+          "permuted_balanced_accuracy": 0.7130012744635905,
+          "drop": 0.22142495504460613
+        },
+        "liquidity_usd": {
+          "baseline_balanced_accuracy": 0.9344262295081966,
+          "permuted_balanced_accuracy": 0.7042720717889628,
+          "drop": 0.23015415771923387
+        },
+        "lp_lock_score": {
+          "baseline_balanced_accuracy": 0.9344262295081966,
+          "permuted_balanced_accuracy": 0.6818118333071457,
+          "drop": 0.252614396201051
+        }
+      },
+      "elapsed_seconds": 12.037285566329956
+    },
+    {
+      "seed": 2,
+      "success": true,
+      "discovery": {
+        "rule": "((dev_score > 17.7269) AND (holder_score > 17.7647)) AND ((dev_score > 17.7269) AND (lp_lock_score > 17.6163))",
+        "fingerprint": "59bc1a79f56d9962",
+        "features": [
+          "dev_score",
+          "holder_score",
+          "lp_lock_score"
+        ],
+        "score": 0.95,
+        "seconds": 10.814902544021606
+      },
+      "baseline": {
+        "accuracy": 0.936,
+        "balanced_accuracy": 0.7191001400560224,
+        "precision": 0.3709677419354839,
+        "recall": 0.4791666666666667,
+        "specificity": 0.9590336134453782,
+        "tp": 23,
+        "tn": 913,
+        "fp": 39,
+        "fn": 25
+      },
+      "ablation": {
+        "dev_score": {
+          "accuracy": 0.952,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 952,
+          "fp": 0,
+          "fn": 48
+        },
+        "holder_score": {
+          "accuracy": 0.952,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 952,
+          "fp": 0,
+          "fn": 48
+        },
+        "liquidity_usd": {
+          "accuracy": 0.936,
+          "balanced_accuracy": 0.7191001400560224,
+          "precision": 0.3709677419354839,
+          "recall": 0.4791666666666667,
+          "specificity": 0.9590336134453782,
+          "tp": 23,
+          "tn": 913,
+          "fp": 39,
+          "fn": 25
+        },
+        "lp_lock_score": {
+          "accuracy": 0.952,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 952,
+          "fp": 0,
+          "fn": 48
+        }
+      },
+      "permutation": {
+        "dev_score": {
+          "accuracy": 0.908,
+          "balanced_accuracy": 0.5758053221288515,
+          "precision": 0.15625,
+          "recall": 0.20833333333333334,
+          "specificity": 0.9432773109243697,
+          "tp": 10,
+          "tn": 898,
+          "fp": 54,
+          "fn": 38
+        },
+        "holder_score": {
+          "accuracy": 0.899,
+          "balanced_accuracy": 0.6106442577030813,
+          "precision": 0.1728395061728395,
+          "recall": 0.2916666666666667,
+          "specificity": 0.9296218487394958,
+          "tp": 14,
+          "tn": 885,
+          "fp": 67,
+          "fn": 34
+        },
+        "liquidity_usd": {
+          "accuracy": 0.936,
+          "balanced_accuracy": 0.7191001400560224,
+          "precision": 0.3709677419354839,
+          "recall": 0.4791666666666667,
+          "specificity": 0.9590336134453782,
+          "tp": 23,
+          "tn": 913,
+          "fp": 39,
+          "fn": 25
+        },
+        "lp_lock_score": {
+          "accuracy": 0.903,
+          "balanced_accuracy": 0.5435049019607843,
+          "precision": 0.1111111111111111,
+          "recall": 0.14583333333333334,
+          "specificity": 0.9411764705882353,
+          "tp": 7,
+          "tn": 896,
+          "fp": 56,
+          "fn": 41
+        }
+      },
+      "label_null": {
+        "accuracy": 0.896,
+        "balanced_accuracy": 0.5002626050420168,
+        "precision": 0.04838709677419355,
+        "recall": 0.0625,
+        "specificity": 0.9380252100840336,
+        "tp": 3,
+        "tn": 893,
+        "fp": 59,
+        "fn": 45
+      },
+      "threshold_perturbation": {
+        "accuracy": 0.936,
+        "balanced_accuracy": 0.7191001400560224,
+        "precision": 0.3709677419354839,
+        "recall": 0.4791666666666667,
+        "specificity": 0.9590336134453782,
+        "tp": 23,
+        "tn": 913,
+        "fp": 39,
+        "fn": 25
+      },
+      "range_shift": {
+        "accuracy": 0.94,
+        "balanced_accuracy": 0.740983893557423,
+        "precision": 0.4032258064516129,
+        "recall": 0.5208333333333334,
+        "specificity": 0.9611344537815126,
+        "tp": 25,
+        "tn": 915,
+        "fp": 37,
+        "fn": 23
+      },
+      "signal_contrast": {
+        "dev_score": {
+          "baseline_balanced_accuracy": 0.7191001400560224,
+          "permuted_balanced_accuracy": 0.5758053221288515,
+          "drop": 0.14329481792717091
+        },
+        "holder_score": {
+          "baseline_balanced_accuracy": 0.7191001400560224,
+          "permuted_balanced_accuracy": 0.6106442577030813,
+          "drop": 0.10845588235294112
+        },
+        "liquidity_usd": {
+          "baseline_balanced_accuracy": 0.7191001400560224,
+          "permuted_balanced_accuracy": 0.7191001400560224,
+          "drop": 0.0
+        },
+        "lp_lock_score": {
+          "baseline_balanced_accuracy": 0.7191001400560224,
+          "permuted_balanced_accuracy": 0.5435049019607843,
+          "drop": 0.17559523809523814
+        }
+      },
+      "elapsed_seconds": 11.046515941619873
+    },
+    {
+      "seed": 3,
+      "success": true,
+      "discovery": {
+        "rule": "((holder_score > 15.4893) AND (dev_score > 15.6364)) AND ((liquidity_usd > 15807.5) AND (dev_score > 15.6364))",
+        "fingerprint": "10d1804010968cd8",
+        "features": [
+          "dev_score",
+          "holder_score",
+          "liquidity_usd"
+        ],
+        "score": 0.9425,
+        "seconds": 11.814672470092773
+      },
+      "baseline": {
+        "accuracy": 0.927,
+        "balanced_accuracy": 0.9177629003210399,
+        "precision": 0.4188034188034188,
+        "recall": 0.9074074074074074,
+        "specificity": 0.9281183932346723,
+        "tp": 49,
+        "tn": 878,
+        "fp": 68,
+        "fn": 5
+      },
+      "ablation": {
+        "dev_score": {
+          "accuracy": 0.946,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 946,
+          "fp": 0,
+          "fn": 54
+        },
+        "holder_score": {
+          "accuracy": 0.843,
+          "balanced_accuracy": 0.8908268733850129,
+          "precision": 0.24878048780487805,
+          "recall": 0.9444444444444444,
+          "specificity": 0.8372093023255814,
+          "tp": 51,
+          "tn": 792,
+          "fp": 154,
+          "fn": 3
+        },
+        "liquidity_usd": {
+          "accuracy": 0.946,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 946,
+          "fp": 0,
+          "fn": 54
+        },
+        "lp_lock_score": {
+          "accuracy": 0.927,
+          "balanced_accuracy": 0.9177629003210399,
+          "precision": 0.4188034188034188,
+          "recall": 0.9074074074074074,
+          "specificity": 0.9281183932346723,
+          "tp": 49,
+          "tn": 878,
+          "fp": 68,
+          "fn": 5
+        }
+      },
+      "permutation": {
+        "dev_score": {
+          "accuracy": 0.881,
+          "balanced_accuracy": 0.6053363088246809,
+          "precision": 0.16494845360824742,
+          "recall": 0.2962962962962963,
+          "specificity": 0.9143763213530656,
+          "tp": 16,
+          "tn": 865,
+          "fp": 81,
+          "fn": 38
+        },
+        "holder_score": {
+          "accuracy": 0.893,
+          "balanced_accuracy": 0.6553323937044867,
+          "precision": 0.22105263157894736,
+          "recall": 0.3888888888888889,
+          "specificity": 0.9217758985200846,
+          "tp": 21,
+          "tn": 872,
+          "fp": 74,
+          "fn": 33
+        },
+        "liquidity_usd": {
+          "accuracy": 0.884,
+          "balanced_accuracy": 0.6593062407015895,
+          "precision": 0.20754716981132076,
+          "recall": 0.4074074074074074,
+          "specificity": 0.9112050739957717,
+          "tp": 22,
+          "tn": 862,
+          "fp": 84,
+          "fn": 32
+        },
+        "lp_lock_score": {
+          "accuracy": 0.927,
+          "balanced_accuracy": 0.9177629003210399,
+          "precision": 0.4188034188034188,
+          "recall": 0.9074074074074074,
+          "specificity": 0.9281183932346723,
+          "tp": 49,
+          "tn": 878,
+          "fp": 68,
+          "fn": 5
+        }
+      },
+      "label_null": {
+        "accuracy": 0.837,
+        "balanced_accuracy": 0.47731187847466916,
+        "precision": 0.03418803418803419,
+        "recall": 0.07407407407407407,
+        "specificity": 0.8805496828752643,
+        "tp": 4,
+        "tn": 833,
+        "fp": 113,
+        "fn": 50
+      },
+      "threshold_perturbation": {
+        "accuracy": 0.926,
+        "balanced_accuracy": 0.9172343590948242,
+        "precision": 0.4152542372881356,
+        "recall": 0.9074074074074074,
+        "specificity": 0.927061310782241,
+        "tp": 49,
+        "tn": 877,
+        "fp": 69,
+        "fn": 5
+      },
+      "range_shift": {
+        "accuracy": 0.918,
+        "balanced_accuracy": 0.8780831571529246,
+        "precision": 0.3813559322033898,
+        "recall": 0.8333333333333334,
+        "specificity": 0.9228329809725159,
+        "tp": 45,
+        "tn": 873,
+        "fp": 73,
+        "fn": 9
+      },
+      "signal_contrast": {
+        "dev_score": {
+          "baseline_balanced_accuracy": 0.9177629003210399,
+          "permuted_balanced_accuracy": 0.6053363088246809,
+          "drop": 0.312426591496359
+        },
+        "holder_score": {
+          "baseline_balanced_accuracy": 0.9177629003210399,
+          "permuted_balanced_accuracy": 0.6553323937044867,
+          "drop": 0.2624305066165532
+        },
+        "liquidity_usd": {
+          "baseline_balanced_accuracy": 0.9177629003210399,
+          "permuted_balanced_accuracy": 0.6593062407015895,
+          "drop": 0.2584566596194504
+        },
+        "lp_lock_score": {
+          "baseline_balanced_accuracy": 0.9177629003210399,
+          "permuted_balanced_accuracy": 0.9177629003210399,
+          "drop": 0.0
+        }
+      },
+      "elapsed_seconds": 12.04982042312622
+    },
+    {
+      "seed": 4,
+      "success": true,
+      "discovery": {
+        "rule": "((holder_score > 16.8129) AND (dev_score > 15.0524)) AND ((lp_lock_score > 16.3747) AND (liquidity_usd > 18203))",
+        "fingerprint": "d6cde1fe697c85e0",
+        "features": [
+          "dev_score",
+          "holder_score",
+          "liquidity_usd",
+          "lp_lock_score"
+        ],
+        "score": 0.99,
+        "seconds": 17.536582708358765
+      },
+      "baseline": {
+        "accuracy": 0.979,
+        "balanced_accuracy": 0.8384615384615385,
+        "precision": 1.0,
+        "recall": 0.676923076923077,
+        "specificity": 1.0,
+        "tp": 44,
+        "tn": 935,
+        "fp": 0,
+        "fn": 21
+      },
+      "ablation": {
+        "dev_score": {
+          "accuracy": 0.945,
+          "balanced_accuracy": 0.8202797202797203,
+          "precision": 0.5641025641025641,
+          "recall": 0.676923076923077,
+          "specificity": 0.9636363636363636,
+          "tp": 44,
+          "tn": 901,
+          "fp": 34,
+          "fn": 21
+        },
+        "holder_score": {
+          "accuracy": 0.935,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 935,
+          "fp": 0,
+          "fn": 65
+        },
+        "liquidity_usd": {
+          "accuracy": 0.935,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 935,
+          "fp": 0,
+          "fn": 65
+        },
+        "lp_lock_score": {
+          "accuracy": 0.935,
+          "balanced_accuracy": 0.5,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 1.0,
+          "tp": 0,
+          "tn": 935,
+          "fp": 0,
+          "fn": 65
+        }
+      },
+      "permutation": {
+        "dev_score": {
+          "accuracy": 0.939,
+          "balanced_accuracy": 0.6739201974496092,
+          "precision": 0.5454545454545454,
+          "recall": 0.36923076923076925,
+          "specificity": 0.9786096256684492,
+          "tp": 24,
+          "tn": 915,
+          "fp": 20,
+          "fn": 41
+        },
+        "holder_score": {
+          "accuracy": 0.941,
+          "balanced_accuracy": 0.6893048128342246,
+          "precision": 0.5652173913043478,
+          "recall": 0.4,
+          "specificity": 0.9786096256684492,
+          "tp": 26,
+          "tn": 915,
+          "fp": 20,
+          "fn": 39
+        },
+        "liquidity_usd": {
+          "accuracy": 0.933,
+          "balanced_accuracy": 0.6420814479638008,
+          "precision": 0.47619047619047616,
+          "recall": 0.3076923076923077,
+          "specificity": 0.9764705882352941,
+          "tp": 20,
+          "tn": 913,
+          "fp": 22,
+          "fn": 45
+        },
+        "lp_lock_score": {
+          "accuracy": 0.939,
+          "balanced_accuracy": 0.6882352941176471,
+          "precision": 0.5416666666666666,
+          "recall": 0.4,
+          "specificity": 0.9764705882352941,
+          "tp": 26,
+          "tn": 913,
+          "fp": 22,
+          "fn": 39
+        }
+      },
+      "label_null": {
+        "accuracy": 0.895,
+        "balanced_accuracy": 0.49292472233648704,
+        "precision": 0.045454545454545456,
+        "recall": 0.03076923076923077,
+        "specificity": 0.9550802139037433,
+        "tp": 2,
+        "tn": 893,
+        "fp": 42,
+        "fn": 63
+      },
+      "threshold_perturbation": {
+        "accuracy": 0.977,
+        "balanced_accuracy": 0.823076923076923,
+        "precision": 1.0,
+        "recall": 0.6461538461538462,
+        "specificity": 1.0,
+        "tp": 42,
+        "tn": 935,
+        "fp": 0,
+        "fn": 23
+      },
+      "range_shift": {
+        "accuracy": 0.975,
+        "balanced_accuracy": 0.8148498560263266,
+        "precision": 0.9761904761904762,
+        "recall": 0.6307692307692307,
+        "specificity": 0.9989304812834224,
+        "tp": 41,
+        "tn": 934,
+        "fp": 1,
+        "fn": 24
+      },
+      "signal_contrast": {
+        "dev_score": {
+          "baseline_balanced_accuracy": 0.8384615384615385,
+          "permuted_balanced_accuracy": 0.6739201974496092,
+          "drop": 0.1645413410119293
+        },
+        "holder_score": {
+          "baseline_balanced_accuracy": 0.8384615384615385,
+          "permuted_balanced_accuracy": 0.6893048128342246,
+          "drop": 0.14915672562731386
+        },
+        "liquidity_usd": {
+          "baseline_balanced_accuracy": 0.8384615384615385,
+          "permuted_balanced_accuracy": 0.6420814479638008,
+          "drop": 0.19638009049773764
+        },
+        "lp_lock_score": {
+          "baseline_balanced_accuracy": 0.8384615384615385,
+          "permuted_balanced_accuracy": 0.6882352941176471,
+          "drop": 0.15022624434389142
+        }
+      },
+      "elapsed_seconds": 17.74970054626465
+    }
+  ],
+  "summary": {
+    "successful_seeds": 5,
+    "requested_seeds": 5,
+    "baseline_accuracy": {
+      "n": 5,
+      "mean": 0.9618,
+      "median": 0.975,
+      "min": 0.927,
+      "max": 0.992
+    },
+    "baseline_balanced_accuracy": {
+      "n": 5,
+      "mean": 0.8428876616693595,
+      "median": 0.8384615384615385,
+      "min": 0.7191001400560224,
+      "max": 0.9344262295081966
+    },
+    "label_null_balanced_accuracy": {
+      "n": 5,
+      "mean": 0.49301807472918135,
+      "median": 0.49292472233648704,
+      "min": 0.47731187847466916,
+      "max": 0.5154245011260672
+    },
+    "threshold_accuracy": {
+      "n": 5,
+      "mean": 0.9618,
+      "median": 0.977,
+      "min": 0.926,
+      "max": 0.993
+    },
+    "range_shift_accuracy": {
+      "n": 5,
+      "mean": 0.9584,
+      "median": 0.971,
+      "min": 0.918,
+      "max": 0.988
+    },
+    "discovery_seconds": {
+      "n": 5,
+      "mean": 13.049516344070435,
+      "median": 11.844058275222778,
+      "min": 10.814902544021606,
+      "max": 17.536582708358765
+    },
+    "total_seconds": {
+      "n": 5,
+      "mean": 13.267515993118286,
+      "median": 12.04982042312622,
+      "min": 11.046515941619873,
+      "max": 17.74970054626465
+    },
+    "rule_fingerprints": [
+      "5ef34e6799b902d3",
+      "0bdb267aa52a6641",
+      "59bc1a79f56d9962",
+      "10d1804010968cd8",
+      "d6cde1fe697c85e0"
+    ],
+    "feature_frequency": {
+      "dev_score": 5,
+      "holder_score": 5,
+      "liquidity_usd": 4,
+      "lp_lock_score": 4
+    },
+    "feature_stability": {
+      "dev_score": 1.0,
+      "holder_score": 1.0,
+      "liquidity_usd": 0.8,
+      "lp_lock_score": 0.8
+    },
+    "permutation_signal_drop": {
+      "dev_score": {
+        "n": 5,
+        "mean": 0.2104454731546142,
+        "median": 0.1782852564102564,
+        "min": 0.14329481792717091,
+        "max": 0.312426591496359
+      },
+      "holder_score": {
+        "n": 5,
+        "mean": 0.181680366065035,
+        "median": 0.16693376068376065,
+        "min": 0.10845588235294112,
+        "max": 0.2624305066165532
+      },
+      "liquidity_usd": {
+        "n": 5,
+        "mean": 0.17119957045617326,
+        "median": 0.19638009049773764,
+        "min": 0.0,
+        "max": 0.2584566596194504
+      },
+      "lp_lock_score": {
+        "n": 5,
+        "mean": 0.14637627829213867,
+        "median": 0.15344551282051277,
+        "min": 0.0,
+        "max": 0.252614396201051
+      }
+    },
+    "checks": {
+      "baseline_replication": true,
+      "rule_identity_stability": false,
+      "feature_stability": true,
+      "null_control_separation": true,
+      "threshold_robustness": true,
+      "range_shift_robustness": true,
+      "signal_destruction_detected": true
+    },
+    "verdict": "L8-INVESTIGATE"
+  },
+  "elapsed_seconds": 66.44129252433777,
+  "method_note": "Discovery occurs once per seed. Adversarial transforms operate on held-out observations using the same discovered rule. Label null genuinely shuffles labels for evaluation."
+}

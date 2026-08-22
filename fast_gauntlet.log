@@ -1,0 +1,121 @@
+
+========================================================================
+TEST 1 — BASIC HIDDEN-RULE DISCOVERY
+========================================================================
+00 acc=0.9480 ((holder_score > 15.3502) AND (liquidity_usd > 11808.2))
+01 acc=0.9280 ((holder_score > 15.1278) AND (liquidity_usd > 13510.6))
+02 acc=0.9400 ((holder_score > 15.6522) AND (liquidity_usd > 11924.3))
+03 acc=0.9160 ((holder_score > 13.7559) AND (liquidity_usd > 13300.7))
+04 acc=0.9440 ((holder_score > 14.3779) AND (liquidity_usd > 12616.3))
+
+========================================================================
+TEST 2 — HELD-OUT GENERALIZATION
+========================================================================
+00 train=0.9300 heldout=0.9310 gap=-0.0010
+01 train=0.9600 heldout=0.9470 gap=0.0130
+02 train=0.9300 heldout=0.9420 gap=-0.0120
+03 train=0.9400 heldout=0.9490 gap=-0.0090
+04 train=0.9100 heldout=0.9250 gap=-0.0150
+
+========================================================================
+TEST 3 — RANDOM-LABEL FALSIFICATION
+========================================================================
+00 acc=0.5960 (tax_score > 10.8179)
+01 acc=0.5486 
+02 acc=0.5680 ((dev_score < 12.9367) AND (lp_lock_score > 12.6056))
+03 acc=0.5453 
+04 acc=0.6280 ((dev_score > 5.72541) AND (lp_lock_score > 4.51935))
+
+========================================================================
+TEST 4 — CORRELATED DECOY
+========================================================================
+00 acc=0.9200 decoy=False ((holder_score > 15.1992) AND (liquidity_usd > 11379.3))
+01 acc=0.9433 decoy=False ((holder_score > 15.9209) AND (liquidity_usd > 11914.6))
+02 acc=0.9567 decoy=False ((holder_score > 15.2273) AND (liquidity_usd > 10431.9))
+03 acc=0.9400 decoy=False ((holder_score > 14.2978) AND (liquidity_usd > 11837.9))
+04 acc=0.9233 decoy=False ((holder_score > 14.889) AND (liquidity_usd > 12380.5))
+05 acc=0.9400 decoy=False ((holder_score > 15.6862) AND (liquidity_usd > 10640.6))
+06 acc=0.9367 decoy=False ((holder_score > 15.495) AND (liquidity_usd > 11515.1))
+07 acc=0.9300 decoy=False ((holder_score > 14.0241) AND (liquidity_usd > 11619.3))
+
+========================================================================
+TEST 5 — DISTRIBUTION SHIFT
+========================================================================
+00 train=0.9600 shifted=0.9380
+01 train=0.9467 shifted=0.9530
+02 train=0.9400 shifted=0.9510
+03 train=0.9233 shifted=0.9330
+04 train=0.9500 shifted=0.9440
+
+========================================================================
+TEST 6 — HIDDEN CONFOUNDER
+========================================================================
+00 acc=0.8925 (liquidity_usd > 16221.9)
+01 acc=0.8725 (liquidity_usd > 17090.7)
+02 acc=0.9125 ((holder_score > 16.253) AND (liquidity_usd > 14722.6))
+03 acc=0.8975 (liquidity_usd > 16097.5)
+04 acc=0.9000 (liquidity_usd > 16718.7)
+
+========================================================================
+TEST 7 — NON-IDENTIFIABILITY
+========================================================================
+00 acc=0.9925 (holder_score > 7.59104)
+01 acc=0.9850 (holder_score > 6.71763)
+02 acc=0.9825 (holder_score > 8.34719)
+03 acc=0.9875 (holder_score > 8.03672)
+04 acc=0.9825 (holder_score > 7.86887)
+
+========================================================================
+TEST 8 — MANIPULATION-COST ANALYSIS
+========================================================================
+((holder_score > 15.3479) AND (liquidity_usd > 12547.3))
+acc 0.918 synthetic_cost 17000
+
+========================================================================
+TEST 9 — COUNTERFACTUAL SENSITIVITY
+========================================================================
+((holder_score > 15.5334) AND (liquidity_usd > 11718.2)) [0.4666666666666667, 0.5633333333333334, 0.0]
+
+========================================================================
+TEST 10 — FEATURE ABLATION
+========================================================================
+all_features 0.9566666666666667 ((holder_score > 15.6197) AND (liquidity_usd > 11851.4))
+no_liquidity 0.7433333333333333 (holder_score > 15.6197)
+no_holder 0.7233333333333334 (liquidity_usd > 11851.4)
+only_decoy 0.5124518613607189 
+only_true_features 0.9566666666666667 ((holder_score > 15.6197) AND (liquidity_usd > 11851.4))
+
+========================================================================
+TEST 11 — ADVERSARIAL DECOY PRESSURE
+========================================================================
+00 acc=0.9967 decoy=True (overall_score > 74.4838)
+01 acc=0.9833 decoy=True (overall_score > 75.6843)
+02 acc=0.9800 decoy=True (overall_score > 75.4425)
+03 acc=1.0000 decoy=True (overall_score > 48.6143)
+04 acc=0.9800 decoy=True (overall_score > 25.2179)
+05 acc=0.9967 decoy=True (overall_score > 73.0748)
+06 acc=0.9733 decoy=True (overall_score > 75.4422)
+07 acc=0.9767 decoy=True (overall_score > 75.5206)
+
+========================================================================
+TEST 12 — EXACT REPRODUCIBILITY
+========================================================================
+((holder_score > 14.8207) AND (liquidity_usd > 11521))
+((holder_score > 14.8207) AND (liquidity_usd > 11521))
+identical True
+
+========================================================================
+FINAL SUMMARY
+========================================================================
+discovery_status: STRONG
+generalization_status: STRONG
+noise_falsification_status: PASS
+decoy_status: PROMISING
+adversarial_decoy_selection_rate: 1.0
+exact_reproducibility: True
+replication_schedule: 5 standard seeds; 8 decoy/adversarial seeds
+novelty_claim: NOT AUTOMATICALLY ESTABLISHED
+
+COMPLETE
+Results: novelty_gauntlet_results.json
+Runtime: 2.18 seconds

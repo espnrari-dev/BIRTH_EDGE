@@ -1,0 +1,1393 @@
+#!/usr/bin/env python3
+
+import random
+import json
+import math
+import statistics
+import time
+import traceback
+import importlib
+
+import aegis_rule_miner as arm
+
+
+# ================================================================
+# AEGIS FULL NOVELTY GAUNTLET
+# ================================================================
+#
+# Purpose:
+#   Stress-test AEGIS rule discovery for:
+#
+#   1. Hidden-rule recovery
+#   2. Seed stability
+#   3. Held-out generalization
+#   4. Random-label falsification
+#   5. Correlated decoy resistance
+#   6. Distribution shift
+#   7. Hidden confounding
+#   8. Non-identifiability
+#   9. Manipulation-cost analysis
+#  10. Counterfactual sensitivity
+#  11. Feature ablation
+#  12. Adversarial decoy pressure
+#
+# IMPORTANT:
+#   This is a scientific stress-test harness.
+#   It does NOT automatically claim novelty.
+#
+# ================================================================
+
+
+OUT = "novelty_gauntlet_results.json"
+
+DISCOVERY_GENS = 60
+DISCOVERY_POP = 100
+MAX_DEPTH = 5
+
+
+# ================================================================
+# UTILITIES
+# ================================================================
+
+def accuracy(expr, rows):
+    if not rows:
+        return 0.0
+
+    correct = 0
+
+    for r in rows:
+        pred = bool(expr.evaluate(arm.extract_features(r)))
+        target = bool(r["pumped"])
+
+        if pred == target:
+            correct += 1
+
+    return correct / len(rows)
+
+
+def split(rows, seed, frac=0.70):
+    data = list(rows)
+    random.Random(seed).shuffle(data)
+
+    cut = int(len(data) * frac)
+
+    return data[:cut], data[cut:]
+
+
+def discover(rows, seed, gens=DISCOVERY_GENS, pop=DISCOVERY_POP):
+    random.seed(seed)
+
+    expr, acc = arm.evolve_rule(
+        rows,
+        generations=gens,
+        population_size=pop,
+        max_depth=MAX_DEPTH
+    )
+
+    if expr is None:
+        return None, 0.0, ""
+
+    return expr, acc, expr.to_string()
+
+
+def contains(text, name):
+    return name in text
+
+
+def safe_mean(values):
+    return statistics.mean(values) if values else 0.0
+
+
+def safe_stdev(values):
+    if len(values) < 2:
+        return 0.0
+    return statistics.stdev(values)
+
+
+def add_result(results, name, data):
+    results["tests"][name] = data
+
+
+def banner(name):
+    print()
+    print("=" * 72)
+    print(name)
+    print("=" * 72)
+
+
+# ================================================================
+# DATA GENERATORS
+# ================================================================
+
+def base_rows(n, seed, noise=0.05):
+    rng = random.Random(seed)
+    rows = []
+
+    for _ in range(n):
+
+        liquidity = rng.uniform(0, 30000)
+        holder = rng.uniform(0, 30)
+
+        true_state = (
+            liquidity > 12000
+            and holder > 15
+        )
+
+        pumped = (
+            int(true_state)
+            if rng.random() >= noise
+            else int(not true_state)
+        )
+
+        rows.append({
+            "initial_liquidity_usd": liquidity,
+            "holder_score": holder,
+            "dev_score": rng.uniform(0, 20),
+            "lp_lock_score": rng.uniform(0, 20),
+            "tax_score": rng.uniform(0, 15),
+            "overall_score": rng.uniform(0, 100),
+            "pumped": pumped,
+            "rug_pulled": 0,
+        })
+
+    return rows
+
+
+def correlated_decoy_rows(n, seed):
+    """
+    True mechanism:
+
+        liquidity > 12000 AND holder > 15
+
+    overall_score is deliberately correlated with the true state.
+    It is therefore a much stronger decoy than the random overall_score.
+    """
+
+    rng = random.Random(seed)
+    rows = []
+
+    for _ in range(n):
+
+        liquidity = rng.uniform(0, 30000)
+        holder = rng.uniform(0, 30)
+
+        true_state = (
+            liquidity > 12000
+            and holder > 15
+        )
+
+        # Strong correlated decoy.
+        signal = (
+            (liquidity / 30000.0) * 0.55
+            + (holder / 30.0) * 0.45
+        )
+
+        overall = signal * 100 + rng.gauss(0, 4)
+
+        pumped = (
+            int(true_state)
+            if rng.random() >= 0.05
+            else int(not true_state)
+        )
+
+        rows.append({
+            "initial_liquidity_usd": liquidity,
+            "holder_score": holder,
+            "dev_score": rng.uniform(0, 20),
+            "lp_lock_score": rng.uniform(0, 20),
+            "tax_score": rng.uniform(0, 15),
+            "overall_score": overall,
+            "pumped": pumped,
+            "rug_pulled": 0,
+        })
+
+    return rows
+
+
+def random_label_rows(n, seed):
+    rows = base_rows(n, seed)
+
+    rng = random.Random(seed + 100000)
+
+    for r in rows:
+        r["pumped"] = rng.randint(0, 1)
+
+    return rows
+
+
+def shifted_rows(n, seed):
+    """
+    Train-like distribution:
+        liquidity 0..30k
+        holder 0..30
+
+    Test-like distribution:
+        liquidity 15k..45k
+        holder 10..40
+
+    The underlying rule remains the same.
+    """
+
+    rng = random.Random(seed)
+    rows = []
+
+    for _ in range(n):
+
+        liquidity = rng.uniform(15000, 45000)
+        holder = rng.uniform(10, 40)
+
+        true_state = (
+            liquidity > 12000
+            and holder > 15
+        )
+
+        pumped = (
+            int(true_state)
+            if rng.random() >= 0.05
+            else int(not true_state)
+        )
+
+        rows.append({
+            "initial_liquidity_usd": liquidity,
+            "holder_score": holder,
+            "dev_score": rng.uniform(0, 20),
+            "lp_lock_score": rng.uniform(0, 20),
+            "tax_score": rng.uniform(0, 15),
+            "overall_score": rng.uniform(0, 100),
+            "pumped": pumped,
+            "rug_pulled": 0,
+        })
+
+    return rows
+
+
+def confounded_rows(n, seed):
+    """
+    Hidden confounder C influences both candidate features
+    and the outcome.
+
+    True mechanism:
+
+        C > 0.5
+
+    Candidate observables:
+        liquidity
+        holder
+
+    This tests whether AEGIS mistakes correlated observables
+    for the actual hidden mechanism.
+    """
+
+    rng = random.Random(seed)
+    rows = []
+
+    for _ in range(n):
+
+        c = rng.random()
+
+        liquidity = (
+            7000
+            + c * 18000
+            + rng.gauss(0, 1500)
+        )
+
+        holder = (
+            8
+            + c * 18
+            + rng.gauss(0, 2)
+        )
+
+        pumped = (
+            1 if c > 0.5 else 0
+        )
+
+        if rng.random() < 0.05:
+            pumped = 1 - pumped
+
+        rows.append({
+            "initial_liquidity_usd": max(0, liquidity),
+            "holder_score": max(0, holder),
+            "dev_score": rng.uniform(0, 20),
+            "lp_lock_score": rng.uniform(0, 20),
+            "tax_score": rng.uniform(0, 15),
+            "overall_score": rng.uniform(0, 100),
+            "pumped": pumped,
+            "rug_pulled": 0,
+
+            # Hidden variable intentionally NOT included in FEATURES.
+            "_hidden_confounder": c,
+        })
+
+    return rows
+
+
+def nonidentifiable_rows(n, seed):
+    """
+    Two hidden mechanisms generate the same observable rule.
+
+    Mechanism A:
+        hidden > 0.5
+
+    Mechanism B:
+        hidden <= 0.5
+
+    Observable features are deterministic transforms of the same
+    latent variable.
+
+    A system that has only the observables cannot know which hidden
+    causal story is the true one.
+
+    Expected correct behavior:
+        high predictive performance may occur,
+        but causal mechanism should be considered non-identifiable.
+    """
+
+    rng = random.Random(seed)
+    rows = []
+
+    for _ in range(n):
+
+        z = rng.random()
+
+        x1 = z
+        x2 = z * z
+
+        pumped = int(z > 0.5)
+
+        rows.append({
+            "initial_liquidity_usd": x1 * 30000,
+            "holder_score": x2 * 30,
+            "dev_score": rng.uniform(0, 20),
+            "lp_lock_score": rng.uniform(0, 20),
+            "tax_score": rng.uniform(0, 15),
+            "overall_score": rng.uniform(0, 100),
+            "pumped": pumped,
+            "rug_pulled": 0,
+        })
+
+    return rows
+
+
+def adversarial_decoy_rows(n, seed):
+    """
+    Makes the cheap decoy extremely predictive in training.
+
+    The true rule remains liquidity + holder.
+
+    The decoy is constructed so that a superficial miner is tempted
+    to choose overall_score.
+    """
+
+    rng = random.Random(seed)
+    rows = []
+
+    for _ in range(n):
+
+        liquidity = rng.uniform(0, 30000)
+        holder = rng.uniform(0, 30)
+
+        true_state = (
+            liquidity > 12000
+            and holder > 15
+        )
+
+        # Very strong training correlation.
+        if true_state:
+            overall = rng.gauss(80, 3)
+        else:
+            overall = rng.gauss(20, 3)
+
+        pumped = (
+            int(true_state)
+            if rng.random() >= 0.05
+            else int(not true_state)
+        )
+
+        rows.append({
+            "initial_liquidity_usd": liquidity,
+            "holder_score": holder,
+            "dev_score": rng.uniform(0, 20),
+            "lp_lock_score": rng.uniform(0, 20),
+            "tax_score": rng.uniform(0, 15),
+            "overall_score": overall,
+            "pumped": pumped,
+            "rug_pulled": 0,
+        })
+
+    return rows
+
+
+# ================================================================
+# TEST 1 — BASIC HIDDEN RULE DISCOVERY
+# ================================================================
+
+def test_basic(results):
+
+    banner("TEST 1 — BASIC HIDDEN-RULE DISCOVERY")
+
+    discoveries = []
+    accuracies = []
+
+    for seed in range(10):
+
+        rows = base_rows(250, 1000 + seed)
+
+        expr, acc, text = discover(rows, seed)
+
+        discoveries.append(text)
+        accuracies.append(acc)
+
+        print(
+            f"Seed {seed:02d} | "
+            f"acc={acc:.4f} | "
+            f"liquidity={contains(text, 'liquidity_usd')} | "
+            f"holder={contains(text, 'holder_score')} | "
+            f"{text}"
+        )
+
+    both = sum(
+        contains(x, "liquidity_usd")
+        and contains(x, "holder_score")
+        for x in discoveries
+    )
+
+    data = {
+        "runs": 10,
+        "both_features_recovered": both,
+        "recovery_rate": both / 10,
+        "mean_training_accuracy": safe_mean(accuracies),
+        "stdev_training_accuracy": safe_stdev(accuracies),
+        "rules": discoveries,
+    }
+
+    add_result(results, "basic_discovery", data)
+
+    print()
+    print("RECOVERY RATE:", f"{both}/10")
+
+
+# ================================================================
+# TEST 2 — HELD-OUT GENERALIZATION
+# ================================================================
+
+def test_heldout(results):
+
+    banner("TEST 2 — HELD-OUT GENERALIZATION")
+
+    scores = []
+    rules = []
+
+    for seed in range(10):
+
+        train = base_rows(300, 2000 + seed)
+        test = base_rows(1000, 3000 + seed)
+
+        expr, train_acc, text = discover(
+            train,
+            seed + 100
+        )
+
+        if expr is None:
+            continue
+
+        test_acc = accuracy(expr, test)
+
+        scores.append(test_acc)
+        rules.append(text)
+
+        print(
+            f"Seed {seed:02d} | "
+            f"train={train_acc:.4f} | "
+            f"heldout={test_acc:.4f} | "
+            f"{text}"
+        )
+
+    data = {
+        "runs": len(scores),
+        "mean_heldout_accuracy": safe_mean(scores),
+        "stdev_heldout_accuracy": safe_stdev(scores),
+        "minimum_heldout_accuracy": min(scores) if scores else 0,
+        "maximum_heldout_accuracy": max(scores) if scores else 0,
+        "rules": rules,
+    }
+
+    add_result(results, "heldout_generalization", data)
+
+
+# ================================================================
+# TEST 3 — RANDOM LABEL FALSIFICATION
+# ================================================================
+
+def test_random_labels(results):
+
+    banner("TEST 3 — RANDOM-LABEL FALSIFICATION")
+
+    scores = []
+    suspicious = 0
+
+    for seed in range(10):
+
+        rows = random_label_rows(250, 4000 + seed)
+
+        expr, acc, text = discover(
+            rows,
+            seed + 200
+        )
+
+        scores.append(acc)
+
+        if acc >= 0.90:
+            suspicious += 1
+
+        print(
+            f"Seed {seed:02d} | "
+            f"acc={acc:.4f} | "
+            f"{text}"
+        )
+
+    data = {
+        "runs": len(scores),
+        "mean_accuracy": safe_mean(scores),
+        "maximum_accuracy": max(scores) if scores else 0,
+        "suspicious_high_accuracy_runs": suspicious,
+        "interpretation": (
+            "FAIL if random labels repeatedly produce very high accuracy"
+        ),
+    }
+
+    add_result(results, "random_label_falsification", data)
+
+
+# ================================================================
+# TEST 4 — CORRELATED DECOY
+# ================================================================
+
+def test_correlated_decoy(results):
+
+    banner("TEST 4 — CORRELATED DECOY RESISTANCE")
+
+    decoy_selected = 0
+    both_selected = 0
+    scores = []
+    rules = []
+
+    for seed in range(15):
+
+        rows = correlated_decoy_rows(
+            300,
+            5000 + seed
+        )
+
+        expr, acc, text = discover(
+            rows,
+            seed + 300
+        )
+
+        scores.append(acc)
+        rules.append(text)
+
+        if contains(text, "overall_score"):
+            decoy_selected += 1
+
+        if (
+            contains(text, "liquidity_usd")
+            and contains(text, "holder_score")
+        ):
+            both_selected += 1
+
+        print(
+            f"Seed {seed:02d} | "
+            f"acc={acc:.4f} | "
+            f"decoy={contains(text,'overall_score')} | "
+            f"{text}"
+        )
+
+    data = {
+        "runs": len(scores),
+        "both_true_features_rate": (
+            both_selected / len(scores)
+            if scores else 0
+        ),
+        "decoy_selection_rate": (
+            decoy_selected / len(scores)
+            if scores else 0
+        ),
+        "mean_accuracy": safe_mean(scores),
+        "rules": rules,
+    }
+
+    add_result(results, "correlated_decoy", data)
+
+
+# ================================================================
+# TEST 5 — DISTRIBUTION SHIFT
+# ================================================================
+
+def test_distribution_shift(results):
+
+    banner("TEST 5 — DISTRIBUTION SHIFT")
+
+    scores = []
+
+    for seed in range(10):
+
+        train = base_rows(300, 6000 + seed)
+        test = shifted_rows(1000, 7000 + seed)
+
+        expr, train_acc, text = discover(
+            train,
+            seed + 400
+        )
+
+        if expr is None:
+            continue
+
+        test_acc = accuracy(expr, test)
+        scores.append(test_acc)
+
+        print(
+            f"Seed {seed:02d} | "
+            f"train={train_acc:.4f} | "
+            f"shifted={test_acc:.4f} | "
+            f"{text}"
+        )
+
+    add_result(
+        results,
+        "distribution_shift",
+        {
+            "runs": len(scores),
+            "mean_shifted_accuracy": safe_mean(scores),
+            "minimum_shifted_accuracy": min(scores) if scores else 0,
+            "maximum_shifted_accuracy": max(scores) if scores else 0,
+        }
+    )
+
+
+# ================================================================
+# TEST 6 — HIDDEN CONFOUNDER
+# ================================================================
+
+def test_confounder(results):
+
+    banner("TEST 6 — HIDDEN-CONFOUNDER STRESS TEST")
+
+    scores = []
+    rules = []
+
+    for seed in range(10):
+
+        rows = confounded_rows(
+            400,
+            8000 + seed
+        )
+
+        expr, acc, text = discover(
+            rows,
+            seed + 500
+        )
+
+        scores.append(acc)
+        rules.append(text)
+
+        print(
+            f"Seed {seed:02d} | "
+            f"acc={acc:.4f} | "
+            f"{text}"
+        )
+
+    data = {
+        "runs": len(scores),
+        "mean_accuracy": safe_mean(scores),
+        "rules": rules,
+        "warning": (
+            "High predictive accuracy here does NOT establish causality. "
+            "The true generator contains an intentionally hidden variable."
+        ),
+    }
+
+    add_result(results, "hidden_confounder", data)
+
+
+# ================================================================
+# TEST 7 — NON-IDENTIFIABILITY
+# ================================================================
+
+def test_nonidentifiability(results):
+
+    banner("TEST 7 — NON-IDENTIFIABILITY")
+
+    scores = []
+    rules = []
+
+    for seed in range(10):
+
+        rows = nonidentifiable_rows(
+            400,
+            9000 + seed
+        )
+
+        expr, acc, text = discover(
+            rows,
+            seed + 600
+        )
+
+        scores.append(acc)
+        rules.append(text)
+
+        print(
+            f"Seed {seed:02d} | "
+            f"acc={acc:.4f} | "
+            f"{text}"
+        )
+
+    data = {
+        "runs": len(scores),
+        "mean_accuracy": safe_mean(scores),
+        "rules": rules,
+        "expected_behavior": (
+            "Predictive success is possible while causal mechanism "
+            "remains non-identifiable."
+        ),
+    }
+
+    add_result(results, "nonidentifiability", data)
+
+
+# ================================================================
+# TEST 8 — MANIPULATION-COST ANALYSIS
+# ================================================================
+
+def rule_cost(text):
+
+    """
+    Explicit hypothetical manipulation costs.
+
+    These are TEST VALUES, not real-world claims.
+
+    Liquidity:
+        expensive to manipulate
+
+    Holder score:
+        expensive to manipulate
+
+    Overall score:
+        cheap to manipulate
+
+    Other scores:
+        moderate
+    """
+
+    costs = {
+        "liquidity_usd": 12000,
+        "holder_score": 5000,
+        "overall_score": 0,
+        "dev_score": 1000,
+        "lp_lock_score": 3000,
+        "tax_score": 500,
+    }
+
+    total = 0
+
+    for feature, cost in costs.items():
+        if feature in text:
+            total += cost
+
+    return total
+
+
+def test_cost_analysis(results):
+
+    banner("TEST 8 — MANIPULATION-COST ANALYSIS")
+
+    rows = correlated_decoy_rows(
+        500,
+        10000
+    )
+
+    expr, acc, text = discover(
+        rows,
+        700
+    )
+
+    if expr is None:
+        data = {"status": "no_rule"}
+        add_result(results, "manipulation_cost", data)
+        return
+
+    cost = rule_cost(text)
+
+    print("Discovered rule:")
+    print(text)
+
+    print("Predictive accuracy:", round(acc, 4))
+    print("Hypothetical manipulation cost:", cost)
+
+    data = {
+        "rule": text,
+        "accuracy": acc,
+        "hypothetical_cost": cost,
+        "cost_model_is_synthetic": True,
+        "important": (
+            "This test measures whether cost can be evaluated after "
+            "discovery. It does not prove economic security."
+        ),
+    }
+
+    add_result(results, "manipulation_cost", data)
+
+
+# ================================================================
+# TEST 9 — COUNTERFACTUAL SENSITIVITY
+# ================================================================
+
+def test_counterfactual(results):
+
+    banner("TEST 9 — COUNTERFACTUAL SENSITIVITY")
+
+    rows = base_rows(300, 11000)
+
+    expr, acc, text = discover(
+        rows,
+        800
+    )
+
+    if expr is None:
+        add_result(
+            results,
+            "counterfactual",
+            {"status": "no_rule"}
+        )
+        return
+
+    changed_liquidity = 0
+    changed_holder = 0
+    changed_decoy = 0
+
+    for r in rows:
+
+        original = bool(
+            expr.evaluate(
+                arm.extract_features(r)
+            )
+        )
+
+        # Move liquidity far across threshold.
+        r1 = dict(r)
+        r1["initial_liquidity_usd"] = (
+            29000
+            if r["initial_liquidity_usd"] < 12000
+            else 1000
+        )
+
+        altered_liq = bool(
+            expr.evaluate(
+                arm.extract_features(r1)
+            )
+        )
+
+        if altered_liq != original:
+            changed_liquidity += 1
+
+        # Move holder far across threshold.
+        r2 = dict(r)
+        r2["holder_score"] = (
+            29
+            if r["holder_score"] < 15
+            else 1
+        )
+
+        altered_holder = bool(
+            expr.evaluate(
+                arm.extract_features(r2)
+            )
+        )
+
+        if altered_holder != original:
+            changed_holder += 1
+
+        # Change only decoy.
+        r3 = dict(r)
+        r3["overall_score"] = (
+            99
+            if r["overall_score"] < 50
+            else 1
+        )
+
+        altered_decoy = bool(
+            expr.evaluate(
+                arm.extract_features(r3)
+            )
+        )
+
+        if altered_decoy != original:
+            changed_decoy += 1
+
+    n = len(rows)
+
+    data = {
+        "rule": text,
+        "accuracy": acc,
+        "liquidity_sensitivity": changed_liquidity / n,
+        "holder_sensitivity": changed_holder / n,
+        "decoy_sensitivity": changed_decoy / n,
+        "interpretation": (
+            "This measures predictive rule sensitivity, not causality."
+        ),
+    }
+
+    add_result(results, "counterfactual", data)
+
+    print("Rule:", text)
+    print("Liquidity sensitivity:", round(changed_liquidity / n, 4))
+    print("Holder sensitivity:", round(changed_holder / n, 4))
+    print("Decoy sensitivity:", round(changed_decoy / n, 4))
+
+
+# ================================================================
+# TEST 10 — FEATURE ABLATION
+# ================================================================
+
+def test_ablation(results):
+
+    banner("TEST 10 — FEATURE ABLATION")
+
+    original_features = list(arm.FEATURES)
+
+    feature_sets = {
+        "all_features": original_features,
+        "no_liquidity": [
+            x for x in original_features
+            if x != "liquidity_usd"
+        ],
+        "no_holder": [
+            x for x in original_features
+            if x != "holder_score"
+        ],
+        "only_decoy": [
+            "overall_score"
+        ],
+        "only_true_features": [
+            "liquidity_usd",
+            "holder_score"
+        ],
+    }
+
+    results_table = {}
+
+    try:
+
+        rows = base_rows(300, 12000)
+
+        for name, features in feature_sets.items():
+
+            arm.FEATURES[:] = features
+
+            expr, acc, text = discover(
+                rows,
+                900 + len(name)
+            )
+
+            results_table[name] = {
+                "accuracy": acc,
+                "rule": text,
+                "features": features,
+            }
+
+            print(
+                f"{name:20s} "
+                f"acc={acc:.4f} | {text}"
+            )
+
+    finally:
+        arm.FEATURES[:] = original_features
+
+    add_result(
+        results,
+        "feature_ablation",
+        results_table
+    )
+
+
+# ================================================================
+# TEST 11 — ADVERSARIAL DECOY
+# ================================================================
+
+def test_adversarial_decoy(results):
+
+    banner("TEST 11 — ADVERSARIAL DECOY PRESSURE")
+
+    decoy = 0
+    true_pair = 0
+    scores = []
+    rules = []
+
+    for seed in range(15):
+
+        rows = adversarial_decoy_rows(
+            300,
+            13000 + seed
+        )
+
+        expr, acc, text = discover(
+            rows,
+            1000 + seed
+        )
+
+        scores.append(acc)
+        rules.append(text)
+
+        if "overall_score" in text:
+            decoy += 1
+
+        if (
+            "liquidity_usd" in text
+            and "holder_score" in text
+        ):
+            true_pair += 1
+
+        print(
+            f"Seed {seed:02d} | "
+            f"acc={acc:.4f} | "
+            f"decoy={('overall_score' in text)} | "
+            f"{text}"
+        )
+
+    add_result(
+        results,
+        "adversarial_decoy",
+        {
+            "runs": len(scores),
+            "mean_accuracy": safe_mean(scores),
+            "decoy_selection_rate": (
+                decoy / len(scores)
+                if scores else 0
+            ),
+            "true_pair_rate": (
+                true_pair / len(scores)
+                if scores else 0
+            ),
+            "rules": rules,
+        }
+    )
+
+
+# ================================================================
+# TEST 12 — REPRODUCIBILITY
+# ================================================================
+
+def test_reproducibility(results):
+
+    banner("TEST 12 — EXACT REPRODUCIBILITY")
+
+    rows = base_rows(250, 15000)
+
+    expr1, acc1, text1 = discover(
+        rows,
+        424242
+    )
+
+    expr2, acc2, text2 = discover(
+        rows,
+        424242
+    )
+
+    identical = (
+        text1 == text2
+        and abs(acc1 - acc2) < 1e-12
+    )
+
+    print("Run 1:", text1)
+    print("Run 2:", text2)
+    print("Identical:", identical)
+
+    add_result(
+        results,
+        "reproducibility",
+        {
+            "identical": identical,
+            "run1_rule": text1,
+            "run2_rule": text2,
+            "run1_accuracy": acc1,
+            "run2_accuracy": acc2,
+        }
+    )
+
+
+# ================================================================
+# OVERALL VERDICT
+# ================================================================
+
+def verdict(results):
+
+    banner("FINAL NOVELTY-GAUNTLET SUMMARY")
+
+    t = results["tests"]
+
+    print()
+
+    # ------------------------------------------------------------
+    # Basic discovery
+    # ------------------------------------------------------------
+
+    basic = t.get("basic_discovery", {})
+
+    recovery = basic.get(
+        "recovery_rate",
+        0
+    )
+
+    print(
+        "Hidden-rule recovery:",
+        f"{recovery * 100:.1f}%"
+    )
+
+    # ------------------------------------------------------------
+    # Held out
+    # ------------------------------------------------------------
+
+    held = t.get(
+        "heldout_generalization",
+        {}
+    )
+
+    print(
+        "Held-out mean accuracy:",
+        f"{held.get('mean_heldout_accuracy', 0):.4f}"
+    )
+
+    # ------------------------------------------------------------
+    # Random labels
+    # ------------------------------------------------------------
+
+    random_test = t.get(
+        "random_label_falsification",
+        {}
+    )
+
+    print(
+        "Random-label maximum accuracy:",
+        f"{random_test.get('maximum_accuracy', 0):.4f}"
+    )
+
+    # ------------------------------------------------------------
+    # Correlated decoy
+    # ------------------------------------------------------------
+
+    decoy = t.get(
+        "correlated_decoy",
+        {}
+    )
+
+    print(
+        "Correlated-decoy selection:",
+        f"{decoy.get('decoy_selection_rate', 0) * 100:.1f}%"
+    )
+
+    # ------------------------------------------------------------
+    # Adversarial decoy
+    # ------------------------------------------------------------
+
+    adv = t.get(
+        "adversarial_decoy",
+        {}
+    )
+
+    print(
+        "Adversarial-decoy selection:",
+        f"{adv.get('decoy_selection_rate', 0) * 100:.1f}%"
+    )
+
+    # ------------------------------------------------------------
+    # Reproducibility
+    # ------------------------------------------------------------
+
+    repro = t.get(
+        "reproducibility",
+        {}
+    )
+
+    print(
+        "Exact reproducibility:",
+        repro.get("identical", False)
+    )
+
+    print()
+    print("-" * 72)
+
+    # Conservative interpretation.
+    #
+    # No automatic "NOVEL" verdict.
+    # We classify evidence, not scientific priority.
+
+    if recovery >= 0.8:
+        discovery_status = "STRONG"
+    elif recovery >= 0.5:
+        discovery_status = "PARTIAL"
+    else:
+        discovery_status = "WEAK"
+
+    held_score = held.get(
+        "mean_heldout_accuracy",
+        0
+    )
+
+    if held_score >= 0.90:
+        generalization_status = "STRONG"
+    elif held_score >= 0.75:
+        generalization_status = "PARTIAL"
+    else:
+        generalization_status = "WEAK"
+
+    random_max = random_test.get(
+        "maximum_accuracy",
+        1
+    )
+
+    if random_max < 0.75:
+        falsification_status = "PASS"
+    elif random_max < 0.90:
+        falsification_status = "WARNING"
+    else:
+        falsification_status = "FAIL"
+
+    decoy_rate = decoy.get(
+        "decoy_selection_rate",
+        1
+    )
+
+    if decoy_rate < 0.20:
+        decoy_status = "PROMISING"
+    elif decoy_rate < 0.50:
+        decoy_status = "PARTIAL"
+    else:
+        decoy_status = "FAIL"
+
+    print("DISCOVERY:", discovery_status)
+    print("GENERALIZATION:", generalization_status)
+    print("NOISE FALSIFICATION:", falsification_status)
+    print("DECOY RESISTANCE:", decoy_status)
+
+    print()
+    print("SCIENCE STATUS:")
+    print()
+    print(
+        "This batch can establish empirical behavior, "
+        "robustness, failure modes, and promising mechanisms."
+    )
+    print(
+        "It cannot by itself establish that the architecture "
+        "is scientifically novel."
+    )
+    print()
+    print(
+        "Novelty requires comparison against the closest "
+        "prior-art implementations after the empirical "
+        "properties have been measured."
+    )
+
+    results["summary"] = {
+        "discovery_status": discovery_status,
+        "generalization_status": generalization_status,
+        "noise_falsification_status": falsification_status,
+        "decoy_status": decoy_status,
+        "novelty_claim": "NOT AUTOMATICALLY ESTABLISHED",
+    }
+
+
+# ================================================================
+# MAIN
+# ================================================================
+
+def main():
+
+    started = time.time()
+
+    print()
+    print("=" * 72)
+    print("AEGIS FULL NOVELTY GAUNTLET")
+    print("=" * 72)
+    print()
+    print("This is an empirical stress-test suite.")
+    print("No synthetic result will automatically be called novel.")
+    print()
+
+    results = {
+        "metadata": {
+            "system": "AEGIS rule miner",
+            "timestamp": time.strftime(
+                "%Y-%m-%dT%H:%M:%S"
+            ),
+            "discovery_generations": DISCOVERY_GENS,
+            "discovery_population": DISCOVERY_POP,
+            "max_depth": MAX_DEPTH,
+        },
+        "tests": {},
+    }
+
+    tests = [
+        test_basic,
+        test_heldout,
+        test_random_labels,
+        test_correlated_decoy,
+        test_distribution_shift,
+        test_confounder,
+        test_nonidentifiability,
+        test_cost_analysis,
+        test_counterfactual,
+        test_ablation,
+        test_adversarial_decoy,
+        test_reproducibility,
+    ]
+
+    for test in tests:
+
+        try:
+            test(results)
+
+        except Exception as e:
+
+            name = test.__name__
+
+            print()
+            print("TEST ERROR:", name)
+            print(type(e).__name__, str(e))
+            traceback.print_exc()
+
+            results["tests"][name] = {
+                "status": "ERROR",
+                "error": str(e),
+            }
+
+    verdict(results)
+
+    results["runtime_seconds"] = (
+        time.time() - started
+    )
+
+    with open(OUT, "w") as f:
+        json.dump(
+            results,
+            f,
+            indent=2
+        )
+
+    print()
+    print("=" * 72)
+    print("COMPLETE")
+    print("=" * 72)
+    print()
+    print("Results saved to:")
+    print(OUT)
+    print()
+    print(
+        "Runtime:",
+        round(results["runtime_seconds"], 2),
+        "seconds"
+    )
+    print()
+
+
+if __name__ == "__main__":
+    main()
+

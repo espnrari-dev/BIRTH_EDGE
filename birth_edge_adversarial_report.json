@@ -1,0 +1,1158 @@
+{
+  "base_test_samples": 35,
+  "base_training_samples": 35,
+  "checks": {
+    "base_recovery": true,
+    "boundary_recovery": true,
+    "dense_grid_recovery": true,
+    "holder_is_sufficient": true,
+    "large_grid_recovery": true,
+    "liquidity_not_sufficient": true,
+    "multi_seed_stability": true,
+    "noise_resistance": true,
+    "null_data_not_perfect": true,
+    "out_of_range_recovery": true,
+    "repeated_stability": true
+  },
+  "results": {
+    "BASELINE_COMPARISON": {
+      "always_one_accuracy": 0.628571,
+      "always_zero_accuracy": 0.371429,
+      "birth_edge_accuracy": 0.8,
+      "birth_edge_evaluated": 35,
+      "birth_edge_rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "error": null,
+      "majority_accuracy": 0.628571,
+      "majority_class": 1
+    },
+    "BASE_DISCOVERY": {
+      "accuracy": 0.942857,
+      "confusion": {
+        "fn": 7,
+        "fp": 0,
+        "tn": 13,
+        "tp": 15
+      },
+      "discovery_score": 0.9428571428571428,
+      "evaluated": 35,
+      "features": [
+        "holder_score"
+      ],
+      "held_out_accuracy": 0.8,
+      "held_out_evaluated": 35,
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "samples": 35
+    },
+    "BOOTSTRAP_RESAMPLING": {
+      "results": [
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 0,
+          "score": 0.9142857142857143
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 1,
+          "score": 1.0
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 2,
+          "score": 1.0
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 3,
+          "score": 0.9142857142857143
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 4,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 5,
+          "score": 1.0
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 6,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 7,
+          "score": 0.9142857142857143
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 8,
+          "score": 0.9428571428571428
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 9,
+          "score": 0.9428571428571428
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 10,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 11,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 12,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 13,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 14,
+          "score": 0.9428571428571428
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 15,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 16,
+          "score": 0.8857142857142857
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 17,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 18,
+          "score": 0.9428571428571428
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 19,
+          "score": 0.8857142857142857
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 20,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 21,
+          "score": 0.9142857142857143
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 22,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 23,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 24,
+          "score": 0.9142857142857143
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 25,
+          "score": 0.9428571428571428
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 26,
+          "score": 1.0
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 27,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 28,
+          "score": 0.9428571428571428
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 29,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 30,
+          "score": 0.9428571428571428
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=6.0),))",
+          "run": 31,
+          "score": 1.0
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 32,
+          "score": 0.9428571428571428
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 33,
+          "score": 1.0
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 34,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 35,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 36,
+          "score": 0.8857142857142857
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 37,
+          "score": 1.0
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 38,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 39,
+          "score": 0.9142857142857143
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 40,
+          "score": 0.9142857142857143
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 41,
+          "score": 0.9428571428571428
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 42,
+          "score": 0.9142857142857143
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 43,
+          "score": 0.9428571428571428
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 44,
+          "score": 1.0
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 45,
+          "score": 0.9428571428571428
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 46,
+          "score": 1.0
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 47,
+          "score": 0.9428571428571428
+        },
+        {
+          "accuracy_on_original": 0.914286,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+          "run": 48,
+          "score": 0.9714285714285714
+        },
+        {
+          "accuracy_on_original": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "run": 49,
+          "score": 0.9714285714285714
+        }
+      ],
+      "rules": [
+        "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+        "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=6.0),))",
+        "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))"
+      ],
+      "runs": 50,
+      "success_rate": 1.0,
+      "successful_discoveries": 50,
+      "unique_rules": 3
+    },
+    "BOUNDARY_RECOVERY": {
+      "all_correct": true,
+      "observations": [
+        {
+          "correct": true,
+          "holder_score": 6.9999,
+          "oracle": 0,
+          "prediction": 0
+        },
+        {
+          "correct": true,
+          "holder_score": 7.0,
+          "oracle": 0,
+          "prediction": 0
+        },
+        {
+          "correct": true,
+          "holder_score": 7.0001,
+          "oracle": 1,
+          "prediction": 1
+        },
+        {
+          "correct": true,
+          "holder_score": 9.9999,
+          "oracle": 1,
+          "prediction": 1
+        },
+        {
+          "correct": true,
+          "holder_score": 10.0,
+          "oracle": 1,
+          "prediction": 1
+        },
+        {
+          "correct": true,
+          "holder_score": 10.0001,
+          "oracle": 1,
+          "prediction": 1
+        }
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))"
+    },
+    "CLASS_IMBALANCE": {
+      "discovery_score": 0.9898477157360406,
+      "error": null,
+      "features": [
+        "holder_score"
+      ],
+      "negative_count": 180,
+      "original_accuracy": 0.942857,
+      "positive_count": 17,
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "samples": 197,
+      "training_accuracy": 0.989848
+    },
+    "DENSE_HOLDER_GRID": {
+      "accuracy": 0.936567,
+      "discovery_score": 0.9365671641791045,
+      "evaluated": 804,
+      "features": [
+        "holder_score"
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=6.35),))",
+      "samples": 804
+    },
+    "DISTRIBUTION_SHIFT": {
+      "error": null,
+      "features": [
+        "holder_score"
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "shifted_accuracy": 0.9,
+      "shifted_samples": 50,
+      "training_accuracy": 1.0,
+      "training_score": 1.0
+    },
+    "DUPLICATE_CORRELATED_FEATURES": {
+      "accuracy": 0.942857,
+      "discovery_score": 0.9428571428571428,
+      "evaluated": 35,
+      "features": [
+        "holder_score"
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "samples": 35
+    },
+    "DUPLICATE_ROW_CONTAMINATION": {
+      "accuracy": 0.942857,
+      "discovery_score": 0.9428571428571428,
+      "evaluated": 175,
+      "features": [
+        "holder_score"
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "samples": 175
+    },
+    "EXTREME_OUTLIERS": {
+      "accuracy": 0.948718,
+      "discovery_score": 0.9487179487179487,
+      "evaluated": 39,
+      "features": [
+        "holder_score"
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "samples": 39
+    },
+    "FEATURE_SWAP": {
+      "accuracy": 0.742857,
+      "discovery_score": 0.5714285714285714,
+      "evaluated": 35,
+      "features": [
+        "holder_score"
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=3.0),))",
+      "samples": 35
+    },
+    "HOLDER_ONLY_ABLATION": {
+      "accuracy": 1.0,
+      "discovery_score": 0.9428571428571428,
+      "evaluated": 35,
+      "features": [
+        "holder_score"
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "samples": 35
+    },
+    "LABEL_SHUFFLE": {
+      "accuracy": 0.2,
+      "discovery_score": 0.6,
+      "evaluated": 35,
+      "features": [
+        "holder_score"
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='<', threshold=9.0),))",
+      "samples": 35
+    },
+    "LARGE_GRID": {
+      "accuracy": 0.948387,
+      "discovery_score": 0.9483870967741935,
+      "evaluated": 310,
+      "features": [
+        "holder_score"
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=6.25),))",
+      "samples": 310
+    },
+    "LIQUIDITY_ONLY_ABLATION": {
+      "accuracy": 0.0,
+      "discovery_score": 0.0,
+      "evaluated": 0,
+      "features": [],
+      "rule": null,
+      "samples": 35
+    },
+    "LIQUIDITY_RANGE_STRESS": {
+      "error": null,
+      "evaluated": 72,
+      "stress_accuracy": 0.875,
+      "stress_samples": 72,
+      "training_rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "training_score": 0.9428571428571428
+    },
+    "MANY_IRRELEVANT_FEATURES": {
+      "accuracy": 0.942857,
+      "core_feature_only": true,
+      "discovery_score": 0.9428571428571428,
+      "evaluated": 35,
+      "features": [
+        "holder_score"
+      ],
+      "noise_feature_count": 50,
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "samples": 35
+    },
+    "MONOTONIC_TRANSFORMATION": {
+      "accuracy": 0.714286,
+      "discovery_score": 0.9428571428571428,
+      "evaluated": 35,
+      "features": [
+        "holder_score"
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=50.0),))",
+      "samples": 35
+    },
+    "MULTI_SEED_STABILITY": {
+      "results": [
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 0
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 1
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 2
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 3
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 4
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 5
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 6
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 7
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 8
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 9
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 10
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 11
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 12
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 13
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 14
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 15
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 16
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 17
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 18
+        },
+        {
+          "accuracy": 0.942857,
+          "error": null,
+          "features": [
+            "holder_score"
+          ],
+          "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+          "score": 0.9428571428571428,
+          "seed": 19
+        }
+      ],
+      "rules": [
+        "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))"
+      ],
+      "runs": 20,
+      "unique_rules": 1
+    },
+    "MULTI_SPLIT_IDENTIFIABILITY": {
+      "A": {
+        "accuracy": 0.942857,
+        "discovery_score": 0.9428571428571428,
+        "evaluated": 35,
+        "features": [
+          "holder_score"
+        ],
+        "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+        "samples": 35
+      },
+      "B": {
+        "accuracy": 0.942857,
+        "discovery_score": 0.9428571428571428,
+        "evaluated": 35,
+        "features": [
+          "holder_score"
+        ],
+        "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=6.0),))",
+        "samples": 35
+      },
+      "C": {
+        "accuracy": 0.958333,
+        "discovery_score": 0.9583333333333334,
+        "evaluated": 48,
+        "features": [
+          "holder_score"
+        ],
+        "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=6.0),))",
+        "samples": 48
+      },
+      "D": {
+        "accuracy": 0.933333,
+        "discovery_score": 0.9333333333333333,
+        "evaluated": 30,
+        "features": [
+          "holder_score"
+        ],
+        "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+        "samples": 30
+      }
+    },
+    "NOISE_RESISTANCE": {
+      "accuracy": 0.942857,
+      "discovery_score": 0.9428571428571428,
+      "evaluated": 35,
+      "expected_core_feature": "holder_score",
+      "features": [
+        "holder_score"
+      ],
+      "ignored_noise": true,
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "samples": 35
+    },
+    "NON_MONOTONIC_TRANSFORMATION": {
+      "accuracy": 0.857143,
+      "discovery_score": 0.6571428571428571,
+      "evaluated": 35,
+      "features": [
+        "holder_score"
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=0.9493278367245317),))",
+      "samples": 35
+    },
+    "NULL_DATA_DISCOVERY": {
+      "accuracy": 0.0,
+      "discovery_score": 0.47,
+      "error": null,
+      "features": [],
+      "rule": null,
+      "samples": 100
+    },
+    "OUT_OF_RANGE_GENERALIZATION": {
+      "error": null,
+      "evaluated": 42,
+      "out_of_range_accuracy": 1.0,
+      "out_of_range_samples": 42,
+      "training_rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "training_samples": 35,
+      "training_score": 0.9428571428571428
+    },
+    "RANDOM_LABEL_NULL_DISTRIBUTION": {
+      "max_discovery_score": 0.714286,
+      "mean_discovery_score": 0.622857,
+      "min_discovery_score": 0.542857,
+      "rules": [
+        "Rule(predicates=(Predicate(feature='holder_score', operator='<', threshold=11.0),))",
+        "Rule(predicates=(Predicate(feature='holder_score', operator='<', threshold=3.0),))",
+        "Rule(predicates=(Predicate(feature='holder_score', operator='<', threshold=5.0),))",
+        "Rule(predicates=(Predicate(feature='holder_score', operator='<', threshold=7.0),))",
+        "Rule(predicates=(Predicate(feature='holder_score', operator='<', threshold=9.0),))",
+        "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=1.0),))",
+        "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=11.0),))",
+        "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=3.0),))",
+        "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=5.0),))",
+        "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+        "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=9.0),))"
+      ],
+      "runs": 30,
+      "successful_scores": 30,
+      "unique_rules": 11
+    },
+    "REPEATED_DISCOVERY_CONSISTENCY": {
+      "mean_score": 0.942857,
+      "rules": [
+        "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))"
+      ],
+      "runs": 50,
+      "score_stdev": 0.0,
+      "unique_rules": 1
+    },
+    "RULE_COMPLEXITY_PARSIMONY": {
+      "error": null,
+      "feature_count": 1,
+      "features": [
+        "holder_score"
+      ],
+      "held_out_accuracy": 0.8,
+      "predicate_count": 1,
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "training_accuracy": 0.942857
+    },
+    "SAMPLE_SIZE_SCALING": {
+      "large": {
+        "accuracy": 0.933842,
+        "discovery_score": 0.9338422391857506,
+        "evaluated": 786,
+        "features": [
+          "holder_score"
+        ],
+        "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=6.15),))",
+        "samples": 786
+      },
+      "medium": {
+        "accuracy": 0.92,
+        "discovery_score": 0.92,
+        "evaluated": 100,
+        "features": [
+          "holder_score"
+        ],
+        "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=6.75),))",
+        "samples": 100
+      },
+      "small": {
+        "accuracy": 0.0,
+        "discovery_score": 0.0,
+        "evaluated": 0,
+        "features": [],
+        "rule": null,
+        "samples": 14
+      }
+    },
+    "THRESHOLD_PERTURBATION": {
+      "accuracy": 0.666667,
+      "discovery_score": 0.6666666666666666,
+      "evaluated": 30,
+      "features": [
+        "holder_score"
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+      "samples": 30
+    },
+    "TRUE_FEATURE_PERMUTATION": {
+      "accuracy": 0.342857,
+      "discovery_score": 0.6,
+      "evaluated": 35,
+      "features": [
+        "holder_score"
+      ],
+      "post_permutation_accuracy": 0.342857,
+      "post_permutation_features": [
+        "holder_score"
+      ],
+      "rule": "Rule(predicates=(Predicate(feature='holder_score', operator='<', threshold=1.0),))",
+      "samples": 35
+    }
+  },
+  "runtime_error_tests": [],
+  "summary": {
+    "base_features": [
+      "holder_score"
+    ],
+    "base_held_out_accuracy": 0.8,
+    "base_rule": "Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=7.0),))",
+    "base_training_accuracy": 0.942857,
+    "baseline_majority_accuracy": 0.628571,
+    "baseline_test_accuracy": 0.8,
+    "boundary_all_correct": true,
+    "dense_grid_accuracy": 0.936567,
+    "feature_permutation_accuracy": 0.342857,
+    "holder_only_accuracy": 1.0,
+    "large_grid_accuracy": 0.948387,
+    "liquidity_only_rule": null,
+    "multi_seed_unique_rules": 1,
+    "noise_resistance": true,
+    "null_data_accuracy": 0.0,
+    "out_of_range_accuracy": 1.0,
+    "random_label_max_score": 0.714286,
+    "random_label_mean_score": 0.622857,
+    "repeated_discovery_unique_rules": 1
+  },
+  "system": "BIRTH_EDGE",
+  "test_suite": "COMPREHENSIVE_ADVERSARIAL_VALIDATION",
+  "tests_run": 30,
+  "tests_with_runtime_errors": 0,
+  "version": 1
+}

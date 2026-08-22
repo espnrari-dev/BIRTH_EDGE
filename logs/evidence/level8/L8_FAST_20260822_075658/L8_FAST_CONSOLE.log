@@ -1,0 +1,92 @@
+======================================================================
+BIRTH_EDGE — L8 FAST ADVERSARIAL DIAGNOSTIC
+======================================================================
+World       : MULTI_SIGNAL
+Seeds       : 5
+Train       : 400
+Test        : 1000
+Discovery   : ONCE PER SEED
+Miner       : UNMODIFIED
+Definitive  : UNMODIFIED
+
+
+[SEED 00] generating data...
+[SEED 00] discovering...
+[SEED 00] discovered in 13.237s
+[SEED 00] rule: ((dev_score > 18.6203) AND (liquidity_usd > 16898.5)) AND ((holder_score > 15.6674) AND (lp_lock_score > 15.3534))
+[SEED 00] features: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[SEED 00] baseline accuracy=0.975000 balanced=0.804688
+[SEED 00] COMPLETE total=13.454s
+
+[SEED 01] generating data...
+[SEED 01] discovering...
+[SEED 01] discovered in 11.844s
+[SEED 01] rule: ((dev_score > 15.4153) AND (holder_score > 15.7624)) AND ((liquidity_usd > 16281.9) AND (lp_lock_score > 14.6929))
+[SEED 01] features: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[SEED 01] baseline accuracy=0.992000 balanced=0.934426
+[SEED 01] COMPLETE total=12.037s
+
+[SEED 02] generating data...
+[SEED 02] discovering...
+[SEED 02] discovered in 10.815s
+[SEED 02] rule: ((dev_score > 17.7269) AND (holder_score > 17.7647)) AND ((dev_score > 17.7269) AND (lp_lock_score > 17.6163))
+[SEED 02] features: ['dev_score', 'holder_score', 'lp_lock_score']
+[SEED 02] baseline accuracy=0.936000 balanced=0.719100
+[SEED 02] COMPLETE total=11.047s
+
+[SEED 03] generating data...
+[SEED 03] discovering...
+[SEED 03] discovered in 11.815s
+[SEED 03] rule: ((holder_score > 15.4893) AND (dev_score > 15.6364)) AND ((liquidity_usd > 15807.5) AND (dev_score > 15.6364))
+[SEED 03] features: ['dev_score', 'holder_score', 'liquidity_usd']
+[SEED 03] baseline accuracy=0.927000 balanced=0.917763
+[SEED 03] COMPLETE total=12.050s
+
+[SEED 04] generating data...
+[SEED 04] discovering...
+[SEED 04] discovered in 17.537s
+[SEED 04] rule: ((holder_score > 16.8129) AND (dev_score > 15.0524)) AND ((lp_lock_score > 16.3747) AND (liquidity_usd > 18203))
+[SEED 04] features: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[SEED 04] baseline accuracy=0.979000 balanced=0.838462
+[SEED 04] COMPLETE total=17.750s
+
+======================================================================
+L8 FORENSIC AGGREGATION
+======================================================================
+Successful seeds : 5/5
+Discovery time   : 13.0495s mean
+Baseline acc     : 0.961800
+Baseline balanced: 0.842888
+
+FEATURE STABILITY
+  dev_score        1.000
+  holder_score     1.000
+  liquidity_usd    0.800
+  lp_lock_score    0.800
+
+PERMUTATION SIGNAL DROP
+  dev_score        +0.210445
+  holder_score     +0.181680
+  liquidity_usd    +0.171200
+  lp_lock_score    +0.146376
+
+ADVERSARIAL RESULTS
+  Label null balanced : 0.493018
+  Threshold accuracy  : 0.961800
+  Range-shift accuracy: 0.958400
+
+CHECKS
+  baseline_replication          : PASS
+  rule_identity_stability       : FAIL
+  feature_stability             : PASS
+  null_control_separation       : PASS
+  threshold_robustness          : PASS
+  range_shift_robustness        : PASS
+  signal_destruction_detected   : PASS
+
+======================================================================
+L8 VERDICT
+======================================================================
+L8-INVESTIGATE
+
+REPORT: /data/data/com.termux/files/home/BIRTH_EDGE/logs/evidence/level8/L8_FAST_20260822_075805.json

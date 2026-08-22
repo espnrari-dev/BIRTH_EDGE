@@ -1,0 +1,469 @@
+{
+  "audit": "BIRTH_EDGE_L8_1_STRUCTURAL_IDENTIFIABILITY",
+  "version": "L8.1",
+  "timestamp": "2026-08-22T08:06:03-0400",
+  "world": "MULTI_SIGNAL",
+  "train_n": 400,
+  "common_test_seed": 987654,
+  "common_test_n": 2000,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "features": [
+    "dev_score",
+    "holder_score",
+    "liquidity_usd",
+    "lp_lock_score"
+  ],
+  "source_test": "/data/data/com.termux/files/home/BIRTH_EDGE/definitive_architecture_test.py",
+  "miner_modified": false,
+  "definitive_test_modified": false,
+  "discoveries": [
+    {
+      "seed": 0,
+      "success": true,
+      "expr": "CompositeRule(op='AND', children=(CompositeRule(op='AND', children=(Rule(predicates=(Predicate(feature='dev_score', operator='>', threshold=18.620333165799483),)), Rule(predicates=(Predicate(feature='liquidity_usd', operator='>', threshold=16898.4527128626),)))), CompositeRule(op='AND', children=(Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=15.667370178662628),)), Rule(predicates=(Predicate(feature='lp_lock_score', operator='>', threshold=15.353388979831694),))))))",
+      "rule": "((dev_score > 18.6203) AND (liquidity_usd > 16898.5)) AND ((holder_score > 15.6674) AND (lp_lock_score > 15.3534))",
+      "raw_fingerprint": "5ef34e6799b902d3",
+      "canonical": [
+        [
+          "(dev_score > 18.6203)",
+          null,
+          null
+        ],
+        [
+          "(holder_score > 15.6674)",
+          null,
+          null
+        ],
+        [
+          "(liquidity_usd > 16898.5)",
+          null,
+          null
+        ],
+        [
+          "(lp_lock_score > 15.3534)",
+          null,
+          null
+        ]
+      ],
+      "canonical_fingerprint": "5d3eb3af17d246c9",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "thresholds": {},
+      "score": 0.9825,
+      "discovery_seconds": 11.784323453903198,
+      "common_test": {
+        "accuracy": 0.98,
+        "balanced_accuracy": 0.8387096774193548,
+        "precision": 1.0,
+        "recall": 0.6774193548387096,
+        "specificity": 1.0,
+        "tp": 84,
+        "tn": 1876,
+        "fp": 0,
+        "fn": 40
+      },
+      "positive_rate": 0.042
+    },
+    {
+      "seed": 1,
+      "success": true,
+      "expr": "CompositeRule(op='AND', children=(CompositeRule(op='AND', children=(Rule(predicates=(Predicate(feature='dev_score', operator='>', threshold=15.415337356071138),)), Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=15.762426511483683),)))), CompositeRule(op='AND', children=(Rule(predicates=(Predicate(feature='liquidity_usd', operator='>', threshold=16281.85944813491),)), Rule(predicates=(Predicate(feature='lp_lock_score', operator='>', threshold=14.692871834621343),))))))",
+      "rule": "((dev_score > 15.4153) AND (holder_score > 15.7624)) AND ((liquidity_usd > 16281.9) AND (lp_lock_score > 14.6929))",
+      "raw_fingerprint": "0bdb267aa52a6641",
+      "canonical": [
+        [
+          "(dev_score > 15.4153)",
+          null,
+          null
+        ],
+        [
+          "(holder_score > 15.7624)",
+          null,
+          null
+        ],
+        [
+          "(liquidity_usd > 16281.9)",
+          null,
+          null
+        ],
+        [
+          "(lp_lock_score > 14.6929)",
+          null,
+          null
+        ]
+      ],
+      "canonical_fingerprint": "49d29d9ad4ab8a4c",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "thresholds": {},
+      "score": 0.99,
+      "discovery_seconds": 12.885978937149048,
+      "common_test": {
+        "accuracy": 0.9895,
+        "balanced_accuracy": 0.9303855148222023,
+        "precision": 0.963963963963964,
+        "recall": 0.8629032258064516,
+        "specificity": 0.997867803837953,
+        "tp": 107,
+        "tn": 1872,
+        "fp": 4,
+        "fn": 17
+      },
+      "positive_rate": 0.0555
+    },
+    {
+      "seed": 2,
+      "success": true,
+      "expr": "CompositeRule(op='AND', children=(CompositeRule(op='AND', children=(Rule(predicates=(Predicate(feature='dev_score', operator='>', threshold=17.726885773754738),)), Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=17.764670735757498),)))), CompositeRule(op='AND', children=(Rule(predicates=(Predicate(feature='dev_score', operator='>', threshold=17.726885773754738),)), Rule(predicates=(Predicate(feature='lp_lock_score', operator='>', threshold=17.616282452652914),))))))",
+      "rule": "((dev_score > 17.7269) AND (holder_score > 17.7647)) AND ((dev_score > 17.7269) AND (lp_lock_score > 17.6163))",
+      "raw_fingerprint": "59bc1a79f56d9962",
+      "canonical": [
+        [
+          "(dev_score > 17.7269)",
+          null,
+          null
+        ],
+        [
+          "(holder_score > 17.7647)",
+          null,
+          null
+        ],
+        [
+          "(lp_lock_score > 17.6163)",
+          null,
+          null
+        ]
+      ],
+      "canonical_fingerprint": "7f5ca3622b9f8d60",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "lp_lock_score"
+      ],
+      "thresholds": {},
+      "score": 0.95,
+      "discovery_seconds": 10.771744966506958,
+      "common_test": {
+        "accuracy": 0.9455,
+        "balanced_accuracy": 0.7826621500790976,
+        "precision": 0.556390977443609,
+        "recall": 0.5967741935483871,
+        "specificity": 0.9685501066098081,
+        "tp": 74,
+        "tn": 1817,
+        "fp": 59,
+        "fn": 50
+      },
+      "positive_rate": 0.0665
+    },
+    {
+      "seed": 3,
+      "success": true,
+      "expr": "CompositeRule(op='AND', children=(CompositeRule(op='AND', children=(Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=15.489272475368276),)), Rule(predicates=(Predicate(feature='dev_score', operator='>', threshold=15.636435708145907),)))), CompositeRule(op='AND', children=(Rule(predicates=(Predicate(feature='liquidity_usd', operator='>', threshold=15807.500338270413),)), Rule(predicates=(Predicate(feature='dev_score', operator='>', threshold=15.636435708145907),))))))",
+      "rule": "((holder_score > 15.4893) AND (dev_score > 15.6364)) AND ((liquidity_usd > 15807.5) AND (dev_score > 15.6364))",
+      "raw_fingerprint": "10d1804010968cd8",
+      "canonical": [
+        [
+          "(dev_score > 15.6364)",
+          null,
+          null
+        ],
+        [
+          "(holder_score > 15.4893)",
+          null,
+          null
+        ],
+        [
+          "(liquidity_usd > 15807.5)",
+          null,
+          null
+        ]
+      ],
+      "canonical_fingerprint": "fb5fbc6e14f5d2ff",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd"
+      ],
+      "thresholds": {},
+      "score": 0.9425,
+      "discovery_seconds": 10.732259750366211,
+      "common_test": {
+        "accuracy": 0.9405,
+        "balanced_accuracy": 0.9268605131026892,
+        "precision": 0.5113122171945701,
+        "recall": 0.9112903225806451,
+        "specificity": 0.9424307036247335,
+        "tp": 113,
+        "tn": 1768,
+        "fp": 108,
+        "fn": 11
+      },
+      "positive_rate": 0.1105
+    },
+    {
+      "seed": 4,
+      "success": true,
+      "expr": "CompositeRule(op='AND', children=(CompositeRule(op='AND', children=(Rule(predicates=(Predicate(feature='holder_score', operator='>', threshold=16.812881443082084),)), Rule(predicates=(Predicate(feature='dev_score', operator='>', threshold=15.052354824521633),)))), CompositeRule(op='AND', children=(Rule(predicates=(Predicate(feature='lp_lock_score', operator='>', threshold=16.374676037072156),)), Rule(predicates=(Predicate(feature='liquidity_usd', operator='>', threshold=18202.958807161223),))))))",
+      "rule": "((holder_score > 16.8129) AND (dev_score > 15.0524)) AND ((lp_lock_score > 16.3747) AND (liquidity_usd > 18203))",
+      "raw_fingerprint": "d6cde1fe697c85e0",
+      "canonical": [
+        [
+          "(dev_score > 15.0524)",
+          null,
+          null
+        ],
+        [
+          "(holder_score > 16.8129)",
+          null,
+          null
+        ],
+        [
+          "(liquidity_usd > 18203)",
+          null,
+          null
+        ],
+        [
+          "(lp_lock_score > 16.3747)",
+          null,
+          null
+        ]
+      ],
+      "canonical_fingerprint": "fbae64611b778f79",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "thresholds": {},
+      "score": 0.99,
+      "discovery_seconds": 10.468520879745483,
+      "common_test": {
+        "accuracy": 0.9755,
+        "balanced_accuracy": 0.8024193548387097,
+        "precision": 1.0,
+        "recall": 0.6048387096774194,
+        "specificity": 1.0,
+        "tp": 75,
+        "tn": 1876,
+        "fp": 0,
+        "fn": 49
+      },
+      "positive_rate": 0.0375
+    }
+  ],
+  "raw_identity": {
+    "unique_rules": 5,
+    "exact_identity": false,
+    "fingerprints": [
+      "5ef34e6799b902d3",
+      "0bdb267aa52a6641",
+      "59bc1a79f56d9962",
+      "10d1804010968cd8",
+      "d6cde1fe697c85e0"
+    ]
+  },
+  "canonical_identity": {
+    "unique_rules": 5,
+    "exact_identity": false,
+    "fingerprints": [
+      "5d3eb3af17d246c9",
+      "49d29d9ad4ab8a4c",
+      "7f5ca3622b9f8d60",
+      "fb5fbc6e14f5d2ff",
+      "fbae64611b778f79"
+    ]
+  },
+  "feature_frequency": {
+    "dev_score": 5,
+    "holder_score": 5,
+    "liquidity_usd": 4,
+    "lp_lock_score": 4
+  },
+  "feature_stability": {
+    "dev_score": 1.0,
+    "holder_score": 1.0,
+    "liquidity_usd": 0.8,
+    "lp_lock_score": 0.8
+  },
+  "threshold_statistics": {
+    "dev_score": {
+      "n": 0,
+      "mean": null,
+      "median": null,
+      "min": null,
+      "max": null,
+      "range": null
+    },
+    "holder_score": {
+      "n": 0,
+      "mean": null,
+      "median": null,
+      "min": null,
+      "max": null,
+      "range": null
+    },
+    "liquidity_usd": {
+      "n": 0,
+      "mean": null,
+      "median": null,
+      "min": null,
+      "max": null,
+      "range": null
+    },
+    "lp_lock_score": {
+      "n": 0,
+      "mean": null,
+      "median": null,
+      "min": null,
+      "max": null,
+      "range": null
+    }
+  },
+  "pairwise_structural": [
+    {
+      "seed_a": 0,
+      "seed_b": 1,
+      "jaccard": 0.0
+    },
+    {
+      "seed_a": 0,
+      "seed_b": 2,
+      "jaccard": 0.0
+    },
+    {
+      "seed_a": 0,
+      "seed_b": 3,
+      "jaccard": 0.0
+    },
+    {
+      "seed_a": 0,
+      "seed_b": 4,
+      "jaccard": 0.0
+    },
+    {
+      "seed_a": 1,
+      "seed_b": 2,
+      "jaccard": 0.0
+    },
+    {
+      "seed_a": 1,
+      "seed_b": 3,
+      "jaccard": 0.0
+    },
+    {
+      "seed_a": 1,
+      "seed_b": 4,
+      "jaccard": 0.0
+    },
+    {
+      "seed_a": 2,
+      "seed_b": 3,
+      "jaccard": 0.0
+    },
+    {
+      "seed_a": 2,
+      "seed_b": 4,
+      "jaccard": 0.0
+    },
+    {
+      "seed_a": 3,
+      "seed_b": 4,
+      "jaccard": 0.0
+    }
+  ],
+  "pairwise_functional": [
+    {
+      "seed_a": 0,
+      "seed_b": 1,
+      "agreement": 0.9865
+    },
+    {
+      "seed_a": 0,
+      "seed_b": 2,
+      "agreement": 0.9525
+    },
+    {
+      "seed_a": 0,
+      "seed_b": 3,
+      "agreement": 0.9315
+    },
+    {
+      "seed_a": 0,
+      "seed_b": 4,
+      "agreement": 0.9855
+    },
+    {
+      "seed_a": 1,
+      "seed_b": 2,
+      "agreement": 0.944
+    },
+    {
+      "seed_a": 1,
+      "seed_b": 3,
+      "agreement": 0.944
+    },
+    {
+      "seed_a": 1,
+      "seed_b": 4,
+      "agreement": 0.982
+    },
+    {
+      "seed_a": 2,
+      "seed_b": 3,
+      "agreement": 0.893
+    },
+    {
+      "seed_a": 2,
+      "seed_b": 4,
+      "agreement": 0.954
+    },
+    {
+      "seed_a": 3,
+      "seed_b": 4,
+      "agreement": 0.926
+    }
+  ],
+  "common_test_accuracy": {
+    "n": 5,
+    "mean": 0.9662000000000001,
+    "min": 0.9405,
+    "max": 0.9895
+  },
+  "common_test_balanced_accuracy": {
+    "n": 5,
+    "mean": 0.8562074420524107,
+    "min": 0.7826621500790976,
+    "max": 0.9303855148222023
+  },
+  "checks": {
+    "discovery_replication": true,
+    "raw_string_identity": false,
+    "canonical_identity": false,
+    "feature_stability": true,
+    "structural_jaccard": false,
+    "structural_jaccard_floor": false,
+    "functional_agreement": false,
+    "functional_agreement_floor": false,
+    "cross_seed_performance": true,
+    "structural_identifiability": false
+  },
+  "verdict": "L8.1-INVESTIGATE",
+  "method_note": "L8.1 separates raw syntactic identity from canonical predicate identity, feature stability, structural Jaccard similarity, threshold stability, and functional prediction agreement. Discovery occurs once per seed. All discovered rules are evaluated on one common held-out dataset.",
+  "elapsed_seconds": 56.810895919799805
+}

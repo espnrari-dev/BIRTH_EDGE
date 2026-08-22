@@ -1,0 +1,8 @@
+BIRTH_EDGE PRE-UPGRADE BACKUP
+Timestamp: 20260822_062939
+Source: /data/data/com.termux/files/home/BIRTH_EDGE
+Backup: /data/data/com.termux/files/home/BIRTH_EDGE/backups/pre_compositional_20260822_062939
+
+fb1f8f3145d63dc3744b6b607ba136b3675b95509cb848c1b428e4f90d57bcc0  /data/data/com.termux/files/home/BIRTH_EDGE/backups/pre_compositional_20260822_062939/BACKUP_MANIFEST.txt
+fd479c93a5674a3516b3a0030c4a8cbda9831733996103fd190765b0549313d8  /data/data/com.termux/files/home/BIRTH_EDGE/backups/pre_compositional_20260822_062939/aegis_rule_miner.py
+5ba99df7cb2a6006bf21576cb17d60a2399d36fd3946d022d831ee20a9dfef46  /data/data/com.termux/files/home/BIRTH_EDGE/backups/pre_compositional_20260822_062939/definitive_architecture_test.py

@@ -1,0 +1,158 @@
+================================================================================
+MULTI_SIGNAL FORENSIC METRIC AUDIT V2
+================================================================================
+Miner: /data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py
+Test : /data/data/com.termux/files/home/BIRTH_EDGE/definitive_architecture_test.py
+
+Candidate generators:
+   make_out_of_range
+   make_shifted_world
+   make_world
+   run_standard_world
+
+--------------------------------------------------------------------------------
+SEED 00
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 01
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 02
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 03
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 04
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 05
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 06
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 07
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 08
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 09
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 10
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 11
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 12
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 13
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 14
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 15
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 16
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 17
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 18
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+--------------------------------------------------------------------------------
+SEED 19
+Generator: make_out_of_range
+Rows: 400
+Row keys: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score', 'overall_score', 'pumped', 'tax_score']
+LABEL STATUS: NO EXPLICIT BINARY LABEL FIELD
+This is the critical result: the prior auditor was incorrectly assuming row['target'].
+
+================================================================================
+FORENSIC AUDIT SUMMARY
+================================================================================
+NO VALID METRIC RUNS.
+The audit must first identify the actual target construction used by the definitive test.

@@ -1,0 +1,1385 @@
+{
+  "system": "BIRTH_EDGE",
+  "test_suite": "ARCHITECTURE_GENERALIZATION",
+  "version": 2,
+  "entrypoint": "evolve_rule",
+  "datasets": {
+    "LINEAR_THRESHOLD": {
+      "samples": 200,
+      "runs": 20,
+      "successful_runs": 0,
+      "runtime_errors": 20,
+      "mean_accuracy": null,
+      "min_accuracy": null,
+      "max_accuracy": null,
+      "accuracy_stdev": 0.0,
+      "unique_rules": 0,
+      "rules": [],
+      "runs_detail": [
+        {
+          "seed": 0,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 1,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 2,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 3,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 4,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 5,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 6,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 7,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 8,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 9,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 10,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 11,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 12,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 13,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 14,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 15,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 16,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 17,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 18,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 19,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        }
+      ]
+    },
+    "INVERSE_THRESHOLD": {
+      "samples": 200,
+      "runs": 20,
+      "successful_runs": 0,
+      "runtime_errors": 20,
+      "mean_accuracy": null,
+      "min_accuracy": null,
+      "max_accuracy": null,
+      "accuracy_stdev": 0.0,
+      "unique_rules": 0,
+      "rules": [],
+      "runs_detail": [
+        {
+          "seed": 0,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 1,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 2,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 3,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 4,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 5,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 6,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 7,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 8,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 9,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 10,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 11,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 12,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 13,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 14,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 15,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 16,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 17,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 18,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 19,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        }
+      ]
+    },
+    "DIFFERENT_THRESHOLD": {
+      "samples": 200,
+      "runs": 20,
+      "successful_runs": 0,
+      "runtime_errors": 20,
+      "mean_accuracy": null,
+      "min_accuracy": null,
+      "max_accuracy": null,
+      "accuracy_stdev": 0.0,
+      "unique_rules": 0,
+      "rules": [],
+      "runs_detail": [
+        {
+          "seed": 0,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 1,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 2,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 3,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 4,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 5,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 6,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 7,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 8,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 9,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 10,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 11,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 12,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 13,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 14,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 15,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 16,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 17,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 18,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 19,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        }
+      ]
+    },
+    "NONLINEAR_ABS": {
+      "samples": 300,
+      "runs": 20,
+      "successful_runs": 0,
+      "runtime_errors": 20,
+      "mean_accuracy": null,
+      "min_accuracy": null,
+      "max_accuracy": null,
+      "accuracy_stdev": 0.0,
+      "unique_rules": 0,
+      "rules": [],
+      "runs_detail": [
+        {
+          "seed": 0,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 1,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 2,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 3,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 4,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 5,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 6,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 7,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 8,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 9,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 10,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 11,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 12,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 13,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 14,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 15,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 16,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 17,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 18,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 19,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        }
+      ]
+    },
+    "TWO_FEATURE_INTERACTION": {
+      "samples": 400,
+      "runs": 20,
+      "successful_runs": 0,
+      "runtime_errors": 20,
+      "mean_accuracy": null,
+      "min_accuracy": null,
+      "max_accuracy": null,
+      "accuracy_stdev": 0.0,
+      "unique_rules": 0,
+      "rules": [],
+      "runs_detail": [
+        {
+          "seed": 0,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 1,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 2,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 3,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 4,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 5,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 6,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 7,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 8,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 9,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 10,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 11,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 12,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 13,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 14,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 15,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 16,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 17,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 18,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 19,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        }
+      ]
+    },
+    "IRRELEVANT_FEATURE_OVERLOAD": {
+      "samples": 250,
+      "runs": 20,
+      "successful_runs": 0,
+      "runtime_errors": 20,
+      "mean_accuracy": null,
+      "min_accuracy": null,
+      "max_accuracy": null,
+      "accuracy_stdev": 0.0,
+      "unique_rules": 0,
+      "rules": [],
+      "runs_detail": [
+        {
+          "seed": 0,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 1,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 2,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 3,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 4,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 5,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 6,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 7,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 8,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 9,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 10,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 11,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 12,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 13,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 14,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 15,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 16,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 17,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 18,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 19,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        }
+      ]
+    },
+    "RANDOM_LABEL_CONTROL": {
+      "samples": 250,
+      "runs": 20,
+      "successful_runs": 0,
+      "runtime_errors": 20,
+      "mean_accuracy": null,
+      "min_accuracy": null,
+      "max_accuracy": null,
+      "accuracy_stdev": 0.0,
+      "unique_rules": 0,
+      "rules": [],
+      "runs_detail": [
+        {
+          "seed": 0,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 1,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 2,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 3,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 4,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 5,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 6,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 7,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 8,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 9,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 10,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 11,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 12,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 13,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 14,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 15,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 16,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 17,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 18,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        },
+        {
+          "seed": 19,
+          "rule": null,
+          "accuracy": null,
+          "error": {
+            "type": "KeyError",
+            "message": "'pumped'"
+          }
+        }
+      ]
+    }
+  },
+  "runtime_errors": [
+    {
+      "dataset": "DISTRIBUTION_SHIFT",
+      "type": "KeyError",
+      "message": "'pumped'",
+      "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/architecture_generalization_test.py\", line 411, in main\n    result = run_shift_test()\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/architecture_generalization_test.py\", line 298, in run_shift_test\n    rule = discover(train, 0)\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/architecture_generalization_test.py\", line 31, in discover\n    return arm.evolve_rule(\n           ~~~~~~~~~~~~~~~^\n        rows,\n        ^^^^^\n    ...<2 lines>...\n        max_depth=5,\n        ^^^^^^^^^^^^\n    )\n    ^\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py\", line 180, in evolve_rule\n    return _discover(data, seed)\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py\", line 127, in _discover\n    names, cols, labels = _matrix(rows)\n                          ~~~~~~~^^^^^^\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py\", line 72, in _matrix\n    labels.append(bool(row[\"pumped\"]))\n                       ~~~^^^^^^^^^^\nKeyError: 'pumped'\n"
+    },
+    {
+      "dataset": "OUT_OF_RANGE",
+      "type": "KeyError",
+      "message": "'pumped'",
+      "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/architecture_generalization_test.py\", line 442, in main\n    result = run_out_of_range_test()\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/architecture_generalization_test.py\", line 313, in run_out_of_range_test\n    rule = discover(train, 0)\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/architecture_generalization_test.py\", line 31, in discover\n    return arm.evolve_rule(\n           ~~~~~~~~~~~~~~~^\n        rows,\n        ^^^^^\n    ...<2 lines>...\n        max_depth=5,\n        ^^^^^^^^^^^^\n    )\n    ^\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py\", line 180, in evolve_rule\n    return _discover(data, seed)\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py\", line 127, in _discover\n    names, cols, labels = _matrix(rows)\n                          ~~~~~~~^^^^^^\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py\", line 72, in _matrix\n    labels.append(bool(row[\"pumped\"]))\n                       ~~~^^^^^^^^^^\nKeyError: 'pumped'\n"
+    }
+  ],
+  "summary": {
+    "datasets_tested": 7,
+    "runtime_errors": 2,
+    "all_dataset_runs_completed": false
+  }
+}

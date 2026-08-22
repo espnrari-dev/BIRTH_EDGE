@@ -1,0 +1,601 @@
+{
+  "system": "BIRTH_EDGE",
+  "test": "REAL_ARCHITECTURE_DISCOVERY",
+  "version": 1,
+  "features": [
+    "liquidity_usd",
+    "holder_score",
+    "dev_score",
+    "lp_lock_score",
+    "tax_score",
+    "overall_score"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "worlds": [
+    "SINGLE_LIQUIDITY",
+    "REVERSE_HOLDER",
+    "TWO_FEATURE_AND",
+    "DEV_THRESHOLD",
+    "LP_LOCK_THRESHOLD",
+    "OVERALL_THRESHOLD",
+    "NULL_REALITY"
+  ],
+  "results": [
+    {
+      "world": "SINGLE_LIQUIDITY",
+      "seed": 0,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9966666666666667,
+      "rule": "(liquidity_usd > 15155.4)",
+      "features": [
+        "liquidity_usd"
+      ],
+      "metrics": {
+        "accuracy": 0.9966666666666667,
+        "balanced_accuracy": 0.9968553459119497,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "SINGLE_LIQUIDITY",
+      "seed": 1,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9966666666666667,
+      "rule": "(liquidity_usd > 15076.6)",
+      "features": [
+        "liquidity_usd"
+      ],
+      "metrics": {
+        "accuracy": 0.9966666666666667,
+        "balanced_accuracy": 0.9968553459119497,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "SINGLE_LIQUIDITY",
+      "seed": 2,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.99,
+      "rule": "(liquidity_usd > 14220.7)",
+      "features": [
+        "liquidity_usd"
+      ],
+      "metrics": {
+        "accuracy": 0.99,
+        "balanced_accuracy": 0.9896551724137931,
+        "positive_precision": 0.9810126582278481
+      },
+      "complexity": 1
+    },
+    {
+      "world": "SINGLE_LIQUIDITY",
+      "seed": 3,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9866666666666667,
+      "rule": "(liquidity_usd > 14551.1)",
+      "features": [
+        "liquidity_usd"
+      ],
+      "metrics": {
+        "accuracy": 0.9866666666666667,
+        "balanced_accuracy": 0.9863013698630136,
+        "positive_precision": 0.9746835443037974
+      },
+      "complexity": 1
+    },
+    {
+      "world": "SINGLE_LIQUIDITY",
+      "seed": 4,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 1.0,
+      "rule": "(liquidity_usd > 15028.4)",
+      "features": [
+        "liquidity_usd"
+      ],
+      "metrics": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "REVERSE_HOLDER",
+      "seed": 0,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9766666666666667,
+      "rule": "(holder_score < 6.52262)",
+      "features": [
+        "holder_score"
+      ],
+      "metrics": {
+        "accuracy": 0.9766666666666667,
+        "balanced_accuracy": 0.9593023255813953,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "REVERSE_HOLDER",
+      "seed": 1,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.98,
+      "rule": "(holder_score < 8.73812)",
+      "features": [
+        "holder_score"
+      ],
+      "metrics": {
+        "accuracy": 0.98,
+        "balanced_accuracy": 0.986784140969163,
+        "positive_precision": 0.9240506329113924
+      },
+      "complexity": 1
+    },
+    {
+      "world": "REVERSE_HOLDER",
+      "seed": 2,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.98,
+      "rule": "(holder_score < 8.4076)",
+      "features": [
+        "holder_score"
+      ],
+      "metrics": {
+        "accuracy": 0.98,
+        "balanced_accuracy": 0.985781990521327,
+        "positive_precision": 0.9368421052631579
+      },
+      "complexity": 1
+    },
+    {
+      "world": "REVERSE_HOLDER",
+      "seed": 3,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9966666666666667,
+      "rule": "(holder_score < 8.01796)",
+      "features": [
+        "holder_score"
+      ],
+      "metrics": {
+        "accuracy": 0.9966666666666667,
+        "balanced_accuracy": 0.9977477477477478,
+        "positive_precision": 0.9873417721518988
+      },
+      "complexity": 1
+    },
+    {
+      "world": "REVERSE_HOLDER",
+      "seed": 4,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9966666666666667,
+      "rule": "(holder_score < 7.91227)",
+      "features": [
+        "holder_score"
+      ],
+      "metrics": {
+        "accuracy": 0.9966666666666667,
+        "balanced_accuracy": 0.99375,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "TWO_FEATURE_AND",
+      "seed": 0,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9833333333333333,
+      "rule": "((holder_score > 16.2331) AND (liquidity_usd > 15155.4))",
+      "features": [
+        "holder_score",
+        "liquidity_usd"
+      ],
+      "metrics": {
+        "accuracy": 0.9833333333333333,
+        "balanced_accuracy": 0.9675324675324675,
+        "positive_precision": 1.0
+      },
+      "complexity": 2
+    },
+    {
+      "world": "TWO_FEATURE_AND",
+      "seed": 1,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.99,
+      "rule": "((liquidity_usd > 15076.6) AND (holder_score > 15.7624))",
+      "features": [
+        "holder_score",
+        "liquidity_usd"
+      ],
+      "metrics": {
+        "accuracy": 0.99,
+        "balanced_accuracy": 0.9825581395348837,
+        "positive_precision": 1.0
+      },
+      "complexity": 2
+    },
+    {
+      "world": "TWO_FEATURE_AND",
+      "seed": 2,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.99,
+      "rule": "((holder_score > 14.6612) AND (liquidity_usd > 14220.7))",
+      "features": [
+        "holder_score",
+        "liquidity_usd"
+      ],
+      "metrics": {
+        "accuracy": 0.99,
+        "balanced_accuracy": 0.9932126696832579,
+        "positive_precision": 0.9634146341463414
+      },
+      "complexity": 2
+    },
+    {
+      "world": "TWO_FEATURE_AND",
+      "seed": 3,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.98,
+      "rule": "((holder_score > 15.4893) AND (liquidity_usd > 14551.1))",
+      "features": [
+        "holder_score",
+        "liquidity_usd"
+      ],
+      "metrics": {
+        "accuracy": 0.98,
+        "balanced_accuracy": 0.9750152684470601,
+        "positive_precision": 0.963855421686747
+      },
+      "complexity": 2
+    },
+    {
+      "world": "TWO_FEATURE_AND",
+      "seed": 4,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9966666666666667,
+      "rule": "((holder_score > 15.3722) AND (liquidity_usd > 15028.4))",
+      "features": [
+        "holder_score",
+        "liquidity_usd"
+      ],
+      "metrics": {
+        "accuracy": 0.9966666666666667,
+        "balanced_accuracy": 0.9931506849315068,
+        "positive_precision": 1.0
+      },
+      "complexity": 2
+    },
+    {
+      "world": "DEV_THRESHOLD",
+      "seed": 0,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.98,
+      "rule": "(dev_score > 18.8216)",
+      "features": [
+        "dev_score"
+      ],
+      "metrics": {
+        "accuracy": 0.98,
+        "balanced_accuracy": 0.9846153846153847,
+        "positive_precision": 0.9459459459459459
+      },
+      "complexity": 1
+    },
+    {
+      "world": "DEV_THRESHOLD",
+      "seed": 1,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9766666666666667,
+      "rule": "(dev_score > 20.5993)",
+      "features": [
+        "dev_score"
+      ],
+      "metrics": {
+        "accuracy": 0.9766666666666667,
+        "balanced_accuracy": 0.9656862745098039,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "DEV_THRESHOLD",
+      "seed": 2,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9766666666666667,
+      "rule": "(dev_score > 20.4247)",
+      "features": [
+        "dev_score"
+      ],
+      "metrics": {
+        "accuracy": 0.9766666666666667,
+        "balanced_accuracy": 0.9656862745098039,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "DEV_THRESHOLD",
+      "seed": 3,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9966666666666667,
+      "rule": "(dev_score > 20.1742)",
+      "features": [
+        "dev_score"
+      ],
+      "metrics": {
+        "accuracy": 0.9966666666666667,
+        "balanced_accuracy": 0.9947916666666667,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "DEV_THRESHOLD",
+      "seed": 4,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.99,
+      "rule": "(dev_score > 20.0566)",
+      "features": [
+        "dev_score"
+      ],
+      "metrics": {
+        "accuracy": 0.99,
+        "balanced_accuracy": 0.9846938775510203,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "LP_LOCK_THRESHOLD",
+      "seed": 0,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9866666666666667,
+      "rule": "(lp_lock_score > 18.6518)",
+      "features": [
+        "lp_lock_score"
+      ],
+      "metrics": {
+        "accuracy": 0.9866666666666667,
+        "balanced_accuracy": 0.9826086956521739,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "LP_LOCK_THRESHOLD",
+      "seed": 1,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.98,
+      "rule": "(lp_lock_score > 17.2724)",
+      "features": [
+        "lp_lock_score"
+      ],
+      "metrics": {
+        "accuracy": 0.98,
+        "balanced_accuracy": 0.9833333333333334,
+        "positive_precision": 0.9523809523809523
+      },
+      "complexity": 1
+    },
+    {
+      "world": "LP_LOCK_THRESHOLD",
+      "seed": 2,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9866666666666667,
+      "rule": "(lp_lock_score > 17.7053)",
+      "features": [
+        "lp_lock_score"
+      ],
+      "metrics": {
+        "accuracy": 0.9866666666666667,
+        "balanced_accuracy": 0.9887640449438202,
+        "positive_precision": 0.9682539682539683
+      },
+      "complexity": 1
+    },
+    {
+      "world": "LP_LOCK_THRESHOLD",
+      "seed": 3,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9766666666666667,
+      "rule": "(lp_lock_score > 18.1546)",
+      "features": [
+        "lp_lock_score"
+      ],
+      "metrics": {
+        "accuracy": 0.9766666666666667,
+        "balanced_accuracy": 0.9703389830508475,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "LP_LOCK_THRESHOLD",
+      "seed": 4,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9866666666666667,
+      "rule": "(lp_lock_score > 18.4403)",
+      "features": [
+        "lp_lock_score"
+      ],
+      "metrics": {
+        "accuracy": 0.9866666666666667,
+        "balanced_accuracy": 0.9846153846153847,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "OVERALL_THRESHOLD",
+      "seed": 0,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9766666666666667,
+      "rule": "(overall_score > 67.7351)",
+      "features": [
+        "overall_score"
+      ],
+      "metrics": {
+        "accuracy": 0.9766666666666667,
+        "balanced_accuracy": 0.9834905660377358,
+        "positive_precision": 0.9263157894736842
+      },
+      "complexity": 1
+    },
+    {
+      "world": "OVERALL_THRESHOLD",
+      "seed": 1,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.98,
+      "rule": "(overall_score > 73.2048)",
+      "features": [
+        "overall_score"
+      ],
+      "metrics": {
+        "accuracy": 0.98,
+        "balanced_accuracy": 0.9647058823529412,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "OVERALL_THRESHOLD",
+      "seed": 2,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9866666666666667,
+      "rule": "(overall_score > 71.2417)",
+      "features": [
+        "overall_score"
+      ],
+      "metrics": {
+        "accuracy": 0.9866666666666667,
+        "balanced_accuracy": 0.9759036144578312,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "OVERALL_THRESHOLD",
+      "seed": 3,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.99,
+      "rule": "(overall_score > 71.1822)",
+      "features": [
+        "overall_score"
+      ],
+      "metrics": {
+        "accuracy": 0.99,
+        "balanced_accuracy": 0.9817073170731707,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "OVERALL_THRESHOLD",
+      "seed": 4,
+      "samples": 300,
+      "discovered": true,
+      "discovery_score": 0.9866666666666667,
+      "rule": "(overall_score > 71.1194)",
+      "features": [
+        "overall_score"
+      ],
+      "metrics": {
+        "accuracy": 0.9866666666666667,
+        "balanced_accuracy": 0.9797979797979798,
+        "positive_precision": 1.0
+      },
+      "complexity": 1
+    },
+    {
+      "world": "NULL_REALITY",
+      "seed": 0,
+      "samples": 300,
+      "discovered": false,
+      "discovery_score": 0.4716666666666667,
+      "rule": null,
+      "features": [],
+      "metrics": null,
+      "complexity": 0
+    },
+    {
+      "world": "NULL_REALITY",
+      "seed": 1,
+      "samples": 300,
+      "discovered": false,
+      "discovery_score": 0.4716666666666667,
+      "rule": null,
+      "features": [],
+      "metrics": null,
+      "complexity": 0
+    },
+    {
+      "world": "NULL_REALITY",
+      "seed": 2,
+      "samples": 300,
+      "discovered": false,
+      "discovery_score": 0.4716666666666667,
+      "rule": null,
+      "features": [],
+      "metrics": null,
+      "complexity": 0
+    },
+    {
+      "world": "NULL_REALITY",
+      "seed": 3,
+      "samples": 300,
+      "discovered": false,
+      "discovery_score": 0.4716666666666667,
+      "rule": null,
+      "features": [],
+      "metrics": null,
+      "complexity": 0
+    },
+    {
+      "world": "NULL_REALITY",
+      "seed": 4,
+      "samples": 300,
+      "discovered": false,
+      "discovery_score": 0.4716666666666667,
+      "rule": null,
+      "features": [],
+      "metrics": null,
+      "complexity": 0
+    }
+  ]
+}

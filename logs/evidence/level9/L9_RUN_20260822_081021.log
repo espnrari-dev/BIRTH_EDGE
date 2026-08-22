@@ -1,0 +1,265 @@
+==============================================================================
+BIRTH_EDGE — L9 MECHANISM RECOVERY
+==============================================================================
+QUESTION:
+Does repeated discovery recover a common underlying decision mechanism?
+
+Miner              : UNMODIFIED
+Definitive test    : UNMODIFIED
+Discovery seeds    : 50
+Train sizes        : [100, 200, 400, 800]
+Common test N      : 5000
+Shifted tests      : 3
+
+==============================================================================
+PHASE 1 — 50-SEED DISCOVERY CONVERGENCE
+==============================================================================
+[00] discovering... 11.41s | score=0.9825 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[01] discovering... 11.28s | score=0.99 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[02] discovering... 12.08s | score=0.95 | features=['dev_score', 'holder_score', 'lp_lock_score']
+[03] discovering... 14.73s | score=0.9425 | features=['dev_score', 'holder_score', 'liquidity_usd']
+[04] discovering... 13.93s | score=0.99 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[05] discovering... 25.08s | score=0.99 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[06] discovering... 21.16s | score=0.995 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[07] discovering... 19.09s | score=0.99 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[08] discovering... 21.47s | score=0.995 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[09] discovering... 13.46s | score=0.96 | features=['holder_score', 'liquidity_usd', 'lp_lock_score']
+[10] discovering... 11.92s | score=0.97 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[11] discovering... 13.41s | score=0.83 | features=['dev_score', 'holder_score']
+[12] discovering... 15.33s | score=0.9825 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[13] discovering... 18.96s | score=0.995 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[14] discovering... 16.37s | score=0.96 | features=['holder_score', 'liquidity_usd', 'lp_lock_score']
+[15] discovering... 13.04s | score=0.9675 | features=['dev_score', 'holder_score', 'liquidity_usd']
+[16] discovering... 12.47s | score=0.9775 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[17] discovering... 12.48s | score=0.995 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[18] discovering... 12.15s | score=0.9925 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[19] discovering... 13.35s | score=0.96 | features=['holder_score', 'liquidity_usd', 'lp_lock_score']
+[20] discovering... 14.41s | score=1.0 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[21] discovering... 17.11s | score=0.9925 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[22] discovering... 12.94s | score=0.9975 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[23] discovering... 18.86s | score=0.9875 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[24] discovering... 14.14s | score=0.9925 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[25] discovering... 14.65s | score=1.0 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[26] discovering... 12.23s | score=0.99 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[27] discovering... 13.33s | score=0.98 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[28] discovering... 17.26s | score=0.995 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[29] discovering... 16.11s | score=0.98 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[30] discovering... 14.71s | score=0.985 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[31] discovering... 46.97s | score=0.9875 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[32] discovering... 22.15s | score=0.9575 | features=['dev_score', 'liquidity_usd', 'lp_lock_score']
+[33] discovering... 21.81s | score=0.995 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[34] discovering... 18.99s | score=0.99 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[35] discovering... 15.88s | score=0.9925 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[36] discovering... 16.99s | score=0.9475 | features=['holder_score', 'liquidity_usd', 'lp_lock_score']
+[37] discovering... 17.40s | score=0.9925 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[38] discovering... 14.27s | score=0.9525 | features=['dev_score', 'liquidity_usd', 'lp_lock_score']
+[39] discovering... 12.67s | score=0.9975 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[40] discovering... 12.82s | score=0.985 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[41] discovering... 14.40s | score=0.9775 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[42] discovering... 14.56s | score=0.9725 | features=['dev_score', 'holder_score', 'liquidity_usd']
+[43] discovering... 12.93s | score=0.95 | features=['dev_score', 'holder_score', 'liquidity_usd']
+[44] discovering... 11.80s | score=0.995 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[45] discovering... 15.02s | score=0.9675 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[46] discovering... 11.40s | score=0.9775 | features=['dev_score', 'holder_score', 'lp_lock_score']
+[47] discovering... 11.91s | score=0.995 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[48] discovering... 10.99s | score=0.9675 | features=['holder_score', 'liquidity_usd', 'lp_lock_score']
+[49] discovering... 11.59s | score=0.9925 | features=['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+Successful discoveries: 50/50
+
+==============================================================================
+PHASE 2 — COMMON HELD-OUT POPULATION
+==============================================================================
+Seed 00 | acc=0.97840 | bal=0.84211
+Seed 01 | acc=0.98860 | bal=0.92615
+Seed 02 | acc=0.94200 | bal=0.77109
+Seed 03 | acc=0.93860 | bal=0.92099
+Seed 04 | acc=0.97500 | bal=0.81725
+Seed 05 | acc=0.99400 | bal=0.95885
+Seed 06 | acc=0.98920 | bal=0.92647
+Seed 07 | acc=0.98780 | bal=0.91217
+Seed 08 | acc=0.99460 | bal=0.96188
+Seed 09 | acc=0.93180 | bal=0.78187
+Seed 10 | acc=0.98080 | bal=0.86507
+Seed 11 | acc=0.78840 | bal=0.88643
+Seed 12 | acc=0.98460 | bal=0.88743
+Seed 13 | acc=0.98780 | bal=0.91082
+Seed 14 | acc=0.93460 | bal=0.88497
+Seed 15 | acc=0.93640 | bal=0.77080
+Seed 16 | acc=0.96700 | bal=0.75877
+Seed 17 | acc=0.98440 | bal=0.88596
+Seed 18 | acc=0.99100 | bal=0.94369
+Seed 19 | acc=0.93240 | bal=0.95017
+Seed 20 | acc=0.99440 | bal=0.96177
+Seed 21 | acc=0.98900 | bal=0.92907
+Seed 22 | acc=0.99320 | bal=0.98958
+Seed 23 | acc=0.99000 | bal=0.92690
+Seed 24 | acc=0.98680 | bal=0.92518
+Seed 25 | acc=0.99180 | bal=0.94548
+Seed 26 | acc=0.98480 | bal=0.88889
+Seed 27 | acc=0.97980 | bal=0.85234
+Seed 28 | acc=0.98740 | bal=0.92551
+Seed 29 | acc=0.97760 | bal=0.83626
+Seed 30 | acc=0.97040 | bal=0.78904
+Seed 31 | acc=0.98240 | bal=0.88083
+Seed 32 | acc=0.93360 | bal=0.79097
+Seed 33 | acc=0.98140 | bal=0.86404
+Seed 34 | acc=0.98760 | bal=0.90936
+Seed 35 | acc=0.98660 | bal=0.92643
+Seed 36 | acc=0.93140 | bal=0.85210
+Seed 37 | acc=0.98460 | bal=0.88743
+Seed 38 | acc=0.93000 | bal=0.82697
+Seed 39 | acc=0.99760 | bal=0.98381
+Seed 40 | acc=0.97600 | bal=0.82456
+Seed 41 | acc=0.98340 | bal=0.87865
+Seed 42 | acc=0.93780 | bal=0.91514
+Seed 43 | acc=0.93480 | bal=0.87695
+Seed 44 | acc=0.99680 | bal=0.99828
+Seed 45 | acc=0.96640 | bal=0.75439
+Seed 46 | acc=0.94060 | bal=0.78524
+Seed 47 | acc=0.99420 | bal=0.95760
+Seed 48 | acc=0.93420 | bal=0.90373
+Seed 49 | acc=0.99220 | bal=0.94298
+
+==============================================================================
+PHASE 3 — PAIRWISE FUNCTIONAL EQUIVALENCE
+==============================================================================
+Pairs evaluated : 1225
+Mean agreement  : 0.952599
+Minimum         : 0.723800
+
+==============================================================================
+PHASE 4 — FEATURE CONVERGENCE
+==============================================================================
+dev_score          45/50 (0.900)
+holder_score       48/50 (0.960)
+liquidity_usd      47/50 (0.940)
+lp_lock_score      45/50 (0.900)
+
+==============================================================================
+PHASE 5 — THRESHOLD CONVERGENCE
+==============================================================================
+dev_score          N/A
+holder_score       N/A
+liquidity_usd      N/A
+lp_lock_score      N/A
+
+==============================================================================
+PHASE 6 — SAMPLE-SIZE SCALING
+==============================================================================
+
+TRAIN N=100
+  seed=00 acc=0.85780 bal=0.72861
+  seed=01 acc=0.93500 bal=0.64000
+  seed=02 acc=0.86960 bal=0.65773
+  seed=03 acc=0.94600 bal=0.60933
+  seed=04 acc=0.90780 bal=0.86382
+  seed=05 acc=0.90440 bal=0.66286
+  seed=06 acc=0.93640 bal=0.71661
+  seed=07 acc=0.97620 bal=0.84092
+  seed=08 acc=0.93120 bal=0.65421
+  seed=09 acc=0.91880 bal=0.52429
+
+TRAIN N=200
+  seed=00 acc=0.93380 bal=0.64071
+  seed=01 acc=0.97800 bal=0.83918
+  seed=02 acc=0.93440 bal=0.96073
+  seed=03 acc=0.98880 bal=0.93709
+  seed=04 acc=0.93560 bal=0.86519
+  seed=05 acc=0.98820 bal=0.92864
+  seed=06 acc=0.96260 bal=0.72661
+  seed=07 acc=0.97600 bal=0.84488
+  seed=08 acc=0.97260 bal=0.81054
+  seed=09 acc=0.96020 bal=0.70906
+
+TRAIN N=400
+  seed=00 acc=0.87340 bal=0.69770
+  seed=01 acc=0.97220 bal=0.81846
+  seed=02 acc=0.98300 bal=0.88115
+  seed=03 acc=0.99360 bal=0.98708
+  seed=04 acc=0.93220 bal=0.85795
+  seed=05 acc=0.96960 bal=0.77778
+  seed=06 acc=0.92980 bal=0.81196
+  seed=07 acc=0.99120 bal=0.94651
+  seed=08 acc=0.93320 bal=0.85442
+  seed=09 acc=0.98280 bal=0.88375
+
+TRAIN N=800
+  seed=00 acc=0.93340 bal=0.87891
+  seed=01 acc=0.98220 bal=0.87395
+  seed=02 acc=0.94040 bal=0.91112
+  seed=03 acc=0.99460 bal=0.96053
+  seed=04 acc=0.93420 bal=0.91050
+  seed=05 acc=0.97820 bal=0.84064
+  seed=06 acc=0.96820 bal=0.76754
+  seed=07 acc=0.99140 bal=0.93984
+  seed=08 acc=0.93280 bal=0.93684
+  seed=09 acc=0.98540 bal=0.89327
+
+==============================================================================
+PHASE 7 — DISTRIBUTION-SHIFT GENERALIZATION
+==============================================================================
+shift=111111 mean_bal=0.87608 min=0.73624
+shift=222222 mean_bal=0.86918 min=0.72626
+shift=333333 mean_bal=0.87825 min=0.73034
+
+==============================================================================
+PHASE 8 — DISCOVERY FEATURE ABLATION
+==============================================================================
+dev_score          positive-rate mean=0.01091
+holder_score       positive-rate mean=0.00364
+liquidity_usd      positive-rate mean=0.00844
+lp_lock_score      positive-rate mean=0.01387
+
+==============================================================================
+PHASE 9 — FEATURE PERMUTATION DISRUPTION
+==============================================================================
+dev_score          balanced mean=0.70104
+holder_score       balanced mean=0.69240
+liquidity_usd      balanced mean=0.68082
+lp_lock_score      balanced mean=0.69969
+
+==============================================================================
+PHASE 10 — LABEL-SHUFFLE NULL
+==============================================================================
+null=00 balanced=0.50761
+null=01 balanced=0.51153
+null=02 balanced=0.50466
+null=03 balanced=0.50902
+null=04 balanced=0.50205
+null=05 balanced=0.50199
+null=06 balanced=0.50099
+null=07 balanced=0.50406
+null=08 balanced=0.49888
+null=09 balanced=0.48875
+
+==============================================================================
+PHASE 11 — FUNCTIONAL CLUSTERING
+==============================================================================
+Agreement threshold : 0.95
+Functional clusters : 5
+Cluster sizes       : [39, 3, 5, 1, 2]
+
+==============================================================================
+PHASE 12 — DISAGREEMENT CONCENTRATION
+==============================================================================
+Mean disagreement mass: 1.411800
+
+==============================================================================
+L9 FINAL FORENSIC SUMMARY
+==============================================================================
+Successful discoveries : 50/50
+Mean common accuracy   : 0.968484
+Mean balanced accuracy : 0.885849
+Pairwise mean agreement: 0.952599
+Pairwise minimum       : 0.723800
+Label-null mean        : 0.502954
+Null separation        : 0.382895
+Functional clusters    : 5
+
+==============================================================================
+L9 VERDICT
+==============================================================================
+L9-FUNCTIONAL-CONVERGENCE-SUPPORTED
+
+REPORT: /data/data/com.termux/files/home/BIRTH_EDGE/logs/evidence/level9/L9_MECHANISM_RECOVERY_20260822_083122.json

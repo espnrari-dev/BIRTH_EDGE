@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "system": "AEGIS Rule Miner V3 FAST VALIDATED",
+    "timestamp": "2026-08-22T05:16:18",
+    "standard_replications": 5,
+    "decoy_replications": 8,
+    "test_categories": 12
+  },
+  "tests": {
+    "basic_discovery": {
+      "runs": 5,
+      "both_features_recovered": 5,
+      "recovery_rate": 1.0,
+      "mean_accuracy": 0.9352,
+      "stdev_accuracy": 0.013084341787036857,
+      "rules": [
+        "((holder_score > 15.3502) AND (liquidity_usd > 11808.2))",
+        "((holder_score > 15.1278) AND (liquidity_usd > 13510.6))",
+        "((holder_score > 15.6522) AND (liquidity_usd > 11924.3))",
+        "((holder_score > 13.7559) AND (liquidity_usd > 13300.7))",
+        "((holder_score > 14.3779) AND (liquidity_usd > 12616.3))"
+      ]
+    },
+    "heldout_generalization": {
+      "runs": 5,
+      "mean_heldout_accuracy": 0.9388,
+      "stdev_heldout_accuracy": 0.010401922899156627,
+      "mean_train_test_gap": -0.004799999999999982,
+      "minimum": 0.925,
+      "maximum": 0.949
+    },
+    "random_label_falsification": {
+      "runs": 5,
+      "mean_accuracy": 0.5771706373863665,
+      "maximum_accuracy": 0.628,
+      "suspicious_high_accuracy_runs": 0
+    },
+    "correlated_decoy": {
+      "runs": 8,
+      "mean_accuracy": 0.9362499999999999,
+      "decoy_selection_rate": 0.0,
+      "true_pair_rate": 1.0,
+      "rules": [
+        "((holder_score > 15.1992) AND (liquidity_usd > 11379.3))",
+        "((holder_score > 15.9209) AND (liquidity_usd > 11914.6))",
+        "((holder_score > 15.2273) AND (liquidity_usd > 10431.9))",
+        "((holder_score > 14.2978) AND (liquidity_usd > 11837.9))",
+        "((holder_score > 14.889) AND (liquidity_usd > 12380.5))",
+        "((holder_score > 15.6862) AND (liquidity_usd > 10640.6))",
+        "((holder_score > 15.495) AND (liquidity_usd > 11515.1))",
+        "((holder_score > 14.0241) AND (liquidity_usd > 11619.3))"
+      ]
+    },
+    "distribution_shift": {
+      "runs": 5,
+      "mean_shifted_accuracy": 0.9438,
+      "stdev_shifted_accuracy": 0.00846758525200659,
+      "minimum": 0.933,
+      "maximum": 0.953
+    },
+    "hidden_confounder": {
+      "runs": 5,
+      "mean_accuracy": 0.895,
+      "rules": [
+        "(liquidity_usd > 16221.9)",
+        "(liquidity_usd > 17090.7)",
+        "((holder_score > 16.253) AND (liquidity_usd > 14722.6))",
+        "(liquidity_usd > 16097.5)",
+        "(liquidity_usd > 16718.7)"
+      ],
+      "warning": "Predictive success here does not establish causal identification."
+    },
+    "nonidentifiability": {
+      "runs": 5,
+      "mean_accuracy": 0.986,
+      "rules": [
+        "(holder_score > 7.59104)",
+        "(holder_score > 6.71763)",
+        "(holder_score > 8.34719)",
+        "(holder_score > 8.03672)",
+        "(holder_score > 7.86887)"
+      ],
+      "expected_behavior": "Prediction may succeed while latent causal mechanism remains non-identifiable."
+    },
+    "manipulation_cost": {
+      "rule": "((holder_score > 15.3479) AND (liquidity_usd > 12547.3))",
+      "accuracy": 0.918,
+      "hypothetical_cost": 17000,
+      "cost_model_is_synthetic": true
+    },
+    "counterfactual": {
+      "rule": "((holder_score > 15.5334) AND (liquidity_usd > 11718.2))",
+      "accuracy": 0.94,
+      "liquidity_sensitivity": 0.4666666666666667,
+      "holder_sensitivity": 0.5633333333333334,
+      "decoy_sensitivity": 0.0
+    },
+    "feature_ablation": {
+      "all_features": {
+        "accuracy": 0.9566666666666667,
+        "rule": "((holder_score > 15.6197) AND (liquidity_usd > 11851.4))",
+        "features": [
+          "liquidity_usd",
+          "holder_score",
+          "dev_score",
+          "lp_lock_score",
+          "tax_score",
+          "overall_score"
+        ]
+      },
+      "no_liquidity": {
+        "accuracy": 0.7433333333333333,
+        "rule": "(holder_score > 15.6197)",
+        "features": [
+          "holder_score",
+          "dev_score",
+          "lp_lock_score",
+          "tax_score",
+          "overall_score"
+        ]
+      },
+      "no_holder": {
+        "accuracy": 0.7233333333333334,
+        "rule": "(liquidity_usd > 11851.4)",
+        "features": [
+          "liquidity_usd",
+          "dev_score",
+          "lp_lock_score",
+          "tax_score",
+          "overall_score"
+        ]
+      },
+      "only_decoy": {
+        "accuracy": 0.5124518613607189,
+        "rule": "",
+        "features": [
+          "overall_score"
+        ]
+      },
+      "only_true_features": {
+        "accuracy": 0.9566666666666667,
+        "rule": "((holder_score > 15.6197) AND (liquidity_usd > 11851.4))",
+        "features": [
+          "liquidity_usd",
+          "holder_score"
+        ]
+      }
+    },
+    "adversarial_decoy": {
+      "runs": 8,
+      "mean_accuracy": 0.9858333333333333,
+      "decoy_selection_rate": 1.0,
+      "true_pair_rate": 0.0,
+      "rules": [
+        "(overall_score > 74.4838)",
+        "(overall_score > 75.6843)",
+        "(overall_score > 75.4425)",
+        "(overall_score > 48.6143)",
+        "(overall_score > 25.2179)",
+        "(overall_score > 73.0748)",
+        "(overall_score > 75.4422)",
+        "(overall_score > 75.5206)"
+      ]
+    },
+    "reproducibility": {
+      "identical": true,
+      "run1_rule": "((holder_score > 14.8207) AND (liquidity_usd > 11521))",
+      "run2_rule": "((holder_score > 14.8207) AND (liquidity_usd > 11521))",
+      "run1_accuracy": 0.94,
+      "run2_accuracy": 0.94
+    }
+  },
+  "summary": {
+    "discovery_status": "STRONG",
+    "generalization_status": "STRONG",
+    "noise_falsification_status": "PASS",
+    "decoy_status": "PROMISING",
+    "adversarial_decoy_selection_rate": 1.0,
+    "exact_reproducibility": true,
+    "replication_schedule": "5 standard seeds; 8 decoy/adversarial seeds",
+    "novelty_claim": "NOT AUTOMATICALLY ESTABLISHED"
+  },
+  "runtime_seconds": 2.1805121898651123
+}

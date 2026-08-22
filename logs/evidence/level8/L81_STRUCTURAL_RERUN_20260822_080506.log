@@ -1,0 +1,103 @@
+======================================================================
+BIRTH_EDGE — L8.1 STRUCTURAL IDENTIFIABILITY
+======================================================================
+World              : MULTI_SIGNAL
+Seeds              : 5
+Train              : 400
+Common test        : 987654
+Common test N      : 2000
+Miner              : UNMODIFIED
+Definitive test    : UNMODIFIED
+Discovery           : ONCE PER SEED
+
+[SEED 00] generating...
+[SEED 00] discovering...
+[SEED 00] discovered in 11.784s
+[SEED 00] RAW: ((dev_score > 18.6203) AND (liquidity_usd > 16898.5)) AND ((holder_score > 15.6674) AND (lp_lock_score > 15.3534))
+[SEED 00] CANONICAL: [('(dev_score > 18.6203)', None, None), ('(holder_score > 15.6674)', None, None), ('(liquidity_usd > 16898.5)', None, None), ('(lp_lock_score > 15.3534)', None, None)]
+[SEED 00] FEATURES: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[SEED 01] generating...
+[SEED 01] discovering...
+[SEED 01] discovered in 12.886s
+[SEED 01] RAW: ((dev_score > 15.4153) AND (holder_score > 15.7624)) AND ((liquidity_usd > 16281.9) AND (lp_lock_score > 14.6929))
+[SEED 01] CANONICAL: [('(dev_score > 15.4153)', None, None), ('(holder_score > 15.7624)', None, None), ('(liquidity_usd > 16281.9)', None, None), ('(lp_lock_score > 14.6929)', None, None)]
+[SEED 01] FEATURES: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[SEED 02] generating...
+[SEED 02] discovering...
+[SEED 02] discovered in 10.772s
+[SEED 02] RAW: ((dev_score > 17.7269) AND (holder_score > 17.7647)) AND ((dev_score > 17.7269) AND (lp_lock_score > 17.6163))
+[SEED 02] CANONICAL: [('(dev_score > 17.7269)', None, None), ('(holder_score > 17.7647)', None, None), ('(lp_lock_score > 17.6163)', None, None)]
+[SEED 02] FEATURES: ['dev_score', 'holder_score', 'lp_lock_score']
+[SEED 03] generating...
+[SEED 03] discovering...
+[SEED 03] discovered in 10.732s
+[SEED 03] RAW: ((holder_score > 15.4893) AND (dev_score > 15.6364)) AND ((liquidity_usd > 15807.5) AND (dev_score > 15.6364))
+[SEED 03] CANONICAL: [('(dev_score > 15.6364)', None, None), ('(holder_score > 15.4893)', None, None), ('(liquidity_usd > 15807.5)', None, None)]
+[SEED 03] FEATURES: ['dev_score', 'holder_score', 'liquidity_usd']
+[SEED 04] generating...
+[SEED 04] discovering...
+[SEED 04] discovered in 10.469s
+[SEED 04] RAW: ((holder_score > 16.8129) AND (dev_score > 15.0524)) AND ((lp_lock_score > 16.3747) AND (liquidity_usd > 18203))
+[SEED 04] CANONICAL: [('(dev_score > 15.0524)', None, None), ('(holder_score > 16.8129)', None, None), ('(liquidity_usd > 18203)', None, None), ('(lp_lock_score > 16.3747)', None, None)]
+[SEED 04] FEATURES: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+Generating COMMON TEST SET seed=987654...
+[SEED 00] common-test accuracy=0.980000 balanced=0.838710
+[SEED 01] common-test accuracy=0.989500 balanced=0.930386
+[SEED 02] common-test accuracy=0.945500 balanced=0.782662
+[SEED 03] common-test accuracy=0.940500 balanced=0.926861
+[SEED 04] common-test accuracy=0.975500 balanced=0.802419
+
+======================================================================
+L8.1 STRUCTURAL FORENSICS
+======================================================================
+Successful discoveries : 5/5
+Raw unique rules      : 5
+Canonical unique rules: 5
+
+FEATURE STABILITY
+  dev_score          1.000
+  holder_score       1.000
+  liquidity_usd      0.800
+  lp_lock_score      0.800
+
+STRUCTURAL AGREEMENT
+  Mean Jaccard         : 0.000000
+  Minimum Jaccard      : 0.000000
+
+FUNCTIONAL AGREEMENT
+  Mean prediction agreement   : 0.949900
+  Minimum prediction agreement: 0.893000
+
+COMMON TEST PERFORMANCE
+  Accuracy mean       : 0.966200
+  Accuracy min        : 0.940500
+  Accuracy max        : 0.989500
+  Balanced mean       : 0.856207
+  Balanced min        : 0.782662
+  Balanced max        : 0.930386
+
+THRESHOLD STABILITY
+  dev_score          N/A
+  holder_score       N/A
+  liquidity_usd      N/A
+  lp_lock_score      N/A
+
+CHECKS
+  discovery_replication           : PASS
+  raw_string_identity             : FAIL
+  canonical_identity              : FAIL
+  feature_stability               : PASS
+  structural_jaccard              : FAIL
+  structural_jaccard_floor        : FAIL
+  functional_agreement            : FAIL
+  functional_agreement_floor      : FAIL
+  cross_seed_performance          : PASS
+  structural_identifiability      : FAIL
+
+======================================================================
+L8.1 VERDICT
+======================================================================
+L8.1-INVESTIGATE
+
+REPORT: /data/data/com.termux/files/home/BIRTH_EDGE/logs/evidence/level8/L81_STRUCTURAL_20260822_080603.json

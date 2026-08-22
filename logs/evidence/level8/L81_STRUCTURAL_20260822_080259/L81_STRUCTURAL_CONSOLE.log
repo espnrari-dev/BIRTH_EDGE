@@ -1,0 +1,43 @@
+======================================================================
+BIRTH_EDGE — L8.1 STRUCTURAL IDENTIFIABILITY
+======================================================================
+World              : MULTI_SIGNAL
+Seeds              : 5
+Train              : 400
+Common test        : 987654
+Miner              : UNMODIFIED
+Definitive test     : UNMODIFIED
+Discovery           : ONCE PER SEED
+
+[SEED 00] generating...
+[SEED 00] discovering...
+[SEED 00] discovered in 10.213s
+[SEED 00] RAW: ((dev_score > 18.6203) AND (liquidity_usd > 16898.5)) AND ((holder_score > 15.6674) AND (lp_lock_score > 15.3534))
+[SEED 00] CANONICAL: [('(dev_score > 18.6203)', None, None), ('(holder_score > 15.6674)', None, None), ('(liquidity_usd > 16898.5)', None, None), ('(lp_lock_score > 15.3534)', None, None)]
+[SEED 00] FEATURES: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[SEED 01] generating...
+[SEED 01] discovering...
+[SEED 01] discovered in 10.715s
+[SEED 01] RAW: ((dev_score > 15.4153) AND (holder_score > 15.7624)) AND ((liquidity_usd > 16281.9) AND (lp_lock_score > 14.6929))
+[SEED 01] CANONICAL: [('(dev_score > 15.4153)', None, None), ('(holder_score > 15.7624)', None, None), ('(liquidity_usd > 16281.9)', None, None), ('(lp_lock_score > 14.6929)', None, None)]
+[SEED 01] FEATURES: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+[SEED 02] generating...
+[SEED 02] discovering...
+[SEED 02] discovered in 11.172s
+[SEED 02] RAW: ((dev_score > 17.7269) AND (holder_score > 17.7647)) AND ((dev_score > 17.7269) AND (lp_lock_score > 17.6163))
+[SEED 02] CANONICAL: [('(dev_score > 17.7269)', None, None), ('(holder_score > 17.7647)', None, None), ('(lp_lock_score > 17.6163)', None, None)]
+[SEED 02] FEATURES: ['dev_score', 'holder_score', 'lp_lock_score']
+[SEED 03] generating...
+[SEED 03] discovering...
+[SEED 03] discovered in 10.994s
+[SEED 03] RAW: ((holder_score > 15.4893) AND (dev_score > 15.6364)) AND ((liquidity_usd > 15807.5) AND (dev_score > 15.6364))
+[SEED 03] CANONICAL: [('(dev_score > 15.6364)', None, None), ('(holder_score > 15.4893)', None, None), ('(liquidity_usd > 15807.5)', None, None)]
+[SEED 03] FEATURES: ['dev_score', 'holder_score', 'liquidity_usd']
+[SEED 04] generating...
+[SEED 04] discovering...
+[SEED 04] discovered in 11.322s
+[SEED 04] RAW: ((holder_score > 16.8129) AND (dev_score > 15.0524)) AND ((lp_lock_score > 16.3747) AND (liquidity_usd > 18203))
+[SEED 04] CANONICAL: [('(dev_score > 15.0524)', None, None), ('(holder_score > 16.8129)', None, None), ('(liquidity_usd > 18203)', None, None), ('(lp_lock_score > 16.3747)', None, None)]
+[SEED 04] FEATURES: ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+Generating COMMON TEST SET seed=987654...

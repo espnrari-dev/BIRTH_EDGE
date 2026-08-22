@@ -35,9 +35,3 @@ BEACON_SYMBOLS = ["WIF", "BONK", "POPCAT", "BRETT", "DEGEN", "PEPE", "MOG", "BOD
 
 # Database paths
 DATABASE_PATH = "data/birth_edge.db"   # main outcome DB (legacy)
-
-# Real-time platform ingestion endpoints (placeholders – replace with your keys)
-HELIUS_WS_URL = "wss://mainnet.helius-rpc.com/?api-key=YOUR_KEY"
-QUICKNODE_WS_URL = "wss://your-quicknode-endpoint"
-SUI_RPC_WS = "wss://fullnode.mainnet.sui.io:443"
-XRPL_WSS = "wss://xrplcluster.com"
