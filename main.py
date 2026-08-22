@@ -1,109 +1,103 @@
-import asyncio
-import os
-import time
-import traceback
+import asyncio, os, traceback, inspect
 from datetime import datetime
-
 os.makedirs("data", exist_ok=True)
-os.makedirs("logs", exist_ok=True)
-
-print(f"[{datetime.now()}] BIRTH_EDGE starting REAL...")
-
-from utils import fetch_json_sync, log_jsonl, now_str
+print(f"[{datetime.now()}] BIRTH_EDGE REAL + IPO FIXED v4...")
+from utils import fetch_json_sync, now_str
 from config import DEX_LATEST_URL, DEX_TOKEN_URL, LIQ_THRESHOLD, POLL_INTERVAL_FILTERED
 from filters import run_all_filters
-from scoring import record_token as record_to_birth
-from learning import record_token as record_to_learning
+import scoring, learning
+from ipo import ipo_loop, init_ipo_db
+print("filters:", inspect.signature(scoring.record_token if hasattr(scoring,'record_token') else learning.record_token))
+try: getattr(scoring,'init_db',lambda:None)()
+except: pass
+try: getattr(learning,'init_learning_db',lambda:None)()
+except: pass
+try: init_ipo_db()
+except: pass
 
-try:
-    from database import init_db
-    from learning import init_learning_db
-    init_db()
-    init_learning_db()
-    print("DBs initialized")
-except Exception as e:
-    print(f"DB init error: {e}")
-    traceback.print_exc()
+def make_pair_url(addr):
+    return DEX_TOKEN_URL.format(addr) if '{}' in DEX_TOKEN_URL else f"{DEX_TOKEN_URL.rstrip('/')}/{addr}"
 
-def fetch_filtered_tokens():
+async def call_filters(addr, chain, liq, pair_obj):
+    # filters.py now is dict version: {"addr":..., "chain":..., "liquidity_usd":...}
+    token_data = {
+        "addr": addr,
+        "address": addr,
+        "tokenAddress": addr,
+        "chain": chain,
+        "chainId": chain,
+        "liquidity_usd": liq,
+        "liquidity": {"usd": liq},
+        "pair": pair_obj,
+        "baseToken": pair_obj.get('baseToken',{}) if isinstance(pair_obj,dict) else {},
+        "symbol": pair_obj.get('baseToken',{}).get('symbol') if isinstance(pair_obj,dict) and pair_obj.get('baseToken') else pair_obj.get('symbol','?') if isinstance(pair_obj,dict) else '?'
+    }
+    # also add all pair fields into token_data for filters that read directly
+    if isinstance(pair_obj, dict):
+        token_data.update(pair_obj)
+    return await run_all_filters(token_data)
+
+def call_record(mod, addr, chain, symbol, liq, result):
+    # try dict version, then 5-arg version
     try:
-        r = fetch_json_sync(DEX_LATEST_URL)
-        if not r:
-            return []
-        tokens = []
-        for t in r[:20]:
-            addr = t.get('tokenAddress')
-            if not addr:
-                continue
-            details = fetch_json_sync(DEX_TOKEN_URL.format(addr))
-            if not details:
-                continue
-            pairs = details.get('pairs', [])
-            if not pairs:
-                continue
-            liq = float(pairs[0].get('liquidity', {}).get('usd', 0) or 0)
-            if liq > LIQ_THRESHOLD:
-                chain = t.get('chainId', 'solana')
-                symbol = t.get('symbol', '?')
-                creator = None
-                try:
-                    creator = pairs[0].get('baseToken', {}).get('address')
-                except:
-                    pass
-                tokens.append({
-                    "addr": addr,
-                    "chain": chain,
-                    "symbol": symbol,
-                    "liquidity_usd": liq,
-                    "creator": creator,
-                    "discovered_at": now_str(),
-                })
-        return tokens
-    except Exception as e:
-        print(f"fetch_filtered error: {e}")
-        traceback.print_exc()
-        return []
-
-async def process_token(token):
-    try:
-        print(f"[{now_str()}] Processing {token.get('symbol')} {token.get('addr')[:8]} liq ${token.get('liquidity_usd'):,.0f}")
-        filtered = await run_all_filters(token)
-        final_data = filtered if "overall_score" in filtered else {**token, **filtered}
-        if filtered.get("pass"):
-            print(f"[{now_str()}] PASS {token.get('symbol')} overall {final_data.get('overall_score')} holder {final_data.get('holder_score')}")
-        else:
-            print(f"[{now_str()}] FILTERED {token.get('symbol')} reason {filtered.get('reason','score')} overall {final_data.get('overall_score','?')}")
+        # new dict api
+        payload = {
+            "addr": addr, "address": addr, "chain": chain, "symbol": symbol,
+            "liquidity_usd": liq, "overall_score": result.get('overall_score'),
+            "holder_score": result.get('holder_score'),
+            "status": "PASS" if result.get('pass') else "FILTERED",
+            "result": result
+        }
+        payload.update(result)
+        return mod.record_token(payload)
+    except TypeError:
         try:
-            record_to_birth(final_data)
-            record_to_learning(final_data)
-            print(f"[{now_str()}] RECORDED to both DBs")
-        except Exception as e:
-            print(f"record_token error: {e}")
-            traceback.print_exc()
-    except Exception as e:
-        print(f"process_token error: {e}")
-        traceback.print_exc()
+            return mod.record_token(addr, chain, symbol, liq, result)
+        except TypeError:
+            return mod.record_token({"addr":addr,"chain":chain,"symbol":symbol,"liq":liq,"result":result})
 
-async def main_loop():
-    print(f"[{now_str()}] REAL BIRTH_FILTERED loop starting, threshold ${LIQ_THRESHOLD}")
-    seen = set()
+async def birth_filtered_loop():
+    seen=set()
+    print(f"[{now_str()}] BIRTH_FILTERED hunting ${LIQ_THRESHOLD}+")
     while True:
         try:
-            tokens = fetch_filtered_tokens()
-            new_tokens = [t for t in tokens if t['addr'] not in seen]
-            if new_tokens:
-                print(f"[{now_str()}] Found {len(new_tokens)} NEW filtered tokens")
-                for t in new_tokens:
-                    seen.add(t['addr'])
-                    await process_token(t)
-                    await asyncio.sleep(2)
-            else:
-                print(f"[{now_str()}] Watching {len(seen)} seen, no new, alive")
-            await asyncio.sleep(POLL_INTERVAL_FILTERED)
+            data=fetch_json_sync(DEX_LATEST_URL)
+            if not data:
+                await asyncio.sleep(POLL_INTERVAL_FILTERED); continue
+            tokens=data if isinstance(data,list) else data.get('tokens',[]) or data.get('pairs',[]) or []
+            new_count=0
+            for t in tokens:
+                addr=t.get('tokenAddress') or t.get('address') or t.get('baseToken',{}).get('address')
+                if not addr or addr in seen: continue
+                liq=0; pair_obj=None
+                if 'liquidity' in t and isinstance(t.get('liquidity'),dict):
+                    liq=float(t.get('liquidity',{}).get('usd',0) or 0); pair_obj=t
+                elif 'liquidity_usd' in t:
+                    liq=float(t.get('liquidity_usd',0) or 0); pair_obj=t
+                else:
+                    pd=fetch_json_sync(make_pair_url(addr))
+                    if not pd: continue
+                    pairs=pd.get('pairs',[]) if isinstance(pd,dict) else pd
+                    if not pairs: continue
+                    pair_obj=pairs[0]
+                    liq=float(pair_obj.get('liquidity',{}).get('usd',0) or 0)
+                if liq < LIQ_THRESHOLD: continue
+                seen.add(addr); new_count+=1
+                chain=pair_obj.get('chainId','solana') if pair_obj and isinstance(pair_obj,dict) else 'solana'
+                symbol=pair_obj.get('baseToken',{}).get('symbol') if pair_obj and isinstance(pair_obj,dict) else t.get('symbol','?')
+                result=await call_filters(addr, chain, liq, pair_obj or t)
+                status="PASS" if result.get('pass') else "FILTERED"
+                print(f"[{now_str()}] {status} {symbol} {addr[:8]} liq ${liq:,.0f} overall {result.get('overall_score')} {result.get('reason','')}")
+                call_record(scoring, addr, chain, symbol, liq, result)
+                call_record(learning, addr, chain, symbol, liq, result)
+            if new_count==0:
+                print(f"[{now_str()}] Watching {len(seen)} seen, no new >${LIQ_THRESHOLD}")
         except Exception as e:
-            print(f"main loop error: {e}")
-            traceback.print_exc()
-            await asyncio.sleep(10)
+            print(f"[{now_str()}] birth error {e}"); traceback.print_exc()
+        await asyncio.sleep(POLL_INTERVAL_FILTERED)
 
-if __name__ == "__main__":
-    asyncio.run(main_loop())
+async def dual():
+    await asyncio.gather(birth_filtered_loop(), ipo_loop())
+
+if __name__=="__main__":
+    asyncio.run(dual())
