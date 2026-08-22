@@ -1,0 +1,12 @@
+258d44c | 2026-08-22 01:15:17 -0400 | SIA v1 locked - three loops spine, controlled causal test V3, 10 schools, architect track, Level5 live evidence BLUECHIP 177x
+360494d | 2026-08-21 23:47:00 -0400 | SECURE: remove data/logs/dbs from public - keep code only
+2f2816f | 2026-08-21 23:08:53 -0400 | chore: gitignore logs/db/cache - keep repo clean
+58e9052 | 2026-08-21 23:02:27 -0400 | readme: clean live log
+be1b79a | 2026-08-21 23:00:45 -0400 | readme: live receipt
+33b32c8 | 2026-08-21 22:59:16 -0400 | readme: live log with receipt
+096603e | 2026-08-21 22:58:35 -0400 | readme: add real live log
+826d650 | 2026-08-21 22:57:33 -0400 | readme: live logs
+7aacbe9 | 2026-08-21 22:55:01 -0400 | fix v4: filters dict API + DEX_TOKEN_URL .format() + dual alive
+c74c323 | 2026-08-21 22:41:41 -0400 | v0.1c live 35 total PASS Words 85.48 7k - fixed symbol ?
+2772035 | 2026-08-21 22:38:07 -0400 | v0.1b live total 33 avg 55.95 max 90.48 - still alive 22:36
+d454dd4 | 2026-08-21 21:57:10 -0400 | v0.1 live total 20 max 90.48 4 PASS 00k+ liq on Termux - 2026-08-21

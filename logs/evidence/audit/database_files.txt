@@ -1,0 +1,4 @@
+/data/data/com.termux/files/home/BIRTH_EDGE/data/birth_edge.db
+/data/data/com.termux/files/home/BIRTH_EDGE/data/cognition.db
+/data/data/com.termux/files/home/BIRTH_EDGE/data/learning.db
+/data/data/com.termux/files/home/BIRTH_EDGE/data/learning_backup_1787363141.db

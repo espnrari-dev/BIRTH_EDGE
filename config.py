@@ -1,0 +1,37 @@
+# Public API configuration – no private keys needed.
+POLL_INTERVAL_BIRTH = 20
+POLL_INTERVAL_FILTERED = 30
+POLL_INTERVAL_KATANA = 15
+POLL_INTERVAL_BEACON = 5
+
+# Public endpoints
+DEX_LATEST_URL = "https://api.dexscreener.com/token-profiles/latest/v1"
+DEX_TOKEN_URL = "https://api.dexscreener.com/latest/dex/tokens/{}"
+DEX_SEARCH_URL = "https://api.dexscreener.com/latest/dex/search/?q={}"
+SOLANA_PUBLIC_RPC = "https://api.mainnet-beta.solana.com"
+JUPITER_QUOTE_URL = "https://lite-api.jup.ag/swap/v1/quote"
+JUPITER_PRICE_URL = "https://api.jup.ag/price/v2?ids={}"
+RUGCHECK_URL = "https://api.rugcheck.xyz/v1/check/{}"
+SOLSCAN_URL = "https://public-api.solscan.io/account/tokens?address={}&limit=10"
+
+# Thresholds
+LIQ_THRESHOLD = 5000
+KATANA_GAP_THRESHOLD = 1.0
+BEACON_MAX_GAP = 5.0
+TAX_MAX_PERCENT = 10
+TOP10_HOLDERS_MAX = 35
+DEV_HOLDER_MAX = 5
+SCORE_MIN_BUY = 75
+
+# Scoring weights (sum = 100)
+SCORE_LIQ_WEIGHT = 20
+SCORE_HOLDERS_WEIGHT = 25
+SCORE_DEV_WEIGHT = 20
+SCORE_LP_WEIGHT = 20
+SCORE_TAX_WEIGHT = 15
+
+# Beacon symbols
+BEACON_SYMBOLS = ["WIF", "BONK", "POPCAT", "BRETT", "DEGEN", "PEPE", "MOG", "BODEN"]
+
+# Database paths
+DATABASE_PATH = "data/birth_edge.db"   # main outcome DB (legacy)

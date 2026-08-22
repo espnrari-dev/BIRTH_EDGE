@@ -1,0 +1,13 @@
+/data/data/com.termux/files/home/BIRTH_EDGE/__pycache__/full_novelty_gauntlet.cpython-313.pyc
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2_results.json
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/evidence/LEVEL5_2026-08-22.json
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_gauntlet_results.json
+/data/data/com.termux/files/home/BIRTH_EDGE/test_run.log

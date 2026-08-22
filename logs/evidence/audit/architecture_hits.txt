@@ -1,0 +1,504 @@
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:1:{"time": "2026-08-21 16:12:48", "addr": "Pb3HT6fm7zVKohpMa9vLLmLXZkf6wd6GYtPnYC6pump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:2:{"time": "2026-08-21 16:12:49", "addr": "8W1SKUSjiEF2Vxdn1UGrCP4RfAjy7CDMwour9GcNpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:3:{"time": "2026-08-21 16:12:49", "addr": "AtFinRzec6EEJnrbdYxWr6eiM9zPasRUaSfZxiVEpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:4:{"time": "2026-08-21 16:12:49", "addr": "B1jVtooQKCZfTBWGvgFuve41DeKVYkdorhPYBJSQmfMS", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:5:{"time": "2026-08-21 16:12:49", "addr": "4vYNt561GoSr4MJMJo1DTqMw6qVykncxw1E78DiXpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:6:{"time": "2026-08-21 16:12:49", "addr": "HFzTSPcJGP1LTh4GZS43TB98fjjTTxFDs5iKuhywpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:7:{"time": "2026-08-21 16:12:50", "addr": "AC8jUD8j1neSZzW3oZgFZ1dQHhqdNoX4f9gV1SRHpump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:8:{"time": "2026-08-21 16:12:50", "addr": "4yro2xbCxMFVvygCsj5FZMgZnVCb8EqcbPGTbSGCgDBc", "reason": "mint_freeze"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:9:{"time": "2026-08-21 16:12:50", "addr": "4LE7r92AiWk2mQJe9m93GFs8aSKvDqptDAJAFpkypump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:10:{"time": "2026-08-21 16:12:51", "addr": "8kCapJG7yq889F4VVjshJ3Miv9YpYPoSg9yfppKPpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:11:{"time": "2026-08-21 16:12:51", "addr": "41G6CueAmnjs6hYWRsgCtQmnXRjnwYJK7kkfpkjKCL1P", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:12:{"time": "2026-08-21 16:12:51", "addr": "HBLHdFyHxj9Ts3xhc8kDvF4LmY2VyFt2Y9Twsbefpump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:13:{"time": "2026-08-21 16:12:51", "addr": "4MjMAhkc7aGxoa4gvBGgq2AcxWHZkVj9pW1VsZaDpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:14:{"time": "2026-08-21 16:12:51", "addr": "vmhpWbyux2fBpsuajgzgERmRp2xcAL3NWZ3RxKJpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:15:{"time": "2026-08-21 16:33:02", "addr": "2Z8UzKqHXTVUX8XuRB1vtqLndG9unatgYqwU1VTEpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:16:{"time": "2026-08-21 16:33:03", "addr": "EhWu6QbyMzkK1fYTHRqrRnSLFEyPdenwvWkw5GQXpump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:17:{"time": "2026-08-21 16:33:03", "addr": "0x198A088F53fBdAB6f39B046aDB3c1EF8a9CD7777", "reason": null}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:18:{"time": "2026-08-21 16:33:04", "addr": "7U6ggMrnprgUZfhyW5Rhm8gVRqqzj6eEMHwG75wjpump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:19:{"time": "2026-08-21 16:33:04", "addr": "BcZd8o95jUnremRizyjLBG8NNToQZEmYiYVd3psxpump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:20:{"time": "2026-08-21 16:33:05", "addr": "Gv1wtMM81TZzfcX5QCAGi1weNhXJMC8dw1JBxaATpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:21:{"time": "2026-08-21 16:33:05", "addr": "AtVqUAK8eenvzaZ6Po6bJq7wYhdBjbrmYAySt4fApump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:22:{"time": "2026-08-21 16:33:05", "addr": "5VWoDGaVyGL9ADfdQRmndw2xRf5nYCrjejx5nbmEgiUc", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:23:{"time": "2026-08-21 16:33:05", "addr": "0x84Bb2E060D4772DA260BaE34328332A6564B2eC5", "reason": null}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:24:{"time": "2026-08-21 16:33:05", "addr": "0x4EE092E12F1ca20684F416008f14BAa1e86CC660", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:25:{"time": "2026-08-21 16:33:06", "addr": "8W1SKUSjiEF2Vxdn1UGrCP4RfAjy7CDMwour9GcNpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:26:{"time": "2026-08-21 16:33:06", "addr": "AtFinRzec6EEJnrbdYxWr6eiM9zPasRUaSfZxiVEpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:27:{"time": "2026-08-21 16:34:07", "addr": "3ePJxsjRohBHd8eD13beeVKooMkHosWGuufijEcqpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:28:{"time": "2026-08-21 16:34:07", "addr": "4gifwoa1Q1VnEhqSi4ggevpAFtKQaAyc6ZAHqqsppump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:29:{"time": "2026-08-21 16:34:09", "addr": "FzG39QkGYRBv6tjpcKFBxfEXpZheUH78mqGTCnn5pump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:30:{"time": "2026-08-21 16:36:10", "addr": "CGNnTX42a2EPDi3KkM8iWL7Rtud6waRQNP3y8GX2pump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:31:{"time": "2026-08-21 16:36:10", "addr": "0xE831AdB63e7De5CdD9d49eF130ea037500c8FEe1", "reason": null}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:32:{"time": "2026-08-21 16:39:13", "addr": "Bn1Wy74owcLz85BAmb5VVHh22Rf7BDuSf9JJKdvypump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:33:{"time": "2026-08-21 16:39:13", "addr": "J1T2WhGqaELu1PdsrPNRmAF5dSUaUNBDQgSwwWMepump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:34:{"time": "2026-08-21 16:43:06", "addr": "Bn1Wy74owcLz85BAmb5VVHh22Rf7BDuSf9JJKdvypump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:35:{"time": "2026-08-21 16:43:06", "addr": "J1T2WhGqaELu1PdsrPNRmAF5dSUaUNBDQgSwwWMepump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:36:{"time": "2026-08-21 16:43:07", "addr": "CGNnTX42a2EPDi3KkM8iWL7Rtud6waRQNP3y8GX2pump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:37:{"time": "2026-08-21 16:43:07", "addr": "0xE831AdB63e7De5CdD9d49eF130ea037500c8FEe1", "reason": null}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:38:{"time": "2026-08-21 16:43:07", "addr": "3ePJxsjRohBHd8eD13beeVKooMkHosWGuufijEcqpump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:39:{"time": "2026-08-21 16:43:08", "addr": "4gifwoa1Q1VnEhqSi4ggevpAFtKQaAyc6ZAHqqsppump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:40:{"time": "2026-08-21 16:43:08", "addr": "FzG39QkGYRBv6tjpcKFBxfEXpZheUH78mqGTCnn5pump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:41:{"time": "2026-08-21 16:43:09", "addr": "2Z8UzKqHXTVUX8XuRB1vtqLndG9unatgYqwU1VTEpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:42:{"time": "2026-08-21 16:43:10", "addr": "EhWu6QbyMzkK1fYTHRqrRnSLFEyPdenwvWkw5GQXpump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:43:{"time": "2026-08-21 16:43:10", "addr": "0x198A088F53fBdAB6f39B046aDB3c1EF8a9CD7777", "reason": null}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:44:{"time": "2026-08-21 16:43:10", "addr": "7U6ggMrnprgUZfhyW5Rhm8gVRqqzj6eEMHwG75wjpump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:45:{"time": "2026-08-21 16:43:11", "addr": "BcZd8o95jUnremRizyjLBG8NNToQZEmYiYVd3psxpump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:46:{"time": "2026-08-21 16:43:11", "addr": "Gv1wtMM81TZzfcX5QCAGi1weNhXJMC8dw1JBxaATpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:47:{"time": "2026-08-21 16:43:12", "addr": "AtVqUAK8eenvzaZ6Po6bJq7wYhdBjbrmYAySt4fApump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:48:{"time": "2026-08-21 16:44:12", "addr": "5VWoDGaVyGL9ADfdQRmndw2xRf5nYCrjejx5nbmEgiUc", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:49:{"time": "2026-08-21 16:45:13", "addr": "H6fsSLtBDgsTsJFMfYxDMaFvZq1WxGn7dqQMasfWqbj2", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:50:{"time": "2026-08-21 16:45:16", "addr": "H6fsSLtBDgsTsJFMfYxDMaFvZq1WxGn7dqQMasfWqbj2", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:51:{"time": "2026-08-21 16:47:14", "addr": "HdPTcUh5FHyCWob9h19F5SLDyAtLSn1Nu9Rb85hApump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:52:{"time": "2026-08-21 16:47:18", "addr": "HdPTcUh5FHyCWob9h19F5SLDyAtLSn1Nu9Rb85hApump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:53:{"time": "2026-08-21 16:48:15", "addr": "G9tWifqnZbC6KsagcbM4MgiPbwU2X5a9cZDDwomJpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:54:{"time": "2026-08-21 16:48:15", "addr": "0xB2000000000000000000000c2aF1252324e08A01", "reason": null}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:55:{"time": "2026-08-21 16:48:18", "addr": "G9tWifqnZbC6KsagcbM4MgiPbwU2X5a9cZDDwomJpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:56:{"time": "2026-08-21 16:48:18", "addr": "0xB2000000000000000000000c2aF1252324e08A01", "reason": null}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:57:{"time": "2026-08-21 16:49:16", "addr": "GUavFiD23GThc3bJHS2ct5HpwN25Fi2UGaYfQPUbpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:58:{"time": "2026-08-21 16:49:16", "addr": "Bu8DMG7owbCfLYd1SQhS1TAw8cZUK6nEirDK23J2pump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:59:{"time": "2026-08-21 16:49:19", "addr": "GUavFiD23GThc3bJHS2ct5HpwN25Fi2UGaYfQPUbpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:60:{"time": "2026-08-21 16:49:19", "addr": "Bu8DMG7owbCfLYd1SQhS1TAw8cZUK6nEirDK23J2pump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:61:{"time": "2026-08-21 17:29:09", "addr": "oZPbdNqzFbURtZEjZspXtf7txDGJaU7hAg5qwVapump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:62:{"time": "2026-08-21 17:29:09", "addr": "9as2ARtHL7S7jtLfpuYPwsKajYYpYJcj449hJSnXpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:63:{"time": "2026-08-21 17:29:09", "addr": "F8sn2Gw9WjL9KAKtuRxtdxiDQo1fxvubU21Zzprrpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:64:{"time": "2026-08-21 17:29:09", "addr": "87QtDtqHj1uatfmuwF7oBcmMaUfFpAUE7NNrpbkWpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:65:{"time": "2026-08-21 17:29:10", "addr": "0xb200000000000000000000ae0D77061d59BcC201", "reason": null}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:66:{"time": "2026-08-21 17:29:10", "addr": "AiAiqyZUbbxxzddfg4xHKVwJk9H9s5sQrqPkXDfApump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:67:{"time": "2026-08-21 17:29:11", "addr": "GgpomCu62JiqfkY1FGv3N9BMxGoPivQHc6CYSdsApump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:68:{"time": "2026-08-21 17:29:11", "addr": "0x8977ce5EFC36e3a33A7e53b0eAa2B9562018A34c", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:69:{"time": "2026-08-21 17:29:11", "addr": "0xcCfB3E9Ae9C0fB9D45Bf796086DbB834E043A9dE", "reason": null}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:70:{"time": "2026-08-21 17:29:11", "addr": "BUP7QbZwo3MdapprJptHbobcSejUsFWwUbNvmBx6pump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:71:{"time": "2026-08-21 17:29:12", "addr": "GrABufBahfAdJYNFzvtQDpBbcAot3sNVz1wdpeh9pump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:72:{"time": "2026-08-21 17:29:12", "addr": "0x7254c04B065A08382B93c3E30B1e01B78b76C47f", "reason": null}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:73:{"time": "2026-08-21 17:29:13", "addr": "4XiVfs227ZGsXLyQU25n1gL7onSbWTYJVCVHw5Kqpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:74:{"time": "2026-08-21 17:31:14", "addr": "0x7039a02aff58a27821748fd2c9a8d92de83487cc", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:75:{"time": "2026-08-21 17:33:14", "addr": "3fCo8VHWbfkD7dxdJYogX8e1AAqeb3VXPniyBpQnpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:76:{"time": "2026-08-21 17:33:15", "addr": "EpY9EurXwPnQbVM6fk84goG1kBf9K3GZRCuqgV6Tpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:77:{"time": "2026-08-21 17:37:16", "addr": "AGqycBkLFf79WbwgFevpfQQWF7kmPm7VJn4M8a8epump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:78:{"time": "2026-08-21 17:37:16", "addr": "DSCmk8U6qNJptKM4me7QN2rAq2bmz5uQpT2mTWtGpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:79:{"time": "2026-08-21 17:40:18", "addr": "7Asbbd2ckuYCZbufPeaP2zaJZngEp3keKPgF7LUWjRTJ", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:80:{"time": "2026-08-21 17:42:19", "addr": "AwMXfmYXrFZeJhAYSVuJHVBXzrztFVeiV4ng8S5mpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:81:{"time": "2026-08-21 17:44:20", "addr": "0xb200000000000000000000f707554350ddc4eD01", "reason": null}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:82:{"time": "2026-08-21 17:45:20", "addr": "F2Q3gTKvY3KemFLXb33Unt1QFtt1n8H54kKFqnqjpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:83:{"time": "2026-08-21 17:45:20", "addr": "GBEVt9gVY7t6PkWPz21thH3wMSvTMppyyVi87qSHpump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:84:{"time": "2026-08-21 17:45:21", "addr": "ApueSYBFwvoWSq3mk3UzFQXZXmNs9gRkqouJ9aQbpump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:85:{"time": "2026-08-21 17:50:54", "addr": "BF5N1yvoLWEGNfEKx9tfW9yMWZYwWr2FkXS61eV7pump", "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:86:{"time": "2026-08-21 17:50:56", "addr": "DjeQr3Mf6sBxjkyDeRxogkPh4H8q3mZd1i6YVMeKpump", "reason": "holders"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/rejected_tokens.jsonl:87:{"time": "2026-08-21 17:50:56", "addr": "0xb200000000000000000000a4dc6ff0a4d7a18b01", "reason": null}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/decisions.jsonl:1:{"timestamp": "2026-08-21 16:33:02", "addr": "0xF7Aa4F4300e33C8B9Cb6a11f0e4445A494aef388", "chain": "robinhood", "symbol": "?", "overall_score": 75, "ml_pump_probability": 0.5, "agent_role": "unknown", "agent_confidence": 0.5, "relevant_wisdom_count": 0, "final_decision_score": 52.75, "label": "NEUTRAL"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/decisions.jsonl:2:{"timestamp": "2026-08-21 16:33:05", "addr": "0x00b849ba5Ea4e7D8F37f64c552e2e5d71e1037cC", "chain": "robinhood", "symbol": "?", "overall_score": 75, "ml_pump_probability": 0.5, "agent_role": "unknown", "agent_confidence": 0.5, "relevant_wisdom_count": 0, "final_decision_score": 52.75, "label": "NEUTRAL"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/decisions.jsonl:3:{"timestamp": "2026-08-21 16:33:06", "addr": "0x3c7Bbb32D34D27E00267DCd4cC1ECdF940929303", "chain": "ethereum", "symbol": "?", "overall_score": 75, "ml_pump_probability": 0.5, "agent_role": "unknown", "agent_confidence": 0.5, "relevant_wisdom_count": 0, "final_decision_score": 52.75, "label": "NEUTRAL"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/decisions.jsonl:4:{"timestamp": "2026-08-21 16:43:09", "addr": "0xF7Aa4F4300e33C8B9Cb6a11f0e4445A494aef388", "chain": "robinhood", "symbol": "?", "overall_score": 75, "ml_pump_probability": 0.5, "agent_role": "unknown", "agent_confidence": 0.5, "relevant_wisdom_count": 0, "final_decision_score": 52.75, "label": "NEUTRAL"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/decisions.jsonl:5:{"timestamp": "2026-08-21 17:29:09", "addr": "0x7e2D64EBEA7186f8f5d7c1f66f9fE236FF346cB8", "chain": "robinhood", "symbol": "?", "overall_score": 75, "ml_pump_probability": 0.5, "agent_role": "unknown", "agent_confidence": 0.5, "relevant_wisdom_count": 0, "final_decision_score": 52.75, "label": "NEUTRAL"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/decisions.jsonl:6:{"timestamp": "2026-08-21 17:29:10", "addr": "0x54F5B4464f7C404497e1fb065a0Af6ac388D76B0", "chain": "robinhood", "symbol": "?", "overall_score": 75, "ml_pump_probability": 0.5, "agent_role": "unknown", "agent_confidence": 0.5, "relevant_wisdom_count": 0, "final_decision_score": 52.75, "label": "NEUTRAL"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/decisions.jsonl:7:{"timestamp": "2026-08-21 17:46:22", "addr": "0x0977FA2139B773732Da455926660b3D22C8CaB7F", "chain": "robinhood", "symbol": "?", "overall_score": 75, "ml_pump_probability": 0.5, "agent_role": "unknown", "agent_confidence": 0.5, "relevant_wisdom_count": 0, "final_decision_score": 52.75, "label": "NEUTRAL"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/decisions.jsonl:8:{"timestamp": "2026-08-21 17:54:58", "addr": "0x937fc38466CF01Fa78698F871d2A0f6D953E7777", "chain": "bsc", "symbol": "?", "overall_score": 75, "ml_pump_probability": 0.5, "agent_role": "unknown", "agent_confidence": 0.5, "relevant_wisdom_count": 0, "final_decision_score": 52.75, "label": "NEUTRAL"}
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:1:[2026-08-21 17:29:07] BIRTH_EDGE with realtime Pump.fun + cognition + ML + decision engine starting...
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:28:[2026-08-21 17:29:08] Learning report: total=3, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:29:[2026-08-21 17:29:08] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:38:[2026-08-21 17:29:09] 🧠 DECISION: NEUTRAL | ? on robinhood | Score 52.8 | ML 0.50 | Agent unknown
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:47:[2026-08-21 17:29:10] 🧠 DECISION: NEUTRAL | ? on robinhood | Score 52.8 | ML 0.50 | Agent unknown
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:218:[2026-08-21 17:34:09] Learning: updated 2 token outcomes, trained ML, and recorded events.
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:219:[2026-08-21 17:34:09] Learning report: total=5, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:220:[2026-08-21 17:34:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:378:[2026-08-21 17:39:09] Learning report: total=5, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:379:[2026-08-21 17:39:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:542:[2026-08-21 17:44:09] Learning report: total=5, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:543:[2026-08-21 17:44:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:630:[2026-08-21 17:46:22] 🧠 DECISION: NEUTRAL | ? on robinhood | Score 52.8 | ML 0.50 | Agent unknown
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:721:[2026-08-21 17:49:09] Learning: updated 1 token outcomes, trained ML, and recorded events.
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:722:[2026-08-21 17:49:09] Learning report: total=6, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:723:[2026-08-21 17:49:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:881:[2026-08-21 17:54:09] Learning report: total=6, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:882:[2026-08-21 17:54:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:909:[2026-08-21 17:54:58] 🧠 DECISION: NEUTRAL | ? on bsc | Score 52.8 | ML 0.50 | Agent unknown
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/birth_edge.log:8:[2026-08-21 21:07:29] FILTERED ? reason score overall 47.24
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/birth_edge.log:11:[2026-08-21 21:07:31] FILTERED ? reason score overall 60.8
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/birth_edge.log:18:[2026-08-21 21:07:37] FILTERED ? reason score overall 55.53
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/birth_edge.log:22:[2026-08-21 21:07:40] FILTERED ? reason score overall 49.59
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/birth_edge.log:26:[2026-08-21 21:07:43] FILTERED ? reason score overall 56.28
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/birth_edge.log:30:[2026-08-21 21:07:46] FILTERED ? reason score overall 48.04
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/birth_edge.log:48:[2026-08-21 21:12:29] FILTERED ? reason score overall 61.37
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/birth_edge.log:59:[2026-08-21 21:16:29] FILTERED ? reason score overall 56.67
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/birth_edge.log:64:[2026-08-21 21:17:07] FILTERED ? reason score overall 54.85
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/birth_edge.log:73:[2026-08-21 21:20:32] FILTERED ? reason score overall 65.76
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/birth_edge.log:81:[2026-08-21 21:23:26] FILTERED ? reason mint_freeze overall ?
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/evidence/LEVEL5_2026-08-22.json:17:  "note": "6/8 pumped, avg >1000%, but n=8 no baseline, EVM random, learning loop not auto-wired - Level 5 not Level 6"
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:8:import scoring, learning
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:10:print("filters:", inspect.signature(scoring.record_token if hasattr(scoring,'record_token') else learning.record_token))
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:13:try: getattr(learning,'init_learning_db',lambda:None)()
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:90:                print(f"[{now_str()}] {status} {symbol} {addr[:8]} liq ${liq:,.0f} overall {result.get('overall_score')} {result.get('reason','')}")
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:92:                call_record(learning, addr, chain, symbol, liq, result)
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:8:async def ingest_solana():
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:12:        print(f"[{now_str()}] Helius WS not configured, skipping Solana real-time ingestion.")
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:32:                    token_addr = value.get("signature", "")  # will be replaced with actual extraction
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:39:async def ingest_evm():
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:43:        print(f"[{now_str()}] QuickNode WS not configured, skipping EVM real-time ingestion.")
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:63:async def ingest_sui():
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:84:async def ingest_xrpl():
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:92:                "streams": ["transactions"]
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:99:                if data.get("transaction", {}).get("TransactionType") == "OfferCreate":
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:100:                    log_jsonl("xrpl_raw.jsonl", {"time": now_str(), "data": data["transaction"]})
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:104:async def ingest_robinhood():
+/data/data/com.termux/files/home/BIRTH_EDGE/filters.py:161:        return {"pass": False, "reason": "liquidity"}
+/data/data/com.termux/files/home/BIRTH_EDGE/filters.py:163:        return {"pass": False, "reason": "mint_freeze"}
+/data/data/com.termux/files/home/BIRTH_EDGE/scoring.py:2:Simple scoring engine that can be extended with machine learning.
+/data/data/com.termux/files/home/BIRTH_EDGE/scoring.py:11:    """Store token data in DB for future learning."""
+/data/data/com.termux/files/home/BIRTH_EDGE/execution.py:9:        print(f"[{datetime.now().strftime('%H:%M:%S')}] ❌ REJECTED: {token_data.get('symbol','?')} – Reason: {token_data.get('reason','unknown')}")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:12:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:14:def init_learning_db():
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:15:    os.makedirs(os.path.dirname(LEARNING_DB), exist_ok=True)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:16:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:19:        CREATE TABLE IF NOT EXISTS learning_results (
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:37:    existing_cols = [row[1] for row in cur.execute("PRAGMA table_info(learning_results)").fetchall()]
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:39:        cur.execute("ALTER TABLE learning_results ADD COLUMN holder_score REAL DEFAULT 0")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:41:        cur.execute("ALTER TABLE learning_results ADD COLUMN dev_score REAL DEFAULT 0")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:43:        cur.execute("ALTER TABLE learning_results ADD COLUMN lp_lock_score REAL DEFAULT 0")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:45:        cur.execute("ALTER TABLE learning_results ADD COLUMN tax_score REAL DEFAULT 0")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:52:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:55:        INSERT OR REPLACE INTO learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:86:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:93:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:125:            cognition.set_memory_importance(addr, importance, reason=f"rug={rug}, pump={pump}")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:139:            conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:142:                UPDATE learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:164:            print(f"[{now_str()}] learning update error for {addr}: {e}")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:166:        print(f"[{now_str()}] Learning: updated {updated} token outcomes, trained ML, and recorded events.")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:169:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:174:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:181:        print(f"[{now_str()}] Learning: no outcome data yet.")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:188:    print(f"[{now_str()}] Learning report: total={total}, rugs={rugs}, pumps={pumps}, avg_score={avg_score:.1f}")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:203:    print(f"[{now_str()}] Learning: suggested minimum score threshold = {best_threshold} (current {SCORE_MIN_BUY})")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:214:    with open("logs/learning_report.jsonl", "a") as f:
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:217:def run_learning_cycle():
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:5:| main.py | Entry point: filter loop, realtime Pump.fun, learning, ML, cognition, agent detection, decision engine |
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:9:| learning.py | Closed-loop outcome tracking and ML training trigger |
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:11:| cognition.py | World map, agent map, memory importance, wisdom, inherent knowledge |
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:13:| decision_engine.py | Combines signals into actionable decisions |
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:25:- logs/qualified_tokens.jsonl, rejected_tokens.jsonl, learning_report.jsonl
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:26:- logs/decisions.jsonl (decision engine output)
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:28:- data/learning.db (outcome database)
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:29:- data/cognition.db (world events, agents, memory, wisdom)
+/data/data/com.termux/files/home/BIRTH_EDGE/verify_files.sh:4:for f in main.py config.py filters.py scanners.py learning.py ml_model.py cognition.py agent_detection.py decision_engine.py realtime_pumpfun.py aegis_rule_miner.py utils.py execution.py requirements.txt FILES_MANIFEST.md CURRICULUM.md; do
+/data/data/com.termux/files/home/BIRTH_EDGE/ml_model.py:11:    def __init__(self, feature_names, learning_rate=0.01, l2=0.001):
+/data/data/com.termux/files/home/BIRTH_EDGE/ml_model.py:14:        self.lr = learning_rate
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:59:    CREATE TABLE IF NOT EXISTS memory_importance (
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:62:        reason TEXT,
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:156:# ---------------- Memory Importance ----------------
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:171:def set_memory_importance(addr: str, importance: float, reason: str = ""):
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:176:        INSERT OR REPLACE INTO memory_importance (addr, importance, reason, updated_at)
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:178:    """, (addr, importance, reason, datetime.now().isoformat()))
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:182:def get_memory_importance(addr: str) -> float:
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:185:    cur.execute("SELECT importance FROM memory_importance WHERE addr = ?", (addr,))
+/data/data/com.termux/files/home/BIRTH_EDGE/agent_detection.py:10:SOLSCAN_ACCOUNT_TXS_URL = "https://public-api.solscan.io/account/transactions?address={}&limit=10"
+/data/data/com.termux/files/home/BIRTH_EDGE/agent_detection.py:23:    """Fetch recent transactions for an address."""
+/data/data/com.termux/files/home/BIRTH_EDGE/agent_detection.py:42:    # Could add sniper detection based on transaction patterns later
+/data/data/com.termux/files/home/BIRTH_EDGE/decision_engine.py:9:# Decision thresholds (configurable via config.py later)
+/data/data/com.termux/files/home/BIRTH_EDGE/decision_engine.py:10:DECISION_LOG = "logs/decisions.jsonl"
+/data/data/com.termux/files/home/BIRTH_EDGE/decision_engine.py:40:def make_decision(token_data: dict) -> dict:
+/data/data/com.termux/files/home/BIRTH_EDGE/decision_engine.py:47:    Produce a final decision score and label.
+/data/data/com.termux/files/home/BIRTH_EDGE/decision_engine.py:85:    # Decision label
+/data/data/com.termux/files/home/BIRTH_EDGE/decision_engine.py:95:    decision = {
+/data/data/com.termux/files/home/BIRTH_EDGE/decision_engine.py:105:        "final_decision_score": round(final_score, 2),
+/data/data/com.termux/files/home/BIRTH_EDGE/decision_engine.py:108:    log_jsonl("decisions.jsonl", decision)
+/data/data/com.termux/files/home/BIRTH_EDGE/decision_engine.py:109:    return decision
+/data/data/com.termux/files/home/BIRTH_EDGE/decision_engine.py:111:def print_decision(decision):
+/data/data/com.termux/files/home/BIRTH_EDGE/decision_engine.py:112:    """Pretty-print decision to console."""
+/data/data/com.termux/files/home/BIRTH_EDGE/decision_engine.py:113:    print(f"[{now_str()}] 🧠 DECISION: {decision['label']} | {decision['symbol']} on {decision['chain']} | Score {decision['final_decision_score']:.1f} | ML {decision['ml_pump_probability']:.2f} | Agent {decision['agent_role']}")
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:9:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:209:    if not os.path.exists(LEARNING_DB): return []
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:210:    conn=sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:214:        cur.execute("SELECT * FROM learning_results WHERE pumped IS NOT NULL")
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:2:An Evidence-Driven Practical Curriculum for Building Adaptive Autonomous Systems
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:8:1 Computational Foundations: Python systems language (functions, classes, inheritance, modules, packages, serialization, exceptions, concurrency, subprocesses, filesystem, networking, APIs, databases) + Software Architecture (modular, interfaces, dependency boundaries, state, event-driven, pipelines, services, persistence, fault isolation, observability) + Data Engineering (schemas, normalization, event records, timestamps, provenance, indexing, integrity, streaming, historical) Lab: learning.db reconstruct what system knew, when, what decided, what happened after
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:10:3 ML & Adaptive: Supervised (classification, regression, features, labels, training, validation, testing, overfitting, generalization) Lab BIRTH_EDGE ML; Online Learning (SGD, incremental, concept drift, streaming, adaptive, catastrophic forgetting, online normalization) Reconstruct current model from first principles; RL (states, actions, rewards, policies, value, exploration/exploitation, Q-learning, policy optimization, TD) Lab SHOGUN/SUIB-X; Adaptive Systems (feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity) Major project: controlled environment where reality changes while system operates
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:11:4 Dynamical Systems & Cybernetics: Dynamical Systems (state, transitions, trajectories, phase space, equilibria, stability, nonlinear, discrete/continuous) Lab AEGIS; Differential Equations (ODEs, nonlinear ODEs, numerical integration, RK4, coupled, parameter estimation) Lab Duffing/ODE discovery; System Identification (Given observations, can we infer hidden rules? parameter estimation, model selection, structural identification, observability, identifiability, latent) Connect AEGIS; Cybernetics (feedback, control, regulation, homeostasis, adaptation, goal-directed, closed-loop, self-regulation) Labs SHOGUN, T-PRAO L4, ORGANISM, homeostat; Autonomous System Theory (automation vs autonomy, Observation→internal state→interpretation→decision→action→environmental response→updated state)
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:12:5 Autonomous-Agent: Agent Architecture (perception, memory, reasoning, planning, action, feedback, internal state); Persistent Agents (durable state, checkpoints, recovery, identity, continuity, event logs, state reconstruction) Lab T-PRAO L4; Multi-Agent (roles, coordination, competition, communication, delegation, trust, reputation) Lab cognition/agent; Agent Governance (permissions, constraints, safety boundaries, execution authority, auditability, human override) Important before autonomous trading
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:14:7 Cognitive Architecture: Memory (working, episodic, semantic, retrieval, persistence, updating); Knowledge Representation (rules, graphs, ontologies, symbolic, embeddings, hybrid); Reasoning (deduction, induction, abduction, causal reasoning, uncertainty, hypothesis generation); Metacognition (What do I know? How confident? What evidence supports? What would change conclusion?) Lab cognition/wisdom
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:15:8 Market Intelligence: Market Microstructure (liquidity, volume, spreads, price impact, order flow, depth); Asset Risk (liquidity, counterparty, smart-contract, concentration, manipulation, rug mechanisms); Signal Detection (signal vs noise, false positives/negatives, precision, recall, calibration, lead time); Decision Theory (expected value, utility, risk, asymmetric outcomes, thresholds, uncertainty) Analyze STRONG_ALERT/WATCH/NEUTRAL/AVOID; Live Intelligence pipeline Discovery→Scoring→Decision→Timestamp→Observation→Outcome→Learning→Updated model Principal BIRTH_EDGE lab
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:16:9 Systems Engineering: Linux/Termux (processes, daemons, services, permissions, filesystems, scheduling, networking, resource constraints) Lab Termux; Reliability (heartbeats, watchdogs, fault detection, recovery, redundancy, graceful degradation) Lab SHOGUN; Observability (health, state, activity, errors, decisions, history, performance); Security (authentication, authorization, secrets, encryption, attack surfaces, sandboxing, supply-chain)
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:19:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:21:Graduation: BUILD blank dir, EXPLAIN every decision, MEASURE experiments distinguishing success/failure, DEFEND handling criticism without changing claim to make easier, DISCOVER at least one result surviving controlled testing not explained by baseline
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:57:# 1. Immediate adaptation - same clone
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:58:print("\n=== 1. Immediate adaptation ===")
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:6:- Ingestion: DEX_LATEST_URL=https://api.dexscreener.com/token-profiles/latest/v1 polling every POLL_INTERVAL_FILTERED=30s
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:7:- Feature Extraction: filters.py run_all_filters() 5-stage: check_liquidity (>=LIQ_THRESHOLD 5000), check_mint_freeze (Solana base64 decode mint layout offset 0 mint_authority 32 bytes, offset 46 freeze_authority 32 bytes, revoked if all zero), check_holders (Solana getTokenLargestAccounts top10% + dev%, EVM random placeholder), check_tax (Solana Jupiter quote round-trip 0.1 SOL buy/sell simulation, EVM random), check_lp_lock + check_dev_history via RugCheck API https://api.rugcheck.xyz/v1/tokens/{addr}/report
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:8:- Cognition: data/cognition.db tables: events (token_birth, token_outcome), agents (address, role, confidence, success/fail), wisdom_rules (seeded: mint not revoked 0.9, top10>35% 0.85, tax>10% 0.95, high liq trap 0.7), memory_importance (rug 0.9, pump 0.8, pct_change*10 + liq_change/100000), inherent_knowledge (mint layout, jupiter url, dexscreener url, scam patterns)
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:10:- Decision: decision_engine.py + SCORE_MIN_BUY=75, overall = liq_score (min 20 or 35, int(liq/2500)) + holder + dev + lp + tax, status PASS if >=75 and holder pass and tax pass
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:11:- Persistence: data/birth_edge.db tokens table, data/learning.db learning_results (addr PK, chain, symbol, initial_price, initial_liquidity, overall_score, holder/dev/lp/tax scores, discovered_at, final_price, rug_pulled, pumped, price_change_24h), data/cognition.db
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:14:**Data Flow:** Input (DexScreener latest) → ingestion (fetch_json_sync) → feature extraction (run_all_filters) → cognition (record_event) → ML (predict) → decision (overall_score) → persistence (record_token both DBs) → monitoring (live.log, API) → feedback (update_outcomes polls DEX_TOKEN_URL https://api.dexscreener.com/latest/dex/tokens/{}, rug if final_price<=0 or liq<=0, pump if final>=2*initial) → learning (train_model) → updated model
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:16:**State:** seen=set() dedup, 3 DBs, MODEL_FILE, inherent knowledge static
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:18:**Learning Mechanism:** experience (token birth + later price) → training input (features dict liquidity, holder, dev, lp, tax, overall) → train_model(features,label) → model state (weights in ml_model.json) → persistence mechanism (json file) → get_model() → predict_pump_probability() → decision/output
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:20:**Decision Mechanism:** STRONG_ALERT/WATCH/NEUTRAL/AVOID based on overall_score threshold 75, holder pass, tax pass
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:22:**Feedback Mechanism:** update_outcomes(min_age_hours=1) cutoff = now -1h, fetches final price, computes importance, updates DB, trains ML, records token_outcome event, retrain_weights scans threshold 50-100 step 5 for best winrate (wins-losses)/len, logs to logs/learning_report.jsonl, aegis_rule_miner.run_rule_mining()
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:35:- But n=8, no baseline, no holdout, no control, survivorship bias, EVM scores random, learning loop not auto-wired
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:41:- Wisdom rules seeded not learned (until rule miner)
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:53:- wisdom_rules learned (seeded)
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:58:- Dual DB + cognition DB with importance-weighted memory
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:129:        true_state = (
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:135:            int(true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:137:            else int(not true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:160:    overall_score is deliberately correlated with the true state.
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:172:        true_state = (
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:186:            int(true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:188:            else int(not true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:237:        true_state = (
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:243:            int(true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:245:            else int(not true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:387:        true_state = (
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:393:        if true_state:
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:399:            int(true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:401:            else int(not true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:13:# SKLearn Baselines
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:14:from sklearn.tree import DecisionTreeClassifier
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:15:from sklearn.ensemble import RandomForestClassifier
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:26:def decision_tree_rule(rows, seed, max_depth=5):
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:39:    clf = DecisionTreeClassifier(max_depth=max_depth, random_state=seed)
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:56:        "rule_type": "DecisionTree"
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:72:    clf = RandomForestClassifier(max_depth=max_depth, n_estimators=50, random_state=seed)
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:92:def greedy_rule_learner(rows, seed):
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:171:        "DecisionTree": run_baseline_on_test(decision_tree_rule, "correlated_decoy", fng.correlated_decoy_rows, seeds=15),
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:173:        "Greedy": run_baseline_on_test(greedy_rule_learner, "correlated_decoy", fng.correlated_decoy_rows, seeds=15),
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:177:        "DecisionTree": run_baseline_on_test(decision_tree_rule, "adversarial_decoy", fng.adversarial_decoy_rows, seeds=15),
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:179:        "Greedy": run_baseline_on_test(greedy_rule_learner, "adversarial_decoy", fng.adversarial_decoy_rows, seeds=15),
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:203:    dt_corr = baseline_results["correlated_decoy"]["DecisionTree"]
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:207:    dt_adv = baseline_results["adversarial_decoy"]["DecisionTree"]
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:211:    print(f"{'DecisionTree':<15} | {dt_corr['decoy_selection_rate']*100:>5.1f}%       | {dt_corr['true_pair_rate']*100:>5.1f}%       | {dt_adv['decoy_selection_rate']*100:>5.1f}%       | {dt_adv['true_pair_rate']*100:>5.1f}%")
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:243:        print("AEGIS does not outperform standard Decision Trees or Random Forests")
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:3:NOVELTY PROVER FOR AEGIS (NO SKLEARN)
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:4:Self-contained decision tree and random forest for comparison.
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:19:# DECISION TREE (from scratch)
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:181:def greedy_rule_learner(rows, seed):
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:214:# DECISION TREE WRAPPER (using our custom tree)
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:217:def custom_decision_tree(rows, seed, max_depth=5):
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:285:        "DT": run_baseline_on_test(custom_decision_tree, fng.correlated_decoy_rows, seeds=15),
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:287:        "Greedy": run_baseline_on_test(greedy_rule_learner, fng.correlated_decoy_rows, seeds=15),
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:290:        "DT": run_baseline_on_test(custom_decision_tree, fng.adversarial_decoy_rows, seeds=15),
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:292:        "Greedy": run_baseline_on_test(greedy_rule_learner, fng.adversarial_decoy_rows, seeds=15),
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:3:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:5:conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:9:cur.execute("PRAGMA table_info(learning_results)")
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:13:cur.execute("SELECT * FROM learning_results WHERE pumped IS NOT NULL")
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:44:    cur.execute(f"SELECT * FROM learning_results WHERE pumped IS NOT NULL AND {time_col} >= datetime('now','-30 days')")
+/data/data/com.termux/files/home/BIRTH_EDGE/check.py:3:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/check.py:4:conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/check.py:7:cur.execute("SELECT initial_liquidity_usd, holder_score, overall_score, pumped, rug_pulled, discovered_at FROM learning_results")
+/data/data/com.termux/files/home/BIRTH_EDGE/value2.py:3:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/value2.py:4:conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/value2.py:7:cur.execute("SELECT * FROM learning_results")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:7:for must in ["config.py", "learning.db" not in str(files) and "shogun.py" or "shogun.py", "cognition.py"]:
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:17:    LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:18:    print(f"LEARNING_DB = {LEARNING_DB} exists: {os.path.exists(LEARNING_DB)}")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:21:    LEARNING_DB = None
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:24:if LEARNING_DB and os.path.exists(LEARNING_DB):
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:25:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:30:    print(f"tables in learning.db: {tables}")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:31:    if "learning_results" in tables:
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:32:        cur.execute("SELECT COUNT(*) FROM learning_results")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:34:        cur.execute("SELECT COUNT(*) FROM learning_results WHERE pumped IS NOT NULL")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:36:        cur.execute("SELECT COUNT(*) FROM learning_results WHERE pumped=1")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:38:        cur.execute("SELECT COUNT(*) FROM learning_results WHERE rug_pulled=1")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:40:        print(f"learning_results total={total} labeled={labeled} pumped={pumped} rugs={rugs}")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:41:        cur.execute("SELECT initial_liquidity_usd, holder_score, overall_score, dev_score, lp_lock_score, tax_score FROM learning_results LIMIT 20")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:48:        cur.execute("SELECT MAX(discovered_at) as last FROM learning_results")
+/data/data/com.termux/files/home/BIRTH_EDGE/api.py:8:    con = sqlite3.connect("data/learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/api.py:13:        FROM learning_results 
+/data/data/com.termux/files/home/BIRTH_EDGE/api.py:22:    con = sqlite3.connect("data/learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/api.py:24:    row = con.execute("SELECT COUNT(*) as total, AVG(overall_score) as avg_score, MAX(overall_score) as max_score FROM learning_results").fetchone()
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:4:BIRTH_EDGE — FULL ADAPTIVE LEARNING FORENSIC TEST
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:10:A) a genuinely adaptive learning system whose accumulated
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:15:B) primarily a fixed rule/scoring system with learning
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:107:# TEST 1 — ARCHITECTURAL LEARNING PATH
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:112:    learning = source_text("learning.py")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:122:        "Memory importance": "set_memory_importance",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:123:        "Threshold adaptation": "best_threshold",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:129:        if needle in learning:
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:133:        "Architecture contains closed learning loop",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:135:        f"{len(found)}/{len(required)} learning mechanisms found",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:146:    db = DATA / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:149:        record("Historical learning dataset", "FAIL", "data/learning.db missing")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:161:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:166:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:173:        "Historical learning dataset",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:187:    tmp = Path(tempfile.mkdtemp(prefix="birth_edge_adaptive_"))
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:194:            "full_adaptive_test.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:259:    db = clone / "data" / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:273:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:400:        "memory_importance",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:429:    db = DATA / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:435:            "learning.db missing"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:449:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:487:    text = source_text("learning.py")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:519:# TEST 10 — ADAPTATION PROPAGATION
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:522:def test_adaptation_propagation():
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:524:    text = source_text("learning.py")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:530:    # Is the learned threshold actually written back into the
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:531:    # production decision configuration?
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:546:            "Learned threshold propagation",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:549:            "Current learning.py does not visibly write that threshold back into SCORE_MIN_BUY."
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:555:            "Learned threshold propagation",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:557:            "Learned threshold is propagated into decision configuration"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:563:            "Learned threshold propagation",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:565:            "No adaptive threshold mechanism found"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:578:    If the learning architecture only appears adaptive because
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:585:    db = DATA / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:591:            "learning.db missing"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:602:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:684:# TEST 12 — FIXED VS ADAPTIVE DECISION PATH
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:687:def test_fixed_vs_adaptive():
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:689:    decision = source_text("decision_engine.py")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:693:    dynamic_learning_reference = any(
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:694:        term in decision
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:696:            "learning",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:708:        "Decision engine adaptive integration",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:709:        "PASS" if dynamic_learning_reference else "LIMITED",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:710:        f"decision_engine references learning systems={dynamic_learning_reference}",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:724:        "learning.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:728:        "decision_engine.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:760:    propagation = statuses.get("Learned threshold propagation")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:762:        "Architecture contains closed learning loop"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:771:        primary = "ADAPTIVE LEARNING ARCHITECTURE CONFIRMED"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:776:        primary = "ADAPTIVE ARCHITECTURE PRESENT — EMPIRICAL EFFECT INCOMPLETE"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:778:        primary = "ADAPTIVE CLAIM NOT FULLY CONFIRMED"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:782:            "Important: learning currently computes an improved threshold "
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:783:            "but the supplied learning.py does not visibly propagate it "
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:794:            "demonstrated behavioral adaptation."
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:799:    print("BIRTH_EDGE ADAPTIVE LEARNING FORENSIC RESULT")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:813:    print("BIRTH_EDGE — FULL ADAPTIVE LEARNING FORENSIC TEST")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:823:        test_adaptation_propagation()
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:825:        test_fixed_vs_adaptive()
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:842:        out = ROOT / "adaptive_test_results.json"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:859:        out = ROOT / "adaptive_test_results.json"
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:5:      "name": "Architecture contains closed learning loop",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:7:      "evidence": "7/7 learning mechanisms found",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:8:      "detail": "ML training, Outcome labeling, Rule mining, Outcome event, Birth event, Memory importance, Threshold adaptation"
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:11:      "name": "Historical learning dataset",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:29:      "name": "Learned threshold propagation",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:32:      "detail": "Current learning.py does not visibly write that threshold back into SCORE_MIN_BUY."
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:41:      "name": "Decision engine adaptive integration",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:43:      "evidence": "decision_engine references learning systems=True",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:50:      "detail": "main.py, filters.py, learning.py, cognition.py, ml_model.py, aegis_rule_miner.py, decision_engine.py, execution.py, agent_detection.py, novelty_comparator.py, full_novelty_gauntlet.py"
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:60:  "fatal_error": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py\", line 835, in main\n    test_ml_mutation(clone, ml_model)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py\", line 264, in test_ml_mutation\n    rows = con.execute(\"\"\"\n           ~~~~~~~~~~~^^^^\n        SELECT\n        ^^^^^^\n    ...<10 lines>...\n        LIMIT 20\n        ^^^^^^^^\n    \"\"\").fetchall()\n    ^^^^\nsqlite3.OperationalError: no such column: liquidity_usd\n"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:4:BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:23:9. Source-level decision-path inspection
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:108:            "decisive_adaptive_test.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:109:            "full_adaptive_test.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:138:    db = ROOT / "data" / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:142:            "Learning database discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:144:            "data/learning.db does not exist",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:185:            "Learning database discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:196:            "Learning database discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:205:# 2. DISCOVER ACTUAL LEARNING DATA
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:208:def discover_learning_rows(db):
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:287:                "Learning dataset discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:314:            "Learning dataset discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:325:            "Learning dataset discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:458:        "learn",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:742:                "reason": "No training API",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:834:                "reason": "No training API",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1028:        "learning.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1030:        "decision_engine.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1052:                    "learn(",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1062:                    "decision",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1078:            "decision_dependency": any(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1081:                    "learning",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1086:                    "learned",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1096:        "Inspected training, prediction, persistence, and decision dependencies",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1138:            "ADAPTIVE BEHAVIOR DEMONSTRATED"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1151:            "LEARNING EFFECT DETECTED — "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1165:            "ADAPTIVE BEHAVIOR NOT DEMONSTRATED"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1184:    print("BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY RESULT")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1199:    print("BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1208:    db = ROOT / "data" / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1210:    discover_learning_rows(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1244:        "decisive_adaptive_test_results.json"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:6:      "name": "Learning database discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:9:      "detail": "learning_results"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:12:      "name": "Learning dataset discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:14:      "evidence": "selected table=learning_results, rows=58",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:21:      "detail": "{\"OnlineLogisticRegression\": \"(feature_names, learning_rate=0.01, l2=0.001)\", \"get_model\": \"()\", \"predict_pump_probability\": \"(features: dict) -> float\", \"train_model\": \"(features: dict, label: int)\"}"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:26:      "evidence": "Inspected training, prediction, persistence, and decision dependencies",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:108:      "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py\", line 956, in history_contrast\n    spec = importlib.util.spec_from_file_location(\n           ^^^^^^^^^^^^^^\nAttributeError: module 'importlib' has no attribute 'util'\n"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:112:    "verdict": "ADAPTIVE BEHAVIOR NOT DEMONSTRATED",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:119:    "learning_results": [
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:236:      "table": "learning_results",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:259:    "OnlineLogisticRegression": "(feature_names, learning_rate=0.01, l2=0.001)",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:265:    "learning.py": {
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:269:      "decision_dependency": true
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:275:      "decision_dependency": true
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:277:    "decision_engine.py": {
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:281:      "decision_dependency": true
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:287:      "decision_dependency": true
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:293:      "decision_dependency": true
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:4:BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST V2
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:35:        3. behavioral adaptation
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:36:        4. persistent adaptation
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:63:RESULT_FILE = ROOT / "decisive_adaptive_test_v2_results.json"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:154:        "decisive_adaptive_test.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:155:        "decisive_adaptive_test_v2.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:156:        "full_adaptive_test.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:280:    "learn",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:302:        "reason": "No training function found"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:345:        "reason": "No prediction API found",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:622:    print("BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST V2")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:838:            "ADAPTIVE BEHAVIOR DEMONSTRATED"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:851:            "LEARNING EFFECT DETECTED — "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:866:            "BEHAVIORAL ADAPTATION NOT ESTABLISHED"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:879:            "ADAPTIVE BEHAVIOR NOT DEMONSTRATED"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2_results.json:84:    "verdict": "ADAPTIVE BEHAVIOR NOT DEMONSTRATED",
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/1/README.md:5:Project: Create architectural map Input→ingestion→feature extraction→cognition→ML→decision→persistence→monitoring→feedback
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/1/README.md:6:Lab learning.db: Design historical record that reconstructs What did system know, when, what decided, what happened after
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:1:# SCHOOL 3 - Machine Learning & Adaptive Learning
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:3:Online Learning: SGD, incremental, concept drift, streaming, adaptive, catastrophic forgetting, online normalization - Reconstruct current model from first principles - critical because architecture isn't static model
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:4:RL: states, actions, rewards, policies, value functions, exploration/exploitation, Q-learning, policy optimization, TD - Lab SHOGUN/SUIB-X
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:5:Adaptive Systems: feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity - Major project: controlled environment where underlying reality changes while system operates, measure adaptation
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/4/README.md:2:Dynamical Systems: state, transitions, trajectories, phase space, equilibria, stability, nonlinear, discrete/continuous - Lab AEGIS
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/4/README.md:5:Cybernetics: feedback, control, regulation, homeostasis, adaptation, goal-directed behavior, closed-loop, self-regulation - Labs SHOGUN, T-PRAO L4, ORGANISM, homeostat
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/4/README.md:6:Autonomous System Theory: distinction automation vs autonomy, formalize Observation→internal state→interpretation→decision→action→environmental response→updated state - central mathematical object
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/5/README.md:2:Agent Architecture: perception, memory, reasoning, planning, action, feedback, internal state
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/5/README.md:3:Persistent Agents: durable state, checkpoints, recovery, identity, continuity, event logs, state reconstruction - Lab T-PRAO L4
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/7/README.md:2:Memory: working memory, episodic memory, semantic memory, retrieval, persistence, memory updating
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/7/README.md:4:Reasoning: deduction, induction, abduction, causal reasoning, uncertainty, hypothesis generation
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/8/README.md:1:# SCHOOL 8 - Market Intelligence & Decision Systems - BIRTH_EDGE specialization
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/8/README.md:5:Decision Theory: expected value, utility, risk, asymmetric outcomes, thresholds, uncertainty - Analyze STRONG_ALERT/WATCH/NEUTRAL/AVOID architecture
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/8/README.md:6:Live Intelligence: Build complete pipeline Discovery→Scoring→Decision→Timestamp→Observation→Outcome→Learning→Updated model - Principal BIRTH_EDGE laboratory
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/9/README.md:4:Observability: Every serious system should expose health, state, activity, errors, decisions, history, performance
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/10/README.md:2:Intellectual Property: invention disclosure, prior art, claims, technical novelty, documentation, provenance - Important: "I can't find a prior example" different from "No prior example exists" - Make strongest defensible statement supported by evidence
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/10/README.md:7:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/10/README.md:8:Graduation: BUILD blank dir, EXPLAIN every decision, MEASURE experiments distinguishing success/failure, DEFEND handling criticism without changing claim to make easier, DISCOVER at least one result surviving controlled testing not explained by baseline
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:1:# LAYER 1 - Learner Curriculum - For someone who knows little
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:3:1. Thinking in Systems: What is system? State, inputs, outputs, feedback, Deterministic vs adaptive, Why architecture matters
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:5:3. Memory and Persistence: State, Ledgers, Hash chains, Persistent learning, Recovery after termination
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:6:4. Observation → Decision → Action: Sensors, Feature extraction, Rules, Decision engines, Confidence, Feedback loops
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:7:5. Adaptive Intelligence: Online learning, Logistic regression, Incremental learning, Experience-based adaptation, Why model that merely predicts isn't necessarily adaptive system
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:9:7. Autonomous Architecture: Watchers, Supervisors, Heartbeats, Runtime state, Governance, Safety boundaries, Closed-loop operation
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/ARCHITECT_TRACK.md:6:- Decomposing complex systems (why 3 DBs? birth_edge.db vs learning.db vs cognition.db)
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/ARCHITECT_TRACK.md:9:- Discovering failure modes (EVM random, 105 dupes, run_learning_cycle not wired)
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/ARCHITECT_TRACK.md:11:- Determining whether components actually interact (does train_model affect decision_engine?)
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:2:## An Evidence-Driven Practical Curriculum for Building Adaptive Autonomous Systems
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:6:- For others: SIA teaches people how to build, interrogate, and extend adaptive autonomous systems
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:9:**Core Rule:** Study concepts because they explain systems you have built. Reverse conventional learn theory → eventually build into: build → encounter problem → learn theory → reconstruct → integrate → test → discover.
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:14:Core engineering loop: PERCEPTION → STATE → MEMORY → LEARNING → REASONING → DECISION → ACTION → FEEDBACK → ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:17:Educational = how you learn, Engineering = what you build, Evidence = how you prove.
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:28:4. run_learning_cycle() not wired into live loop in main.py - dual() only calls birth_filtered_loop + ipo_loop, learning only manual
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:46:1. Immediate adaptation: same clone prediction BEFORE training → train H_A → prediction AFTER, if changes training affects state
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:48:3. Persistence: train → save/commit → destroy process → fresh Python process → load model → same future input, survives process boundary = persistent adaptation not in-memory mutation
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:49:4. Decision-path causality: changed learned state reaches operational decision (decision_engine.py) not disconnected artifact
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:55:LEVEL 0 Learn to build.
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:56:LEVEL 1 Learn to architect.
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:57:LEVEL 2 Learn to make systems adapt.
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:58:LEVEL 3 Learn to make them operate autonomously.
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:59:LEVEL 4 Learn to make them persistent and self-monitoring.
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:60:LEVEL 5 Learn to experimentally determine whether claimed behavior actually exists.
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:61:LEVEL 6 Learn to invent architectures.
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:62:LEVEL 7 Learn to conduct independent research.
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:69:Not chatbot. Must contain and prove interaction of:
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:71:PERCEPTION
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:73:STATE
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:75:MEMORY
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:77:LEARNING
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:79:REASONING
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:81:DECISION
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:83:ACTION
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:85:FEEDBACK
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:87:ADAPTATION

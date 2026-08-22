@@ -1,0 +1,1103 @@
+### SEARCH: deterministic
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:332:    Observable features are deterministic transforms of the same
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:639:    # Deterministic cyclic permutation.
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:3:1. Thinking in Systems: What is system? State, inputs, outputs, feedback, Deterministic vs adaptive, Why architecture matters
+### SEARCH: determinism
+### SEARCH: repeatable
+### SEARCH: reproducible
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/ARCHITECT_TRACK.md:15:- Turning prototypes into reproducible systems
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:63:LEVEL 8 Become an architect capable of producing an original, reproducible system.
+### SEARCH: same input
+### SEARCH: same state
+### SEARCH: same output
+### SEARCH: emergent
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/ARCHITECT_TRACK.md:5:- Recognizing emergent architectural patterns (you saw mint_freeze + holder + tax → need cognition layer)
+### SEARCH: emergence
+### SEARCH: emergent behavior
+### SEARCH: adaptive
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:2:An Evidence-Driven Practical Curriculum for Building Adaptive Autonomous Systems
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:10:3 ML & Adaptive: Supervised (classification, regression, features, labels, training, validation, testing, overfitting, generalization) Lab BIRTH_EDGE ML; Online Learning (SGD, incremental, concept drift, streaming, adaptive, catastrophic forgetting, online normalization) Reconstruct current model from first principles; RL (states, actions, rewards, policies, value, exploration/exploitation, Q-learning, policy optimization, TD) Lab SHOGUN/SUIB-X; Adaptive Systems (feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity) Major project: controlled environment where reality changes while system operates
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:4:BIRTH_EDGE — FULL ADAPTIVE LEARNING FORENSIC TEST
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:10:A) a genuinely adaptive learning system whose accumulated
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:187:    tmp = Path(tempfile.mkdtemp(prefix="birth_edge_adaptive_"))
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:194:            "full_adaptive_test.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:565:            "No adaptive threshold mechanism found"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:578:    If the learning architecture only appears adaptive because
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:684:# TEST 12 — FIXED VS ADAPTIVE DECISION PATH
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:687:def test_fixed_vs_adaptive():
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:708:        "Decision engine adaptive integration",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:771:        primary = "ADAPTIVE LEARNING ARCHITECTURE CONFIRMED"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:776:        primary = "ADAPTIVE ARCHITECTURE PRESENT — EMPIRICAL EFFECT INCOMPLETE"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:778:        primary = "ADAPTIVE CLAIM NOT FULLY CONFIRMED"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:799:    print("BIRTH_EDGE ADAPTIVE LEARNING FORENSIC RESULT")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:813:    print("BIRTH_EDGE — FULL ADAPTIVE LEARNING FORENSIC TEST")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:825:        test_fixed_vs_adaptive()
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:842:        out = ROOT / "adaptive_test_results.json"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:859:        out = ROOT / "adaptive_test_results.json"
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:41:      "name": "Decision engine adaptive integration",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:60:  "fatal_error": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py\", line 835, in main\n    test_ml_mutation(clone, ml_model)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py\", line 264, in test_ml_mutation\n    rows = con.execute(\"\"\"\n           ~~~~~~~~~~~^^^^\n        SELECT\n        ^^^^^^\n    ...<10 lines>...\n        LIMIT 20\n        ^^^^^^^^\n    \"\"\").fetchall()\n    ^^^^\nsqlite3.OperationalError: no such column: liquidity_usd\n"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:4:BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:108:            "decisive_adaptive_test.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:109:            "full_adaptive_test.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1138:            "ADAPTIVE BEHAVIOR DEMONSTRATED"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1165:            "ADAPTIVE BEHAVIOR NOT DEMONSTRATED"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1184:    print("BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY RESULT")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1199:    print("BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1244:        "decisive_adaptive_test_results.json"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:108:      "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py\", line 956, in history_contrast\n    spec = importlib.util.spec_from_file_location(\n           ^^^^^^^^^^^^^^\nAttributeError: module 'importlib' has no attribute 'util'\n"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:112:    "verdict": "ADAPTIVE BEHAVIOR NOT DEMONSTRATED",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:4:BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST V2
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:63:RESULT_FILE = ROOT / "decisive_adaptive_test_v2_results.json"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:154:        "decisive_adaptive_test.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:155:        "decisive_adaptive_test_v2.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:156:        "full_adaptive_test.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:622:    print("BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST V2")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:838:            "ADAPTIVE BEHAVIOR DEMONSTRATED"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:879:            "ADAPTIVE BEHAVIOR NOT DEMONSTRATED"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2_results.json:84:    "verdict": "ADAPTIVE BEHAVIOR NOT DEMONSTRATED",
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:1:# SCHOOL 3 - Machine Learning & Adaptive Learning
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:3:Online Learning: SGD, incremental, concept drift, streaming, adaptive, catastrophic forgetting, online normalization - Reconstruct current model from first principles - critical because architecture isn't static model
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:5:Adaptive Systems: feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity - Major project: controlled environment where underlying reality changes while system operates, measure adaptation
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:3:1. Thinking in Systems: What is system? State, inputs, outputs, feedback, Deterministic vs adaptive, Why architecture matters
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:7:5. Adaptive Intelligence: Online learning, Logistic regression, Incremental learning, Experience-based adaptation, Why model that merely predicts isn't necessarily adaptive system
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:2:## An Evidence-Driven Practical Curriculum for Building Adaptive Autonomous Systems
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:6:- For others: SIA teaches people how to build, interrogate, and extend adaptive autonomous systems
+### SEARCH: adaptation
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:10:3 ML & Adaptive: Supervised (classification, regression, features, labels, training, validation, testing, overfitting, generalization) Lab BIRTH_EDGE ML; Online Learning (SGD, incremental, concept drift, streaming, adaptive, catastrophic forgetting, online normalization) Reconstruct current model from first principles; RL (states, actions, rewards, policies, value, exploration/exploitation, Q-learning, policy optimization, TD) Lab SHOGUN/SUIB-X; Adaptive Systems (feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity) Major project: controlled environment where reality changes while system operates
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:11:4 Dynamical Systems & Cybernetics: Dynamical Systems (state, transitions, trajectories, phase space, equilibria, stability, nonlinear, discrete/continuous) Lab AEGIS; Differential Equations (ODEs, nonlinear ODEs, numerical integration, RK4, coupled, parameter estimation) Lab Duffing/ODE discovery; System Identification (Given observations, can we infer hidden rules? parameter estimation, model selection, structural identification, observability, identifiability, latent) Connect AEGIS; Cybernetics (feedback, control, regulation, homeostasis, adaptation, goal-directed, closed-loop, self-regulation) Labs SHOGUN, T-PRAO L4, ORGANISM, homeostat; Autonomous System Theory (automation vs autonomy, Observation→internal state→interpretation→decision→action→environmental response→updated state)
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:19:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:57:# 1. Immediate adaptation - same clone
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:58:print("\n=== 1. Immediate adaptation ===")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:123:        "Threshold adaptation": "best_threshold",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:519:# TEST 10 — ADAPTATION PROPAGATION
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:522:def test_adaptation_propagation():
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:794:            "demonstrated behavioral adaptation."
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:823:        test_adaptation_propagation()
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:8:      "detail": "ML training, Outcome labeling, Rule mining, Outcome event, Birth event, Memory importance, Threshold adaptation"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:35:        3. behavioral adaptation
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:36:        4. persistent adaptation
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:866:            "BEHAVIORAL ADAPTATION NOT ESTABLISHED"
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:5:Adaptive Systems: feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity - Major project: controlled environment where underlying reality changes while system operates, measure adaptation
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/4/README.md:5:Cybernetics: feedback, control, regulation, homeostasis, adaptation, goal-directed behavior, closed-loop, self-regulation - Labs SHOGUN, T-PRAO L4, ORGANISM, homeostat
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/10/README.md:7:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:7:5. Adaptive Intelligence: Online learning, Logistic regression, Incremental learning, Experience-based adaptation, Why model that merely predicts isn't necessarily adaptive system
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:14:Core engineering loop: PERCEPTION → STATE → MEMORY → LEARNING → REASONING → DECISION → ACTION → FEEDBACK → ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:46:1. Immediate adaptation: same clone prediction BEFORE training → train H_A → prediction AFTER, if changes training affects state
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:48:3. Persistence: train → save/commit → destroy process → fresh Python process → load model → same future input, survives process boundary = persistent adaptation not in-memory mutation
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:87:ADAPTATION
+### SEARCH: learn
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:28:[2026-08-21 17:29:08] Learning report: total=3, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:29:[2026-08-21 17:29:08] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:218:[2026-08-21 17:34:09] Learning: updated 2 token outcomes, trained ML, and recorded events.
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:219:[2026-08-21 17:34:09] Learning report: total=5, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:220:[2026-08-21 17:34:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:378:[2026-08-21 17:39:09] Learning report: total=5, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:379:[2026-08-21 17:39:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:542:[2026-08-21 17:44:09] Learning report: total=5, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:543:[2026-08-21 17:44:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:721:[2026-08-21 17:49:09] Learning: updated 1 token outcomes, trained ML, and recorded events.
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:722:[2026-08-21 17:49:09] Learning report: total=6, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:723:[2026-08-21 17:49:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:881:[2026-08-21 17:54:09] Learning report: total=6, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:882:[2026-08-21 17:54:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/evidence/LEVEL5_2026-08-22.json:17:  "note": "6/8 pumped, avg >1000%, but n=8 no baseline, EVM random, learning loop not auto-wired - Level 5 not Level 6"
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:8:import scoring, learning
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:10:print("filters:", inspect.signature(scoring.record_token if hasattr(scoring,'record_token') else learning.record_token))
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:13:try: getattr(learning,'init_learning_db',lambda:None)()
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:92:                call_record(learning, addr, chain, symbol, liq, result)
+/data/data/com.termux/files/home/BIRTH_EDGE/scoring.py:2:Simple scoring engine that can be extended with machine learning.
+/data/data/com.termux/files/home/BIRTH_EDGE/scoring.py:11:    """Store token data in DB for future learning."""
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:12:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:14:def init_learning_db():
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:15:    os.makedirs(os.path.dirname(LEARNING_DB), exist_ok=True)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:16:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:19:        CREATE TABLE IF NOT EXISTS learning_results (
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:37:    existing_cols = [row[1] for row in cur.execute("PRAGMA table_info(learning_results)").fetchall()]
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:39:        cur.execute("ALTER TABLE learning_results ADD COLUMN holder_score REAL DEFAULT 0")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:41:        cur.execute("ALTER TABLE learning_results ADD COLUMN dev_score REAL DEFAULT 0")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:43:        cur.execute("ALTER TABLE learning_results ADD COLUMN lp_lock_score REAL DEFAULT 0")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:45:        cur.execute("ALTER TABLE learning_results ADD COLUMN tax_score REAL DEFAULT 0")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:52:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:55:        INSERT OR REPLACE INTO learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:86:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:93:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:139:            conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:142:                UPDATE learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:164:            print(f"[{now_str()}] learning update error for {addr}: {e}")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:166:        print(f"[{now_str()}] Learning: updated {updated} token outcomes, trained ML, and recorded events.")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:169:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:174:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:181:        print(f"[{now_str()}] Learning: no outcome data yet.")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:188:    print(f"[{now_str()}] Learning report: total={total}, rugs={rugs}, pumps={pumps}, avg_score={avg_score:.1f}")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:203:    print(f"[{now_str()}] Learning: suggested minimum score threshold = {best_threshold} (current {SCORE_MIN_BUY})")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:214:    with open("logs/learning_report.jsonl", "a") as f:
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:217:def run_learning_cycle():
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:5:| main.py | Entry point: filter loop, realtime Pump.fun, learning, ML, cognition, agent detection, decision engine |
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:9:| learning.py | Closed-loop outcome tracking and ML training trigger |
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:25:- logs/qualified_tokens.jsonl, rejected_tokens.jsonl, learning_report.jsonl
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:28:- data/learning.db (outcome database)
+/data/data/com.termux/files/home/BIRTH_EDGE/verify_files.sh:4:for f in main.py config.py filters.py scanners.py learning.py ml_model.py cognition.py agent_detection.py decision_engine.py realtime_pumpfun.py aegis_rule_miner.py utils.py execution.py requirements.txt FILES_MANIFEST.md CURRICULUM.md; do
+/data/data/com.termux/files/home/BIRTH_EDGE/ml_model.py:11:    def __init__(self, feature_names, learning_rate=0.01, l2=0.001):
+/data/data/com.termux/files/home/BIRTH_EDGE/ml_model.py:14:        self.lr = learning_rate
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:9:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:209:    if not os.path.exists(LEARNING_DB): return []
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:210:    conn=sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:214:        cur.execute("SELECT * FROM learning_results WHERE pumped IS NOT NULL")
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:8:1 Computational Foundations: Python systems language (functions, classes, inheritance, modules, packages, serialization, exceptions, concurrency, subprocesses, filesystem, networking, APIs, databases) + Software Architecture (modular, interfaces, dependency boundaries, state, event-driven, pipelines, services, persistence, fault isolation, observability) + Data Engineering (schemas, normalization, event records, timestamps, provenance, indexing, integrity, streaming, historical) Lab: learning.db reconstruct what system knew, when, what decided, what happened after
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:10:3 ML & Adaptive: Supervised (classification, regression, features, labels, training, validation, testing, overfitting, generalization) Lab BIRTH_EDGE ML; Online Learning (SGD, incremental, concept drift, streaming, adaptive, catastrophic forgetting, online normalization) Reconstruct current model from first principles; RL (states, actions, rewards, policies, value, exploration/exploitation, Q-learning, policy optimization, TD) Lab SHOGUN/SUIB-X; Adaptive Systems (feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity) Major project: controlled environment where reality changes while system operates
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:15:8 Market Intelligence: Market Microstructure (liquidity, volume, spreads, price impact, order flow, depth); Asset Risk (liquidity, counterparty, smart-contract, concentration, manipulation, rug mechanisms); Signal Detection (signal vs noise, false positives/negatives, precision, recall, calibration, lead time); Decision Theory (expected value, utility, risk, asymmetric outcomes, thresholds, uncertainty) Analyze STRONG_ALERT/WATCH/NEUTRAL/AVOID; Live Intelligence pipeline Discovery→Scoring→Decision→Timestamp→Observation→Outcome→Learning→Updated model Principal BIRTH_EDGE lab
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:19:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:11:- Persistence: data/birth_edge.db tokens table, data/learning.db learning_results (addr PK, chain, symbol, initial_price, initial_liquidity, overall_score, holder/dev/lp/tax scores, discovered_at, final_price, rug_pulled, pumped, price_change_24h), data/cognition.db
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:14:**Data Flow:** Input (DexScreener latest) → ingestion (fetch_json_sync) → feature extraction (run_all_filters) → cognition (record_event) → ML (predict) → decision (overall_score) → persistence (record_token both DBs) → monitoring (live.log, API) → feedback (update_outcomes polls DEX_TOKEN_URL https://api.dexscreener.com/latest/dex/tokens/{}, rug if final_price<=0 or liq<=0, pump if final>=2*initial) → learning (train_model) → updated model
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:18:**Learning Mechanism:** experience (token birth + later price) → training input (features dict liquidity, holder, dev, lp, tax, overall) → train_model(features,label) → model state (weights in ml_model.json) → persistence mechanism (json file) → get_model() → predict_pump_probability() → decision/output
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:22:**Feedback Mechanism:** update_outcomes(min_age_hours=1) cutoff = now -1h, fetches final price, computes importance, updates DB, trains ML, records token_outcome event, retrain_weights scans threshold 50-100 step 5 for best winrate (wins-losses)/len, logs to logs/learning_report.jsonl, aegis_rule_miner.run_rule_mining()
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:35:- But n=8, no baseline, no holdout, no control, survivorship bias, EVM scores random, learning loop not auto-wired
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:41:- Wisdom rules seeded not learned (until rule miner)
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:53:- wisdom_rules learned (seeded)
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:13:# SKLearn Baselines
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:14:from sklearn.tree import DecisionTreeClassifier
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:15:from sklearn.ensemble import RandomForestClassifier
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:92:def greedy_rule_learner(rows, seed):
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:173:        "Greedy": run_baseline_on_test(greedy_rule_learner, "correlated_decoy", fng.correlated_decoy_rows, seeds=15),
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:179:        "Greedy": run_baseline_on_test(greedy_rule_learner, "adversarial_decoy", fng.adversarial_decoy_rows, seeds=15),
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:3:NOVELTY PROVER FOR AEGIS (NO SKLEARN)
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:181:def greedy_rule_learner(rows, seed):
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:287:        "Greedy": run_baseline_on_test(greedy_rule_learner, fng.correlated_decoy_rows, seeds=15),
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:292:        "Greedy": run_baseline_on_test(greedy_rule_learner, fng.adversarial_decoy_rows, seeds=15),
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:3:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:5:conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:9:cur.execute("PRAGMA table_info(learning_results)")
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:13:cur.execute("SELECT * FROM learning_results WHERE pumped IS NOT NULL")
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:44:    cur.execute(f"SELECT * FROM learning_results WHERE pumped IS NOT NULL AND {time_col} >= datetime('now','-30 days')")
+/data/data/com.termux/files/home/BIRTH_EDGE/check.py:3:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/check.py:4:conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/check.py:7:cur.execute("SELECT initial_liquidity_usd, holder_score, overall_score, pumped, rug_pulled, discovered_at FROM learning_results")
+/data/data/com.termux/files/home/BIRTH_EDGE/value2.py:3:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/value2.py:4:conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/value2.py:7:cur.execute("SELECT * FROM learning_results")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:7:for must in ["config.py", "learning.db" not in str(files) and "shogun.py" or "shogun.py", "cognition.py"]:
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:17:    LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:18:    print(f"LEARNING_DB = {LEARNING_DB} exists: {os.path.exists(LEARNING_DB)}")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:21:    LEARNING_DB = None
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:24:if LEARNING_DB and os.path.exists(LEARNING_DB):
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:25:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:30:    print(f"tables in learning.db: {tables}")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:31:    if "learning_results" in tables:
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:32:        cur.execute("SELECT COUNT(*) FROM learning_results")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:34:        cur.execute("SELECT COUNT(*) FROM learning_results WHERE pumped IS NOT NULL")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:36:        cur.execute("SELECT COUNT(*) FROM learning_results WHERE pumped=1")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:38:        cur.execute("SELECT COUNT(*) FROM learning_results WHERE rug_pulled=1")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:40:        print(f"learning_results total={total} labeled={labeled} pumped={pumped} rugs={rugs}")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:41:        cur.execute("SELECT initial_liquidity_usd, holder_score, overall_score, dev_score, lp_lock_score, tax_score FROM learning_results LIMIT 20")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:48:        cur.execute("SELECT MAX(discovered_at) as last FROM learning_results")
+/data/data/com.termux/files/home/BIRTH_EDGE/api.py:8:    con = sqlite3.connect("data/learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/api.py:13:        FROM learning_results 
+/data/data/com.termux/files/home/BIRTH_EDGE/api.py:22:    con = sqlite3.connect("data/learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/api.py:24:    row = con.execute("SELECT COUNT(*) as total, AVG(overall_score) as avg_score, MAX(overall_score) as max_score FROM learning_results").fetchone()
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:4:BIRTH_EDGE — FULL ADAPTIVE LEARNING FORENSIC TEST
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:10:A) a genuinely adaptive learning system whose accumulated
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:15:B) primarily a fixed rule/scoring system with learning
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:107:# TEST 1 — ARCHITECTURAL LEARNING PATH
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:112:    learning = source_text("learning.py")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:129:        if needle in learning:
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:133:        "Architecture contains closed learning loop",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:135:        f"{len(found)}/{len(required)} learning mechanisms found",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:146:    db = DATA / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:149:        record("Historical learning dataset", "FAIL", "data/learning.db missing")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:161:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:166:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:173:        "Historical learning dataset",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:259:    db = clone / "data" / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:273:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:429:    db = DATA / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:435:            "learning.db missing"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:449:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:487:    text = source_text("learning.py")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:524:    text = source_text("learning.py")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:530:    # Is the learned threshold actually written back into the
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:546:            "Learned threshold propagation",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:549:            "Current learning.py does not visibly write that threshold back into SCORE_MIN_BUY."
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:555:            "Learned threshold propagation",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:557:            "Learned threshold is propagated into decision configuration"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:563:            "Learned threshold propagation",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:578:    If the learning architecture only appears adaptive because
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:585:    db = DATA / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:591:            "learning.db missing"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:602:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:693:    dynamic_learning_reference = any(
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:696:            "learning",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:709:        "PASS" if dynamic_learning_reference else "LIMITED",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:710:        f"decision_engine references learning systems={dynamic_learning_reference}",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:724:        "learning.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:760:    propagation = statuses.get("Learned threshold propagation")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:762:        "Architecture contains closed learning loop"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:771:        primary = "ADAPTIVE LEARNING ARCHITECTURE CONFIRMED"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:782:            "Important: learning currently computes an improved threshold "
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:783:            "but the supplied learning.py does not visibly propagate it "
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:799:    print("BIRTH_EDGE ADAPTIVE LEARNING FORENSIC RESULT")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:813:    print("BIRTH_EDGE — FULL ADAPTIVE LEARNING FORENSIC TEST")
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:5:      "name": "Architecture contains closed learning loop",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:7:      "evidence": "7/7 learning mechanisms found",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:11:      "name": "Historical learning dataset",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:29:      "name": "Learned threshold propagation",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:32:      "detail": "Current learning.py does not visibly write that threshold back into SCORE_MIN_BUY."
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:43:      "evidence": "decision_engine references learning systems=True",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:50:      "detail": "main.py, filters.py, learning.py, cognition.py, ml_model.py, aegis_rule_miner.py, decision_engine.py, execution.py, agent_detection.py, novelty_comparator.py, full_novelty_gauntlet.py"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:138:    db = ROOT / "data" / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:142:            "Learning database discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:144:            "data/learning.db does not exist",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:185:            "Learning database discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:196:            "Learning database discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:205:# 2. DISCOVER ACTUAL LEARNING DATA
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:208:def discover_learning_rows(db):
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:287:                "Learning dataset discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:314:            "Learning dataset discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:325:            "Learning dataset discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:458:        "learn",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1028:        "learning.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1052:                    "learn(",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1081:                    "learning",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1086:                    "learned",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1151:            "LEARNING EFFECT DETECTED — "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1208:    db = ROOT / "data" / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1210:    discover_learning_rows(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:6:      "name": "Learning database discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:9:      "detail": "learning_results"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:12:      "name": "Learning dataset discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:14:      "evidence": "selected table=learning_results, rows=58",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:21:      "detail": "{\"OnlineLogisticRegression\": \"(feature_names, learning_rate=0.01, l2=0.001)\", \"get_model\": \"()\", \"predict_pump_probability\": \"(features: dict) -> float\", \"train_model\": \"(features: dict, label: int)\"}"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:119:    "learning_results": [
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:236:      "table": "learning_results",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:259:    "OnlineLogisticRegression": "(feature_names, learning_rate=0.01, l2=0.001)",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:265:    "learning.py": {
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:280:    "learn",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:851:            "LEARNING EFFECT DETECTED — "
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/1/README.md:6:Lab learning.db: Design historical record that reconstructs What did system know, when, what decided, what happened after
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:1:# SCHOOL 3 - Machine Learning & Adaptive Learning
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:3:Online Learning: SGD, incremental, concept drift, streaming, adaptive, catastrophic forgetting, online normalization - Reconstruct current model from first principles - critical because architecture isn't static model
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:4:RL: states, actions, rewards, policies, value functions, exploration/exploitation, Q-learning, policy optimization, TD - Lab SHOGUN/SUIB-X
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:5:Adaptive Systems: feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity - Major project: controlled environment where underlying reality changes while system operates, measure adaptation
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/8/README.md:6:Live Intelligence: Build complete pipeline Discovery→Scoring→Decision→Timestamp→Observation→Outcome→Learning→Updated model - Principal BIRTH_EDGE laboratory
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/10/README.md:7:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:1:# LAYER 1 - Learner Curriculum - For someone who knows little
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:5:3. Memory and Persistence: State, Ledgers, Hash chains, Persistent learning, Recovery after termination
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:7:5. Adaptive Intelligence: Online learning, Logistic regression, Incremental learning, Experience-based adaptation, Why model that merely predicts isn't necessarily adaptive system
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/ARCHITECT_TRACK.md:6:- Decomposing complex systems (why 3 DBs? birth_edge.db vs learning.db vs cognition.db)
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/ARCHITECT_TRACK.md:9:- Discovering failure modes (EVM random, 105 dupes, run_learning_cycle not wired)
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:9:**Core Rule:** Study concepts because they explain systems you have built. Reverse conventional learn theory → eventually build into: build → encounter problem → learn theory → reconstruct → integrate → test → discover.
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:14:Core engineering loop: PERCEPTION → STATE → MEMORY → LEARNING → REASONING → DECISION → ACTION → FEEDBACK → ADAPTATION
+### SEARCH: learning
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:28:[2026-08-21 17:29:08] Learning report: total=3, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:29:[2026-08-21 17:29:08] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:218:[2026-08-21 17:34:09] Learning: updated 2 token outcomes, trained ML, and recorded events.
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:219:[2026-08-21 17:34:09] Learning report: total=5, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:220:[2026-08-21 17:34:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:378:[2026-08-21 17:39:09] Learning report: total=5, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:379:[2026-08-21 17:39:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:542:[2026-08-21 17:44:09] Learning report: total=5, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:543:[2026-08-21 17:44:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:721:[2026-08-21 17:49:09] Learning: updated 1 token outcomes, trained ML, and recorded events.
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:722:[2026-08-21 17:49:09] Learning report: total=6, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:723:[2026-08-21 17:49:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:881:[2026-08-21 17:54:09] Learning report: total=6, rugs=0, pumps=0, avg_score=75.0
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:882:[2026-08-21 17:54:09] Learning: suggested minimum score threshold = 50 (current 75)
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/evidence/LEVEL5_2026-08-22.json:17:  "note": "6/8 pumped, avg >1000%, but n=8 no baseline, EVM random, learning loop not auto-wired - Level 5 not Level 6"
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:8:import scoring, learning
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:10:print("filters:", inspect.signature(scoring.record_token if hasattr(scoring,'record_token') else learning.record_token))
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:13:try: getattr(learning,'init_learning_db',lambda:None)()
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:92:                call_record(learning, addr, chain, symbol, liq, result)
+/data/data/com.termux/files/home/BIRTH_EDGE/scoring.py:2:Simple scoring engine that can be extended with machine learning.
+/data/data/com.termux/files/home/BIRTH_EDGE/scoring.py:11:    """Store token data in DB for future learning."""
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:12:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:14:def init_learning_db():
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:15:    os.makedirs(os.path.dirname(LEARNING_DB), exist_ok=True)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:16:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:19:        CREATE TABLE IF NOT EXISTS learning_results (
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:37:    existing_cols = [row[1] for row in cur.execute("PRAGMA table_info(learning_results)").fetchall()]
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:39:        cur.execute("ALTER TABLE learning_results ADD COLUMN holder_score REAL DEFAULT 0")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:41:        cur.execute("ALTER TABLE learning_results ADD COLUMN dev_score REAL DEFAULT 0")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:43:        cur.execute("ALTER TABLE learning_results ADD COLUMN lp_lock_score REAL DEFAULT 0")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:45:        cur.execute("ALTER TABLE learning_results ADD COLUMN tax_score REAL DEFAULT 0")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:52:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:55:        INSERT OR REPLACE INTO learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:86:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:93:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:139:            conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:142:                UPDATE learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:164:            print(f"[{now_str()}] learning update error for {addr}: {e}")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:166:        print(f"[{now_str()}] Learning: updated {updated} token outcomes, trained ML, and recorded events.")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:169:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:174:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:181:        print(f"[{now_str()}] Learning: no outcome data yet.")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:188:    print(f"[{now_str()}] Learning report: total={total}, rugs={rugs}, pumps={pumps}, avg_score={avg_score:.1f}")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:203:    print(f"[{now_str()}] Learning: suggested minimum score threshold = {best_threshold} (current {SCORE_MIN_BUY})")
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:214:    with open("logs/learning_report.jsonl", "a") as f:
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:217:def run_learning_cycle():
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:5:| main.py | Entry point: filter loop, realtime Pump.fun, learning, ML, cognition, agent detection, decision engine |
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:9:| learning.py | Closed-loop outcome tracking and ML training trigger |
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:25:- logs/qualified_tokens.jsonl, rejected_tokens.jsonl, learning_report.jsonl
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:28:- data/learning.db (outcome database)
+/data/data/com.termux/files/home/BIRTH_EDGE/verify_files.sh:4:for f in main.py config.py filters.py scanners.py learning.py ml_model.py cognition.py agent_detection.py decision_engine.py realtime_pumpfun.py aegis_rule_miner.py utils.py execution.py requirements.txt FILES_MANIFEST.md CURRICULUM.md; do
+/data/data/com.termux/files/home/BIRTH_EDGE/ml_model.py:11:    def __init__(self, feature_names, learning_rate=0.01, l2=0.001):
+/data/data/com.termux/files/home/BIRTH_EDGE/ml_model.py:14:        self.lr = learning_rate
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:9:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:209:    if not os.path.exists(LEARNING_DB): return []
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:210:    conn=sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:214:        cur.execute("SELECT * FROM learning_results WHERE pumped IS NOT NULL")
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:8:1 Computational Foundations: Python systems language (functions, classes, inheritance, modules, packages, serialization, exceptions, concurrency, subprocesses, filesystem, networking, APIs, databases) + Software Architecture (modular, interfaces, dependency boundaries, state, event-driven, pipelines, services, persistence, fault isolation, observability) + Data Engineering (schemas, normalization, event records, timestamps, provenance, indexing, integrity, streaming, historical) Lab: learning.db reconstruct what system knew, when, what decided, what happened after
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:10:3 ML & Adaptive: Supervised (classification, regression, features, labels, training, validation, testing, overfitting, generalization) Lab BIRTH_EDGE ML; Online Learning (SGD, incremental, concept drift, streaming, adaptive, catastrophic forgetting, online normalization) Reconstruct current model from first principles; RL (states, actions, rewards, policies, value, exploration/exploitation, Q-learning, policy optimization, TD) Lab SHOGUN/SUIB-X; Adaptive Systems (feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity) Major project: controlled environment where reality changes while system operates
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:15:8 Market Intelligence: Market Microstructure (liquidity, volume, spreads, price impact, order flow, depth); Asset Risk (liquidity, counterparty, smart-contract, concentration, manipulation, rug mechanisms); Signal Detection (signal vs noise, false positives/negatives, precision, recall, calibration, lead time); Decision Theory (expected value, utility, risk, asymmetric outcomes, thresholds, uncertainty) Analyze STRONG_ALERT/WATCH/NEUTRAL/AVOID; Live Intelligence pipeline Discovery→Scoring→Decision→Timestamp→Observation→Outcome→Learning→Updated model Principal BIRTH_EDGE lab
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:19:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:11:- Persistence: data/birth_edge.db tokens table, data/learning.db learning_results (addr PK, chain, symbol, initial_price, initial_liquidity, overall_score, holder/dev/lp/tax scores, discovered_at, final_price, rug_pulled, pumped, price_change_24h), data/cognition.db
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:14:**Data Flow:** Input (DexScreener latest) → ingestion (fetch_json_sync) → feature extraction (run_all_filters) → cognition (record_event) → ML (predict) → decision (overall_score) → persistence (record_token both DBs) → monitoring (live.log, API) → feedback (update_outcomes polls DEX_TOKEN_URL https://api.dexscreener.com/latest/dex/tokens/{}, rug if final_price<=0 or liq<=0, pump if final>=2*initial) → learning (train_model) → updated model
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:18:**Learning Mechanism:** experience (token birth + later price) → training input (features dict liquidity, holder, dev, lp, tax, overall) → train_model(features,label) → model state (weights in ml_model.json) → persistence mechanism (json file) → get_model() → predict_pump_probability() → decision/output
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:22:**Feedback Mechanism:** update_outcomes(min_age_hours=1) cutoff = now -1h, fetches final price, computes importance, updates DB, trains ML, records token_outcome event, retrain_weights scans threshold 50-100 step 5 for best winrate (wins-losses)/len, logs to logs/learning_report.jsonl, aegis_rule_miner.run_rule_mining()
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:35:- But n=8, no baseline, no holdout, no control, survivorship bias, EVM scores random, learning loop not auto-wired
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:3:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:5:conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:9:cur.execute("PRAGMA table_info(learning_results)")
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:13:cur.execute("SELECT * FROM learning_results WHERE pumped IS NOT NULL")
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:44:    cur.execute(f"SELECT * FROM learning_results WHERE pumped IS NOT NULL AND {time_col} >= datetime('now','-30 days')")
+/data/data/com.termux/files/home/BIRTH_EDGE/check.py:3:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/check.py:4:conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/check.py:7:cur.execute("SELECT initial_liquidity_usd, holder_score, overall_score, pumped, rug_pulled, discovered_at FROM learning_results")
+/data/data/com.termux/files/home/BIRTH_EDGE/value2.py:3:LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/value2.py:4:conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/value2.py:7:cur.execute("SELECT * FROM learning_results")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:7:for must in ["config.py", "learning.db" not in str(files) and "shogun.py" or "shogun.py", "cognition.py"]:
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:17:    LEARNING_DB = os.path.join(os.path.dirname(DATABASE_PATH), "learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:18:    print(f"LEARNING_DB = {LEARNING_DB} exists: {os.path.exists(LEARNING_DB)}")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:21:    LEARNING_DB = None
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:24:if LEARNING_DB and os.path.exists(LEARNING_DB):
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:25:    conn = sqlite3.connect(LEARNING_DB)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:30:    print(f"tables in learning.db: {tables}")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:31:    if "learning_results" in tables:
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:32:        cur.execute("SELECT COUNT(*) FROM learning_results")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:34:        cur.execute("SELECT COUNT(*) FROM learning_results WHERE pumped IS NOT NULL")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:36:        cur.execute("SELECT COUNT(*) FROM learning_results WHERE pumped=1")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:38:        cur.execute("SELECT COUNT(*) FROM learning_results WHERE rug_pulled=1")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:40:        print(f"learning_results total={total} labeled={labeled} pumped={pumped} rugs={rugs}")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:41:        cur.execute("SELECT initial_liquidity_usd, holder_score, overall_score, dev_score, lp_lock_score, tax_score FROM learning_results LIMIT 20")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_audit.py:48:        cur.execute("SELECT MAX(discovered_at) as last FROM learning_results")
+/data/data/com.termux/files/home/BIRTH_EDGE/api.py:8:    con = sqlite3.connect("data/learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/api.py:13:        FROM learning_results 
+/data/data/com.termux/files/home/BIRTH_EDGE/api.py:22:    con = sqlite3.connect("data/learning.db")
+/data/data/com.termux/files/home/BIRTH_EDGE/api.py:24:    row = con.execute("SELECT COUNT(*) as total, AVG(overall_score) as avg_score, MAX(overall_score) as max_score FROM learning_results").fetchone()
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:4:BIRTH_EDGE — FULL ADAPTIVE LEARNING FORENSIC TEST
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:10:A) a genuinely adaptive learning system whose accumulated
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:15:B) primarily a fixed rule/scoring system with learning
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:107:# TEST 1 — ARCHITECTURAL LEARNING PATH
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:112:    learning = source_text("learning.py")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:129:        if needle in learning:
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:133:        "Architecture contains closed learning loop",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:135:        f"{len(found)}/{len(required)} learning mechanisms found",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:146:    db = DATA / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:149:        record("Historical learning dataset", "FAIL", "data/learning.db missing")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:161:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:166:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:173:        "Historical learning dataset",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:259:    db = clone / "data" / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:273:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:429:    db = DATA / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:435:            "learning.db missing"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:449:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:487:    text = source_text("learning.py")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:524:    text = source_text("learning.py")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:549:            "Current learning.py does not visibly write that threshold back into SCORE_MIN_BUY."
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:578:    If the learning architecture only appears adaptive because
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:585:    db = DATA / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:591:            "learning.db missing"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:602:        FROM learning_results
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:693:    dynamic_learning_reference = any(
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:696:            "learning",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:709:        "PASS" if dynamic_learning_reference else "LIMITED",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:710:        f"decision_engine references learning systems={dynamic_learning_reference}",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:724:        "learning.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:762:        "Architecture contains closed learning loop"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:771:        primary = "ADAPTIVE LEARNING ARCHITECTURE CONFIRMED"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:782:            "Important: learning currently computes an improved threshold "
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:783:            "but the supplied learning.py does not visibly propagate it "
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:799:    print("BIRTH_EDGE ADAPTIVE LEARNING FORENSIC RESULT")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:813:    print("BIRTH_EDGE — FULL ADAPTIVE LEARNING FORENSIC TEST")
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:5:      "name": "Architecture contains closed learning loop",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:7:      "evidence": "7/7 learning mechanisms found",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:11:      "name": "Historical learning dataset",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:32:      "detail": "Current learning.py does not visibly write that threshold back into SCORE_MIN_BUY."
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:43:      "evidence": "decision_engine references learning systems=True",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:50:      "detail": "main.py, filters.py, learning.py, cognition.py, ml_model.py, aegis_rule_miner.py, decision_engine.py, execution.py, agent_detection.py, novelty_comparator.py, full_novelty_gauntlet.py"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:138:    db = ROOT / "data" / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:142:            "Learning database discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:144:            "data/learning.db does not exist",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:185:            "Learning database discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:196:            "Learning database discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:205:# 2. DISCOVER ACTUAL LEARNING DATA
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:208:def discover_learning_rows(db):
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:287:                "Learning dataset discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:314:            "Learning dataset discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:325:            "Learning dataset discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1028:        "learning.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1081:                    "learning",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1151:            "LEARNING EFFECT DETECTED — "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1208:    db = ROOT / "data" / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1210:    discover_learning_rows(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:6:      "name": "Learning database discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:9:      "detail": "learning_results"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:12:      "name": "Learning dataset discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:14:      "evidence": "selected table=learning_results, rows=58",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:21:      "detail": "{\"OnlineLogisticRegression\": \"(feature_names, learning_rate=0.01, l2=0.001)\", \"get_model\": \"()\", \"predict_pump_probability\": \"(features: dict) -> float\", \"train_model\": \"(features: dict, label: int)\"}"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:119:    "learning_results": [
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:236:      "table": "learning_results",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:259:    "OnlineLogisticRegression": "(feature_names, learning_rate=0.01, l2=0.001)",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:265:    "learning.py": {
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:851:            "LEARNING EFFECT DETECTED — "
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/1/README.md:6:Lab learning.db: Design historical record that reconstructs What did system know, when, what decided, what happened after
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:1:# SCHOOL 3 - Machine Learning & Adaptive Learning
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:3:Online Learning: SGD, incremental, concept drift, streaming, adaptive, catastrophic forgetting, online normalization - Reconstruct current model from first principles - critical because architecture isn't static model
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:4:RL: states, actions, rewards, policies, value functions, exploration/exploitation, Q-learning, policy optimization, TD - Lab SHOGUN/SUIB-X
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:5:Adaptive Systems: feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity - Major project: controlled environment where underlying reality changes while system operates, measure adaptation
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/8/README.md:6:Live Intelligence: Build complete pipeline Discovery→Scoring→Decision→Timestamp→Observation→Outcome→Learning→Updated model - Principal BIRTH_EDGE laboratory
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/10/README.md:7:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:5:3. Memory and Persistence: State, Ledgers, Hash chains, Persistent learning, Recovery after termination
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:7:5. Adaptive Intelligence: Online learning, Logistic regression, Incremental learning, Experience-based adaptation, Why model that merely predicts isn't necessarily adaptive system
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/ARCHITECT_TRACK.md:6:- Decomposing complex systems (why 3 DBs? birth_edge.db vs learning.db vs cognition.db)
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/ARCHITECT_TRACK.md:9:- Discovering failure modes (EVM random, 105 dupes, run_learning_cycle not wired)
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:14:Core engineering loop: PERCEPTION → STATE → MEMORY → LEARNING → REASONING → DECISION → ACTION → FEEDBACK → ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:28:4. run_learning_cycle() not wired into live loop in main.py - dual() only calls birth_filtered_loop + ipo_loop, learning only manual
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:77:LEARNING
+### SEARCH: trained
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:218:[2026-08-21 17:34:09] Learning: updated 2 token outcomes, trained ML, and recorded events.
+/data/data/com.termux/files/home/BIRTH_EDGE/logs/run.log:721:[2026-08-21 17:49:09] Learning: updated 1 token outcomes, trained ML, and recorded events.
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:166:        print(f"[{now_str()}] Learning: updated {updated} token outcomes, trained ML, and recorded events.")
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:30:- data/ml_model.json (trained ML model weights)
+/data/data/com.termux/files/home/BIRTH_EDGE/decision_engine.py:52:    # ML probability (0-1) scaled to 0-100, but only if model trained
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:9:2 Mathematics: Probability (random variables, distributions, conditional, Bayes, likelihood, expectation, variance, covariance, independence) Interpret BIRTH_EDGE probabilities; Statistics (sampling, bias, variance, confidence, hypothesis testing, effect sizes, regression, correlation, multiple comparisons) Build outcome-analysis framework; Linear Algebra (vectors, matrices, transformations, eigenvalues, dimensionality, projections, decompositions) Connect to AEGIS; Calculus & Optimization (derivatives, gradients, partial, optimization, gradient descent, constrained, loss functions) Dissect OnlineLogisticRegression derive update; Information Theory (entropy, information, mutual information, compression, uncertainty, information gain) When does observation provide new information?
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:88:print(f"Clone A (trained pump) preds: {resA}")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:89:print(f"Clone B (trained rug) preds: {resB}")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:105:print("trained")
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/2/README.md:5:Calculus & Optimization: derivatives, gradients, partial, optimization, gradient descent, constrained, loss functions - Dissect OnlineLogisticRegression derive update rule yourself
+### SEARCH: training
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:9:| learning.py | Closed-loop outcome tracking and ML training trigger |
+/data/data/com.termux/files/home/BIRTH_EDGE/ml_model.py:62:        Update model weights with one training example.
+/data/data/com.termux/files/home/BIRTH_EDGE/ml_model.py:130:        return 0.5  # not enough training data
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:208:def get_training_data():
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:223:    rows=get_training_data()
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:10:3 ML & Adaptive: Supervised (classification, regression, features, labels, training, validation, testing, overfitting, generalization) Lab BIRTH_EDGE ML; Online Learning (SGD, incremental, concept drift, streaming, adaptive, catastrophic forgetting, online normalization) Reconstruct current model from first principles; RL (states, actions, rewards, policies, value, exploration/exploitation, Q-learning, policy optimization, TD) Lab SHOGUN/SUIB-X; Adaptive Systems (feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity) Major project: controlled environment where reality changes while system operates
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:69:print(f"before={pred_before} after training H_A={pred_after_A} changed={pred_before!=pred_after_A}")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:79:print(f"before={pred_before2} after training H_B={pred_after_B} changed={pred_before2!=pred_after_B}")
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:18:**Learning Mechanism:** experience (token birth + later price) → training input (features dict liquidity, holder, dev, lp, tax, overall) → train_model(features,label) → model state (weights in ml_model.json) → persistence mechanism (json file) → get_model() → predict_pump_probability() → decision/output
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:371:    Makes the cheap decoy extremely predictive in training.
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:392:        # Very strong training correlation.
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:456:        "mean_training_accuracy": safe_mean(accuracies),
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:457:        "stdev_training_accuracy": safe_stdev(accuracies),
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_gauntlet_results.json:14:      "mean_training_accuracy": 0.9148,
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_gauntlet_results.json:15:      "stdev_training_accuracy": 0.06613252687680327,
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:158:    # Predict on training set
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:283:    print("Training baselines (this may take a few seconds)...")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:117:        "ML training": "train_model",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:221:                "ML training function exists",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:230:            "ML training function exists",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:239:            "ML training function exists",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:319:            f"outcome-labelled training operations"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:325:            f"training operations"
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:8:      "detail": "ML training, Outcome labeling, Rule mining, Outcome event, Birth event, Memory importance, Threshold adaptation"
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:53:      "name": "ML training function exists",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:18:4. Controlled training with Dataset A
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:19:5. Controlled training with Dataset B
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:445:# 5. FIND TRAINING FUNCTION
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:448:def find_training_function(module):
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:472:                "Training API discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:481:        "Training API discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:483:        "No training function discovered",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:626:# 8. TRAINING EXPERIMENT
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:629:def run_training(module, training_fn, dataset):
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:638:            training_fn(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:730:        train_fn = find_training_function(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:742:                "reason": "No training API",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:758:        success, errors = run_training(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:788:            "training_successes": success,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:789:            "training_errors": errors,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:822:        train_fn = find_training_function(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:834:                "reason": "No training API",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:850:        success, errors = run_training(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:880:            "training_successes": success,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:881:            "training_errors": errors,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:921:        train_a = find_training_function(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:932:                "Training API unavailable"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:935:        run_training(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:974:        train_b = find_training_function(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:985:                "Training API unavailable"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:988:        run_training(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1045:            "training": any(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1096:        "Inspected training, prediction, persistence, and decision dependencies",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1107:        "training_A",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1112:        "training_B",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1156:            "Training altered the model or its immediate "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1170:            "the training experience did not produce a "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1223:    print("Running controlled training experiment A...")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1224:    RESULTS["experiments"]["training_A"] = (
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1229:    print("Running controlled training experiment B...")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1230:    RESULTS["experiments"]["training_B"] = (
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:26:      "evidence": "Inspected training, prediction, persistence, and decision dependencies",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:30:      "name": "Training API discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:42:      "name": "Training API discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:54:      "name": "Training API discovery",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:67:    "training_A": {
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:69:      "training_successes": 4,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:70:      "training_errors": [],
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:86:    "training_B": {
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:88:      "training_successes": 4,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:89:      "training_errors": [],
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:113:    "explanation": "Under this controlled experiment, changing the training experience did not produce a detectable change in subsequent behavior.",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:266:      "training": true,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:272:      "training": true,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:278:      "training": false,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:284:      "training": false,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:290:      "training": false,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:33:        1. training API existence
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:47:    - Training data is synthetic and deliberately controlled.
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:112:# These are deliberately held out from training.
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:272:# Find training API
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:275:training_names = [
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:285:for name in training_names:
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:302:        "reason": "No training function found"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:549:            "training_successes": successful,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:550:            "training_errors": errors,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:856:            "Training altered immediate model "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:870:            "Training changed a model artifact, "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:954:                    "Opposite training histories "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2_results.json:86:    "causal_standard": "Opposite training histories + identical future inputs + different future behavior"
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:2:Supervised: classification, regression, features, labels, training, validation, testing, overfitting, generalization - Lab BIRTH_EDGE ML
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:46:1. Immediate adaptation: same clone prediction BEFORE training → train H_A → prediction AFTER, if changes training affects state
+### SEARCH: updated model
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:15:8 Market Intelligence: Market Microstructure (liquidity, volume, spreads, price impact, order flow, depth); Asset Risk (liquidity, counterparty, smart-contract, concentration, manipulation, rug mechanisms); Signal Detection (signal vs noise, false positives/negatives, precision, recall, calibration, lead time); Decision Theory (expected value, utility, risk, asymmetric outcomes, thresholds, uncertainty) Analyze STRONG_ALERT/WATCH/NEUTRAL/AVOID; Live Intelligence pipeline Discovery→Scoring→Decision→Timestamp→Observation→Outcome→Learning→Updated model Principal BIRTH_EDGE lab
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:14:**Data Flow:** Input (DexScreener latest) → ingestion (fetch_json_sync) → feature extraction (run_all_filters) → cognition (record_event) → ML (predict) → decision (overall_score) → persistence (record_token both DBs) → monitoring (live.log, API) → feedback (update_outcomes polls DEX_TOKEN_URL https://api.dexscreener.com/latest/dex/tokens/{}, rug if final_price<=0 or liq<=0, pump if final>=2*initial) → learning (train_model) → updated model
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/8/README.md:6:Live Intelligence: Build complete pipeline Discovery→Scoring→Decision→Timestamp→Observation→Outcome→Learning→Updated model - Principal BIRTH_EDGE laboratory
+### SEARCH: model update
+### SEARCH: feedback
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:10:3 ML & Adaptive: Supervised (classification, regression, features, labels, training, validation, testing, overfitting, generalization) Lab BIRTH_EDGE ML; Online Learning (SGD, incremental, concept drift, streaming, adaptive, catastrophic forgetting, online normalization) Reconstruct current model from first principles; RL (states, actions, rewards, policies, value, exploration/exploitation, Q-learning, policy optimization, TD) Lab SHOGUN/SUIB-X; Adaptive Systems (feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity) Major project: controlled environment where reality changes while system operates
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:11:4 Dynamical Systems & Cybernetics: Dynamical Systems (state, transitions, trajectories, phase space, equilibria, stability, nonlinear, discrete/continuous) Lab AEGIS; Differential Equations (ODEs, nonlinear ODEs, numerical integration, RK4, coupled, parameter estimation) Lab Duffing/ODE discovery; System Identification (Given observations, can we infer hidden rules? parameter estimation, model selection, structural identification, observability, identifiability, latent) Connect AEGIS; Cybernetics (feedback, control, regulation, homeostasis, adaptation, goal-directed, closed-loop, self-regulation) Labs SHOGUN, T-PRAO L4, ORGANISM, homeostat; Autonomous System Theory (automation vs autonomy, Observation→internal state→interpretation→decision→action→environmental response→updated state)
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:12:5 Autonomous-Agent: Agent Architecture (perception, memory, reasoning, planning, action, feedback, internal state); Persistent Agents (durable state, checkpoints, recovery, identity, continuity, event logs, state reconstruction) Lab T-PRAO L4; Multi-Agent (roles, coordination, competition, communication, delegation, trust, reputation) Lab cognition/agent; Agent Governance (permissions, constraints, safety boundaries, execution authority, auditability, human override) Important before autonomous trading
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:19:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:14:**Data Flow:** Input (DexScreener latest) → ingestion (fetch_json_sync) → feature extraction (run_all_filters) → cognition (record_event) → ML (predict) → decision (overall_score) → persistence (record_token both DBs) → monitoring (live.log, API) → feedback (update_outcomes polls DEX_TOKEN_URL https://api.dexscreener.com/latest/dex/tokens/{}, rug if final_price<=0 or liq<=0, pump if final>=2*initial) → learning (train_model) → updated model
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:22:**Feedback Mechanism:** update_outcomes(min_age_hours=1) cutoff = now -1h, fetches final price, computes importance, updates DB, trains ML, records token_outcome event, retrain_weights scans threshold 50-100 step 5 for best winrate (wins-losses)/len, logs to logs/learning_report.jsonl, aegis_rule_miner.run_rule_mining()
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/1/README.md:5:Project: Create architectural map Input→ingestion→feature extraction→cognition→ML→decision→persistence→monitoring→feedback
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:5:Adaptive Systems: feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity - Major project: controlled environment where underlying reality changes while system operates, measure adaptation
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/4/README.md:5:Cybernetics: feedback, control, regulation, homeostasis, adaptation, goal-directed behavior, closed-loop, self-regulation - Labs SHOGUN, T-PRAO L4, ORGANISM, homeostat
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/5/README.md:2:Agent Architecture: perception, memory, reasoning, planning, action, feedback, internal state
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/10/README.md:7:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:3:1. Thinking in Systems: What is system? State, inputs, outputs, feedback, Deterministic vs adaptive, Why architecture matters
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:6:4. Observation → Decision → Action: Sensors, Feature extraction, Rules, Decision engines, Confidence, Feedback loops
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:14:Core engineering loop: PERCEPTION → STATE → MEMORY → LEARNING → REASONING → DECISION → ACTION → FEEDBACK → ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:85:FEEDBACK
+### SEARCH: closed-loop
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:9:| learning.py | Closed-loop outcome tracking and ML training trigger |
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:11:4 Dynamical Systems & Cybernetics: Dynamical Systems (state, transitions, trajectories, phase space, equilibria, stability, nonlinear, discrete/continuous) Lab AEGIS; Differential Equations (ODEs, nonlinear ODEs, numerical integration, RK4, coupled, parameter estimation) Lab Duffing/ODE discovery; System Identification (Given observations, can we infer hidden rules? parameter estimation, model selection, structural identification, observability, identifiability, latent) Connect AEGIS; Cybernetics (feedback, control, regulation, homeostasis, adaptation, goal-directed, closed-loop, self-regulation) Labs SHOGUN, T-PRAO L4, ORGANISM, homeostat; Autonomous System Theory (automation vs autonomy, Observation→internal state→interpretation→decision→action→environmental response→updated state)
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/4/README.md:5:Cybernetics: feedback, control, regulation, homeostasis, adaptation, goal-directed behavior, closed-loop, self-regulation - Labs SHOGUN, T-PRAO L4, ORGANISM, homeostat
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:9:7. Autonomous Architecture: Watchers, Supervisors, Heartbeats, Runtime state, Governance, Safety boundaries, Closed-loop operation
+### SEARCH: closed loop
+### SEARCH: autonomous
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:2:An Evidence-Driven Practical Curriculum for Building Adaptive Autonomous Systems
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:11:4 Dynamical Systems & Cybernetics: Dynamical Systems (state, transitions, trajectories, phase space, equilibria, stability, nonlinear, discrete/continuous) Lab AEGIS; Differential Equations (ODEs, nonlinear ODEs, numerical integration, RK4, coupled, parameter estimation) Lab Duffing/ODE discovery; System Identification (Given observations, can we infer hidden rules? parameter estimation, model selection, structural identification, observability, identifiability, latent) Connect AEGIS; Cybernetics (feedback, control, regulation, homeostasis, adaptation, goal-directed, closed-loop, self-regulation) Labs SHOGUN, T-PRAO L4, ORGANISM, homeostat; Autonomous System Theory (automation vs autonomy, Observation→internal state→interpretation→decision→action→environmental response→updated state)
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:12:5 Autonomous-Agent: Agent Architecture (perception, memory, reasoning, planning, action, feedback, internal state); Persistent Agents (durable state, checkpoints, recovery, identity, continuity, event logs, state reconstruction) Lab T-PRAO L4; Multi-Agent (roles, coordination, competition, communication, delegation, trust, reputation) Lab cognition/agent; Agent Governance (permissions, constraints, safety boundaries, execution authority, auditability, human override) Important before autonomous trading
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:19:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/4/README.md:6:Autonomous System Theory: distinction automation vs autonomy, formalize Observation→internal state→interpretation→decision→action→environmental response→updated state - central mathematical object
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/5/README.md:1:# SCHOOL 5 - Autonomous-Agent Architecture
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/5/README.md:5:Agent Governance: permissions, constraints, safety boundaries, execution authority, auditability, human override - Important before autonomous trading
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/10/README.md:7:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:9:7. Autonomous Architecture: Watchers, Supervisors, Heartbeats, Runtime state, Governance, Safety boundaries, Closed-loop operation
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:2:## An Evidence-Driven Practical Curriculum for Building Adaptive Autonomous Systems
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:6:- For others: SIA teaches people how to build, interrogate, and extend adaptive autonomous systems
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:29:5. Autonomous trading not yet integrated - execution.py exists but not connected
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:58:LEVEL 3 Learn to make them operate autonomously.
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:67:## Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:91:SHOGUN = autonomous/cybernetic implementation
+### SEARCH: autonomy
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:11:4 Dynamical Systems & Cybernetics: Dynamical Systems (state, transitions, trajectories, phase space, equilibria, stability, nonlinear, discrete/continuous) Lab AEGIS; Differential Equations (ODEs, nonlinear ODEs, numerical integration, RK4, coupled, parameter estimation) Lab Duffing/ODE discovery; System Identification (Given observations, can we infer hidden rules? parameter estimation, model selection, structural identification, observability, identifiability, latent) Connect AEGIS; Cybernetics (feedback, control, regulation, homeostasis, adaptation, goal-directed, closed-loop, self-regulation) Labs SHOGUN, T-PRAO L4, ORGANISM, homeostat; Autonomous System Theory (automation vs autonomy, Observation→internal state→interpretation→decision→action→environmental response→updated state)
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/4/README.md:6:Autonomous System Theory: distinction automation vs autonomy, formalize Observation→internal state→interpretation→decision→action→environmental response→updated state - central mathematical object
+### SEARCH: watchdog
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:16:9 Systems Engineering: Linux/Termux (processes, daemons, services, permissions, filesystems, scheduling, networking, resource constraints) Lab Termux; Reliability (heartbeats, watchdogs, fault detection, recovery, redundancy, graceful degradation) Lab SHOGUN; Observability (health, state, activity, errors, decisions, history, performance); Security (authentication, authorization, secrets, encryption, attack surfaces, sandboxing, supply-chain)
+/data/data/com.termux/files/home/BIRTH_EDGE/run_bg.sh:30:echo "tmux not found, using nohup + watchdog loop."
+/data/data/com.termux/files/home/BIRTH_EDGE/run_bg.sh:40:# Watchdog loop
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/9/README.md:3:Reliability Engineering: heartbeats, watchdogs, fault detection, recovery, redundancy, graceful degradation - SHOGUN operational work
+### SEARCH: heartbeat
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:16:9 Systems Engineering: Linux/Termux (processes, daemons, services, permissions, filesystems, scheduling, networking, resource constraints) Lab Termux; Reliability (heartbeats, watchdogs, fault detection, recovery, redundancy, graceful degradation) Lab SHOGUN; Observability (health, state, activity, errors, decisions, history, performance); Security (authentication, authorization, secrets, encryption, attack surfaces, sandboxing, supply-chain)
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/9/README.md:3:Reliability Engineering: heartbeats, watchdogs, fault detection, recovery, redundancy, graceful degradation - SHOGUN operational work
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:9:7. Autonomous Architecture: Watchers, Supervisors, Heartbeats, Runtime state, Governance, Safety boundaries, Closed-loop operation
+### SEARCH: supervisor
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:9:7. Autonomous Architecture: Watchers, Supervisors, Heartbeats, Runtime state, Governance, Safety boundaries, Closed-loop operation
+### SEARCH: persistent
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:12:5 Autonomous-Agent: Agent Architecture (perception, memory, reasoning, planning, action, feedback, internal state); Persistent Agents (durable state, checkpoints, recovery, identity, continuity, event logs, state reconstruction) Lab T-PRAO L4; Multi-Agent (roles, coordination, competition, communication, delegation, trust, reputation) Lab cognition/agent; Agent Governance (permissions, constraints, safety boundaries, execution authority, auditability, human override) Important before autonomous trading
+/data/data/com.termux/files/home/BIRTH_EDGE/run_bg.sh:2:# BIRTH_EDGE persistent background runner with auto-restart
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:36:        4. persistent adaptation
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:865:            "PERSISTENT MODEL MUTATION DETECTED — "
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/5/README.md:3:Persistent Agents: durable state, checkpoints, recovery, identity, continuity, event logs, state reconstruction - Lab T-PRAO L4
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:5:3. Memory and Persistence: State, Ledgers, Hash chains, Persistent learning, Recovery after termination
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:48:3. Persistence: train → save/commit → destroy process → fresh Python process → load model → same future input, survives process boundary = persistent adaptation not in-memory mutation
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:59:LEVEL 4 Learn to make them persistent and self-monitoring.
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:92:T-PRAO = persistent-organism implementation
+### SEARCH: persistence
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:8:1 Computational Foundations: Python systems language (functions, classes, inheritance, modules, packages, serialization, exceptions, concurrency, subprocesses, filesystem, networking, APIs, databases) + Software Architecture (modular, interfaces, dependency boundaries, state, event-driven, pipelines, services, persistence, fault isolation, observability) + Data Engineering (schemas, normalization, event records, timestamps, provenance, indexing, integrity, streaming, historical) Lab: learning.db reconstruct what system knew, when, what decided, what happened after
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:14:7 Cognitive Architecture: Memory (working, episodic, semantic, retrieval, persistence, updating); Knowledge Representation (rules, graphs, ontologies, symbolic, embeddings, hybrid); Reasoning (deduction, induction, abduction, causal reasoning, uncertainty, hypothesis generation); Metacognition (What do I know? How confident? What evidence supports? What would change conclusion?) Lab cognition/wisdom
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:93:# 3. Persistence across process boundary
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:94:print("\n=== 3. Persistence ===")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:118:print(f"Persistence load result: {r.stdout} err: {r.stderr}")
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:11:- Persistence: data/birth_edge.db tokens table, data/learning.db learning_results (addr PK, chain, symbol, initial_price, initial_liquidity, overall_score, holder/dev/lp/tax scores, discovered_at, final_price, rug_pulled, pumped, price_change_24h), data/cognition.db
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:14:**Data Flow:** Input (DexScreener latest) → ingestion (fetch_json_sync) → feature extraction (run_all_filters) → cognition (record_event) → ML (predict) → decision (overall_score) → persistence (record_token both DBs) → monitoring (live.log, API) → feedback (update_outcomes polls DEX_TOKEN_URL https://api.dexscreener.com/latest/dex/tokens/{}, rug if final_price<=0 or liq<=0, pump if final>=2*initial) → learning (train_model) → updated model
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:18:**Learning Mechanism:** experience (token birth + later price) → training input (features dict liquidity, holder, dev, lp, tax, overall) → train_model(features,label) → model state (weights in ml_model.json) → persistence mechanism (json file) → get_model() → predict_pump_probability() → decision/output
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:372:# TEST 7 — COGNITION PERSISTENCE
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:381:            "Cognition persistence",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:416:        "Cognition persistence",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:758:    cognition = statuses.get("Cognition persistence")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:21:7. Fresh-process persistence test
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1066:            "persistence": any(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1096:        "Inspected training, prediction, persistence, and decision dependencies",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:26:      "evidence": "Inspected training, prediction, persistence, and decision dependencies",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:268:      "persistence": true,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:274:      "persistence": true,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:280:      "persistence": false,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:286:      "persistence": true,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:292:      "persistence": false,
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/1/README.md:5:Project: Create architectural map Input→ingestion→feature extraction→cognition→ML→decision→persistence→monitoring→feedback
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/7/README.md:2:Memory: working memory, episodic memory, semantic memory, retrieval, persistence, memory updating
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:5:3. Memory and Persistence: State, Ledgers, Hash chains, Persistent learning, Recovery after termination
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:8:6. Self-Evaluation: Designing experiments, Controls, Ablations, Held-out testing, Identifiability, Persistence tests, Failure analysis
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:48:3. Persistence: train → save/commit → destroy process → fresh Python process → load model → same future input, survives process boundary = persistent adaptation not in-memory mutation
+### SEARCH: restart
+/data/data/com.termux/files/home/BIRTH_EDGE/run_bg.sh:2:# BIRTH_EDGE persistent background runner with auto-restart
+/data/data/com.termux/files/home/BIRTH_EDGE/run_bg.sh:29:# Fallback: nohup with restart loop
+/data/data/com.termux/files/home/BIRTH_EDGE/run_bg.sh:44:        echo "$(date) - BIRTH_EDGE died, restarting..."
+### SEARCH: recovery
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:12:5 Autonomous-Agent: Agent Architecture (perception, memory, reasoning, planning, action, feedback, internal state); Persistent Agents (durable state, checkpoints, recovery, identity, continuity, event logs, state reconstruction) Lab T-PRAO L4; Multi-Agent (roles, coordination, competition, communication, delegation, trust, reputation) Lab cognition/agent; Agent Governance (permissions, constraints, safety boundaries, execution authority, auditability, human override) Important before autonomous trading
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:16:9 Systems Engineering: Linux/Termux (processes, daemons, services, permissions, filesystems, scheduling, networking, resource constraints) Lab Termux; Reliability (heartbeats, watchdogs, fault detection, recovery, redundancy, graceful degradation) Lab SHOGUN; Observability (health, state, activity, errors, decisions, history, performance); Security (authentication, authorization, secrets, encryption, attack surfaces, sandboxing, supply-chain)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:20:#   1. Hidden-rule recovery
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:455:        "recovery_rate": both / 10,
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:464:    print("RECOVERY RATE:", f"{both}/10")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:1133:    recovery = basic.get(
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:1134:        "recovery_rate",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:1139:        "Hidden-rule recovery:",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:1140:        f"{recovery * 100:.1f}%"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:1221:    if recovery >= 0.8:
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:1223:    elif recovery >= 0.5:
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_gauntlet_results.json:13:      "recovery_rate": 0.8,
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/5/README.md:3:Persistent Agents: durable state, checkpoints, recovery, identity, continuity, event logs, state reconstruction - Lab T-PRAO L4
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/9/README.md:3:Reliability Engineering: heartbeats, watchdogs, fault detection, recovery, redundancy, graceful degradation - SHOGUN operational work
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:5:3. Memory and Persistence: State, Ledgers, Hash chains, Persistent learning, Recovery after termination
+### SEARCH: kill -9
+### SEARCH: process boundary
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:93:# 3. Persistence across process boundary
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/ARCHITECT_TRACK.md:8:- Designing adversarial tests (isolated clones, process boundary)
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:48:3. Persistence: train → save/commit → destroy process → fresh Python process → load model → same future input, survives process boundary = persistent adaptation not in-memory mutation
+### SEARCH: save
+/data/data/com.termux/files/home/BIRTH_EDGE/ml_model.py:76:    def save(self, path):
+/data/data/com.termux/files/home/BIRTH_EDGE/ml_model.py:123:    model.save(MODEL_FILE)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:1378:    print("Results saved to:")
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:247:    # Save comparative results
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:263:    print("\nDetailed comparison saved to: novelty_comparison.json")
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:46:    saved = [r for r in recent if not bool(r["pumped"]) and not fires(r)]
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:47:    print(f"C: last 30 days: {len(recent)} total, rugs blocked by rule: {len(saved)}")
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:49:    saved = [r for r in rows if not bool(r["pumped"]) and not fires(r)]
+/data/data/com.termux/files/home/BIRTH_EDGE/value.py:50:    print(f"C: no time col, total rugs blocked all time: {len(saved)}")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1073:                    "save(",
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:48:3. Persistence: train → save/commit → destroy process → fresh Python process → load model → same future input, survives process boundary = persistent adaptation not in-memory mutation
+### SEARCH: load
+/data/data/com.termux/files/home/BIRTH_EDGE/utils.py:50:    payload = {
+/data/data/com.termux/files/home/BIRTH_EDGE/utils.py:56:        requests.post(url, json=payload, timeout=10)
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:44:        payload = {
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:51:        payload.update(result)
+/data/data/com.termux/files/home/BIRTH_EDGE/main.py:52:        return mod.record_token(payload)
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:29:                data = json.loads(msg)
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:57:                data = json.loads(msg)
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:78:                data = json.loads(msg)
+/data/data/com.termux/files/home/BIRTH_EDGE/ingestion.py:98:                data = json.loads(msg)
+/data/data/com.termux/files/home/BIRTH_EDGE/filters.py:12:async def fetch_json(session, url, payload=None):
+/data/data/com.termux/files/home/BIRTH_EDGE/filters.py:14:        if payload:
+/data/data/com.termux/files/home/BIRTH_EDGE/filters.py:15:            async with session.post(url, json=payload) as resp:
+/data/data/com.termux/files/home/BIRTH_EDGE/filters.py:28:    payload = {"jsonrpc": "2.0", "id": 1, "method": method, "params": params}
+/data/data/com.termux/files/home/BIRTH_EDGE/filters.py:30:        return await fetch_json(session, url, payload=payload)
+/data/data/com.termux/files/home/BIRTH_EDGE/ml_model.py:89:    def load(cls, path):
+/data/data/com.termux/files/home/BIRTH_EDGE/ml_model.py:91:            data = json.load(f)
+/data/data/com.termux/files/home/BIRTH_EDGE/ml_model.py:114:        return OnlineLogisticRegression.load(MODEL_FILE)
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:121:    return [{"timestamp": r["timestamp"], "event_type": r["event_type"], "data": json.loads(r["data_json"])} for r in rows]
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:224:        return json.loads(row[0])
+/data/data/com.termux/files/home/BIRTH_EDGE/realtime_pumpfun.py:24:                    data = json.loads(msg)
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:24:    """Worker that receives future as list[dict] - FIXED: no double json.loads"""
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:34:# Load future - outer loads gives list[dict], inner x IS dict, do NOT json.loads(x)
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:35:future = json.loads(sys.argv[1]) # list of dicts - FIXED
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:36:history = json.loads(sys.argv[2])
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:52:        return json.loads(result.stdout.strip().splitlines()[-1])
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:108:# Load in fresh process
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:109:load_code = f'''
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:117:r = subprocess.run([sys.executable, "-c", load_code], capture_output=True, text=True)
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:118:print(f"Persistence load result: {r.stdout} err: {r.stderr}")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:120:    persisted_pred = json.loads(r.stdout.strip().splitlines()[-1])["pred"]
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:121:    print(f"Persisted pred after destroy/reload: {persisted_pred} vs pred_after_A={pred_after_A} match={persisted_pred==pred_after_A}")
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:147:def load_aegis_results():
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:150:            data = json.load(f)
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:182:    # 2. Load AEGIS results
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:183:    aegis_data = load_aegis_results()
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:263:def load_aegis():
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:265:        return json.load(f)
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:273:    # Load AEGIS data
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator_nosklearn.py:274:    aegis = load_aegis()
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:961:        if spec is None or spec.loader is None:
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:963:                "Unable to load second ML module"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:970:        spec.loader.exec_module(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:262:HISTORY = json.loads(sys.argv[2])
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:494:    json.loads(x)
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:495:    for x in json.loads(
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:602:            return json.loads(line)
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2_results.json:67:      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 241, in <module>\n    json.loads(x)\n    ~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.13/json/__init__.py\", line 345, in loads\n    raise TypeError(f'the JSON object must be str, bytes or bytearray, '\n                    f'not {s.__class__.__name__}')\nTypeError: the JSON object must be str, bytes or bytearray, not dict\n",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2_results.json:72:      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 241, in <module>\n    json.loads(x)\n    ~~~~~~~~~~^^^\n  File \"/data/data/com.termux/files/usr/lib/python3.13/json/__init__.py\", line 345, in loads\n    raise TypeError(f'the JSON object must be str, bytes or bytearray, '\n                    f'not {s.__class__.__name__}')\nTypeError: the JSON object must be str, bytes or bytearray, not dict\n",
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:39:TEST INVALID = experiment did not execute (V2 TypeError: the JSON object must be str, bytes or bytearray, not dict - worker received list[dict] but did json.loads(x) on already dict, both arms crashed before prediction, parent printed verdict on empty output)
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:48:3. Persistence: train → save/commit → destroy process → fresh Python process → load model → same future input, survives process boundary = persistent adaptation not in-memory mutation
+### SEARCH: state
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:8:1 Computational Foundations: Python systems language (functions, classes, inheritance, modules, packages, serialization, exceptions, concurrency, subprocesses, filesystem, networking, APIs, databases) + Software Architecture (modular, interfaces, dependency boundaries, state, event-driven, pipelines, services, persistence, fault isolation, observability) + Data Engineering (schemas, normalization, event records, timestamps, provenance, indexing, integrity, streaming, historical) Lab: learning.db reconstruct what system knew, when, what decided, what happened after
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:10:3 ML & Adaptive: Supervised (classification, regression, features, labels, training, validation, testing, overfitting, generalization) Lab BIRTH_EDGE ML; Online Learning (SGD, incremental, concept drift, streaming, adaptive, catastrophic forgetting, online normalization) Reconstruct current model from first principles; RL (states, actions, rewards, policies, value, exploration/exploitation, Q-learning, policy optimization, TD) Lab SHOGUN/SUIB-X; Adaptive Systems (feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity) Major project: controlled environment where reality changes while system operates
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:11:4 Dynamical Systems & Cybernetics: Dynamical Systems (state, transitions, trajectories, phase space, equilibria, stability, nonlinear, discrete/continuous) Lab AEGIS; Differential Equations (ODEs, nonlinear ODEs, numerical integration, RK4, coupled, parameter estimation) Lab Duffing/ODE discovery; System Identification (Given observations, can we infer hidden rules? parameter estimation, model selection, structural identification, observability, identifiability, latent) Connect AEGIS; Cybernetics (feedback, control, regulation, homeostasis, adaptation, goal-directed, closed-loop, self-regulation) Labs SHOGUN, T-PRAO L4, ORGANISM, homeostat; Autonomous System Theory (automation vs autonomy, Observation→internal state→interpretation→decision→action→environmental response→updated state)
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:12:5 Autonomous-Agent: Agent Architecture (perception, memory, reasoning, planning, action, feedback, internal state); Persistent Agents (durable state, checkpoints, recovery, identity, continuity, event logs, state reconstruction) Lab T-PRAO L4; Multi-Agent (roles, coordination, competition, communication, delegation, trust, reputation) Lab cognition/agent; Agent Governance (permissions, constraints, safety boundaries, execution authority, auditability, human override) Important before autonomous trading
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:16:9 Systems Engineering: Linux/Termux (processes, daemons, services, permissions, filesystems, scheduling, networking, resource constraints) Lab Termux; Reliability (heartbeats, watchdogs, fault detection, recovery, redundancy, graceful degradation) Lab SHOGUN; Observability (health, state, activity, errors, decisions, history, performance); Security (authentication, authorization, secrets, encryption, attack surfaces, sandboxing, supply-chain)
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:19:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:16:**State:** seen=set() dedup, 3 DBs, MODEL_FILE, inherent knowledge static
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:18:**Learning Mechanism:** experience (token birth + later price) → training input (features dict liquidity, holder, dev, lp, tax, overall) → train_model(features,label) → model state (weights in ml_model.json) → persistence mechanism (json file) → get_model() → predict_pump_probability() → decision/output
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:129:        true_state = (
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:135:            int(true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:137:            else int(not true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:160:    overall_score is deliberately correlated with the true state.
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:172:        true_state = (
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:186:            int(true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:188:            else int(not true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:237:        true_state = (
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:243:            int(true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:245:            else int(not true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:387:        true_state = (
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:393:        if true_state:
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:399:            int(true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:401:            else int(not true_state)
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:39:    clf = DecisionTreeClassifier(max_depth=max_depth, random_state=seed)
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_comparator.py:72:    clf = RandomForestClassifier(max_depth=max_depth, n_estimators=50, random_state=seed)
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:4:RL: states, actions, rewards, policies, value functions, exploration/exploitation, Q-learning, policy optimization, TD - Lab SHOGUN/SUIB-X
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/4/README.md:2:Dynamical Systems: state, transitions, trajectories, phase space, equilibria, stability, nonlinear, discrete/continuous - Lab AEGIS
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/4/README.md:6:Autonomous System Theory: distinction automation vs autonomy, formalize Observation→internal state→interpretation→decision→action→environmental response→updated state - central mathematical object
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/5/README.md:2:Agent Architecture: perception, memory, reasoning, planning, action, feedback, internal state
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/5/README.md:3:Persistent Agents: durable state, checkpoints, recovery, identity, continuity, event logs, state reconstruction - Lab T-PRAO L4
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/9/README.md:4:Observability: Every serious system should expose health, state, activity, errors, decisions, history, performance
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/10/README.md:2:Intellectual Property: invention disclosure, prior art, claims, technical novelty, documentation, provenance - Important: "I can't find a prior example" different from "No prior example exists" - Make strongest defensible statement supported by evidence
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/10/README.md:7:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:3:1. Thinking in Systems: What is system? State, inputs, outputs, feedback, Deterministic vs adaptive, Why architecture matters
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:5:3. Memory and Persistence: State, Ledgers, Hash chains, Persistent learning, Recovery after termination
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:9:7. Autonomous Architecture: Watchers, Supervisors, Heartbeats, Runtime state, Governance, Safety boundaries, Closed-loop operation
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:14:Core engineering loop: PERCEPTION → STATE → MEMORY → LEARNING → REASONING → DECISION → ACTION → FEEDBACK → ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:46:1. Immediate adaptation: same clone prediction BEFORE training → train H_A → prediction AFTER, if changes training affects state
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:49:4. Decision-path causality: changed learned state reaches operational decision (decision_engine.py) not disconnected artifact
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:73:STATE
+### SEARCH: memory
+/data/data/com.termux/files/home/BIRTH_EDGE/learning.py:125:            cognition.set_memory_importance(addr, importance, reason=f"rug={rug}, pump={pump}")
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:11:| cognition.py | World map, agent map, memory importance, wisdom, inherent knowledge |
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:29:- data/cognition.db (world events, agents, memory, wisdom)
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:59:    CREATE TABLE IF NOT EXISTS memory_importance (
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:156:# ---------------- Memory Importance ----------------
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:171:def set_memory_importance(addr: str, importance: float, reason: str = ""):
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:176:        INSERT OR REPLACE INTO memory_importance (addr, importance, reason, updated_at)
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:182:def get_memory_importance(addr: str) -> float:
+/data/data/com.termux/files/home/BIRTH_EDGE/cognition.py:185:    cur.execute("SELECT importance FROM memory_importance WHERE addr = ?", (addr,))
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:12:5 Autonomous-Agent: Agent Architecture (perception, memory, reasoning, planning, action, feedback, internal state); Persistent Agents (durable state, checkpoints, recovery, identity, continuity, event logs, state reconstruction) Lab T-PRAO L4; Multi-Agent (roles, coordination, competition, communication, delegation, trust, reputation) Lab cognition/agent; Agent Governance (permissions, constraints, safety boundaries, execution authority, auditability, human override) Important before autonomous trading
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:14:7 Cognitive Architecture: Memory (working, episodic, semantic, retrieval, persistence, updating); Knowledge Representation (rules, graphs, ontologies, symbolic, embeddings, hybrid); Reasoning (deduction, induction, abduction, causal reasoning, uncertainty, hypothesis generation); Metacognition (What do I know? How confident? What evidence supports? What would change conclusion?) Lab cognition/wisdom
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:19:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:8:- Cognition: data/cognition.db tables: events (token_birth, token_outcome), agents (address, role, confidence, success/fail), wisdom_rules (seeded: mint not revoked 0.9, top10>35% 0.85, tax>10% 0.95, high liq trap 0.7), memory_importance (rug 0.9, pump 0.8, pct_change*10 + liq_change/100000), inherent_knowledge (mint layout, jupiter url, dexscreener url, scam patterns)
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:58:- Dual DB + cognition DB with importance-weighted memory
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:122:        "Memory importance": "set_memory_importance",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:400:        "memory_importance",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:8:      "detail": "ML training, Outcome labeling, Rule mining, Outcome event, Birth event, Memory importance, Threshold adaptation"
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/5/README.md:2:Agent Architecture: perception, memory, reasoning, planning, action, feedback, internal state
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/7/README.md:2:Memory: working memory, episodic memory, semantic memory, retrieval, persistence, memory updating
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/10/README.md:7:Capstone: THE GATES AUTONOMOUS INTELLIGENCE PLATFORM unified PERCEPTION→STATE→MEMORY→LEARNING→REASONING→DECISION→ACTION→FEEDBACK→ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:5:3. Memory and Persistence: State, Ledgers, Hash chains, Persistent learning, Recovery after termination
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:14:Core engineering loop: PERCEPTION → STATE → MEMORY → LEARNING → REASONING → DECISION → ACTION → FEEDBACK → ADAPTATION
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:48:3. Persistence: train → save/commit → destroy process → fresh Python process → load model → same future input, survives process boundary = persistent adaptation not in-memory mutation
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:75:MEMORY
+### SEARCH: history
+/data/data/com.termux/files/home/BIRTH_EDGE/filters.py:142:async def check_dev_history(token_data: dict) -> dict:
+/data/data/com.termux/files/home/BIRTH_EDGE/filters.py:167:    dev_result = await check_dev_history(token_data)
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:13:6 Scientific Discovery & Verification: Experimental Design (observation, hypothesis, prediction, intervention, control, replication, confounding, measurement error); Ablation (What happens if component X disappears?) Labs pattern_dna_ablation.py trust_ablation.py; Counterfactual Testing (What would have happened if different history?) Connects to Controlled Causal Test V3; Reproducibility (INPUT→VERSION→CONFIGURATION→EXECUTION→OUTPUT→HASH→INTERPRETATION); Evidence Engineering (Level 0 Concept, 1 Prototype, 2 Controlled demonstration, 3 Repeated experiment, 4 Independent replication, 5 Live operational evidence (BLUECHIP 177x), 6 External validation) Prevents overclaiming and dismissing
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:16:9 Systems Engineering: Linux/Termux (processes, daemons, services, permissions, filesystems, scheduling, networking, resource constraints) Lab Termux; Reliability (heartbeats, watchdogs, fault detection, recovery, redundancy, graceful degradation) Lab SHOGUN; Observability (health, state, activity, errors, decisions, history, performance); Security (authentication, authorization, secrets, encryption, attack surfaces, sandboxing, supply-chain)
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:23:def clone_worker(model_path, history_json, future_json):
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:36:history = json.loads(sys.argv[2])
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:37:for feat in history:
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:45:    result = subprocess.run([sys.executable, tf_path, future_json, history_json], capture_output=True, text=True, timeout=15)
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:81:# 2. Opposite-history effect - isolated clones
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:82:print("\n=== 2. Opposite-history effect (isolated clones) ===")
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:7:- Feature Extraction: filters.py run_all_filters() 5-stage: check_liquidity (>=LIQ_THRESHOLD 5000), check_mint_freeze (Solana base64 decode mint layout offset 0 mint_authority 32 bytes, offset 46 freeze_authority 32 bytes, revoked if all zero), check_holders (Solana getTokenLargestAccounts top10% + dev%, EVM random placeholder), check_tax (Solana Jupiter quote round-trip 0.1 SOL buy/sell simulation, EVM random), check_lp_lock + check_dev_history via RugCheck API https://api.rugcheck.xyz/v1/tokens/{addr}/report
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:898:# 13. EXPERIMENT C/D — DIRECT HISTORY CONTRAST
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:901:def history_contrast():
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1117:        "history_contrast",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1152:            "HISTORY-CONTRAST INCOMPLETE"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1157:            "behavior, but the decisive opposite-history "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1159:            "history effect."
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1179:        "opposite_history_changed_future_behavior": histories_differ,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1235:    print("Running opposite-history causal contrast...")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1236:    RESULTS["experiments"]["history_contrast"] = (
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1237:        history_contrast()
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:105:    "history_contrast": {
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:108:      "traceback": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py\", line 956, in history_contrast\n    spec = importlib.util.spec_from_file_location(\n           ^^^^^^^^^^^^^^\nAttributeError: module 'importlib' has no attribute 'util'\n"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:116:    "opposite_history_changed_future_behavior": false
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:14:        Train on history H_A.
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:17:        Train on exactly opposite history H_B.
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:37:        5. history-dependent behavior
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:81:# History A:
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:84:def history_a():
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:97:# History B:
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:99:def history_b():
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:262:HISTORY = json.loads(sys.argv[2])
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:516:for item in HISTORY:
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:565:def run_worker(root, history, mode):
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:574:        json.dumps(history),
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:666:        history_a(),
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:667:        "HISTORY_A"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:698:        history_b(),
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:699:        "HISTORY_B"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:715:    # DIRECT HISTORY CONTRAST
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:883:            "Under a controlled opposite-history "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:904:            "history_A": (
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:909:            "history_B": (
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2_results.json:5:    "history_A": "low score -> 0, high score -> 1",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2_results.json:6:    "history_B": "exact inverse labels",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2_results.json:85:    "explanation": "Under a controlled opposite-history experiment, accumulated experience did not produce detectable differences in future predictions.",
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/6/README.md:4:Counterfactual Testing: What would have happened if system had received different history? Connects directly to Controlled Causal Test V3
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/9/README.md:4:Observability: Every serious system should expose health, state, activity, errors, decisions, history, performance
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:47:2. Opposite-history effect: Clone A → H_A, Clone B → H_B, same future inputs, A prediction ≠ B prediction (strongest behavioral evidence)
+### SEARCH: counterfactual
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:13:6 Scientific Discovery & Verification: Experimental Design (observation, hypothesis, prediction, intervention, control, replication, confounding, measurement error); Ablation (What happens if component X disappears?) Labs pattern_dna_ablation.py trust_ablation.py; Counterfactual Testing (What would have happened if different history?) Connects to Controlled Causal Test V3; Reproducibility (INPUT→VERSION→CONFIGURATION→EXECUTION→OUTPUT→HASH→INTERPRETATION); Evidence Engineering (Level 0 Concept, 1 Prototype, 2 Controlled demonstration, 3 Repeated experiment, 4 Independent replication, 5 Live operational evidence (BLUECHIP 177x), 6 External validation) Prevents overclaiming and dismissing
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:29:#  10. Counterfactual sensitivity
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:839:# TEST 9 — COUNTERFACTUAL SENSITIVITY
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:842:def test_counterfactual(results):
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:844:    banner("TEST 9 — COUNTERFACTUAL SENSITIVITY")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:856:            "counterfactual",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:937:    add_result(results, "counterfactual", data)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:1335:        test_counterfactual,
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_gauntlet_results.json:125:    "counterfactual": {
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/6/README.md:4:Counterfactual Testing: What would have happened if system had received different history? Connects directly to Controlled Causal Test V3
+### SEARCH: causal
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:13:6 Scientific Discovery & Verification: Experimental Design (observation, hypothesis, prediction, intervention, control, replication, confounding, measurement error); Ablation (What happens if component X disappears?) Labs pattern_dna_ablation.py trust_ablation.py; Counterfactual Testing (What would have happened if different history?) Connects to Controlled Causal Test V3; Reproducibility (INPUT→VERSION→CONFIGURATION→EXECUTION→OUTPUT→HASH→INTERPRETATION); Evidence Engineering (Level 0 Concept, 1 Prototype, 2 Controlled demonstration, 3 Repeated experiment, 4 Independent replication, 5 Live operational evidence (BLUECHIP 177x), 6 External validation) Prevents overclaiming and dismissing
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:14:7 Cognitive Architecture: Memory (working, episodic, semantic, retrieval, persistence, updating); Knowledge Representation (rules, graphs, ontologies, symbolic, embeddings, hybrid); Reasoning (deduction, induction, abduction, causal reasoning, uncertainty, hypothesis generation); Metacognition (What do I know? How confident? What evidence supports? What would change conclusion?) Lab cognition/wisdom
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:5:def generate_causal_decoy(n, seed):
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:11:        # TRUE CAUSAL RULE - ground truth we hide
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:18:        # DECOY: highly correlated but NOT causal - this is the trap
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:34:print("=== BIRTH_EDGE IRREFUTABLE CAUSAL PROOF ===")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:36:print("Decoy trap: overall_score correlates ~0.85 but is not causal")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:38:print("If miner picks liquidity + holder_score = causal discovery\n")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:40:rows = generate_causal_decoy(n=500, seed=42)
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:43:wins_causal = 0
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:52:    is_causal = "holder_score" in rule and "liquidity" in rule
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:53:    is_decoy = "overall_score" in rule and not is_causal
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:55:    if is_causal:
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:56:        wins_causal += 1
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:63:    print(f"Run {seed}: acc={acc:.4f} | causal={is_causal} decoy={is_decoy} | {rule}")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:67:print(f"Causal discovery (found both true features): {wins_causal}/10")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:78:# So if you hit 0.93+ with causal features, it's not luck
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:79:if wins_causal >= 7 and best_acc >= 0.93 and wins_decoy <= 2:
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_proof.py:80:    print("VERDICT: CAUSAL DISCOVERY PROVEN - groundbreaking")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v2.py:28:print("Testing with 1000 rows, pop=500, gen=150 - should be 10/10 causal")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v2.py:34:    causal = "holder_score" in rule and "liquidity" in rule
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v2.py:36:    if causal: wins+=1
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v2.py:37:    print(f"Seed {s}: acc={acc:.4f} causal={causal} decoy={decoy} | {rule}")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v2.py:39:print(f"\nCausal rate: {wins}/10")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:336:    causal story is the true one.
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:340:        but causal mechanism should be considered non-identifiable.
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:702:            "High predictive accuracy here does NOT establish causality. "
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:747:            "Predictive success is possible while causal mechanism "
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:933:            "This measures predictive rule sensitivity, not causality."
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_gauntlet_results.json:99:      "warning": "High predictive accuracy here does NOT establish causality. The true generator contains an intentionally hidden variable."
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_gauntlet_results.json:116:      "expected_behavior": "Predictive success is possible while causal mechanism remains non-identifiable."
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_gauntlet_results.json:131:      "interpretation": "This measures predictive rule sensitivity, not causality."
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:671:            "Positive separation is evidence of structure; it is not by itself proof of causality."
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:4:BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:9:    Does accumulated experience causally change future behavior?
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:55:    "question": "Does accumulated experience causally change future behavior?",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:99:            prefix="birth_edge_causal_"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1022:# 14. SOURCE-LEVEL CAUSAL PATH
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1025:def source_causal_path():
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1091:    RESULTS["source_causal_path"] = findings
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1094:        "Source causal-path inspection",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1158:            "comparison did not establish a clean causal "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1184:    print("BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY RESULT")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1199:    print("BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1220:    source_causal_path()
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1235:    print("Running opposite-history causal contrast...")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:3:  "question": "Does accumulated experience causally change future behavior?",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:24:      "name": "Source causal-path inspection",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:264:  "source_causal_path": {
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:4:BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST V2
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:9:    Does accumulated experience causally change future behavior?
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:147:            prefix="birth_edge_causal_v2_"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:616:# MAIN CAUSAL EXPERIMENT
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:622:    print("BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST V2")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:832:    # FINAL CAUSAL CLASSIFICATION
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:852:            "CAUSAL BEHAVIORAL EFFECT NOT ESTABLISHED"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:952:            "causal_standard":
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:978:    print("BIRTH_EDGE — DECISIVE CAUSALITY RESULT")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2_results.json:86:    "causal_standard": "Opposite training histories + identical future inputs + different future behavior"
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/6/README.md:4:Counterfactual Testing: What would have happened if system had received different history? Connects directly to Controlled Causal Test V3
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/7/README.md:4:Reasoning: deduction, induction, abduction, causal reasoning, uncertainty, hypothesis generation
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/ARCHITECT_TRACK.md:13:- Knowing when experiment answered original question (4-layer causal test)
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:35:## Controlled Causal Test — V3 (Renamed from irrefutable v3)
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:49:4. Decision-path causality: changed learned state reaches operational decision (decision_engine.py) not disconnected artifact
+### SEARCH: causality
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:702:            "High predictive accuracy here does NOT establish causality. "
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:933:            "This measures predictive rule sensitivity, not causality."
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_gauntlet_results.json:99:      "warning": "High predictive accuracy here does NOT establish causality. The true generator contains an intentionally hidden variable."
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_gauntlet_results.json:131:      "interpretation": "This measures predictive rule sensitivity, not causality."
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:671:            "Positive separation is evidence of structure; it is not by itself proof of causality."
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:4:BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1184:    print("BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY RESULT")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1199:    print("BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:4:BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST V2
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:622:    print("BIRTH_EDGE — DECISIVE ADAPTIVE CAUSALITY TEST V2")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:978:    print("BIRTH_EDGE — DECISIVE CAUSALITY RESULT")
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:49:4. Decision-path causality: changed learned state reaches operational decision (decision_engine.py) not disconnected artifact
+### SEARCH: ablation
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:13:6 Scientific Discovery & Verification: Experimental Design (observation, hypothesis, prediction, intervention, control, replication, confounding, measurement error); Ablation (What happens if component X disappears?) Labs pattern_dna_ablation.py trust_ablation.py; Counterfactual Testing (What would have happened if different history?) Connects to Controlled Causal Test V3; Reproducibility (INPUT→VERSION→CONFIGURATION→EXECUTION→OUTPUT→HASH→INTERPRETATION); Evidence Engineering (Level 0 Concept, 1 Prototype, 2 Controlled demonstration, 3 Repeated experiment, 4 Independent replication, 5 Live operational evidence (BLUECHIP 177x), 6 External validation) Prevents overclaiming and dismissing
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:30:#  11. Feature ablation
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:946:# TEST 10 — FEATURE ABLATION
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:949:def test_ablation(results):
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:951:    banner("TEST 10 — FEATURE ABLATION")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:1005:        "feature_ablation",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_novelty_gauntlet.py:1336:        test_ablation,
+/data/data/com.termux/files/home/BIRTH_EDGE/novelty_gauntlet_results.json:133:    "feature_ablation": {
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/6/README.md:3:Ablation: What happens if component X disappears? Labs pattern_dna_ablation.py trust_ablation.py
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:8:6. Self-Evaluation: Designing experiments, Controls, Ablations, Held-out testing, Identifiability, Persistence tests, Failure analysis
+### SEARCH: control
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:10:3 ML & Adaptive: Supervised (classification, regression, features, labels, training, validation, testing, overfitting, generalization) Lab BIRTH_EDGE ML; Online Learning (SGD, incremental, concept drift, streaming, adaptive, catastrophic forgetting, online normalization) Reconstruct current model from first principles; RL (states, actions, rewards, policies, value, exploration/exploitation, Q-learning, policy optimization, TD) Lab SHOGUN/SUIB-X; Adaptive Systems (feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity) Major project: controlled environment where reality changes while system operates
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:11:4 Dynamical Systems & Cybernetics: Dynamical Systems (state, transitions, trajectories, phase space, equilibria, stability, nonlinear, discrete/continuous) Lab AEGIS; Differential Equations (ODEs, nonlinear ODEs, numerical integration, RK4, coupled, parameter estimation) Lab Duffing/ODE discovery; System Identification (Given observations, can we infer hidden rules? parameter estimation, model selection, structural identification, observability, identifiability, latent) Connect AEGIS; Cybernetics (feedback, control, regulation, homeostasis, adaptation, goal-directed, closed-loop, self-regulation) Labs SHOGUN, T-PRAO L4, ORGANISM, homeostat; Autonomous System Theory (automation vs autonomy, Observation→internal state→interpretation→decision→action→environmental response→updated state)
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:13:6 Scientific Discovery & Verification: Experimental Design (observation, hypothesis, prediction, intervention, control, replication, confounding, measurement error); Ablation (What happens if component X disappears?) Labs pattern_dna_ablation.py trust_ablation.py; Counterfactual Testing (What would have happened if different history?) Connects to Controlled Causal Test V3; Reproducibility (INPUT→VERSION→CONFIGURATION→EXECUTION→OUTPUT→HASH→INTERPRETATION); Evidence Engineering (Level 0 Concept, 1 Prototype, 2 Controlled demonstration, 3 Repeated experiment, 4 Independent replication, 5 Live operational evidence (BLUECHIP 177x), 6 External validation) Prevents overclaiming and dismissing
+/data/data/com.termux/files/home/BIRTH_EDGE/CURRICULUM.md:21:Graduation: BUILD blank dir, EXPLAIN every decision, MEASURE experiments distinguishing success/failure, DEFEND handling criticism without changing claim to make easier, DISCOVER at least one result surviving controlled testing not explained by baseline
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:35:- But n=8, no baseline, no holdout, no control, survivorship bias, EVM scores random, learning loop not auto-wired
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:52:- overall_score predicts pump generally (needs controlled experiment, baseline)
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:18:4. Controlled training with Dataset A
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:19:5. Controlled training with Dataset B
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:557:# 7. BUILD CONTROLLED DATASETS
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:560:def controlled_features():
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:605:    rows = controlled_features()
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:617:    rows = controlled_features()
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:698:    for features in controlled_features():
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1169:            "Under this controlled experiment, changing "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1223:    print("Running controlled training experiment A...")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1229:    print("Running controlled training experiment B...")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:113:    "explanation": "Under this controlled experiment, changing the training experience did not produce a detectable change in subsequent behavior.",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:47:    - Training data is synthetic and deliberately controlled.
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:67:# CONTROLLED EXPERIMENT DATA
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:871:            "but the controlled future predictions "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:883:            "Under a controlled opposite-history "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2_results.json:85:    "explanation": "Under a controlled opposite-history experiment, accumulated experience did not produce detectable differences in future predictions.",
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/3/README.md:5:Adaptive Systems: feedback, adaptation, environmental change, online optimization, stability, convergence, learning under nonstationarity - Major project: controlled environment where underlying reality changes while system operates, measure adaptation
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/4/README.md:5:Cybernetics: feedback, control, regulation, homeostasis, adaptation, goal-directed behavior, closed-loop, self-regulation - Labs SHOGUN, T-PRAO L4, ORGANISM, homeostat
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/6/README.md:2:Experimental Design: observation, hypothesis, prediction, intervention, control, replication, confounding, measurement error
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/6/README.md:4:Counterfactual Testing: What would have happened if system had received different history? Connects directly to Controlled Causal Test V3
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/6/README.md:6:Evidence Engineering: Level 0 Concept, 1 Prototype, 2 Controlled demonstration, 3 Repeated experiment, 4 Independent replication, 5 Live operational evidence (BLUECHIP 17749% tonight), 6 External validation - Prevents overclaiming and dismissing
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/schools/10/README.md:8:Graduation: BUILD blank dir, EXPLAIN every decision, MEASURE experiments distinguishing success/failure, DEFEND handling criticism without changing claim to make easier, DISCOVER at least one result surviving controlled testing not explained by baseline
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/modules/LAYER1.md:8:6. Self-Evaluation: Designing experiments, Controls, Ablations, Held-out testing, Identifiability, Persistence tests, Failure analysis
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:35:## Controlled Causal Test — V3 (Renamed from irrefutable v3)
+### SEARCH: clone
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:17:    def clone(self): raise NotImplementedError
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:24:    def clone(self): return FeatureNode(self.name)
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:31:    def clone(self): return ConstNode(self.value)
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:38:    def clone(self): return GtNode(self.left.clone(), self.right.clone())
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:45:    def clone(self): return LtNode(self.left.clone(), self.right.clone())
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:52:    def clone(self): return AndNode(self.left.clone(), self.right.clone())
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:59:    def clone(self): return OrNode(self.left.clone(), self.right.clone())
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:66:    def clone(self): return NotNode(self.child.clone())
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:132:    node=node.clone()
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:166:    c1=p1.clone(); c2=p2.clone()
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:174:        return n2.clone(), c2
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:176:        setattr(parent, attr, n2.clone())
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:188:            best=scored[0][0].clone()
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:191:        elite=[x[0].clone() for x in scored[:10]]
+/data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py:199:                child=t1.clone()
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:23:def clone_worker(model_path, history_json, future_json):
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:48:        print(f"CLONE FAILED stderr: {result.stderr}")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:57:# 1. Immediate adaptation - same clone
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:81:# 2. Opposite-history effect - isolated clones
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:82:print("\n=== 2. Opposite-history effect (isolated clones) ===")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:86:resA = clone_worker(modelA, json.dumps(H_A), future_json)
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:87:resB = clone_worker(modelB, json.dumps(H_B), future_json)
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:88:print(f"Clone A (trained pump) preds: {resA}")
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:89:print(f"Clone B (trained rug) preds: {resB}")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:182:# TEST 3 — TEMPORARY CLONE
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:185:def make_clone():
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:212:def test_ml_function(clone):
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:214:    sys.path.insert(0, str(clone))
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:250:def test_ml_mutation(clone, ml_model):
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:259:    db = clone / "data" / "learning.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:340:def test_rule_miner(clone):
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:375:def test_cognition(clone):
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:377:    db = clone / "data" / "cognition.db"
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:828:        clone = make_clone()
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:830:        print(f"\nTemporary clone: {clone}")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:832:        ml_model = test_ml_function(clone)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:835:            test_ml_mutation(clone, ml_model)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:837:        test_rule_miner(clone)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:838:        test_cognition(clone)
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:850:        print("\nTemporary clone retained for inspection:")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:851:        print(clone)
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:60:  "fatal_error": "Traceback (most recent call last):\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py\", line 835, in main\n    test_ml_mutation(clone, ml_model)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py\", line 264, in test_ml_mutation\n    rows = con.execute(\"\"\"\n           ~~~~~~~~~~~^^^^\n        SELECT\n        ^^^^^^\n    ...<10 lines>...\n        LIMIT 20\n        ^^^^^^^^\n    \"\"\").fetchall()\n    ^^^^\nsqlite3.OperationalError: no such column: liquidity_usd\n"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:29:- Each experiment gets its own temporary clone.
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:96:def clone_root():
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:337:def discover_ml_module(clone):
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:341:        str(clone)
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:493:def find_model_files(clone, module):
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:518:                    p = clone / p
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:532:            clone.rglob(pattern)
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:719:    clone = clone_root()
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:723:        str(clone)
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:753:                clone,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:772:                clone,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:811:    clone = clone_root()
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:815:        str(clone)
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:845:                clone,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:864:                clone,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:903:    clone_a = clone_root()
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:904:    clone_b = clone_root()
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:916:            str(clone_a)
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:952:            str(clone_b)
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:958:            clone_b / "ml_model.py"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1214:    clone = clone_root()
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1217:        clone
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:45:    - Every experiment runs in a temporary clone.
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:144:def clone_root():
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:657:    clone_a = clone_root()
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:661:        clone_a
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:665:        clone_a,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:689:    clone_b = clone_root()
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:693:        clone_b
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:697:        clone_b,
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:1033:        clone_a
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:1042:        clone_b
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/ARCHITECT_TRACK.md:8:- Designing adversarial tests (isolated clones, process boundary)
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:46:1. Immediate adaptation: same clone prediction BEFORE training → train H_A → prediction AFTER, if changes training affects state
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:47:2. Opposite-history effect: Clone A → H_A, Clone B → H_B, same future inputs, A prediction ≠ B prediction (strongest behavioral evidence)
+### SEARCH: opposite-history
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:81:# 2. Opposite-history effect - isolated clones
+/data/data/com.termux/files/home/BIRTH_EDGE/demo/irrefutable_v3.py:82:print("\n=== 2. Opposite-history effect (isolated clones) ===")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1157:            "behavior, but the decisive opposite-history "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1235:    print("Running opposite-history causal contrast...")
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2.py:883:            "Under a controlled opposite-history "
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_v2_results.json:85:    "explanation": "Under a controlled opposite-history experiment, accumulated experience did not produce detectable differences in future predictions.",
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:47:2. Opposite-history effect: Clone A → H_A, Clone B → H_B, same future inputs, A prediction ≠ B prediction (strongest behavioral evidence)
+### SEARCH: decision path
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:684:# TEST 12 — FIXED VS ADAPTIVE DECISION PATH
+### SEARCH: decision_engine
+/data/data/com.termux/files/home/BIRTH_EDGE/FILES_MANIFEST.md:13:| decision_engine.py | Combines signals into actionable decisions |
+/data/data/com.termux/files/home/BIRTH_EDGE/verify_files.sh:4:for f in main.py config.py filters.py scanners.py learning.py ml_model.py cognition.py agent_detection.py decision_engine.py realtime_pumpfun.py aegis_rule_miner.py utils.py execution.py requirements.txt FILES_MANIFEST.md CURRICULUM.md; do
+/data/data/com.termux/files/home/BIRTH_EDGE/docs/BIRTH_EDGE_FORMAL_SPEC.md:10:- Decision: decision_engine.py + SCORE_MIN_BUY=75, overall = liq_score (min 20 or 35, int(liq/2500)) + holder + dev + lp + tax, status PASS if >=75 and holder pass and tax pass
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:689:    decision = source_text("decision_engine.py")
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:710:        f"decision_engine references learning systems={dynamic_learning_reference}",
+/data/data/com.termux/files/home/BIRTH_EDGE/full_adaptive_test.py:728:        "decision_engine.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:43:      "evidence": "decision_engine references learning systems=True",
+/data/data/com.termux/files/home/BIRTH_EDGE/adaptive_test_results.json:50:      "detail": "main.py, filters.py, learning.py, cognition.py, ml_model.py, aegis_rule_miner.py, decision_engine.py, execution.py, agent_detection.py, novelty_comparator.py, full_novelty_gauntlet.py"
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test.py:1030:        "decision_engine.py",
+/data/data/com.termux/files/home/BIRTH_EDGE/decisive_adaptive_test_results.json:277:    "decision_engine.py": {
+/data/data/com.termux/files/home/BIRTH_EDGE/curriculum/ARCHITECT_TRACK.md:11:- Determining whether components actually interact (does train_model affect decision_engine?)
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:49:4. Decision-path causality: changed learned state reaches operational decision (decision_engine.py) not disconnected artifact
+### SEARCH: prediction before
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:46:1. Immediate adaptation: same clone prediction BEFORE training → train H_A → prediction AFTER, if changes training affects state
+### SEARCH: prediction after
+/data/data/com.termux/files/home/BIRTH_EDGE/SIA_MASTER.md:46:1. Immediate adaptation: same clone prediction BEFORE training → train H_A → prediction AFTER, if changes training affects state

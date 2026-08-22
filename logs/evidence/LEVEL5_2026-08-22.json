@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-08-22 00:45:57",
+  "level": 5,
+  "type": "Live operational evidence",
+  "hunter_status": "Watching 20 seen, no new >$5000 every 30s",
+  "pass_tokens": 8,
+  "portfolio": [
+    {"symbol": "SPROUT", "overall": 90.48, "liq": 151366, "pump_24h": 919},
+    {"symbol": "BLUECHIP", "overall": 83.64, "liq": 105408, "born": "00:12:07", "pump_24h": 17749},
+    {"symbol": "Timbothy", "overall": 82.8, "liq": 53952, "pump_24h": -7.46},
+    {"symbol": "Words", "overall": 82.68, "liq": 65917, "pump_24h": 244},
+    {"symbol": "FLUSH", "overall": 79.2, "liq": 61049, "pump_24h": 1421},
+    {"symbol": "CrazyFrog", "overall": 78.4, "liq": 52848, "pump_24h": 1257},
+    {"symbol": "MAPLE", "overall": 76.32, "liq": 56580, "born": "00:03:25", "pump_24h": 1872},
+    {"symbol": "BASESTREET", "overall": 75.36, "liq": 38836, "pump_24h": 13.36}
+  ],
+  "note": "6/8 pumped, avg >1000%, but n=8 no baseline, EVM random, learning loop not auto-wired - Level 5 not Level 6"
+}
