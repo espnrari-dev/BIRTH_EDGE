@@ -1,0 +1,727 @@
+================================================================================
+MULTI_SIGNAL FORENSIC METRIC AUDIT V3
+================================================================================
+Miner : /data/data/com.termux/files/home/BIRTH_EDGE/aegis_rule_miner.py
+Test  : /data/data/com.termux/files/home/BIRTH_EDGE/definitive_architecture_test.py
+World : MULTI_SIGNAL
+Seeds : 20
+
+REAL TEST INTERFACES FOUND:
+  make_world()
+  labels()
+  predict()
+  metrics()
+  safe_discover()
+
+--------------------------------------------------------------------------------
+SEED 00
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 19
+TRAIN negatives : 381
+TEST positives  : 64
+TEST negatives  : 936
+DISCOVERED      : True
+DISCOVERY SCORE : 0.9825
+RULE            : ((dev_score > 18.6203) AND (liquidity_usd > 16898.5)) AND ((holder_score > 15.6674) AND (lp_lock_score > 15.3534))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.982500
+  balanced_accuracy : 0.815789
+  precision         : 1.000000
+  TP=12 TN=381 FP=0 FN=7
+  positive_rate     : 0.047500
+  negative_rate     : 0.952500
+
+HELD-OUT METRICS
+  accuracy          : 0.975000
+  balanced_accuracy : 0.804688
+  precision         : 1.000000
+  TP=39 TN=936 FP=0 FN=25
+  positive_rate     : 0.064000
+  negative_rate     : 0.936000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 01
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 31
+TRAIN negatives : 369
+TEST positives  : 61
+TEST negatives  : 939
+DISCOVERED      : True
+DISCOVERY SCORE : 0.99
+RULE            : ((dev_score > 15.4153) AND (holder_score > 15.7624)) AND ((liquidity_usd > 16281.9) AND (lp_lock_score > 14.6929))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.990000
+  balanced_accuracy : 0.935484
+  precision         : 1.000000
+  TP=27 TN=369 FP=0 FN=4
+  positive_rate     : 0.077500
+  negative_rate     : 0.922500
+
+HELD-OUT METRICS
+  accuracy          : 0.992000
+  balanced_accuracy : 0.934426
+  precision         : 1.000000
+  TP=53 TN=939 FP=0 FN=8
+  positive_rate     : 0.061000
+  negative_rate     : 0.939000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 02
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 26
+TRAIN negatives : 374
+TEST positives  : 48
+TEST negatives  : 952
+DISCOVERED      : True
+DISCOVERY SCORE : 0.95
+RULE            : ((dev_score > 17.7269) AND (holder_score > 17.7647)) AND ((dev_score > 17.7269) AND (lp_lock_score > 17.6163))
+RULE FEATURES   : ['dev_score', 'holder_score', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.950000
+  balanced_accuracy : 0.848005
+  precision         : 0.593750
+  TP=19 TN=361 FP=13 FN=7
+  positive_rate     : 0.065000
+  negative_rate     : 0.935000
+
+HELD-OUT METRICS
+  accuracy          : 0.936000
+  balanced_accuracy : 0.719100
+  precision         : 0.370968
+  TP=23 TN=913 FP=39 FN=25
+  positive_rate     : 0.048000
+  negative_rate     : 0.952000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 03
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 24
+TRAIN negatives : 376
+TEST positives  : 54
+TEST negatives  : 946
+DISCOVERED      : True
+DISCOVERY SCORE : 0.9425
+RULE            : ((holder_score > 15.4893) AND (dev_score > 15.6364)) AND ((liquidity_usd > 15807.5) AND (dev_score > 15.6364))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd']
+
+TRAIN METRICS
+  accuracy          : 0.942500
+  balanced_accuracy : 0.949911
+  precision         : 0.511111
+  TP=23 TN=354 FP=22 FN=1
+  positive_rate     : 0.060000
+  negative_rate     : 0.940000
+
+HELD-OUT METRICS
+  accuracy          : 0.927000
+  balanced_accuracy : 0.917763
+  precision         : 0.418803
+  TP=49 TN=878 FP=68 FN=5
+  positive_rate     : 0.054000
+  negative_rate     : 0.946000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 04
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 19
+TRAIN negatives : 381
+TEST positives  : 65
+TEST negatives  : 935
+DISCOVERED      : True
+DISCOVERY SCORE : 0.99
+RULE            : ((holder_score > 16.8129) AND (dev_score > 15.0524)) AND ((lp_lock_score > 16.3747) AND (liquidity_usd > 18203))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.990000
+  balanced_accuracy : 0.894737
+  precision         : 1.000000
+  TP=15 TN=381 FP=0 FN=4
+  positive_rate     : 0.047500
+  negative_rate     : 0.952500
+
+HELD-OUT METRICS
+  accuracy          : 0.979000
+  balanced_accuracy : 0.838462
+  precision         : 1.000000
+  TP=44 TN=935 FP=0 FN=21
+  positive_rate     : 0.065000
+  negative_rate     : 0.935000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 05
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 26
+TRAIN negatives : 374
+TEST positives  : 57
+TEST negatives  : 943
+DISCOVERED      : True
+DISCOVERY SCORE : 0.99
+RULE            : ((lp_lock_score > 15.1501) AND (holder_score > 15.5111)) AND ((liquidity_usd > 14938.1) AND (dev_score > 16.1597))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.990000
+  balanced_accuracy : 0.923077
+  precision         : 1.000000
+  TP=22 TN=374 FP=0 FN=4
+  positive_rate     : 0.065000
+  negative_rate     : 0.935000
+
+HELD-OUT METRICS
+  accuracy          : 0.994000
+  balanced_accuracy : 0.955610
+  precision         : 0.981132
+  TP=52 TN=942 FP=1 FN=5
+  positive_rate     : 0.057000
+  negative_rate     : 0.943000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 06
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 33
+TRAIN negatives : 367
+TEST positives  : 61
+TEST negatives  : 939
+DISCOVERED      : True
+DISCOVERY SCORE : 0.995
+RULE            : ((dev_score > 17.1195) AND (lp_lock_score > 15.5417)) AND ((liquidity_usd > 15381.7) AND (holder_score > 14.7976))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.995000
+  balanced_accuracy : 0.969697
+  precision         : 1.000000
+  TP=31 TN=367 FP=0 FN=2
+  positive_rate     : 0.082500
+  negative_rate     : 0.917500
+
+HELD-OUT METRICS
+  accuracy          : 0.988000
+  balanced_accuracy : 0.901639
+  precision         : 1.000000
+  TP=49 TN=939 FP=0 FN=12
+  positive_rate     : 0.061000
+  negative_rate     : 0.939000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 07
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 23
+TRAIN negatives : 377
+TEST positives  : 65
+TEST negatives  : 935
+DISCOVERED      : True
+DISCOVERY SCORE : 0.99
+RULE            : ((liquidity_usd > 14961.5) AND (dev_score > 15.894)) AND ((lp_lock_score > 15.5899) AND (holder_score > 16.8737))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.990000
+  balanced_accuracy : 0.913043
+  precision         : 1.000000
+  TP=19 TN=377 FP=0 FN=4
+  positive_rate     : 0.057500
+  negative_rate     : 0.942500
+
+HELD-OUT METRICS
+  accuracy          : 0.986000
+  balanced_accuracy : 0.892308
+  precision         : 1.000000
+  TP=51 TN=935 FP=0 FN=14
+  positive_rate     : 0.065000
+  negative_rate     : 0.935000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 08
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 31
+TRAIN negatives : 369
+TEST positives  : 51
+TEST negatives  : 949
+DISCOVERED      : True
+DISCOVERY SCORE : 0.995
+RULE            : ((dev_score > 16.1997) AND (holder_score > 15.078)) AND ((liquidity_usd > 14970.8) AND (lp_lock_score > 15.2323))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.995000
+  balanced_accuracy : 0.967742
+  precision         : 1.000000
+  TP=29 TN=369 FP=0 FN=2
+  positive_rate     : 0.077500
+  negative_rate     : 0.922500
+
+HELD-OUT METRICS
+  accuracy          : 0.997000
+  balanced_accuracy : 0.970588
+  precision         : 1.000000
+  TP=48 TN=949 FP=0 FN=3
+  positive_rate     : 0.051000
+  negative_rate     : 0.949000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 09
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 22
+TRAIN negatives : 378
+TEST positives  : 61
+TEST negatives  : 939
+DISCOVERED      : True
+DISCOVERY SCORE : 0.96
+RULE            : ((holder_score > 14.9249) AND (lp_lock_score > 18.4585)) AND ((holder_score > 16.5078) AND (liquidity_usd > 16704.4))
+RULE FEATURES   : ['holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.960000
+  balanced_accuracy : 0.871813
+  precision         : 0.607143
+  TP=17 TN=367 FP=11 FN=5
+  positive_rate     : 0.055000
+  negative_rate     : 0.945000
+
+HELD-OUT METRICS
+  accuracy          : 0.951000
+  balanced_accuracy : 0.812959
+  precision         : 0.588235
+  TP=40 TN=911 FP=28 FN=21
+  positive_rate     : 0.061000
+  negative_rate     : 0.939000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 10
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 31
+TRAIN negatives : 369
+TEST positives  : 46
+TEST negatives  : 954
+DISCOVERED      : True
+DISCOVERY SCORE : 0.97
+RULE            : ((holder_score > 14.9923) AND (lp_lock_score > 16.2321)) AND ((liquidity_usd > 14802.1) AND (dev_score > 18.541))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.970000
+  balanced_accuracy : 0.806452
+  precision         : 1.000000
+  TP=19 TN=369 FP=0 FN=12
+  positive_rate     : 0.077500
+  negative_rate     : 0.922500
+
+HELD-OUT METRICS
+  accuracy          : 0.987000
+  balanced_accuracy : 0.858696
+  precision         : 1.000000
+  TP=33 TN=954 FP=0 FN=13
+  positive_rate     : 0.046000
+  negative_rate     : 0.954000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 11
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 20
+TRAIN negatives : 380
+TEST positives  : 57
+TEST negatives  : 943
+DISCOVERED      : True
+DISCOVERY SCORE : 0.83
+RULE            : (dev_score > 14.3546) AND (holder_score > 14.5015)
+RULE FEATURES   : ['dev_score', 'holder_score']
+
+TRAIN METRICS
+  accuracy          : 0.830000
+  balanced_accuracy : 0.910526
+  precision         : 0.227273
+  TP=20 TN=312 FP=68 FN=0
+  positive_rate     : 0.050000
+  negative_rate     : 0.950000
+
+HELD-OUT METRICS
+  accuracy          : 0.791000
+  balanced_accuracy : 0.889183
+  precision         : 0.214286
+  TP=57 TN=734 FP=209 FN=0
+  positive_rate     : 0.057000
+  negative_rate     : 0.943000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 12
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 25
+TRAIN negatives : 375
+TEST positives  : 56
+TEST negatives  : 944
+DISCOVERED      : True
+DISCOVERY SCORE : 0.9825
+RULE            : ((dev_score > 16.131) AND (liquidity_usd > 16066.8)) AND ((holder_score > 16.3224) AND (lp_lock_score > 15.6262))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.982500
+  balanced_accuracy : 0.860000
+  precision         : 1.000000
+  TP=18 TN=375 FP=0 FN=7
+  positive_rate     : 0.062500
+  negative_rate     : 0.937500
+
+HELD-OUT METRICS
+  accuracy          : 0.985000
+  balanced_accuracy : 0.866071
+  precision         : 1.000000
+  TP=41 TN=944 FP=0 FN=15
+  positive_rate     : 0.056000
+  negative_rate     : 0.944000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 13
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 19
+TRAIN negatives : 381
+TEST positives  : 64
+TEST negatives  : 936
+DISCOVERED      : True
+DISCOVERY SCORE : 0.995
+RULE            : ((dev_score > 16.8552) AND (liquidity_usd > 15195.7)) AND ((holder_score > 15.5848) AND (lp_lock_score > 15.9348))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.995000
+  balanced_accuracy : 0.947368
+  precision         : 1.000000
+  TP=17 TN=381 FP=0 FN=2
+  positive_rate     : 0.047500
+  negative_rate     : 0.952500
+
+HELD-OUT METRICS
+  accuracy          : 0.991000
+  balanced_accuracy : 0.929688
+  precision         : 1.000000
+  TP=55 TN=936 FP=0 FN=9
+  positive_rate     : 0.064000
+  negative_rate     : 0.936000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 14
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 23
+TRAIN negatives : 377
+TEST positives  : 56
+TEST negatives  : 944
+DISCOVERED      : True
+DISCOVERY SCORE : 0.96
+RULE            : ((liquidity_usd > 14765.6) AND (lp_lock_score > 13.5856)) AND ((lp_lock_score > 15.2825) AND (holder_score > 17.6586))
+RULE FEATURES   : ['holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.960000
+  balanced_accuracy : 0.897128
+  precision         : 0.612903
+  TP=19 TN=365 FP=12 FN=4
+  positive_rate     : 0.057500
+  negative_rate     : 0.942500
+
+HELD-OUT METRICS
+  accuracy          : 0.938000
+  balanced_accuracy : 0.908369
+  precision         : 0.471154
+  TP=49 TN=889 FP=55 FN=7
+  positive_rate     : 0.056000
+  negative_rate     : 0.944000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 15
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 25
+TRAIN negatives : 375
+TEST positives  : 54
+TEST negatives  : 946
+DISCOVERED      : True
+DISCOVERY SCORE : 0.9675
+RULE            : ((dev_score > 18.915) AND (holder_score > 13.8225)) AND ((holder_score > 17.917) AND (liquidity_usd > 16248.7))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd']
+
+TRAIN METRICS
+  accuracy          : 0.967500
+  balanced_accuracy : 0.870667
+  precision         : 0.730769
+  TP=19 TN=368 FP=7 FN=6
+  positive_rate     : 0.062500
+  negative_rate     : 0.937500
+
+HELD-OUT METRICS
+  accuracy          : 0.931000
+  balanced_accuracy : 0.710340
+  precision         : 0.384615
+  TP=25 TN=906 FP=40 FN=29
+  positive_rate     : 0.054000
+  negative_rate     : 0.946000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 16
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 22
+TRAIN negatives : 378
+TEST positives  : 67
+TEST negatives  : 933
+DISCOVERED      : True
+DISCOVERY SCORE : 0.9775
+RULE            : ((dev_score > 17.017) AND (liquidity_usd > 17839.1)) AND ((lp_lock_score > 18.3667) AND (holder_score > 16.9028))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.977500
+  balanced_accuracy : 0.795455
+  precision         : 1.000000
+  TP=13 TN=378 FP=0 FN=9
+  positive_rate     : 0.055000
+  negative_rate     : 0.945000
+
+HELD-OUT METRICS
+  accuracy          : 0.960000
+  balanced_accuracy : 0.701493
+  precision         : 1.000000
+  TP=27 TN=933 FP=0 FN=40
+  positive_rate     : 0.067000
+  negative_rate     : 0.933000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 17
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 27
+TRAIN negatives : 373
+TEST positives  : 59
+TEST negatives  : 941
+DISCOVERED      : True
+DISCOVERY SCORE : 0.995
+RULE            : ((dev_score > 15.437) AND (lp_lock_score > 16.2366)) AND ((holder_score > 15.4857) AND (liquidity_usd > 16620))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.995000
+  balanced_accuracy : 0.962963
+  precision         : 1.000000
+  TP=25 TN=373 FP=0 FN=2
+  positive_rate     : 0.067500
+  negative_rate     : 0.932500
+
+HELD-OUT METRICS
+  accuracy          : 0.982000
+  balanced_accuracy : 0.847458
+  precision         : 1.000000
+  TP=41 TN=941 FP=0 FN=18
+  positive_rate     : 0.059000
+  negative_rate     : 0.941000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 18
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 28
+TRAIN negatives : 372
+TEST positives  : 63
+TEST negatives  : 937
+DISCOVERED      : True
+DISCOVERY SCORE : 0.9925
+RULE            : ((dev_score > 15.3519) AND (holder_score > 15.6561)) AND ((liquidity_usd > 14787.6) AND (lp_lock_score > 15.8515))
+RULE FEATURES   : ['dev_score', 'holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.992500
+  balanced_accuracy : 0.946429
+  precision         : 1.000000
+  TP=25 TN=372 FP=0 FN=3
+  positive_rate     : 0.070000
+  negative_rate     : 0.930000
+
+HELD-OUT METRICS
+  accuracy          : 0.986000
+  balanced_accuracy : 0.903695
+  precision         : 0.962264
+  TP=51 TN=935 FP=2 FN=12
+  positive_rate     : 0.063000
+  negative_rate     : 0.937000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+--------------------------------------------------------------------------------
+SEED 19
+--------------------------------------------------------------------------------
+TRAIN rows     : 400
+HELD-OUT rows  : 1000
+TRAIN positives : 13
+TRAIN negatives : 387
+TEST positives  : 75
+TEST negatives  : 925
+DISCOVERED      : True
+DISCOVERY SCORE : 0.96
+RULE            : ((holder_score > 15.2207) AND (lp_lock_score > 15.0841)) AND ((holder_score > 15.2207) AND (liquidity_usd > 14694.4))
+RULE FEATURES   : ['holder_score', 'liquidity_usd', 'lp_lock_score']
+
+TRAIN METRICS
+  accuracy          : 0.960000
+  balanced_accuracy : 0.979328
+  precision         : 0.448276
+  TP=13 TN=371 FP=16 FN=0
+  positive_rate     : 0.032500
+  negative_rate     : 0.967500
+
+HELD-OUT METRICS
+  accuracy          : 0.932000
+  balanced_accuracy : 0.950991
+  precision         : 0.525180
+  TP=73 TN=859 FP=66 FN=2
+  positive_rate     : 0.075000
+  negative_rate     : 0.925000
+
+METRIC RECOMPUTATION:
+  TRAIN : MATCH
+  TEST  : MATCH
+
+================================================================================
+FORENSIC MULTI_SIGNAL SUMMARY
+================================================================================
+World                     : MULTI_SIGNAL
+Runs                      : 20
+Valid discovered runs     : 20
+Discovery rate            : 1.000000
+Mean train accuracy       : 0.970750
+Mean held-out accuracy    : 0.960400
+Min held-out accuracy     : 0.791000
+Mean held-out balanced acc: 0.865676
+Mean held-out positive %   : 0.059200
+Mean held-out negative %   : 0.940800
+Independent metric audit  : PASS
+
+RULE STABILITY
+--------------------------------------------------------------------------------
+01 / 20 | ((dev_score > 15.3519) AND (holder_score > 15.6561)) AND ((liquidity_usd > 14787.6) AND (lp_lock_score > 15.8515))
+01 / 20 | ((dev_score > 15.4153) AND (holder_score > 15.7624)) AND ((liquidity_usd > 16281.9) AND (lp_lock_score > 14.6929))
+01 / 20 | ((dev_score > 15.437) AND (lp_lock_score > 16.2366)) AND ((holder_score > 15.4857) AND (liquidity_usd > 16620))
+01 / 20 | ((dev_score > 16.131) AND (liquidity_usd > 16066.8)) AND ((holder_score > 16.3224) AND (lp_lock_score > 15.6262))
+01 / 20 | ((dev_score > 16.1997) AND (holder_score > 15.078)) AND ((liquidity_usd > 14970.8) AND (lp_lock_score > 15.2323))
+01 / 20 | ((dev_score > 16.8552) AND (liquidity_usd > 15195.7)) AND ((holder_score > 15.5848) AND (lp_lock_score > 15.9348))
+01 / 20 | ((dev_score > 17.017) AND (liquidity_usd > 17839.1)) AND ((lp_lock_score > 18.3667) AND (holder_score > 16.9028))
+01 / 20 | ((dev_score > 17.1195) AND (lp_lock_score > 15.5417)) AND ((liquidity_usd > 15381.7) AND (holder_score > 14.7976))
+01 / 20 | ((dev_score > 17.7269) AND (holder_score > 17.7647)) AND ((dev_score > 17.7269) AND (lp_lock_score > 17.6163))
+01 / 20 | ((dev_score > 18.6203) AND (liquidity_usd > 16898.5)) AND ((holder_score > 15.6674) AND (lp_lock_score > 15.3534))
+01 / 20 | ((dev_score > 18.915) AND (holder_score > 13.8225)) AND ((holder_score > 17.917) AND (liquidity_usd > 16248.7))
+01 / 20 | ((holder_score > 14.9249) AND (lp_lock_score > 18.4585)) AND ((holder_score > 16.5078) AND (liquidity_usd > 16704.4))
+01 / 20 | ((holder_score > 14.9923) AND (lp_lock_score > 16.2321)) AND ((liquidity_usd > 14802.1) AND (dev_score > 18.541))
+01 / 20 | ((holder_score > 15.2207) AND (lp_lock_score > 15.0841)) AND ((holder_score > 15.2207) AND (liquidity_usd > 14694.4))
+01 / 20 | ((holder_score > 15.4893) AND (dev_score > 15.6364)) AND ((liquidity_usd > 15807.5) AND (dev_score > 15.6364))
+01 / 20 | ((holder_score > 16.8129) AND (dev_score > 15.0524)) AND ((lp_lock_score > 16.3747) AND (liquidity_usd > 18203))
+01 / 20 | ((liquidity_usd > 14765.6) AND (lp_lock_score > 13.5856)) AND ((lp_lock_score > 15.2825) AND (holder_score > 17.6586))
+01 / 20 | ((liquidity_usd > 14961.5) AND (dev_score > 15.894)) AND ((lp_lock_score > 15.5899) AND (holder_score > 16.8737))
+01 / 20 | ((lp_lock_score > 15.1501) AND (holder_score > 15.5111)) AND ((liquidity_usd > 14938.1) AND (dev_score > 16.1597))
+01 / 20 | (dev_score > 14.3546) AND (holder_score > 14.5015)
+
+HELD-OUT CONFUSION TOTALS
+--------------------------------------------------------------------------------
+TP=900 TN=18308 FP=508 FN=284
+
+================================================================================
+FORENSIC VERDICT
+================================================================================
+PASS — independently recomputed metrics exactly match the definitive test's metric implementation.
+The audit used the actual MULTI_SIGNAL generator and the actual pumped-label construction.
+No synthetic replacement labels or synthetic datasets were introduced.
+
+REPORT: /data/data/com.termux/files/home/BIRTH_EDGE/forensic_multisignal_audit_v3.json
+================================================================================

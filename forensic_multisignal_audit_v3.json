@@ -1,0 +1,1219 @@
+{
+  "audit": "MULTI_SIGNAL_FORENSIC_METRIC_AUDIT_V3",
+  "world": "MULTI_SIGNAL",
+  "train_n": 400,
+  "test_n": 1000,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "discovery_rate": 1.0,
+  "valid_runs": 20,
+  "mean_train_accuracy": 0.97075,
+  "mean_held_out_accuracy": 0.9604,
+  "min_held_out_accuracy": 0.791,
+  "mean_held_out_balanced_accuracy": 0.865676271065456,
+  "mean_held_out_positive_rate": 0.0592,
+  "mean_held_out_negative_rate": 0.9408,
+  "independent_metric_audit": "PASS",
+  "confusion_totals": {
+    "tp": 900,
+    "tn": 18308,
+    "fp": 508,
+    "fn": 284
+  },
+  "rule_counts": {
+    "((dev_score > 18.6203) AND (liquidity_usd > 16898.5)) AND ((holder_score > 15.6674) AND (lp_lock_score > 15.3534))": 1,
+    "((dev_score > 15.4153) AND (holder_score > 15.7624)) AND ((liquidity_usd > 16281.9) AND (lp_lock_score > 14.6929))": 1,
+    "((dev_score > 17.7269) AND (holder_score > 17.7647)) AND ((dev_score > 17.7269) AND (lp_lock_score > 17.6163))": 1,
+    "((holder_score > 15.4893) AND (dev_score > 15.6364)) AND ((liquidity_usd > 15807.5) AND (dev_score > 15.6364))": 1,
+    "((holder_score > 16.8129) AND (dev_score > 15.0524)) AND ((lp_lock_score > 16.3747) AND (liquidity_usd > 18203))": 1,
+    "((lp_lock_score > 15.1501) AND (holder_score > 15.5111)) AND ((liquidity_usd > 14938.1) AND (dev_score > 16.1597))": 1,
+    "((dev_score > 17.1195) AND (lp_lock_score > 15.5417)) AND ((liquidity_usd > 15381.7) AND (holder_score > 14.7976))": 1,
+    "((liquidity_usd > 14961.5) AND (dev_score > 15.894)) AND ((lp_lock_score > 15.5899) AND (holder_score > 16.8737))": 1,
+    "((dev_score > 16.1997) AND (holder_score > 15.078)) AND ((liquidity_usd > 14970.8) AND (lp_lock_score > 15.2323))": 1,
+    "((holder_score > 14.9249) AND (lp_lock_score > 18.4585)) AND ((holder_score > 16.5078) AND (liquidity_usd > 16704.4))": 1,
+    "((holder_score > 14.9923) AND (lp_lock_score > 16.2321)) AND ((liquidity_usd > 14802.1) AND (dev_score > 18.541))": 1,
+    "(dev_score > 14.3546) AND (holder_score > 14.5015)": 1,
+    "((dev_score > 16.131) AND (liquidity_usd > 16066.8)) AND ((holder_score > 16.3224) AND (lp_lock_score > 15.6262))": 1,
+    "((dev_score > 16.8552) AND (liquidity_usd > 15195.7)) AND ((holder_score > 15.5848) AND (lp_lock_score > 15.9348))": 1,
+    "((liquidity_usd > 14765.6) AND (lp_lock_score > 13.5856)) AND ((lp_lock_score > 15.2825) AND (holder_score > 17.6586))": 1,
+    "((dev_score > 18.915) AND (holder_score > 13.8225)) AND ((holder_score > 17.917) AND (liquidity_usd > 16248.7))": 1,
+    "((dev_score > 17.017) AND (liquidity_usd > 17839.1)) AND ((lp_lock_score > 18.3667) AND (holder_score > 16.9028))": 1,
+    "((dev_score > 15.437) AND (lp_lock_score > 16.2366)) AND ((holder_score > 15.4857) AND (liquidity_usd > 16620))": 1,
+    "((dev_score > 15.3519) AND (holder_score > 15.6561)) AND ((liquidity_usd > 14787.6) AND (lp_lock_score > 15.8515))": 1,
+    "((holder_score > 15.2207) AND (lp_lock_score > 15.0841)) AND ((holder_score > 15.2207) AND (liquidity_usd > 14694.4))": 1
+  },
+  "results": [
+    {
+      "seed": 0,
+      "discovered": true,
+      "rule": "((dev_score > 18.6203) AND (liquidity_usd > 16898.5)) AND ((holder_score > 15.6674) AND (lp_lock_score > 15.3534))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.9825,
+      "train": {
+        "accuracy": 0.9825,
+        "balanced_accuracy": 0.8157894736842105,
+        "precision": 1.0,
+        "tp": 12,
+        "tn": 381,
+        "fp": 0,
+        "fn": 7,
+        "positive_count": 19,
+        "negative_count": 381,
+        "positive_rate": 0.0475,
+        "negative_rate": 0.9525
+      },
+      "held_out": {
+        "accuracy": 0.975,
+        "balanced_accuracy": 0.8046875,
+        "precision": 1.0,
+        "tp": 39,
+        "tn": 936,
+        "fp": 0,
+        "fn": 25,
+        "positive_count": 64,
+        "negative_count": 936,
+        "positive_rate": 0.064,
+        "negative_rate": 0.936
+      },
+      "definitive_train": {
+        "accuracy": 0.9825,
+        "balanced_accuracy": 0.8157894736842105,
+        "precision": 1.0,
+        "tp": 12,
+        "tn": 381,
+        "fp": 0,
+        "fn": 7
+      },
+      "definitive_held_out": {
+        "accuracy": 0.975,
+        "balanced_accuracy": 0.8046875,
+        "precision": 1.0,
+        "tp": 39,
+        "tn": 936,
+        "fp": 0,
+        "fn": 25
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 1,
+      "discovered": true,
+      "rule": "((dev_score > 15.4153) AND (holder_score > 15.7624)) AND ((liquidity_usd > 16281.9) AND (lp_lock_score > 14.6929))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.99,
+      "train": {
+        "accuracy": 0.99,
+        "balanced_accuracy": 0.935483870967742,
+        "precision": 1.0,
+        "tp": 27,
+        "tn": 369,
+        "fp": 0,
+        "fn": 4,
+        "positive_count": 31,
+        "negative_count": 369,
+        "positive_rate": 0.0775,
+        "negative_rate": 0.9225
+      },
+      "held_out": {
+        "accuracy": 0.992,
+        "balanced_accuracy": 0.9344262295081966,
+        "precision": 1.0,
+        "tp": 53,
+        "tn": 939,
+        "fp": 0,
+        "fn": 8,
+        "positive_count": 61,
+        "negative_count": 939,
+        "positive_rate": 0.061,
+        "negative_rate": 0.939
+      },
+      "definitive_train": {
+        "accuracy": 0.99,
+        "balanced_accuracy": 0.935483870967742,
+        "precision": 1.0,
+        "tp": 27,
+        "tn": 369,
+        "fp": 0,
+        "fn": 4
+      },
+      "definitive_held_out": {
+        "accuracy": 0.992,
+        "balanced_accuracy": 0.9344262295081966,
+        "precision": 1.0,
+        "tp": 53,
+        "tn": 939,
+        "fp": 0,
+        "fn": 8
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 2,
+      "discovered": true,
+      "rule": "((dev_score > 17.7269) AND (holder_score > 17.7647)) AND ((dev_score > 17.7269) AND (lp_lock_score > 17.6163))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.95,
+      "train": {
+        "accuracy": 0.95,
+        "balanced_accuracy": 0.8480049362402303,
+        "precision": 0.59375,
+        "tp": 19,
+        "tn": 361,
+        "fp": 13,
+        "fn": 7,
+        "positive_count": 26,
+        "negative_count": 374,
+        "positive_rate": 0.065,
+        "negative_rate": 0.935
+      },
+      "held_out": {
+        "accuracy": 0.936,
+        "balanced_accuracy": 0.7191001400560224,
+        "precision": 0.3709677419354839,
+        "tp": 23,
+        "tn": 913,
+        "fp": 39,
+        "fn": 25,
+        "positive_count": 48,
+        "negative_count": 952,
+        "positive_rate": 0.048,
+        "negative_rate": 0.952
+      },
+      "definitive_train": {
+        "accuracy": 0.95,
+        "balanced_accuracy": 0.8480049362402303,
+        "precision": 0.59375,
+        "tp": 19,
+        "tn": 361,
+        "fp": 13,
+        "fn": 7
+      },
+      "definitive_held_out": {
+        "accuracy": 0.936,
+        "balanced_accuracy": 0.7191001400560224,
+        "precision": 0.3709677419354839,
+        "tp": 23,
+        "tn": 913,
+        "fp": 39,
+        "fn": 25
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 3,
+      "discovered": true,
+      "rule": "((holder_score > 15.4893) AND (dev_score > 15.6364)) AND ((liquidity_usd > 15807.5) AND (dev_score > 15.6364))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd"
+      ],
+      "discovery_score": 0.9425,
+      "train": {
+        "accuracy": 0.9425,
+        "balanced_accuracy": 0.9499113475177305,
+        "precision": 0.5111111111111111,
+        "tp": 23,
+        "tn": 354,
+        "fp": 22,
+        "fn": 1,
+        "positive_count": 24,
+        "negative_count": 376,
+        "positive_rate": 0.06,
+        "negative_rate": 0.94
+      },
+      "held_out": {
+        "accuracy": 0.927,
+        "balanced_accuracy": 0.9177629003210399,
+        "precision": 0.4188034188034188,
+        "tp": 49,
+        "tn": 878,
+        "fp": 68,
+        "fn": 5,
+        "positive_count": 54,
+        "negative_count": 946,
+        "positive_rate": 0.054,
+        "negative_rate": 0.946
+      },
+      "definitive_train": {
+        "accuracy": 0.9425,
+        "balanced_accuracy": 0.9499113475177305,
+        "precision": 0.5111111111111111,
+        "tp": 23,
+        "tn": 354,
+        "fp": 22,
+        "fn": 1
+      },
+      "definitive_held_out": {
+        "accuracy": 0.927,
+        "balanced_accuracy": 0.9177629003210399,
+        "precision": 0.4188034188034188,
+        "tp": 49,
+        "tn": 878,
+        "fp": 68,
+        "fn": 5
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 4,
+      "discovered": true,
+      "rule": "((holder_score > 16.8129) AND (dev_score > 15.0524)) AND ((lp_lock_score > 16.3747) AND (liquidity_usd > 18203))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.99,
+      "train": {
+        "accuracy": 0.99,
+        "balanced_accuracy": 0.8947368421052632,
+        "precision": 1.0,
+        "tp": 15,
+        "tn": 381,
+        "fp": 0,
+        "fn": 4,
+        "positive_count": 19,
+        "negative_count": 381,
+        "positive_rate": 0.0475,
+        "negative_rate": 0.9525
+      },
+      "held_out": {
+        "accuracy": 0.979,
+        "balanced_accuracy": 0.8384615384615385,
+        "precision": 1.0,
+        "tp": 44,
+        "tn": 935,
+        "fp": 0,
+        "fn": 21,
+        "positive_count": 65,
+        "negative_count": 935,
+        "positive_rate": 0.065,
+        "negative_rate": 0.935
+      },
+      "definitive_train": {
+        "accuracy": 0.99,
+        "balanced_accuracy": 0.8947368421052632,
+        "precision": 1.0,
+        "tp": 15,
+        "tn": 381,
+        "fp": 0,
+        "fn": 4
+      },
+      "definitive_held_out": {
+        "accuracy": 0.979,
+        "balanced_accuracy": 0.8384615384615385,
+        "precision": 1.0,
+        "tp": 44,
+        "tn": 935,
+        "fp": 0,
+        "fn": 21
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 5,
+      "discovered": true,
+      "rule": "((lp_lock_score > 15.1501) AND (holder_score > 15.5111)) AND ((liquidity_usd > 14938.1) AND (dev_score > 16.1597))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.99,
+      "train": {
+        "accuracy": 0.99,
+        "balanced_accuracy": 0.9230769230769231,
+        "precision": 1.0,
+        "tp": 22,
+        "tn": 374,
+        "fp": 0,
+        "fn": 4,
+        "positive_count": 26,
+        "negative_count": 374,
+        "positive_rate": 0.065,
+        "negative_rate": 0.935
+      },
+      "held_out": {
+        "accuracy": 0.994,
+        "balanced_accuracy": 0.9556101281836618,
+        "precision": 0.9811320754716981,
+        "tp": 52,
+        "tn": 942,
+        "fp": 1,
+        "fn": 5,
+        "positive_count": 57,
+        "negative_count": 943,
+        "positive_rate": 0.057,
+        "negative_rate": 0.943
+      },
+      "definitive_train": {
+        "accuracy": 0.99,
+        "balanced_accuracy": 0.9230769230769231,
+        "precision": 1.0,
+        "tp": 22,
+        "tn": 374,
+        "fp": 0,
+        "fn": 4
+      },
+      "definitive_held_out": {
+        "accuracy": 0.994,
+        "balanced_accuracy": 0.9556101281836618,
+        "precision": 0.9811320754716981,
+        "tp": 52,
+        "tn": 942,
+        "fp": 1,
+        "fn": 5
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 6,
+      "discovered": true,
+      "rule": "((dev_score > 17.1195) AND (lp_lock_score > 15.5417)) AND ((liquidity_usd > 15381.7) AND (holder_score > 14.7976))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.995,
+      "train": {
+        "accuracy": 0.995,
+        "balanced_accuracy": 0.9696969696969697,
+        "precision": 1.0,
+        "tp": 31,
+        "tn": 367,
+        "fp": 0,
+        "fn": 2,
+        "positive_count": 33,
+        "negative_count": 367,
+        "positive_rate": 0.0825,
+        "negative_rate": 0.9175
+      },
+      "held_out": {
+        "accuracy": 0.988,
+        "balanced_accuracy": 0.9016393442622951,
+        "precision": 1.0,
+        "tp": 49,
+        "tn": 939,
+        "fp": 0,
+        "fn": 12,
+        "positive_count": 61,
+        "negative_count": 939,
+        "positive_rate": 0.061,
+        "negative_rate": 0.939
+      },
+      "definitive_train": {
+        "accuracy": 0.995,
+        "balanced_accuracy": 0.9696969696969697,
+        "precision": 1.0,
+        "tp": 31,
+        "tn": 367,
+        "fp": 0,
+        "fn": 2
+      },
+      "definitive_held_out": {
+        "accuracy": 0.988,
+        "balanced_accuracy": 0.9016393442622951,
+        "precision": 1.0,
+        "tp": 49,
+        "tn": 939,
+        "fp": 0,
+        "fn": 12
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 7,
+      "discovered": true,
+      "rule": "((liquidity_usd > 14961.5) AND (dev_score > 15.894)) AND ((lp_lock_score > 15.5899) AND (holder_score > 16.8737))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.99,
+      "train": {
+        "accuracy": 0.99,
+        "balanced_accuracy": 0.9130434782608696,
+        "precision": 1.0,
+        "tp": 19,
+        "tn": 377,
+        "fp": 0,
+        "fn": 4,
+        "positive_count": 23,
+        "negative_count": 377,
+        "positive_rate": 0.0575,
+        "negative_rate": 0.9425
+      },
+      "held_out": {
+        "accuracy": 0.986,
+        "balanced_accuracy": 0.8923076923076922,
+        "precision": 1.0,
+        "tp": 51,
+        "tn": 935,
+        "fp": 0,
+        "fn": 14,
+        "positive_count": 65,
+        "negative_count": 935,
+        "positive_rate": 0.065,
+        "negative_rate": 0.935
+      },
+      "definitive_train": {
+        "accuracy": 0.99,
+        "balanced_accuracy": 0.9130434782608696,
+        "precision": 1.0,
+        "tp": 19,
+        "tn": 377,
+        "fp": 0,
+        "fn": 4
+      },
+      "definitive_held_out": {
+        "accuracy": 0.986,
+        "balanced_accuracy": 0.8923076923076922,
+        "precision": 1.0,
+        "tp": 51,
+        "tn": 935,
+        "fp": 0,
+        "fn": 14
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 8,
+      "discovered": true,
+      "rule": "((dev_score > 16.1997) AND (holder_score > 15.078)) AND ((liquidity_usd > 14970.8) AND (lp_lock_score > 15.2323))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.995,
+      "train": {
+        "accuracy": 0.995,
+        "balanced_accuracy": 0.967741935483871,
+        "precision": 1.0,
+        "tp": 29,
+        "tn": 369,
+        "fp": 0,
+        "fn": 2,
+        "positive_count": 31,
+        "negative_count": 369,
+        "positive_rate": 0.0775,
+        "negative_rate": 0.9225
+      },
+      "held_out": {
+        "accuracy": 0.997,
+        "balanced_accuracy": 0.9705882352941176,
+        "precision": 1.0,
+        "tp": 48,
+        "tn": 949,
+        "fp": 0,
+        "fn": 3,
+        "positive_count": 51,
+        "negative_count": 949,
+        "positive_rate": 0.051,
+        "negative_rate": 0.949
+      },
+      "definitive_train": {
+        "accuracy": 0.995,
+        "balanced_accuracy": 0.967741935483871,
+        "precision": 1.0,
+        "tp": 29,
+        "tn": 369,
+        "fp": 0,
+        "fn": 2
+      },
+      "definitive_held_out": {
+        "accuracy": 0.997,
+        "balanced_accuracy": 0.9705882352941176,
+        "precision": 1.0,
+        "tp": 48,
+        "tn": 949,
+        "fp": 0,
+        "fn": 3
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 9,
+      "discovered": true,
+      "rule": "((holder_score > 14.9249) AND (lp_lock_score > 18.4585)) AND ((holder_score > 16.5078) AND (liquidity_usd > 16704.4))",
+      "features": [
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.96,
+      "train": {
+        "accuracy": 0.96,
+        "balanced_accuracy": 0.8718133718133718,
+        "precision": 0.6071428571428571,
+        "tp": 17,
+        "tn": 367,
+        "fp": 11,
+        "fn": 5,
+        "positive_count": 22,
+        "negative_count": 378,
+        "positive_rate": 0.055,
+        "negative_rate": 0.945
+      },
+      "held_out": {
+        "accuracy": 0.951,
+        "balanced_accuracy": 0.8129593742907523,
+        "precision": 0.5882352941176471,
+        "tp": 40,
+        "tn": 911,
+        "fp": 28,
+        "fn": 21,
+        "positive_count": 61,
+        "negative_count": 939,
+        "positive_rate": 0.061,
+        "negative_rate": 0.939
+      },
+      "definitive_train": {
+        "accuracy": 0.96,
+        "balanced_accuracy": 0.8718133718133718,
+        "precision": 0.6071428571428571,
+        "tp": 17,
+        "tn": 367,
+        "fp": 11,
+        "fn": 5
+      },
+      "definitive_held_out": {
+        "accuracy": 0.951,
+        "balanced_accuracy": 0.8129593742907523,
+        "precision": 0.5882352941176471,
+        "tp": 40,
+        "tn": 911,
+        "fp": 28,
+        "fn": 21
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 10,
+      "discovered": true,
+      "rule": "((holder_score > 14.9923) AND (lp_lock_score > 16.2321)) AND ((liquidity_usd > 14802.1) AND (dev_score > 18.541))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.97,
+      "train": {
+        "accuracy": 0.97,
+        "balanced_accuracy": 0.8064516129032258,
+        "precision": 1.0,
+        "tp": 19,
+        "tn": 369,
+        "fp": 0,
+        "fn": 12,
+        "positive_count": 31,
+        "negative_count": 369,
+        "positive_rate": 0.0775,
+        "negative_rate": 0.9225
+      },
+      "held_out": {
+        "accuracy": 0.987,
+        "balanced_accuracy": 0.8586956521739131,
+        "precision": 1.0,
+        "tp": 33,
+        "tn": 954,
+        "fp": 0,
+        "fn": 13,
+        "positive_count": 46,
+        "negative_count": 954,
+        "positive_rate": 0.046,
+        "negative_rate": 0.954
+      },
+      "definitive_train": {
+        "accuracy": 0.97,
+        "balanced_accuracy": 0.8064516129032258,
+        "precision": 1.0,
+        "tp": 19,
+        "tn": 369,
+        "fp": 0,
+        "fn": 12
+      },
+      "definitive_held_out": {
+        "accuracy": 0.987,
+        "balanced_accuracy": 0.8586956521739131,
+        "precision": 1.0,
+        "tp": 33,
+        "tn": 954,
+        "fp": 0,
+        "fn": 13
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 11,
+      "discovered": true,
+      "rule": "(dev_score > 14.3546) AND (holder_score > 14.5015)",
+      "features": [
+        "dev_score",
+        "holder_score"
+      ],
+      "discovery_score": 0.83,
+      "train": {
+        "accuracy": 0.83,
+        "balanced_accuracy": 0.9105263157894736,
+        "precision": 0.22727272727272727,
+        "tp": 20,
+        "tn": 312,
+        "fp": 68,
+        "fn": 0,
+        "positive_count": 20,
+        "negative_count": 380,
+        "positive_rate": 0.05,
+        "negative_rate": 0.95
+      },
+      "held_out": {
+        "accuracy": 0.791,
+        "balanced_accuracy": 0.8891834570519619,
+        "precision": 0.21428571428571427,
+        "tp": 57,
+        "tn": 734,
+        "fp": 209,
+        "fn": 0,
+        "positive_count": 57,
+        "negative_count": 943,
+        "positive_rate": 0.057,
+        "negative_rate": 0.943
+      },
+      "definitive_train": {
+        "accuracy": 0.83,
+        "balanced_accuracy": 0.9105263157894736,
+        "precision": 0.22727272727272727,
+        "tp": 20,
+        "tn": 312,
+        "fp": 68,
+        "fn": 0
+      },
+      "definitive_held_out": {
+        "accuracy": 0.791,
+        "balanced_accuracy": 0.8891834570519619,
+        "precision": 0.21428571428571427,
+        "tp": 57,
+        "tn": 734,
+        "fp": 209,
+        "fn": 0
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 12,
+      "discovered": true,
+      "rule": "((dev_score > 16.131) AND (liquidity_usd > 16066.8)) AND ((holder_score > 16.3224) AND (lp_lock_score > 15.6262))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.9825,
+      "train": {
+        "accuracy": 0.9825,
+        "balanced_accuracy": 0.86,
+        "precision": 1.0,
+        "tp": 18,
+        "tn": 375,
+        "fp": 0,
+        "fn": 7,
+        "positive_count": 25,
+        "negative_count": 375,
+        "positive_rate": 0.0625,
+        "negative_rate": 0.9375
+      },
+      "held_out": {
+        "accuracy": 0.985,
+        "balanced_accuracy": 0.8660714285714286,
+        "precision": 1.0,
+        "tp": 41,
+        "tn": 944,
+        "fp": 0,
+        "fn": 15,
+        "positive_count": 56,
+        "negative_count": 944,
+        "positive_rate": 0.056,
+        "negative_rate": 0.944
+      },
+      "definitive_train": {
+        "accuracy": 0.9825,
+        "balanced_accuracy": 0.86,
+        "precision": 1.0,
+        "tp": 18,
+        "tn": 375,
+        "fp": 0,
+        "fn": 7
+      },
+      "definitive_held_out": {
+        "accuracy": 0.985,
+        "balanced_accuracy": 0.8660714285714286,
+        "precision": 1.0,
+        "tp": 41,
+        "tn": 944,
+        "fp": 0,
+        "fn": 15
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 13,
+      "discovered": true,
+      "rule": "((dev_score > 16.8552) AND (liquidity_usd > 15195.7)) AND ((holder_score > 15.5848) AND (lp_lock_score > 15.9348))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.995,
+      "train": {
+        "accuracy": 0.995,
+        "balanced_accuracy": 0.9473684210526316,
+        "precision": 1.0,
+        "tp": 17,
+        "tn": 381,
+        "fp": 0,
+        "fn": 2,
+        "positive_count": 19,
+        "negative_count": 381,
+        "positive_rate": 0.0475,
+        "negative_rate": 0.9525
+      },
+      "held_out": {
+        "accuracy": 0.991,
+        "balanced_accuracy": 0.9296875,
+        "precision": 1.0,
+        "tp": 55,
+        "tn": 936,
+        "fp": 0,
+        "fn": 9,
+        "positive_count": 64,
+        "negative_count": 936,
+        "positive_rate": 0.064,
+        "negative_rate": 0.936
+      },
+      "definitive_train": {
+        "accuracy": 0.995,
+        "balanced_accuracy": 0.9473684210526316,
+        "precision": 1.0,
+        "tp": 17,
+        "tn": 381,
+        "fp": 0,
+        "fn": 2
+      },
+      "definitive_held_out": {
+        "accuracy": 0.991,
+        "balanced_accuracy": 0.9296875,
+        "precision": 1.0,
+        "tp": 55,
+        "tn": 936,
+        "fp": 0,
+        "fn": 9
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 14,
+      "discovered": true,
+      "rule": "((liquidity_usd > 14765.6) AND (lp_lock_score > 13.5856)) AND ((lp_lock_score > 15.2825) AND (holder_score > 17.6586))",
+      "features": [
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.96,
+      "train": {
+        "accuracy": 0.96,
+        "balanced_accuracy": 0.8971283588974743,
+        "precision": 0.6129032258064516,
+        "tp": 19,
+        "tn": 365,
+        "fp": 12,
+        "fn": 4,
+        "positive_count": 23,
+        "negative_count": 377,
+        "positive_rate": 0.0575,
+        "negative_rate": 0.9425
+      },
+      "held_out": {
+        "accuracy": 0.938,
+        "balanced_accuracy": 0.9083686440677966,
+        "precision": 0.47115384615384615,
+        "tp": 49,
+        "tn": 889,
+        "fp": 55,
+        "fn": 7,
+        "positive_count": 56,
+        "negative_count": 944,
+        "positive_rate": 0.056,
+        "negative_rate": 0.944
+      },
+      "definitive_train": {
+        "accuracy": 0.96,
+        "balanced_accuracy": 0.8971283588974743,
+        "precision": 0.6129032258064516,
+        "tp": 19,
+        "tn": 365,
+        "fp": 12,
+        "fn": 4
+      },
+      "definitive_held_out": {
+        "accuracy": 0.938,
+        "balanced_accuracy": 0.9083686440677966,
+        "precision": 0.47115384615384615,
+        "tp": 49,
+        "tn": 889,
+        "fp": 55,
+        "fn": 7
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 15,
+      "discovered": true,
+      "rule": "((dev_score > 18.915) AND (holder_score > 13.8225)) AND ((holder_score > 17.917) AND (liquidity_usd > 16248.7))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd"
+      ],
+      "discovery_score": 0.9675,
+      "train": {
+        "accuracy": 0.9675,
+        "balanced_accuracy": 0.8706666666666667,
+        "precision": 0.7307692307692307,
+        "tp": 19,
+        "tn": 368,
+        "fp": 7,
+        "fn": 6,
+        "positive_count": 25,
+        "negative_count": 375,
+        "positive_rate": 0.0625,
+        "negative_rate": 0.9375
+      },
+      "held_out": {
+        "accuracy": 0.931,
+        "balanced_accuracy": 0.7103398324328557,
+        "precision": 0.38461538461538464,
+        "tp": 25,
+        "tn": 906,
+        "fp": 40,
+        "fn": 29,
+        "positive_count": 54,
+        "negative_count": 946,
+        "positive_rate": 0.054,
+        "negative_rate": 0.946
+      },
+      "definitive_train": {
+        "accuracy": 0.9675,
+        "balanced_accuracy": 0.8706666666666667,
+        "precision": 0.7307692307692307,
+        "tp": 19,
+        "tn": 368,
+        "fp": 7,
+        "fn": 6
+      },
+      "definitive_held_out": {
+        "accuracy": 0.931,
+        "balanced_accuracy": 0.7103398324328557,
+        "precision": 0.38461538461538464,
+        "tp": 25,
+        "tn": 906,
+        "fp": 40,
+        "fn": 29
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 16,
+      "discovered": true,
+      "rule": "((dev_score > 17.017) AND (liquidity_usd > 17839.1)) AND ((lp_lock_score > 18.3667) AND (holder_score > 16.9028))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.9775,
+      "train": {
+        "accuracy": 0.9775,
+        "balanced_accuracy": 0.7954545454545454,
+        "precision": 1.0,
+        "tp": 13,
+        "tn": 378,
+        "fp": 0,
+        "fn": 9,
+        "positive_count": 22,
+        "negative_count": 378,
+        "positive_rate": 0.055,
+        "negative_rate": 0.945
+      },
+      "held_out": {
+        "accuracy": 0.96,
+        "balanced_accuracy": 0.7014925373134329,
+        "precision": 1.0,
+        "tp": 27,
+        "tn": 933,
+        "fp": 0,
+        "fn": 40,
+        "positive_count": 67,
+        "negative_count": 933,
+        "positive_rate": 0.067,
+        "negative_rate": 0.933
+      },
+      "definitive_train": {
+        "accuracy": 0.9775,
+        "balanced_accuracy": 0.7954545454545454,
+        "precision": 1.0,
+        "tp": 13,
+        "tn": 378,
+        "fp": 0,
+        "fn": 9
+      },
+      "definitive_held_out": {
+        "accuracy": 0.96,
+        "balanced_accuracy": 0.7014925373134329,
+        "precision": 1.0,
+        "tp": 27,
+        "tn": 933,
+        "fp": 0,
+        "fn": 40
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 17,
+      "discovered": true,
+      "rule": "((dev_score > 15.437) AND (lp_lock_score > 16.2366)) AND ((holder_score > 15.4857) AND (liquidity_usd > 16620))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.995,
+      "train": {
+        "accuracy": 0.995,
+        "balanced_accuracy": 0.962962962962963,
+        "precision": 1.0,
+        "tp": 25,
+        "tn": 373,
+        "fp": 0,
+        "fn": 2,
+        "positive_count": 27,
+        "negative_count": 373,
+        "positive_rate": 0.0675,
+        "negative_rate": 0.9325
+      },
+      "held_out": {
+        "accuracy": 0.982,
+        "balanced_accuracy": 0.847457627118644,
+        "precision": 1.0,
+        "tp": 41,
+        "tn": 941,
+        "fp": 0,
+        "fn": 18,
+        "positive_count": 59,
+        "negative_count": 941,
+        "positive_rate": 0.059,
+        "negative_rate": 0.941
+      },
+      "definitive_train": {
+        "accuracy": 0.995,
+        "balanced_accuracy": 0.962962962962963,
+        "precision": 1.0,
+        "tp": 25,
+        "tn": 373,
+        "fp": 0,
+        "fn": 2
+      },
+      "definitive_held_out": {
+        "accuracy": 0.982,
+        "balanced_accuracy": 0.847457627118644,
+        "precision": 1.0,
+        "tp": 41,
+        "tn": 941,
+        "fp": 0,
+        "fn": 18
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 18,
+      "discovered": true,
+      "rule": "((dev_score > 15.3519) AND (holder_score > 15.6561)) AND ((liquidity_usd > 14787.6) AND (lp_lock_score > 15.8515))",
+      "features": [
+        "dev_score",
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.9925,
+      "train": {
+        "accuracy": 0.9925,
+        "balanced_accuracy": 0.9464285714285714,
+        "precision": 1.0,
+        "tp": 25,
+        "tn": 372,
+        "fp": 0,
+        "fn": 3,
+        "positive_count": 28,
+        "negative_count": 372,
+        "positive_rate": 0.07,
+        "negative_rate": 0.93
+      },
+      "held_out": {
+        "accuracy": 0.986,
+        "balanced_accuracy": 0.9036946689027798,
+        "precision": 0.9622641509433962,
+        "tp": 51,
+        "tn": 935,
+        "fp": 2,
+        "fn": 12,
+        "positive_count": 63,
+        "negative_count": 937,
+        "positive_rate": 0.063,
+        "negative_rate": 0.937
+      },
+      "definitive_train": {
+        "accuracy": 0.9925,
+        "balanced_accuracy": 0.9464285714285714,
+        "precision": 1.0,
+        "tp": 25,
+        "tn": 372,
+        "fp": 0,
+        "fn": 3
+      },
+      "definitive_held_out": {
+        "accuracy": 0.986,
+        "balanced_accuracy": 0.9036946689027798,
+        "precision": 0.9622641509433962,
+        "tp": 51,
+        "tn": 935,
+        "fp": 2,
+        "fn": 12
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    },
+    {
+      "seed": 19,
+      "discovered": true,
+      "rule": "((holder_score > 15.2207) AND (lp_lock_score > 15.0841)) AND ((holder_score > 15.2207) AND (liquidity_usd > 14694.4))",
+      "features": [
+        "holder_score",
+        "liquidity_usd",
+        "lp_lock_score"
+      ],
+      "discovery_score": 0.96,
+      "train": {
+        "accuracy": 0.96,
+        "balanced_accuracy": 0.979328165374677,
+        "precision": 0.4482758620689655,
+        "tp": 13,
+        "tn": 371,
+        "fp": 16,
+        "fn": 0,
+        "positive_count": 13,
+        "negative_count": 387,
+        "positive_rate": 0.0325,
+        "negative_rate": 0.9675
+      },
+      "held_out": {
+        "accuracy": 0.932,
+        "balanced_accuracy": 0.950990990990991,
+        "precision": 0.5251798561151079,
+        "tp": 73,
+        "tn": 859,
+        "fp": 66,
+        "fn": 2,
+        "positive_count": 75,
+        "negative_count": 925,
+        "positive_rate": 0.075,
+        "negative_rate": 0.925
+      },
+      "definitive_train": {
+        "accuracy": 0.96,
+        "balanced_accuracy": 0.979328165374677,
+        "precision": 0.4482758620689655,
+        "tp": 13,
+        "tn": 371,
+        "fp": 16,
+        "fn": 0
+      },
+      "definitive_held_out": {
+        "accuracy": 0.932,
+        "balanced_accuracy": 0.950990990990991,
+        "precision": 0.5251798561151079,
+        "tp": 73,
+        "tn": 859,
+        "fp": 66,
+        "fn": 2
+      },
+      "train_metric_mismatches": [],
+      "held_out_metric_mismatches": []
+    }
+  ]
+}

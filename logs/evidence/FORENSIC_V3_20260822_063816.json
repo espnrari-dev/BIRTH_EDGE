@@ -1,0 +1,16 @@
+{
+  "audit": "MULTI_SIGNAL_FORENSIC_V3",
+  "timestamp": "2026-08-22T06:38:16Z",
+  "world": "MULTI_SIGNAL",
+  "runs": 20,
+  "valid": 20,
+  "discovery_rate": 1.0,
+  "mean_train_acc": 0.97075,
+  "mean_heldout_acc": 0.9604,
+  "min_heldout_acc": 0.791,
+  "balanced_acc": 0.865676,
+  "confusion": {"TP": 900, "TN": 18308, "FP": 508, "FN": 284},
+  "independent_metric_audit": "PASS",
+  "rule_pattern": "dev_score>15 AND holder_score>15 AND liquidity>15k AND lp_lock>15",
+  "proves": "L6 scientist - beats naive baseline with 4-signal conjunction"
+}
