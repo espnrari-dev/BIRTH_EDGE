@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-08-22T02:59:00.852576",
+  "total_tokens": 70,
+  "avg_score": 54.49632352941177,
+  "avg_liq": 29447.448857142856,
+  "pass_candidates": 9,
+  "bad_symbol_rate": 0.2571428571428571,
+  "null_time_rate": 0.014285714285714285,
+  "pump_rate": 0.12,
+  "tables": {
+    "birth_edge.db:tokens": 70,
+    "birth_edge.db:outcomes": 0,
+    "birth_edge.db:ipos": 0,
+    "learning.db:learning_results": 81,
+    "cognition.db:events": 386,
+    "cognition.db:sqlite_sequence": 2,
+    "cognition.db:agents": 0,
+    "cognition.db:wisdom_rules": 13,
+    "cognition.db:memory_importance": 88,
+    "cognition.db:inherent_knowledge": 5
+  },
+  "nominal_rules": {
+    "min_tokens_per_hour": 2,
+    "max_bad_symbol_rate": 0.2,
+    "max_null_time_rate": 0.05,
+    "min_pass_rate": 0.05,
+    "required_tables": [
+      "birth_edge.db:tokens",
+      "learning.db:learning_results",
+      "cognition.db:events"
+    ]
+  }
+}
