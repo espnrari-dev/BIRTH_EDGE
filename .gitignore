@@ -1,0 +1,7 @@
+__pycache__/
+*.log
+*.db
+data/*.db
+logs/
+stats_snapshot.json
+
