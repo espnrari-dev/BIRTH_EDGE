@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-22T02:55:00Z",
+  "total_tokens": 69,
+  "pass_candidates_ge75": 9,
+  "top_hits": [
+    {"symbol": "SPROUT", "score": 90.48, "liq": 151366, "chain": "robinhood", "change_24h": 919.0, "pumped": 1},
+    {"symbol": "MAPLE", "score": 76.32, "liq": 56580, "chain": "robinhood", "change_24h": 3454.0, "pumped": 1},
+    {"symbol": "CrazyFrog", "score": 78.4, "liq": 52848, "chain": "base", "change_24h": 2025.0, "pumped": 1},
+    {"symbol": "FLUSH", "score": 79.2, "liq": 61049, "chain": "robinhood", "change_24h": 1447.0, "pumped": 1},
+    {"symbol": "Words", "score": 82.68, "liq": 65917, "chain": "ethereum", "change_24h": 242.0, "pumped": 1}
+  ],
+  "loss": [{"symbol": "Timbothy", "score": 82.8, "change": -7.46}],
+  "pending": ["ERIC", "BLUECHIP"],
+  "proof": "birth_edge.db 69 tokens, learning.db 13 updated, tripartite PASS"
+}
