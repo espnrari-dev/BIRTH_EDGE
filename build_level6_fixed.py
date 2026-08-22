@@ -1,3 +1,4 @@
+import os
 import sqlite3, json, random, hashlib, os
 from pathlib import Path
 from datetime import datetime

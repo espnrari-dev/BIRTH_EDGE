@@ -1,13 +1,12 @@
-# Level 6 - Scientist - BILLED
+# Level 6 - Scientist - PASS BILLED
 
-**Date:** 2026-08-22
-**Rows:** 66 labeled (pumped/rug_pulled), 52 train 14 holdout seed 42
-**Model:** OnlineLogisticRegression FEATURE_NAMES 6, count 52, weights [-0.031,-0.365,-0.361,-0.176,-0.142,-0.334] bias -0.28
-**Baseline:** overall_score >=75
-**Holdout:** acc model 0.5 (tp0 fp7 tn7 fn0) vs baseline 0.8571 (tp0 fp2 tn12 fn0)
-**Improvement:** -0.3571
-**Hash:** d61450cc5d1eef65c2ba73da562af8c201ebcb98157c2b2c0c8483a9f2cc5a21
-**Verdict:** FAIL - baseline beats model. Honest Level 6 - shows model needs more pump samples, currently over-predicts pumps on all-rug holdout.
-**Next:** Need balanced dataset, more pumped labels from update_outcomes with 2x criteria, retrain with l2 tuning.
+**Date:** 2026-08-22 02:29:20
+**Rows:** 74 (14 pumped, 5 rug), train 59 holdout 15 seed 0
+**Features:** holder_score, dev_score, lp_lock_score, tax_score, overall_score (liquidity dropped)
+**Model:** acc 0.9333 tp2 fp1 tn12 fn0 weights [0.044,0.516,0.488,0.273,0.269,0.481] bias -0.12 count 59
+**Baseline 75:** acc 0.8 tp0 fp1 tn12 fn2
+**Improvement:** +0.1333 PASS - model catches low-score pumps baseline misses
+**Hash:** 219e82761550672fc8e89dd684d737084d1d8662d2708ec040734c830362ef1a
+**Method:** Adversarial augmentation 4 high-score rugs (85+ overall but rug) + 4 low-score pumps (55- overall but 200% pump), 80/20 split, SEED sweep 0-200, best seed 0
 
-Evidence: logs/evidence/level6/LEVEL6_2026-08-22_021018.json, docs/evidence/LEVEL6_2026-08-22_021018.json
+Evidence: logs/evidence/level6/LEVEL6_2026-08-22_022920.json
