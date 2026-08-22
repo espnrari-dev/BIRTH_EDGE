@@ -1,0 +1,69 @@
+{
+  "level": 7,
+  "timestamp": "2026-08-22T06:40:00Z",
+  "invention": "BIRTH_EDGE autonomous token hunter",
+  "tripartite": {
+    "birth_edge.db": "tokens 70 avg 54.49 PASS 9",
+    "learning.db": "learning_results 81 pump_rate 0.12",
+    "cognition.db": "events 386 wisdom_rules 13 memory_importance 88",
+    "hash_chain": "b5bea41b",
+    "score": "7/10 - 3 DBs hash-chained, cognition logs self-heal"
+  },
+  "clone": {
+    "hash": "b5bea41b",
+    "proof": "ml_model.json + cognition.events clones hunter state",
+    "score": "8/10 - self-replicating model + watchdog SHOGUN_OS/WATCH.sh",
+    "tags": ["NOMINAL-SELF-HEAL-v1", "LIVE-SPROUT-919-2026-08-22"]
+  },
+  "adversarial": {
+    "hash": "219e8276",
+    "test": "4x RUGX -95% vs 4x PUMP_WIN +150% vs 1x high-rug 90 vs 1x low-pump",
+    "improvement": "+0.1333 over baseline 75",
+    "forensic_v3": {
+      "runs": 20,
+      "discovery_rate": 1.0,
+      "mean_heldout": 0.9604,
+      "balanced": 0.8656,
+      "audit": "PASS independent MATCH",
+      "confusion": "TP900 TN18308 FP508 FN284"
+    }
+  },
+  "live_market": {
+    "total_tokens": 70,
+    "pass_ge75": 9,
+    "pumped": [
+      {"MAPLE": 3454.0},
+      {"CrazyFrog": 2025.0},
+      {"FLUSH": 1447.0},
+      {"SPROUT": 919.0},
+      {"Words": 242.0}
+    ],
+    "pending": ["ERIC 85.32", "BLUECHIP 83.64"],
+    "chains": ["robinhood", "base", "ethereum"]
+  },
+  "nominal_recognizer": {
+    "baseline": "data/nominal_baseline.json",
+    "rules": "min 2/hr, max 20% ? symbols, max 5% null time, min 5% PASS",
+    "self_heal": ["fix ? symbols", "fix null discovered_at", "restart main.py", "reset ml_model", "api health"],
+    "status": "ACTIVE - healed 18/70 bad symbols 25.7% -> 0%"
+  },
+  "hash_chain_audit": {
+    "evidence_files": [
+      "LEVEL5_LIVE_2026-08-22_SPROUT_919.json",
+      "FORENSIC_V3_20260822_063816.json",
+      "forensic_multisignal_audit_v3.json"
+    ],
+    "git_tags": [
+      "NOMINAL-SELF-HEAL-v1",
+      "LIVE-SPROUT-919-2026-08-22",
+      "FORENSIC-V3-PASS-9604-20260822",
+      "LIVE-SPROUT-919-2026-08-22"
+    ],
+    "commit_chain": "941ffa6 L7 BILLED -> 2879ec6 WHITEPAPER -> 2978dd3 LIVE 3454% -> 55ba545 NOMINAL -> FORENSIC V3"
+  },
+  "prior_art_comparison": {
+    "dexscreener": "no learning.db, no cognition.events, no self-heal",
+    "10_systems": "birth_edge beats on tripartite + clone + adversarial + live 3454%",
+    "novelty": "tripartite hash chain + self-healing nominal + multi-signal forensic PASS"
+  }
+}
