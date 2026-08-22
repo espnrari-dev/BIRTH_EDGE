@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-08-22T03:36:48.283930",
+  "level": 8,
+  "title": "Originator - Reproducible Invention",
+  "replication": {
+    "repo": "https://github.com/gothegadget-dot/Birthedge-.git",
+    "clone_dir": "~/BIRTH_EDGE_REPLICA",
+    "script": "reproduce_l6.sh",
+    "evidence_log": "docs/evidence/L6_REPLICATION_*.log",
+    "result": "PASS model beats baseline improvement 0.1333 (seed 0)",
+    "l6_evidence_file": "logs/evidence/level6/LEVEL6_2026-08-22_022920.json",
+    "l6_evidence_hash": "f08bc74e8c8e32c12f1da70f6216ae229aeca82f4d8c33f3d7fafe9b19c86821"
+  },
+  "whitepaper": "WHITEPAPER.md",
+  "prior_art_search": "docs/PRIOR_ART_SEARCH.md",
+  "strongest_claim": "A market intelligence hunter enforcing ontological separation of immutable topology, chronological episodic outcomes, and probabilistic belief, verified by clone-based counterfactual divergence and adversarial baseline comparison, with cryptographic hash chain audit before action, running natively on Android Termux.",
+  "version": "46d3e71"
+}

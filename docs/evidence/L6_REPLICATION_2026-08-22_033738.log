@@ -1,0 +1,40 @@
+Restoring clean learning DB from backup
+Injecting adversarial examples
+Adversarial rows ensured (4 high-score rugs, 4 low-score pumps).
+Building L6 evidence (seed 0)
+Total labeled rows: 74
+{
+  "timestamp": "2026-08-22T03:37:38.665032",
+  "total": 74,
+  "train": 59,
+  "holdout": 15,
+  "model": {
+    "acc": 0.9333,
+    "tp": 2,
+    "fp": 1,
+    "tn": 12,
+    "fn": 0,
+    "weights": [
+      0.04258769632379312,
+      0.5227071426412,
+      0.4948826424679558,
+      0.2788540528831659,
+      0.2614190564038131,
+      0.46893294851296685
+    ],
+    "bias": -0.11836003008767722,
+    "count": 59
+  },
+  "baseline_75": {
+    "acc": 0.8,
+    "tp": 0,
+    "fp": 1,
+    "tn": 12,
+    "fn": 2
+  },
+  "improvement": 0.1333,
+  "version": "46d3e71"
+}
+
+[HASH] LEVEL6 ffe174b55ddcca3e6f47a198e341901717633f64f87a96d838f6db936656494c -> logs/evidence/level6/LEVEL6_2026-08-22_033738.json
+L6 VERDICT: PASS model beats baseline improvement 0.133
