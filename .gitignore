@@ -1,7 +1,10 @@
 __pycache__/
-*.log
+*.pyc
 *.db
-data/*.db
+*.log
+data/
 logs/
+.venv/
+venv/
+.env
 stats_snapshot.json
-
