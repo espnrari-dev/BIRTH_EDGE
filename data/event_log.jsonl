@@ -129,3 +129,58 @@
 {"amount_sol": 0.01, "balance_after": 0.94, "balance_before": 0.95, "mcap_cents": 124292, "proof": "44d64b14", "side": "trade_open", "symbol": "$EXIT", "t": 1787574282, "type": "trade_open"}
 {"mcap_cents": 408673, "mint": "FYdSSyDnWPVQc5rXqDGhvWCT9dN8Y5F7LTxSLw3vpump", "source": "pump.fun", "symbol": "elf", "t": 1787574283, "type": "birth_seen"}
 {"mcap_cents": 266731, "mint": "CvvciUvGHRpsvRkBkDMzvB4GusAErURc2wuc1iB3pump", "source": "refresh", "symbol": "Proxy", "t": 1787574284, "type": "price_update"}
+{"mcap_cents": 35655, "mint": "5nAUTgrXLp5VSMarKVHqiXUSkuLdzXs3baiSTAYtpump", "source": "pump.fun", "symbol": "CITH", "t": 1787574287, "type": "birth_seen"}
+{"amount_sol": 0.01, "balance_after": 0.9299999999999999, "balance_before": 0.94, "mcap_cents": 35655, "proof": "ced563d5", "side": "trade_open", "symbol": "CITH", "t": 1787574288, "type": "trade_open"}
+{"mcap_cents": 44269, "mint": "5nAUTgrXLp5VSMarKVHqiXUSkuLdzXs3baiSTAYtpump", "source": "pump.fun", "symbol": "CITH", "t": 1787574289, "type": "birth_seen"}
+{"amount_sol": 0.01, "balance_after": 0.9199999999999999, "balance_before": 0.9299999999999999, "mcap_cents": 408673, "proof": "780d84b2", "side": "trade_open", "symbol": "elf", "t": 1787574293, "type": "trade_open"}
+{"amount_sol": 0.01, "balance_after": 0.9099999999999999, "balance_before": 0.9199999999999999, "mcap_cents": 279799, "proof": "76d867ca", "side": "trade_open", "symbol": "\u30af\u30af", "t": 1787574299, "type": "trade_open"}
+{"amount_sol": 0.01, "balance_after": 0.8999999999999999, "balance_before": 0.9099999999999999, "mcap_cents": 267137, "proof": "4235d76c", "side": "trade_open", "symbol": "Nuannuan", "t": 1787574304, "type": "trade_open"}
+{"mcap_cents": 265650, "mint": "5JYc5bJzpYjaqvbMseTxjtA5UsHi2TNwpWBUnP3Ypump", "source": "pump.fun", "symbol": "Tulsa", "t": 1787574311, "type": "birth_seen"}
+{"mcap_cents": 351402, "mint": "CiNUWuf8Z5qkqsHrWamJFT5MzzenR9oDwgdWmwhjpump", "source": "pump.fun", "symbol": "Big4", "t": 1787574311, "type": "birth_seen"}
+{"mcap_cents": 265736, "mint": "8aWiYV4FZjNffdXejbD9Qh5rHirFJqhJgs5bnqdopump", "source": "pump.fun", "symbol": "FRAUD", "t": 1787574311, "type": "birth_seen"}
+{"mcap_cents": 782499, "mint": "Ea7uK86ZJ6pWwdMR62pSK2XBt37dbbfsVWJRbCjvpump", "source": "pump.fun", "symbol": "SKULLETTA", "t": 1787574311, "type": "birth_seen"}
+{"mcap_cents": 266149, "mint": "GHZAnB74ZncPu7YMH5j6NFYwKS3hwya4Fqj2jXbYVbWE", "source": "pump.fun", "symbol": "Traveling", "t": 1787574311, "type": "birth_seen"}
+{"mcap_cents": 279492, "mint": "FyE53PSxAJULzi7FRxYcwXV8ev4xxPsfohNuaCGfpump", "source": "pump.fun", "symbol": "MOON", "t": 1787574311, "type": "birth_seen"}
+{"mcap_cents": 266254, "mint": "4H9ntpUt3bRyYWseBkGZY9UR1yCjbQ1DfFnzbRNCpump", "source": "pump.fun", "symbol": "MOON", "t": 1787574311, "type": "birth_seen"}
+{"mcap_cents": 265782, "mint": "5HP1Dpcdjshm1sHR7Tv8REkdkXR7XtyqbY8FtGeHpump", "source": "pump.fun", "symbol": "$WASHCAT", "t": 1787574311, "type": "birth_seen"}
+{"mcap_cents": 845870, "mint": "GvsHT2gJYQQehWXGKsjDYXdD4oLt39xqGc1EGutHpump", "source": "pump.fun", "symbol": "chill", "t": 1787574311, "type": "birth_seen"}
+{"mcap_cents": 439786, "mint": "AtpQ8iLn8mkc1mVZRmkpDk3BzwEQXYYh8doozbPdpump", "source": "pump.fun", "symbol": "CFI", "t": 1787574311, "type": "birth_seen"}
+{"mcap_cents": 502577, "mint": "3sHTZJsRo9oMPe7YkEgVdi1qp5g82geyuGDFpZp3pump", "source": "pump.fun", "symbol": "$EXIT", "t": 1787574311, "type": "birth_seen"}
+{"mcap_cents": 266473, "mint": "ChxHT6kDTsquYsPZm4QSU4mpgBrexxpn6HupK45ppump", "source": "pump.fun", "symbol": "\u30af\u30af", "t": 1787574311, "type": "birth_seen"}
+{"mcap_cents": 713311, "mint": "51LmKYEYAVe6hCYfBhKzzgGCqSfCz8oyoE8qJBjJBWMS", "source": "pump.fun", "symbol": "SHARKBUX", "t": 1787574311, "type": "birth_seen"}
+{"mcap_cents": 277646, "mint": "EmuWV2CpNHFuMreTTZMpSz9UxtVTM9RkybjERtjypump", "source": "refresh", "symbol": "Sharkbux", "t": 1787574312, "type": "price_update"}
+{"mcap_cents": 654293, "mint": "51LmKYEYAVe6hCYfBhKzzgGCqSfCz8oyoE8qJBjJBWMS", "source": "pump.fun", "symbol": "SHARKBUX", "t": 1787574314, "type": "birth_seen"}
+{"mcap_cents": 474677, "mint": "6jhcGqvcgNWtm2ZbHeSmqLQe7PcLjaDkjj9s7L5epump", "source": "pump.fun", "symbol": "NiggaMorty", "t": 1787574314, "type": "birth_seen"}
+{"amount_sol": 0.06087036977440221, "entry_mcap": 124292, "exit_mcap": 502577, "mcap_cents": 502577, "proof": "2d1b23f1", "side": "profit", "symbol": "$EXIT", "t": 1787574315, "type": "profit"}
+{"amount_sol": 0.01, "balance_after": 0.9508703697744021, "balance_before": 0.9608703697744021, "mcap_cents": 474677, "proof": "d34d8aba", "side": "trade_open", "symbol": "NiggaMorty", "t": 1787574315, "type": "trade_open"}
+{"mcap_cents": 267000, "mint": "7dEUZGodQBhGtF95PuDnp5MzQANfrfQ43tS4Pu75pump", "source": "refresh", "symbol": "TONY", "t": 1787574315, "type": "price_update"}
+{"mcap_cents": 468253, "mint": "FYdSSyDnWPVQc5rXqDGhvWCT9dN8Y5F7LTxSLw3vpump", "source": "pump.fun", "symbol": "elf", "t": 1787574316, "type": "birth_seen"}
+{"mcap_cents": 321111, "mint": "EG4pMHDs7ixdUgaTnjYYW39QEzfWspc4WEXFpCCpump", "source": "refresh", "symbol": "GOLDWHALE", "t": 1787574318, "type": "price_update"}
+{"mcap_cents": 36089, "mint": "5nAUTgrXLp5VSMarKVHqiXUSkuLdzXs3baiSTAYtpump", "source": "pump.fun", "symbol": "CITH", "t": 1787574320, "type": "birth_seen"}
+{"mcap_cents": 266439, "mint": "CvvciUvGHRpsvRkBkDMzvB4GusAErURc2wuc1iB3pump", "source": "refresh", "symbol": "Proxy", "t": 1787574322, "type": "price_update"}
+{"mcap_cents": 285084, "mint": "FQqTccKTQLsF1tUa8KU66Gz3Q5iTq7Eyme9c9D58pump", "source": "refresh", "symbol": "LUCIA", "t": 1787574325, "type": "price_update"}
+{"mcap_cents": 152455, "mint": "3sHTZJsRo9oMPe7YkEgVdi1qp5g82geyuGDFpZp3pump", "source": "refresh", "symbol": "$EXIT", "t": 1787574328, "type": "price_update"}
+{"mcap_cents": 47609, "mint": "5nAUTgrXLp5VSMarKVHqiXUSkuLdzXs3baiSTAYtpump", "source": "refresh", "symbol": "CITH", "t": 1787574331, "type": "price_update"}
+{"mcap_cents": 525584, "mint": "FYdSSyDnWPVQc5rXqDGhvWCT9dN8Y5F7LTxSLw3vpump", "source": "refresh", "symbol": "elf", "t": 1787574335, "type": "price_update"}
+{"mcap_cents": 267610, "mint": "ChxHT6kDTsquYsPZm4QSU4mpgBrexxpn6HupK45ppump", "source": "refresh", "symbol": "\u30af\u30af", "t": 1787574338, "type": "price_update"}
+{"mcap_cents": 267117, "mint": "EXToxu8Uaqq4HcQpJYhjcAWydHdYTezyW6w9oRDepump", "source": "refresh", "symbol": "Nuannuan", "t": 1787574341, "type": "price_update"}
+{"mcap_cents": 265783, "mint": "7KTPnHYdiTkjP4YF5jWMsAwMn1mjbsEihxu96yM1pump", "source": "pump.fun", "symbol": "SS", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 265783, "mint": "8dqSHxUfhTETgBHkTvXy1T3JYeEGCx2UdB9476pVpump", "source": "pump.fun", "symbol": "BUCKZ", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 265783, "mint": "DYBcqbJD46d21upkppQERtxCwohkStwVU3Y3qdeepump", "source": "pump.fun", "symbol": "BUCKZ", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 265783, "mint": "tewGvDJcQzcdprg1pGyVth73K2RyNcPX9m2zcb7pump", "source": "pump.fun", "symbol": "BUCKZ", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 307276, "mint": "F9mkrbm2q1jtyau1mMpoMJ31KafninZt9GaAj171pump", "source": "pump.fun", "symbol": "Thomas", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 265783, "mint": "u1h8YmZR5fPDKpked1KhH3XmugsrXftNC4r6jdApump", "source": "pump.fun", "symbol": "SHARES", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 265783, "mint": "FgusV7iieUsmMebRNhbiFvintNq9wwKts3ccnSydpump", "source": "pump.fun", "symbol": "BUCKZ", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 265783, "mint": "7jXFqz1uMKyjdRF1R4jPZ5PuqHa1BC79hS5K8k4xpump", "source": "pump.fun", "symbol": "BUCKZ", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 265783, "mint": "5js1HE4uEmHQSLaX1JUfGnDGcrgdYEHse5kBMdzDpump", "source": "pump.fun", "symbol": "BUCKZ", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 301936, "mint": "5FqLkvHgB3qRc1tUDG77d7277WVxagGZVouCMZybk3bE", "source": "pump.fun", "symbol": "UP", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 360688, "mint": "AZ73hEaauGDTh3qjftoswoVNazYsBD7EPzfd8biipump", "source": "pump.fun", "symbol": "UP", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 859622, "mint": "G1AaEZqDwFLKS9eBdRkrjzYEhdBVvYr1sfh8d6XKpump", "source": "pump.fun", "symbol": "PTS", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 658831, "mint": "CiNUWuf8Z5qkqsHrWamJFT5MzzenR9oDwgdWmwhjpump", "source": "pump.fun", "symbol": "Big4", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 918546, "mint": "Ea7uK86ZJ6pWwdMR62pSK2XBt37dbbfsVWJRbCjvpump", "source": "pump.fun", "symbol": "SKULLETTA", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 265821, "mint": "FyE53PSxAJULzi7FRxYcwXV8ev4xxPsfohNuaCGfpump", "source": "pump.fun", "symbol": "MOON", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 345157, "mint": "AtpQ8iLn8mkc1mVZRmkpDk3BzwEQXYYh8doozbPdpump", "source": "pump.fun", "symbol": "CFI", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 188647, "mint": "3sHTZJsRo9oMPe7YkEgVdi1qp5g82geyuGDFpZp3pump", "source": "pump.fun", "symbol": "$EXIT", "t": 1787574343, "type": "birth_seen"}
+{"mcap_cents": 180874, "mint": "3sHTZJsRo9oMPe7YkEgVdi1qp5g82geyuGDFpZp3pump", "source": "pump.fun", "symbol": "$EXIT", "t": 1787574345, "type": "birth_seen"}
+{"mcap_cents": 276416, "mint": "6fcf4naji8aN9JtGo3bgFdrbm5as88a2WXHc7HAQpump", "source": "pump.fun", "symbol": "ZYN", "t": 1787574345, "type": "birth_seen"}
+{"mcap_cents": 717080, "mint": "51LmKYEYAVe6hCYfBhKzzgGCqSfCz8oyoE8qJBjJBWMS", "source": "pump.fun", "symbol": "SHARKBUX", "t": 1787574345, "type": "birth_seen"}
