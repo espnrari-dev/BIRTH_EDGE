@@ -1,2 +1,4 @@
 [2026-08-24 08:32:53] === WATCHDOG V2 ACTIVE ===
 [2026-08-24 08:32:53] [OK] nominal
+[2026-08-24 08:43:53] === WATCHDOG V2 ACTIVE ===
+[2026-08-24 08:43:53] [DIAG] ENGINE_STALE: log flatlined > 60s, restarting
