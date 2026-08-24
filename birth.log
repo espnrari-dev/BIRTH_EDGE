@@ -1,0 +1,144 @@
+nohup: ignoring input
+[2026-08-23 23:06:01.701722] BIRTH_EDGE REAL + IPO FIXED v4...
+filters: (token_data: dict)
+[2026-08-23 23:06:02] BIRTH_FILTERED hunting $5000+
+[2026-08-23 23:06:02] PASS LOBSTER 0xE63E4d liq $118,060 overall 93.24 
+[2026-08-23 23:06:02] IPO_EDGE loop starting, 6h interval
+[2026-08-23 23:06:03] FILTERED ASCEND 2oEQxkHy liq $14,859 overall 42.86 
+[2026-08-23 23:06:05] FILTERED MIRALIE 3Zogtb9A liq $39,678 overall 50.68 
+[2026-08-23 23:06:06] FILTERED FALCON 0xEdD207 liq $27,462 overall 66.84 
+[2026-08-23 23:06:06] FILTERED ELO 0xF7997e liq $18,712 overall 63.84 
+[2026-08-23 23:06:07] FILTERED BROKE 0x5f5D04 liq $10,133 overall 56.52 
+[2026-08-23 23:06:07] IPO scan ['2026-08-23', '2026-09-22'] - 0 new, 0 watched
+[2026-08-23 23:06:08] FILTERED NINJACAT 57pTdaUf liq $6,102 overall 37.1 
+[2026-08-23 23:06:09] FILTERED 梦 0xC46BC0 liq $20,394 overall 66.56 
+[2026-08-23 23:06:09] FILTERED DIB 0xf0C720 liq $18,390 overall 62.56 
+[2026-08-23 23:06:10] FILTERED VLED 0x6A58C2 liq $5,312 overall 59.24 
+[2026-08-23 23:06:12] FILTERED $giver 72vwsZXZ liq $9,000 overall 41.0 
+[2026-08-23 23:06:13] FILTERED Hobbes 7UuqhWmo liq $37,431 overall 50.43 
+[2026-08-23 23:06:47] Watching 12 seen, no new >$5000
+[2026-08-23 23:07:21] Watching 12 seen, no new >$5000
+[2026-08-23 23:07:51] FILTERED RANDY 0x3b02B8 liq $8,428 overall 59.72 
+[2026-08-23 23:08:28] Watching 13 seen, no new >$5000
+[2026-08-23 23:09:02] Watching 13 seen, no new >$5000
+[2026-08-23 23:09:35] Watching 13 seen, no new >$5000
+[2026-08-23 23:10:08] Watching 13 seen, no new >$5000
+[2026-08-23 23:10:41] Watching 13 seen, no new >$5000
+[2026-08-23 23:11:15] Watching 13 seen, no new >$5000
+[2026-08-23 23:11:47] Watching 13 seen, no new >$5000
+[2026-08-23 23:12:21] Watching 13 seen, no new >$5000
+[2026-08-23 23:12:54] Watching 13 seen, no new >$5000
+[2026-08-23 23:13:27] Watching 13 seen, no new >$5000
+[2026-08-23 23:13:58] FILTERED BMBS 85C2HJiF liq $21,043 overall 43.04 
+[2026-08-23 23:14:34] Watching 14 seen, no new >$5000
+[2026-08-23 23:15:08] Watching 14 seen, no new >$5000
+[2026-08-23 23:15:41] Watching 14 seen, no new >$5000
+[2026-08-23 23:16:13] FILTERED MoonCoin GnWgtFHN liq $28,391 overall 47.39 
+[2026-08-23 23:16:49] Watching 15 seen, no new >$5000
+[2026-08-23 23:17:22] Watching 15 seen, no new >$5000
+[2026-08-23 23:17:55] Watching 15 seen, no new >$5000
+[2026-08-23 23:18:28] Watching 15 seen, no new >$5000
+[2026-08-23 23:19:01] Watching 15 seen, no new >$5000
+[2026-08-23 23:19:34] Watching 15 seen, no new >$5000
+[2026-08-23 23:20:07] Watching 15 seen, no new >$5000
+[2026-08-23 23:20:41] Watching 15 seen, no new >$5000
+[2026-08-23 23:21:17] Watching 15 seen, no new >$5000
+[2026-08-23 23:21:50] Watching 15 seen, no new >$5000
+[2026-08-23 23:22:23] Watching 15 seen, no new >$5000
+[2026-08-23 23:22:56] Watching 15 seen, no new >$5000
+[2026-08-23 23:23:31] Watching 15 seen, no new >$5000
+[2026-08-23 23:24:04] Watching 15 seen, no new >$5000
+[2026-08-23 23:24:37] Watching 15 seen, no new >$5000
+[2026-08-23 23:25:11] Watching 15 seen, no new >$5000
+[2026-08-23 23:25:44] Watching 15 seen, no new >$5000
+[2026-08-23 23:26:17] Watching 15 seen, no new >$5000
+[2026-08-23 23:26:50] Watching 15 seen, no new >$5000
+[2026-08-23 23:27:24] Watching 15 seen, no new >$5000
+[2026-08-23 23:27:57] Watching 15 seen, no new >$5000
+[2026-08-23 23:28:32] Watching 15 seen, no new >$5000
+[2026-08-23 23:29:05] Watching 15 seen, no new >$5000
+[2026-08-23 23:29:39] Watching 15 seen, no new >$5000
+[2026-08-23 23:30:12] Watching 15 seen, no new >$5000
+[2026-08-23 23:30:45] Watching 15 seen, no new >$5000
+[2026-08-23 23:31:18] Watching 15 seen, no new >$5000
+[2026-08-23 23:31:52] Watching 15 seen, no new >$5000
+[2026-08-23 23:32:25] Watching 15 seen, no new >$5000
+[2026-08-23 23:32:58] Watching 15 seen, no new >$5000
+[2026-08-23 23:33:31] Watching 15 seen, no new >$5000
+[2026-08-23 23:34:05] Watching 15 seen, no new >$5000
+[2026-08-23 23:34:38] Watching 15 seen, no new >$5000
+[2026-08-23 23:35:11] Watching 15 seen, no new >$5000
+[2026-08-23 23:35:45] Watching 15 seen, no new >$5000
+[2026-08-23 23:36:19] Watching 15 seen, no new >$5000
+[2026-08-23 23:36:52] Watching 15 seen, no new >$5000
+[2026-08-23 23:37:26] Watching 15 seen, no new >$5000
+[2026-08-23 23:37:59] Watching 15 seen, no new >$5000
+[2026-08-23 23:38:32] FILTERED NINJACAT E3zGEdeN liq $12,523 overall 40.52 
+[2026-08-23 23:39:07] Watching 16 seen, no new >$5000
+[2026-08-23 23:39:42] Watching 16 seen, no new >$5000
+[2026-08-23 23:40:14] Watching 16 seen, no new >$5000
+[2026-08-23 23:40:47] Watching 16 seen, no new >$5000
+[2026-08-23 23:41:20] Watching 16 seen, no new >$5000
+[2026-08-23 23:41:55] Watching 16 seen, no new >$5000
+[2026-08-23 23:42:28] Watching 16 seen, no new >$5000
+[2026-08-23 23:43:01] Watching 16 seen, no new >$5000
+[2026-08-23 23:43:35] Watching 16 seen, no new >$5000
+[2026-08-23 23:44:07] FILTERED YUREI 9CjhM6w1 liq $23,406 overall 46.41 
+[2026-08-23 23:44:43] Watching 17 seen, no new >$5000
+[2026-08-23 23:45:15] Watching 17 seen, no new >$5000
+[2026-08-23 23:45:49] Watching 17 seen, no new >$5000
+[2026-08-23 23:46:22] Watching 17 seen, no new >$5000
+[2026-08-23 23:46:56] Watching 17 seen, no new >$5000
+[2026-08-23 23:47:31] Watching 17 seen, no new >$5000
+[2026-08-23 23:48:04] Watching 17 seen, no new >$5000
+[2026-08-23 23:48:37] Watching 17 seen, no new >$5000
+[2026-08-23 23:49:10] Watching 17 seen, no new >$5000
+[2026-08-23 23:49:42] FILTERED SOLSHIBE 6kHLia3b liq $22,812 overall 45.81 
+[2026-08-23 23:49:42] PASS MOSSAD 0x3Df502 liq $90,718 overall 90.88 
+[2026-08-23 23:49:43] FILTERED GIPP 8mBC1RTC liq $40,669 overall 52.67 
+[2026-08-23 23:49:44] FILTERED Jermbo 2R37oLgB liq $13,392 overall 41.39 
+[2026-08-23 23:50:19] Watching 21 seen, no new >$5000
+[2026-08-23 23:50:52] Watching 21 seen, no new >$5000
+[2026-08-23 23:51:25] Watching 21 seen, no new >$5000
+[2026-08-23 23:51:57] Watching 21 seen, no new >$5000
+[2026-08-23 23:52:30] Watching 21 seen, no new >$5000
+[2026-08-23 23:53:01] FILTERED Needle CXLUdYfn liq $18,108 overall 42.11 
+[2026-08-23 23:53:36] Watching 22 seen, no new >$5000
+[2026-08-23 23:54:09] Watching 22 seen, no new >$5000
+[2026-08-23 23:54:41] Watching 22 seen, no new >$5000
+[2026-08-23 23:55:12] FILTERED HAMILTON 0x43beBc liq $10,899 overall 59.6 
+[2026-08-23 23:55:46] Watching 23 seen, no new >$5000
+[2026-08-23 23:56:19] Watching 23 seen, no new >$5000
+[2026-08-23 23:56:51] Watching 23 seen, no new >$5000
+[2026-08-23 23:57:25] Watching 23 seen, no new >$5000
+[2026-08-23 23:57:57] Watching 23 seen, no new >$5000
+[2026-08-23 23:58:30] Watching 23 seen, no new >$5000
+[2026-08-23 23:59:03] Watching 23 seen, no new >$5000
+[2026-08-23 23:59:35] Watching 23 seen, no new >$5000
+[2026-08-24 00:00:07] Watching 23 seen, no new >$5000
+[2026-08-24 00:00:39] Watching 23 seen, no new >$5000
+[2026-08-24 00:01:12] Watching 23 seen, no new >$5000
+[2026-08-24 00:01:44] Watching 23 seen, no new >$5000
+[2026-08-24 00:02:18] Watching 23 seen, no new >$5000
+[2026-08-24 00:02:50] Watching 23 seen, no new >$5000
+[2026-08-24 00:03:22] Watching 23 seen, no new >$5000
+[2026-08-24 00:03:54] Watching 23 seen, no new >$5000
+[2026-08-24 00:04:26] Watching 23 seen, no new >$5000
+[2026-08-24 00:04:58] Watching 23 seen, no new >$5000
+[2026-08-24 00:05:31] Watching 23 seen, no new >$5000
+[2026-08-24 00:06:03] Watching 23 seen, no new >$5000
+[2026-08-24 00:06:35] Watching 23 seen, no new >$5000
+[2026-08-24 00:07:08] Watching 23 seen, no new >$5000
+[2026-08-24 00:07:40] Watching 23 seen, no new >$5000
+[2026-08-24 00:08:13] Watching 23 seen, no new >$5000
+[2026-08-24 00:08:45] Watching 23 seen, no new >$5000
+[2026-08-24 00:09:17] Watching 23 seen, no new >$5000
+[2026-08-24 00:09:50] Watching 23 seen, no new >$5000
+[2026-08-24 00:10:22] Watching 23 seen, no new >$5000
+[2026-08-24 00:10:53] FILTERED MARSCOIN 0x1E26d5 liq $39,315 overall 71.26 
+[2026-08-24 00:11:28] Watching 24 seen, no new >$5000
+[2026-08-24 00:12:00] Watching 24 seen, no new >$5000
+[2026-08-24 00:12:34] Watching 24 seen, no new >$5000
+[2026-08-24 00:13:06] Watching 24 seen, no new >$5000
+[2026-08-24 00:13:39] Watching 24 seen, no new >$5000
+[2026-08-24 00:14:12] Watching 24 seen, no new >$5000

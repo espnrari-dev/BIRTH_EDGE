@@ -1,0 +1,466 @@
+{
+  "L1": {
+    "feature_set": [
+      "accuracy",
+      "holder_score",
+      "liquidity"
+    ],
+    "rule_count": 1,
+    "rules": [
+      {
+        "accuracy": 1.0,
+        "holder_score": 15,
+        "liquidity": 12000
+      }
+    ],
+    "status": "OK"
+  },
+  "L2": {
+    "repeatability_rate": 1.0,
+    "runs": [
+      {
+        "accuracy": 1.0,
+        "features": [
+          "accuracy",
+          "holder_score",
+          "liquidity"
+        ],
+        "rule": {
+          "accuracy": 1.0,
+          "holder_score": 15,
+          "liquidity": 12000
+        },
+        "seed": 0
+      },
+      {
+        "accuracy": 1.0,
+        "features": [
+          "accuracy",
+          "holder_score",
+          "liquidity"
+        ],
+        "rule": {
+          "accuracy": 1.0,
+          "holder_score": 15,
+          "liquidity": 12000
+        },
+        "seed": 1
+      },
+      {
+        "accuracy": 1.0,
+        "features": [
+          "accuracy",
+          "holder_score",
+          "liquidity"
+        ],
+        "rule": {
+          "accuracy": 1.0,
+          "holder_score": 15,
+          "liquidity": 11500
+        },
+        "seed": 2
+      },
+      {
+        "accuracy": 1.0,
+        "features": [
+          "accuracy",
+          "holder_score",
+          "liquidity"
+        ],
+        "rule": {
+          "accuracy": 1.0,
+          "holder_score": 15,
+          "liquidity": 12000
+        },
+        "seed": 3
+      },
+      {
+        "accuracy": 1.0,
+        "features": [
+          "accuracy",
+          "holder_score",
+          "liquidity"
+        ],
+        "rule": {
+          "accuracy": 1.0,
+          "holder_score": 15,
+          "liquidity": 12000
+        },
+        "seed": 4
+      },
+      {
+        "accuracy": 1.0,
+        "features": [
+          "accuracy",
+          "holder_score",
+          "liquidity"
+        ],
+        "rule": {
+          "accuracy": 1.0,
+          "holder_score": 15,
+          "liquidity": 11500
+        },
+        "seed": 5
+      },
+      {
+        "accuracy": 1.0,
+        "features": [
+          "accuracy",
+          "holder_score",
+          "liquidity"
+        ],
+        "rule": {
+          "accuracy": 1.0,
+          "holder_score": 15,
+          "liquidity": 12000
+        },
+        "seed": 6
+      },
+      {
+        "accuracy": 1.0,
+        "features": [
+          "accuracy",
+          "holder_score",
+          "liquidity"
+        ],
+        "rule": {
+          "accuracy": 1.0,
+          "holder_score": 15,
+          "liquidity": 12000
+        },
+        "seed": 7
+      },
+      {
+        "accuracy": 1.0,
+        "features": [
+          "accuracy",
+          "holder_score",
+          "liquidity"
+        ],
+        "rule": {
+          "accuracy": 1.0,
+          "holder_score": 15,
+          "liquidity": 12000
+        },
+        "seed": 8
+      },
+      {
+        "accuracy": 1.0,
+        "features": [
+          "accuracy",
+          "holder_score",
+          "liquidity"
+        ],
+        "rule": {
+          "accuracy": 1.0,
+          "holder_score": 15,
+          "liquidity": 12000
+        },
+        "seed": 9
+      }
+    ],
+    "successful_runs": 10
+  },
+  "L3": {
+    "all_runs_share_same_features": true,
+    "mean_feature_jaccard": 1.0,
+    "minimum_feature_jaccard": 1.0,
+    "stable_intersection": [
+      "accuracy",
+      "holder_score",
+      "liquidity"
+    ]
+  },
+  "L4": {
+    "mean_agreement": 0.9946666666666667,
+    "minimum_agreement": 0.985,
+    "model_metrics": [
+      {
+        "metrics": {
+          "accuracy": 1.0,
+          "f1": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tn": 155,
+          "tp": 45
+        },
+        "seed": 0
+      },
+      {
+        "metrics": {
+          "accuracy": 1.0,
+          "f1": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tn": 155,
+          "tp": 45
+        },
+        "seed": 1
+      },
+      {
+        "metrics": {
+          "accuracy": 0.985,
+          "f1": 0.967741935483871,
+          "fn": 0,
+          "fp": 3,
+          "precision": 0.9375,
+          "recall": 1.0,
+          "tn": 152,
+          "tp": 45
+        },
+        "seed": 2
+      },
+      {
+        "metrics": {
+          "accuracy": 1.0,
+          "f1": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tn": 155,
+          "tp": 45
+        },
+        "seed": 3
+      },
+      {
+        "metrics": {
+          "accuracy": 1.0,
+          "f1": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tn": 155,
+          "tp": 45
+        },
+        "seed": 4
+      },
+      {
+        "metrics": {
+          "accuracy": 0.985,
+          "f1": 0.967741935483871,
+          "fn": 0,
+          "fp": 3,
+          "precision": 0.9375,
+          "recall": 1.0,
+          "tn": 152,
+          "tp": 45
+        },
+        "seed": 5
+      },
+      {
+        "metrics": {
+          "accuracy": 1.0,
+          "f1": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tn": 155,
+          "tp": 45
+        },
+        "seed": 6
+      },
+      {
+        "metrics": {
+          "accuracy": 1.0,
+          "f1": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tn": 155,
+          "tp": 45
+        },
+        "seed": 7
+      },
+      {
+        "metrics": {
+          "accuracy": 1.0,
+          "f1": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tn": 155,
+          "tp": 45
+        },
+        "seed": 8
+      },
+      {
+        "metrics": {
+          "accuracy": 1.0,
+          "f1": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tn": 155,
+          "tp": 45
+        },
+        "seed": 9
+      }
+    ],
+    "models": 10
+  },
+  "L5": {
+    "mean_accuracy": 1.0,
+    "mean_f1": 1.0,
+    "stdev_accuracy": 0.0
+  },
+  "L6": {
+    "baseline": {
+      "accuracy": 0.8666666666666667,
+      "fn": 0,
+      "fp": 2,
+      "tn": 10,
+      "tp": 3
+    },
+    "best_improvement": 0.1333333333333333,
+    "mean_improvement": 0.1333333333333333,
+    "results": [
+      {
+        "accuracy": 1.0,
+        "improvement_over_baseline": 0.1333333333333333,
+        "seed": 0
+      },
+      {
+        "accuracy": 1.0,
+        "improvement_over_baseline": 0.1333333333333333,
+        "seed": 1
+      },
+      {
+        "accuracy": 1.0,
+        "improvement_over_baseline": 0.1333333333333333,
+        "seed": 2
+      },
+      {
+        "accuracy": 1.0,
+        "improvement_over_baseline": 0.1333333333333333,
+        "seed": 3
+      },
+      {
+        "accuracy": 1.0,
+        "improvement_over_baseline": 0.1333333333333333,
+        "seed": 4
+      },
+      {
+        "accuracy": 1.0,
+        "improvement_over_baseline": 0.1333333333333333,
+        "seed": 5
+      },
+      {
+        "accuracy": 1.0,
+        "improvement_over_baseline": 0.1333333333333333,
+        "seed": 6
+      },
+      {
+        "accuracy": 1.0,
+        "improvement_over_baseline": 0.1333333333333333,
+        "seed": 7
+      },
+      {
+        "accuracy": 1.0,
+        "improvement_over_baseline": 0.1333333333333333,
+        "seed": 8
+      },
+      {
+        "accuracy": 1.0,
+        "improvement_over_baseline": 0.1333333333333333,
+        "seed": 9
+      }
+    ]
+  },
+  "L7": {
+    "dominant_features": [
+      "accuracy",
+      "holder_score",
+      "liquidity"
+    ],
+    "feature_frequency": {
+      "accuracy": 10,
+      "holder_score": 10,
+      "liquidity": 10
+    },
+    "interpretation": "Cross-seed engineering structure measured."
+  },
+  "L8": {
+    "mean_exact_rule_jaccard": 0.0,
+    "mean_feature_set_jaccard": 1.0,
+    "mean_operator_jaccard": 1.0,
+    "mean_threshold_relative_distance": 0.0049382716049382715,
+    "structural_identifiability": true
+  },
+  "L8.1": {
+    "checks": {
+      "feature_set_jaccard": true,
+      "threshold_stability": true
+    },
+    "verdict": "L8.1-PASS"
+  },
+  "L9": {
+    "functional_convergence": true,
+    "mechanism_recovery": true,
+    "verdict": "L9-MECHANISM-RECOVERY"
+  },
+  "SYNTHESIS": {
+    "claim_boundary": {
+      "not_established_by_this_batch": [
+        "External scientific novelty",
+        "Causal discovery",
+        "Universal generalization"
+      ],
+      "supported_by_this_batch": [
+        "Repeatable discovery",
+        "Feature-level stability",
+        "Functional agreement",
+        "Holdout validation",
+        "Baseline comparison"
+      ]
+    },
+    "defensible_result": {
+      "feature_level_stability": true,
+      "functional_convergence": true,
+      "repeatable_discovery": true,
+      "stable_mechanism_recovery": true
+    },
+    "evidence_chain": {
+      "L1_status": "OK",
+      "L2_successful_runs": 10,
+      "L3_feature_stability": true,
+      "L4_functional_agreement": 0.9946666666666667,
+      "L5_holdout_accuracy": 1.0,
+      "L6_baseline_improvement": 0.1333333333333333,
+      "L7_dominant_features": [
+        "accuracy",
+        "holder_score",
+        "liquidity"
+      ],
+      "L8_feature_jaccard": 1.0,
+      "L8_threshold_distance": 0.0049382716049382715,
+      "L9_verdict": "L9-MECHANISM-RECOVERY"
+    }
+  },
+  "metadata": {
+    "master_hash": "c6838246dda5bb209a33632fb8055e459c9f725394f75895e888e04fe20792f8",
+    "name": "BIRTH_EDGE_L1_L9_MASTER_EVIDENCE",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "timestamp": "2026-08-22T09:29:21"
+  }
+}

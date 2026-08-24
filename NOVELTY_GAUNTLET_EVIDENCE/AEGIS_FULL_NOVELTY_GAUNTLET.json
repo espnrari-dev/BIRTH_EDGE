@@ -1,0 +1,1358 @@
+{
+  "L1_L9": {
+    "BOUNDARY": {
+      "not_established": [
+        "external scientific novelty",
+        "causal identification",
+        "universal generalization",
+        "real-world economic manipulation cost",
+        "automatic trading profitability"
+      ],
+      "supported": [
+        "empirical hidden-rule recovery",
+        "repeatable discovery",
+        "held-out generalization",
+        "negative-control behavior",
+        "correlated-decoy testing",
+        "distribution-shift testing",
+        "feature dependence",
+        "counterfactual sensitivity",
+        "reproducibility",
+        "observational identifiability stress testing"
+      ]
+    },
+    "L1": {
+      "meaning": "Basic structure was discovered.",
+      "status": "FAIL"
+    },
+    "L2": {
+      "meaning": "Discovery is repeatable.",
+      "status": "FAIL"
+    },
+    "L3": {
+      "meaning": "The recovered structure survives correlated decoy pressure.",
+      "status": "FAIL"
+    },
+    "L4": {
+      "meaning": "Function converges on unseen data.",
+      "status": "PASS"
+    },
+    "L5": {
+      "meaning": "The discovered relationship survives distribution change.",
+      "status": "PASS"
+    },
+    "L6": {
+      "meaning": "Negative controls and feature ablation do not reveal a trivial explanation.",
+      "status": "FAIL"
+    },
+    "L7": {
+      "meaning": "The same explanatory variables remain dominant under decoy pressure.",
+      "status": "FAIL"
+    },
+    "L8": {
+      "meaning": "Reproducibility and identifiability stress tests provide structural evidence.",
+      "status": "FAIL"
+    },
+    "L9": {
+      "functional_convergence": true,
+      "mechanism_recovery": false,
+      "structural_convergence": false,
+      "verdict": "L9-FUNCTIONAL-CONVERGENCE"
+    }
+  },
+  "master_hash_pre_hash": "4b9922abd2239544c1dc80991673db0b55c13ed6f471475cc9cc3d8da98fcd8e",
+  "metadata": {
+    "controlled_benchmark": true,
+    "miner_receives_hidden_rule": false,
+    "name": "AEGIS_FULL_NOVELTY_GAUNTLET",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "timestamp": "2026-08-22T10:34:14"
+  },
+  "tests": {
+    "TEST_1": {
+      "pass": false,
+      "recovery_count": 0,
+      "recovery_rate": 0.0,
+      "runs": [
+        {
+          "accuracy": 0.918,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "found_holder": true,
+          "found_liquidity": false,
+          "rule": "((overall_score > 17.59) AND (holder_score > 15.05))",
+          "seed": 0
+        },
+        {
+          "accuracy": 0.892,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "found_holder": true,
+          "found_liquidity": false,
+          "rule": "((overall_score > 17.66) AND (holder_score > 14.56))",
+          "seed": 1
+        },
+        {
+          "accuracy": 0.9,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "found_holder": true,
+          "found_liquidity": false,
+          "rule": "((overall_score > 18.06) AND (holder_score > 14.78))",
+          "seed": 2
+        },
+        {
+          "accuracy": 0.882,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "found_holder": true,
+          "found_liquidity": false,
+          "rule": "((overall_score > 18.96) AND (holder_score > 14.28))",
+          "seed": 3
+        },
+        {
+          "accuracy": 0.904,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "found_holder": true,
+          "found_liquidity": false,
+          "rule": "((overall_score > 18.15) AND (holder_score > 14.78))",
+          "seed": 4
+        },
+        {
+          "accuracy": 0.93,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "found_holder": true,
+          "found_liquidity": false,
+          "rule": "((overall_score > 17.83) AND (holder_score > 15.16))",
+          "seed": 5
+        },
+        {
+          "accuracy": 0.928,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "found_holder": true,
+          "found_liquidity": false,
+          "rule": "((overall_score > 18.91) AND (holder_score > 14.88))",
+          "seed": 6
+        },
+        {
+          "accuracy": 0.872,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "found_holder": true,
+          "found_liquidity": false,
+          "rule": "((overall_score > 19.51) AND (holder_score > 13.58))",
+          "seed": 7
+        },
+        {
+          "accuracy": 0.896,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "found_holder": true,
+          "found_liquidity": false,
+          "rule": "((overall_score > 18.72) AND (holder_score > 14.82))",
+          "seed": 8
+        },
+        {
+          "accuracy": 0.928,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "found_holder": true,
+          "found_liquidity": false,
+          "rule": "((overall_score > 17.23) AND (holder_score > 14.35))",
+          "seed": 9
+        }
+      ]
+    },
+    "TEST_10": {
+      "ablations": {
+        "dev_score": {
+          "accuracy": 0.917,
+          "balanced_accuracy": 0.8759118936728327,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 17.5) AND (holder_score > 14.91))"
+        },
+        "holder_score": {
+          "accuracy": 0.871,
+          "balanced_accuracy": 0.8415093513205729,
+          "features": [
+            "liquidity_usd",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 17.5) AND (liquidity_usd > 1.226e+04))"
+        },
+        "liquidity_usd": {
+          "accuracy": 0.917,
+          "balanced_accuracy": 0.8759118936728327,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 17.5) AND (holder_score > 14.91))"
+        },
+        "lp_lock_score": {
+          "accuracy": 0.917,
+          "balanced_accuracy": 0.8759118936728327,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 17.5) AND (holder_score > 14.91))"
+        },
+        "overall_score": {
+          "accuracy": 0.994,
+          "balanced_accuracy": 0.9957805907172996,
+          "features": [
+            "holder_score",
+            "liquidity_usd"
+          ],
+          "rule": "((holder_score > 14.91) AND (liquidity_usd > 1.187e+04))"
+        },
+        "tax_score": {
+          "accuracy": 0.917,
+          "balanced_accuracy": 0.8759118936728327,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 17.5) AND (holder_score > 14.91))"
+        }
+      },
+      "full_model": {
+        "accuracy": 0.917,
+        "balanced_accuracy": 0.8759118936728327,
+        "features": [
+          "holder_score",
+          "overall_score"
+        ],
+        "rule": "((overall_score > 17.5) AND (holder_score > 14.91))"
+      },
+      "interpretation": "Ablation identifies feature dependence. A performance collapse after removing a feature is evidence that the discovered rule uses that feature, not proof of causality.",
+      "pass": true
+    },
+    "TEST_11": {
+      "decoy_selection_count": 10,
+      "pass": false,
+      "runs": [
+        {
+          "accuracy": 0.9283333333333333,
+          "decoy_selected": true,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 37.24) AND (holder_score > 15.26))",
+          "seed": 0,
+          "true_holder": true,
+          "true_liquidity": false
+        },
+        {
+          "accuracy": 0.925,
+          "decoy_selected": true,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 37.47) AND (holder_score > 14.98))",
+          "seed": 1,
+          "true_holder": true,
+          "true_liquidity": false
+        },
+        {
+          "accuracy": 0.9241666666666667,
+          "decoy_selected": true,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 35.78) AND (holder_score > 14.64))",
+          "seed": 2,
+          "true_holder": true,
+          "true_liquidity": false
+        },
+        {
+          "accuracy": 0.9333333333333333,
+          "decoy_selected": true,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 37.86) AND (holder_score > 15.08))",
+          "seed": 3,
+          "true_holder": true,
+          "true_liquidity": false
+        },
+        {
+          "accuracy": 0.9275,
+          "decoy_selected": true,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 37.53) AND (holder_score > 15))",
+          "seed": 4,
+          "true_holder": true,
+          "true_liquidity": false
+        },
+        {
+          "accuracy": 0.93,
+          "decoy_selected": true,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 38.47) AND (holder_score > 14.68))",
+          "seed": 5,
+          "true_holder": true,
+          "true_liquidity": false
+        },
+        {
+          "accuracy": 0.9341666666666667,
+          "decoy_selected": true,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 36.19) AND (holder_score > 15.02))",
+          "seed": 6,
+          "true_holder": true,
+          "true_liquidity": false
+        },
+        {
+          "accuracy": 0.9208333333333333,
+          "decoy_selected": true,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 37.65) AND (holder_score > 14.85))",
+          "seed": 7,
+          "true_holder": true,
+          "true_liquidity": false
+        },
+        {
+          "accuracy": 0.9191666666666667,
+          "decoy_selected": true,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 37.21) AND (holder_score > 15.17))",
+          "seed": 8,
+          "true_holder": true,
+          "true_liquidity": false
+        },
+        {
+          "accuracy": 0.9233333333333333,
+          "decoy_selected": true,
+          "features": [
+            "holder_score",
+            "overall_score"
+          ],
+          "rule": "((overall_score > 38.28) AND (holder_score > 14.72))",
+          "seed": 9,
+          "true_holder": true,
+          "true_liquidity": false
+        }
+      ],
+      "true_mechanism_recovery": 0
+    },
+    "TEST_12": {
+      "identical_count": 10,
+      "pass": true,
+      "reproducibility_rate": 1.0,
+      "runs": [
+        {
+          "accuracy_a": 0.918,
+          "accuracy_b": 0.918,
+          "identical": true,
+          "rule_a": "((overall_score > 17.59) AND (holder_score > 15.05))",
+          "rule_b": "((overall_score > 17.59) AND (holder_score > 15.05))",
+          "seed": 0
+        },
+        {
+          "accuracy_a": 0.892,
+          "accuracy_b": 0.892,
+          "identical": true,
+          "rule_a": "((overall_score > 17.66) AND (holder_score > 14.56))",
+          "rule_b": "((overall_score > 17.66) AND (holder_score > 14.56))",
+          "seed": 1
+        },
+        {
+          "accuracy_a": 0.9,
+          "accuracy_b": 0.9,
+          "identical": true,
+          "rule_a": "((overall_score > 18.06) AND (holder_score > 14.78))",
+          "rule_b": "((overall_score > 18.06) AND (holder_score > 14.78))",
+          "seed": 2
+        },
+        {
+          "accuracy_a": 0.882,
+          "accuracy_b": 0.882,
+          "identical": true,
+          "rule_a": "((overall_score > 18.96) AND (holder_score > 14.28))",
+          "rule_b": "((overall_score > 18.96) AND (holder_score > 14.28))",
+          "seed": 3
+        },
+        {
+          "accuracy_a": 0.904,
+          "accuracy_b": 0.904,
+          "identical": true,
+          "rule_a": "((overall_score > 18.15) AND (holder_score > 14.78))",
+          "rule_b": "((overall_score > 18.15) AND (holder_score > 14.78))",
+          "seed": 4
+        },
+        {
+          "accuracy_a": 0.93,
+          "accuracy_b": 0.93,
+          "identical": true,
+          "rule_a": "((overall_score > 17.83) AND (holder_score > 15.16))",
+          "rule_b": "((overall_score > 17.83) AND (holder_score > 15.16))",
+          "seed": 5
+        },
+        {
+          "accuracy_a": 0.928,
+          "accuracy_b": 0.928,
+          "identical": true,
+          "rule_a": "((overall_score > 18.91) AND (holder_score > 14.88))",
+          "rule_b": "((overall_score > 18.91) AND (holder_score > 14.88))",
+          "seed": 6
+        },
+        {
+          "accuracy_a": 0.872,
+          "accuracy_b": 0.872,
+          "identical": true,
+          "rule_a": "((overall_score > 19.51) AND (holder_score > 13.58))",
+          "rule_b": "((overall_score > 19.51) AND (holder_score > 13.58))",
+          "seed": 7
+        },
+        {
+          "accuracy_a": 0.896,
+          "accuracy_b": 0.896,
+          "identical": true,
+          "rule_a": "((overall_score > 18.72) AND (holder_score > 14.82))",
+          "rule_b": "((overall_score > 18.72) AND (holder_score > 14.82))",
+          "seed": 8
+        },
+        {
+          "accuracy_a": 0.928,
+          "accuracy_b": 0.928,
+          "identical": true,
+          "rule_a": "((overall_score > 17.23) AND (holder_score > 14.35))",
+          "rule_b": "((overall_score > 17.23) AND (holder_score > 14.35))",
+          "seed": 9
+        }
+      ]
+    },
+    "TEST_2": {
+      "mean_holdout_accuracy": 0.9023,
+      "pass": true,
+      "runs": [
+        {
+          "holdout": {
+            "accuracy": 0.909,
+            "balanced_accuracy": 0.8638270570242104,
+            "f1": 0.8330275229357798,
+            "fn": 76,
+            "fp": 15,
+            "precision": 0.9380165289256198,
+            "recall": 0.7491749174917491,
+            "specificity": 0.9784791965566715,
+            "tn": 682,
+            "tp": 227
+          },
+          "rule": "((overall_score > 17.59) AND (holder_score > 15.05))",
+          "seed": 0,
+          "train_accuracy": 0.918
+        },
+        {
+          "holdout": {
+            "accuracy": 0.909,
+            "balanced_accuracy": 0.8718004379791888,
+            "f1": 0.836624775583483,
+            "fn": 66,
+            "fp": 25,
+            "precision": 0.9031007751937985,
+            "recall": 0.7792642140468228,
+            "specificity": 0.9643366619115549,
+            "tn": 676,
+            "tp": 233
+          },
+          "rule": "((overall_score > 17.66) AND (holder_score > 14.56))",
+          "seed": 1,
+          "train_accuracy": 0.892
+        },
+        {
+          "holdout": {
+            "accuracy": 0.902,
+            "balanced_accuracy": 0.8558481041702518,
+            "f1": 0.8185185185185184,
+            "fn": 77,
+            "fp": 21,
+            "precision": 0.9132231404958677,
+            "recall": 0.7416107382550335,
+            "specificity": 0.9700854700854701,
+            "tn": 681,
+            "tp": 221
+          },
+          "rule": "((overall_score > 18.06) AND (holder_score > 14.78))",
+          "seed": 2,
+          "train_accuracy": 0.9
+        },
+        {
+          "holdout": {
+            "accuracy": 0.886,
+            "balanced_accuracy": 0.8166366149777617,
+            "f1": 0.7701612903225806,
+            "fn": 104,
+            "fp": 10,
+            "precision": 0.9502487562189055,
+            "recall": 0.6474576271186441,
+            "specificity": 0.9858156028368794,
+            "tn": 695,
+            "tp": 191
+          },
+          "rule": "((overall_score > 18.96) AND (holder_score > 14.28))",
+          "seed": 3,
+          "train_accuracy": 0.882
+        },
+        {
+          "holdout": {
+            "accuracy": 0.902,
+            "balanced_accuracy": 0.8568546894662817,
+            "f1": 0.8256227758007118,
+            "fn": 84,
+            "fp": 14,
+            "precision": 0.943089430894309,
+            "recall": 0.7341772151898734,
+            "specificity": 0.97953216374269,
+            "tn": 670,
+            "tp": 232
+          },
+          "rule": "((overall_score > 18.15) AND (holder_score > 14.78))",
+          "seed": 4,
+          "train_accuracy": 0.904
+        },
+        {
+          "holdout": {
+            "accuracy": 0.919,
+            "balanced_accuracy": 0.8721840188048413,
+            "f1": 0.8445297504798465,
+            "fn": 69,
+            "fp": 12,
+            "precision": 0.9482758620689655,
+            "recall": 0.7612456747404844,
+            "specificity": 0.9831223628691983,
+            "tn": 699,
+            "tp": 220
+          },
+          "rule": "((overall_score > 17.83) AND (holder_score > 15.16))",
+          "seed": 5,
+          "train_accuracy": 0.93
+        },
+        {
+          "holdout": {
+            "accuracy": 0.903,
+            "balanced_accuracy": 0.8378004057428214,
+            "f1": 0.8024439918533603,
+            "fn": 91,
+            "fp": 6,
+            "precision": 0.9704433497536946,
+            "recall": 0.6840277777777778,
+            "specificity": 0.9915730337078652,
+            "tn": 706,
+            "tp": 197
+          },
+          "rule": "((overall_score > 18.91) AND (holder_score > 14.88))",
+          "seed": 6,
+          "train_accuracy": 0.928
+        },
+        {
+          "holdout": {
+            "accuracy": 0.875,
+            "balanced_accuracy": 0.7895823215152986,
+            "f1": 0.7311827956989247,
+            "fn": 120,
+            "fp": 5,
+            "precision": 0.9714285714285714,
+            "recall": 0.5862068965517241,
+            "specificity": 0.9929577464788732,
+            "tn": 705,
+            "tp": 170
+          },
+          "rule": "((overall_score > 19.51) AND (holder_score > 13.58))",
+          "seed": 7,
+          "train_accuracy": 0.872
+        },
+        {
+          "holdout": {
+            "accuracy": 0.905,
+            "balanced_accuracy": 0.8594290159685876,
+            "f1": 0.8312611012433392,
+            "fn": 85,
+            "fp": 10,
+            "precision": 0.9590163934426229,
+            "recall": 0.7335423197492164,
+            "specificity": 0.9853157121879589,
+            "tn": 671,
+            "tp": 234
+          },
+          "rule": "((overall_score > 18.72) AND (holder_score > 14.82))",
+          "seed": 8,
+          "train_accuracy": 0.896
+        },
+        {
+          "holdout": {
+            "accuracy": 0.913,
+            "balanced_accuracy": 0.88552110213348,
+            "f1": 0.8517887563884157,
+            "fn": 57,
+            "fp": 30,
+            "precision": 0.8928571428571429,
+            "recall": 0.8143322475570033,
+            "specificity": 0.9567099567099567,
+            "tn": 663,
+            "tp": 250
+          },
+          "rule": "((overall_score > 17.23) AND (holder_score > 14.35))",
+          "seed": 9,
+          "train_accuracy": 0.928
+        }
+      ]
+    },
+    "TEST_3": {
+      "max_accuracy": 0.732,
+      "mean_accuracy": 0.7036,
+      "pass": false,
+      "runs": [
+        {
+          "accuracy": 0.678,
+          "rule": "((tax_score > 19.63) AND (dev_score < 10.32))",
+          "seed": 0
+        },
+        {
+          "accuracy": 0.684,
+          "rule": "((holder_score > 28.43) AND (tax_score < 5.127))",
+          "seed": 1
+        },
+        {
+          "accuracy": 0.684,
+          "rule": "((liquidity_usd < 583.7) AND (holder_score < 16.16))",
+          "seed": 2
+        },
+        {
+          "accuracy": 0.718,
+          "rule": "((tax_score > 18.86) AND (holder_score > 26.7))",
+          "seed": 3
+        },
+        {
+          "accuracy": 0.7,
+          "rule": "((lp_lock_score > 29.07) AND (overall_score > 13.91))",
+          "seed": 4
+        },
+        {
+          "accuracy": 0.708,
+          "rule": "((dev_score < 1.011) AND (holder_score < 6.193))",
+          "seed": 5
+        },
+        {
+          "accuracy": 0.732,
+          "rule": "((tax_score < 0.2731) AND (lp_lock_score > 14.09))",
+          "seed": 6
+        },
+        {
+          "accuracy": 0.712,
+          "rule": "((lp_lock_score > 29.35) AND (holder_score > 20.71))",
+          "seed": 7
+        },
+        {
+          "accuracy": 0.72,
+          "rule": "((lp_lock_score < 4.05) AND (holder_score > 26.61))",
+          "seed": 8
+        },
+        {
+          "accuracy": 0.7,
+          "rule": "((holder_score > 29.13) AND (tax_score < 10.3))",
+          "seed": 9
+        }
+      ]
+    },
+    "TEST_4": {
+      "pass": false,
+      "recovery_rate": 0.0,
+      "runs": [
+        {
+          "accuracy": 0.928,
+          "features": [
+            "liquidity_usd",
+            "overall_score"
+          ],
+          "found_true_holder": false,
+          "found_true_liquidity": true,
+          "rule": "((overall_score > 53.39) AND (liquidity_usd > 1.286e+04))",
+          "seed": 0
+        },
+        {
+          "accuracy": 0.92,
+          "features": [
+            "liquidity_usd",
+            "overall_score"
+          ],
+          "found_true_holder": false,
+          "found_true_liquidity": true,
+          "rule": "((overall_score > 53.07) AND (liquidity_usd > 1.158e+04))",
+          "seed": 1
+        },
+        {
+          "accuracy": 0.946,
+          "features": [
+            "liquidity_usd",
+            "overall_score"
+          ],
+          "found_true_holder": false,
+          "found_true_liquidity": true,
+          "rule": "((overall_score > 50.13) AND (liquidity_usd > 1.221e+04))",
+          "seed": 2
+        },
+        {
+          "accuracy": 0.918,
+          "features": [
+            "liquidity_usd",
+            "overall_score"
+          ],
+          "found_true_holder": false,
+          "found_true_liquidity": true,
+          "rule": "((overall_score > 55.23) AND (liquidity_usd > 1.185e+04))",
+          "seed": 3
+        },
+        {
+          "accuracy": 0.944,
+          "features": [
+            "liquidity_usd",
+            "overall_score"
+          ],
+          "found_true_holder": false,
+          "found_true_liquidity": true,
+          "rule": "((overall_score > 49.58) AND (liquidity_usd > 1.232e+04))",
+          "seed": 4
+        },
+        {
+          "accuracy": 0.94,
+          "features": [
+            "liquidity_usd",
+            "overall_score"
+          ],
+          "found_true_holder": false,
+          "found_true_liquidity": true,
+          "rule": "((overall_score > 47.79) AND (liquidity_usd > 1.142e+04))",
+          "seed": 5
+        },
+        {
+          "accuracy": 0.944,
+          "features": [
+            "liquidity_usd",
+            "overall_score"
+          ],
+          "found_true_holder": false,
+          "found_true_liquidity": true,
+          "rule": "((overall_score > 49.33) AND (liquidity_usd > 1.176e+04))",
+          "seed": 6
+        },
+        {
+          "accuracy": 0.91,
+          "features": [
+            "liquidity_usd",
+            "overall_score"
+          ],
+          "found_true_holder": false,
+          "found_true_liquidity": true,
+          "rule": "((overall_score > 53.53) AND (liquidity_usd > 1.129e+04))",
+          "seed": 7
+        },
+        {
+          "accuracy": 0.92,
+          "features": [
+            "liquidity_usd",
+            "overall_score"
+          ],
+          "found_true_holder": false,
+          "found_true_liquidity": true,
+          "rule": "((overall_score > 54.31) AND (liquidity_usd > 1.236e+04))",
+          "seed": 8
+        },
+        {
+          "accuracy": 0.91,
+          "features": [
+            "liquidity_usd",
+            "overall_score"
+          ],
+          "found_true_holder": false,
+          "found_true_liquidity": true,
+          "rule": "((overall_score > 54.02) AND (liquidity_usd > 1.175e+04))",
+          "seed": 9
+        }
+      ],
+      "true_mechanism_recovery": 0
+    },
+    "TEST_5": {
+      "mean_shifted_accuracy": 0.9077000000000001,
+      "pass": true,
+      "runs": [
+        {
+          "rule": "((overall_score > 17.59) AND (holder_score > 15.05))",
+          "seed": 0,
+          "shifted": {
+            "accuracy": 0.923,
+            "balanced_accuracy": 0.9220647773279352,
+            "f1": 0.9292929292929293,
+            "fn": 0,
+            "fp": 77,
+            "precision": 0.8679245283018868,
+            "recall": 1.0,
+            "specificity": 0.8441295546558705,
+            "tn": 417,
+            "tp": 506
+          },
+          "train_accuracy": 0.918
+        },
+        {
+          "rule": "((overall_score > 17.66) AND (holder_score > 14.56))",
+          "seed": 1,
+          "shifted": {
+            "accuracy": 0.897,
+            "balanced_accuracy": 0.8927083333333333,
+            "f1": 0.9098862642169728,
+            "fn": 0,
+            "fp": 103,
+            "precision": 0.8346709470304976,
+            "recall": 1.0,
+            "specificity": 0.7854166666666667,
+            "tn": 377,
+            "tp": 520
+          },
+          "train_accuracy": 0.892
+        },
+        {
+          "rule": "((overall_score > 18.06) AND (holder_score > 14.78))",
+          "seed": 2,
+          "shifted": {
+            "accuracy": 0.925,
+            "balanced_accuracy": 0.9181222707423581,
+            "f1": 0.9352890422778257,
+            "fn": 0,
+            "fp": 75,
+            "precision": 0.8784440842787682,
+            "recall": 1.0,
+            "specificity": 0.8362445414847162,
+            "tn": 383,
+            "tp": 542
+          },
+          "train_accuracy": 0.9
+        },
+        {
+          "rule": "((overall_score > 18.96) AND (holder_score > 14.28))",
+          "seed": 3,
+          "shifted": {
+            "accuracy": 0.891,
+            "balanced_accuracy": 0.8866943866943867,
+            "f1": 0.9049694856146469,
+            "fn": 0,
+            "fp": 109,
+            "precision": 0.8264331210191083,
+            "recall": 1.0,
+            "specificity": 0.7733887733887734,
+            "tn": 372,
+            "tp": 519
+          },
+          "train_accuracy": 0.882
+        },
+        {
+          "rule": "((overall_score > 18.15) AND (holder_score > 14.78))",
+          "seed": 4,
+          "shifted": {
+            "accuracy": 0.917,
+            "balanced_accuracy": 0.9075723830734966,
+            "f1": 0.929957805907173,
+            "fn": 0,
+            "fp": 83,
+            "precision": 0.8690851735015773,
+            "recall": 1.0,
+            "specificity": 0.8151447661469933,
+            "tn": 366,
+            "tp": 551
+          },
+          "train_accuracy": 0.904
+        },
+        {
+          "rule": "((overall_score > 17.83) AND (holder_score > 15.16))",
+          "seed": 5,
+          "shifted": {
+            "accuracy": 0.923,
+            "balanced_accuracy": 0.9180891965401288,
+            "f1": 0.9321585903083701,
+            "fn": 4,
+            "fp": 73,
+            "precision": 0.8787375415282392,
+            "recall": 0.9924953095684803,
+            "specificity": 0.8436830835117773,
+            "tn": 394,
+            "tp": 529
+          },
+          "train_accuracy": 0.93
+        },
+        {
+          "rule": "((overall_score > 18.91) AND (holder_score > 14.88))",
+          "seed": 6,
+          "shifted": {
+            "accuracy": 0.916,
+            "balanced_accuracy": 0.9166666666666667,
+            "f1": 0.9219330855018588,
+            "fn": 0,
+            "fp": 84,
+            "precision": 0.8551724137931035,
+            "recall": 1.0,
+            "specificity": 0.8333333333333334,
+            "tn": 420,
+            "tp": 496
+          },
+          "train_accuracy": 0.928
+        },
+        {
+          "rule": "((overall_score > 19.51) AND (holder_score > 13.58))",
+          "seed": 7,
+          "shifted": {
+            "accuracy": 0.852,
+            "balanced_accuracy": 0.8408602150537634,
+            "f1": 0.8784893267651889,
+            "fn": 0,
+            "fp": 148,
+            "precision": 0.7833089311859444,
+            "recall": 1.0,
+            "specificity": 0.6817204301075269,
+            "tn": 317,
+            "tp": 535
+          },
+          "train_accuracy": 0.872
+        },
+        {
+          "rule": "((overall_score > 18.72) AND (holder_score > 14.82))",
+          "seed": 8,
+          "shifted": {
+            "accuracy": 0.914,
+            "balanced_accuracy": 0.9088983050847458,
+            "f1": 0.9246935201401052,
+            "fn": 0,
+            "fp": 86,
+            "precision": 0.8599348534201955,
+            "recall": 1.0,
+            "specificity": 0.8177966101694916,
+            "tn": 386,
+            "tp": 528
+          },
+          "train_accuracy": 0.896
+        },
+        {
+          "rule": "((overall_score > 17.23) AND (holder_score > 14.35))",
+          "seed": 9,
+          "shifted": {
+            "accuracy": 0.919,
+            "balanced_accuracy": 0.9103982300884956,
+            "f1": 0.931180968564146,
+            "fn": 0,
+            "fp": 81,
+            "precision": 0.8712241653418124,
+            "recall": 1.0,
+            "specificity": 0.8207964601769911,
+            "tn": 371,
+            "tp": 548
+          },
+          "train_accuracy": 0.928
+        }
+      ]
+    },
+    "TEST_6": {
+      "interpretation": "The hidden variable cannot be recovered because it is deliberately unavailable. The test therefore measures robustness to an omitted variable rather than proving causality.",
+      "mean_balanced_accuracy": 0.8838201612200633,
+      "pass": true,
+      "runs": [
+        {
+          "balanced_accuracy": 0.8702525662839595,
+          "rule": "((overall_score > 38.46) AND (holder_score > 14.73))",
+          "seed": 0,
+          "train_accuracy": 0.918
+        },
+        {
+          "balanced_accuracy": 0.8651295255930087,
+          "rule": "((overall_score > 38.11) AND (holder_score > 15.04))",
+          "seed": 1,
+          "train_accuracy": 0.911
+        },
+        {
+          "balanced_accuracy": 0.8895753203531358,
+          "rule": "((overall_score > 37.68) AND (holder_score > 14.96))",
+          "seed": 2,
+          "train_accuracy": 0.922
+        },
+        {
+          "balanced_accuracy": 0.8779413568887253,
+          "rule": "((overall_score > 38.42) AND (holder_score > 14.63))",
+          "seed": 3,
+          "train_accuracy": 0.919
+        },
+        {
+          "balanced_accuracy": 0.923296433332834,
+          "rule": "((overall_score > 35.67) AND (holder_score > 15.17))",
+          "seed": 4,
+          "train_accuracy": 0.939
+        },
+        {
+          "balanced_accuracy": 0.8818492374200765,
+          "rule": "((overall_score > 37.54) AND (holder_score > 15.48))",
+          "seed": 5,
+          "train_accuracy": 0.923
+        },
+        {
+          "balanced_accuracy": 0.8893062835050519,
+          "rule": "((overall_score > 38.64) AND (holder_score > 15.05))",
+          "seed": 6,
+          "train_accuracy": 0.928
+        },
+        {
+          "balanced_accuracy": 0.8721642468239564,
+          "rule": "((overall_score > 37.13) AND (holder_score > 14.72))",
+          "seed": 7,
+          "train_accuracy": 0.902
+        },
+        {
+          "balanced_accuracy": 0.8693010358045836,
+          "rule": "((overall_score > 38.77) AND (holder_score > 14.87))",
+          "seed": 8,
+          "train_accuracy": 0.916
+        },
+        {
+          "balanced_accuracy": 0.8993856061953021,
+          "rule": "((overall_score > 36.44) AND (holder_score > 15.4))",
+          "seed": 9,
+          "train_accuracy": 0.922
+        }
+      ]
+    },
+    "TEST_7": {
+      "distinct_structures": 1,
+      "dominant_structure_frequency": 1.0,
+      "interpretation": "A strong non-identifiability result is NOT a PASS for mechanism recovery. It demonstrates that observational accuracy alone may not uniquely identify mechanism.",
+      "pass": false,
+      "runs": [
+        {
+          "accuracy": 0.9966666666666667,
+          "balanced_accuracy": 0.9966216216216216,
+          "rule": "(dev_score > 14.9)",
+          "seed": 0,
+          "structural_signature": [
+            [
+              "dev_score",
+              ">"
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.998,
+          "balanced_accuracy": 0.998046875,
+          "rule": "(dev_score > 14.97)",
+          "seed": 1,
+          "structural_signature": [
+            [
+              "dev_score",
+              ">"
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.9993333333333333,
+          "balanced_accuracy": 0.9993206521739131,
+          "rule": "(dev_score > 15.06)",
+          "seed": 2,
+          "structural_signature": [
+            [
+              "dev_score",
+              ">"
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.9953333333333333,
+          "balanced_accuracy": 0.9952830188679245,
+          "rule": "(dev_score > 14.9)",
+          "seed": 3,
+          "structural_signature": [
+            [
+              "dev_score",
+              ">"
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.9906666666666667,
+          "balanced_accuracy": 0.9906542056074766,
+          "rule": "(dev_score > 15.4)",
+          "seed": 4,
+          "structural_signature": [
+            [
+              "dev_score",
+              ">"
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.996,
+          "balanced_accuracy": 0.9961089494163424,
+          "rule": "(dev_score > 15.18)",
+          "seed": 5,
+          "structural_signature": [
+            [
+              "dev_score",
+              ">"
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.9973333333333333,
+          "balanced_accuracy": 0.9971751412429379,
+          "rule": "(dev_score > 14.88)",
+          "seed": 6,
+          "structural_signature": [
+            [
+              "dev_score",
+              ">"
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.9933333333333333,
+          "balanced_accuracy": 0.9932885906040269,
+          "rule": "(dev_score > 14.71)",
+          "seed": 7,
+          "structural_signature": [
+            [
+              "dev_score",
+              ">"
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.9986666666666667,
+          "balanced_accuracy": 0.998696219035202,
+          "rule": "(dev_score > 15.01)",
+          "seed": 8,
+          "structural_signature": [
+            [
+              "dev_score",
+              ">"
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.994,
+          "balanced_accuracy": 0.9941860465116279,
+          "rule": "(dev_score > 14.71)",
+          "seed": 9,
+          "structural_signature": [
+            [
+              "dev_score",
+              ">"
+            ]
+          ]
+        }
+      ]
+    },
+    "TEST_8": {
+      "interpretation": "This measures numerical distance to the discovered decision boundary. It does NOT establish real economic manipulation cost.",
+      "mean_distance": 5.980393275884579,
+      "pass": true,
+      "runs": [
+        {
+          "accuracy": 0.903,
+          "mean_threshold_distance": 5.980771944142216,
+          "minimum_threshold_distance": 0.015507969685526035,
+          "rule": "((overall_score > 18.33) AND (holder_score > 14.89))",
+          "seed": 0
+        },
+        {
+          "accuracy": 0.902,
+          "mean_threshold_distance": 5.748589520381398,
+          "minimum_threshold_distance": 0.007471622904976272,
+          "rule": "((overall_score > 17.92) AND (holder_score > 15.18))",
+          "seed": 1
+        },
+        {
+          "accuracy": 0.899,
+          "mean_threshold_distance": 5.679470298568854,
+          "minimum_threshold_distance": 0.0021686734218171466,
+          "rule": "((overall_score > 18.18) AND (holder_score > 15.03))",
+          "seed": 2
+        },
+        {
+          "accuracy": 0.923,
+          "mean_threshold_distance": 6.152341181560531,
+          "minimum_threshold_distance": 0.009926217810967586,
+          "rule": "((overall_score > 17.29) AND (holder_score > 14.88))",
+          "seed": 3
+        },
+        {
+          "accuracy": 0.924,
+          "mean_threshold_distance": 5.891945925283519,
+          "minimum_threshold_distance": 0.005026152848436993,
+          "rule": "((overall_score > 17.85) AND (holder_score > 15.08))",
+          "seed": 4
+        },
+        {
+          "accuracy": 0.93,
+          "mean_threshold_distance": 5.945284604373603,
+          "minimum_threshold_distance": 0.004721315268774617,
+          "rule": "((overall_score > 17.82) AND (holder_score > 15.25))",
+          "seed": 5
+        },
+        {
+          "accuracy": 0.922,
+          "mean_threshold_distance": 5.981984066889508,
+          "minimum_threshold_distance": 0.007683043749583618,
+          "rule": "((overall_score > 18.69) AND (holder_score > 14.87))",
+          "seed": 6
+        },
+        {
+          "accuracy": 0.896,
+          "mean_threshold_distance": 5.967979614945358,
+          "minimum_threshold_distance": 0.015312023291752297,
+          "rule": "((overall_score > 18.72) AND (holder_score > 14.75))",
+          "seed": 7
+        },
+        {
+          "accuracy": 0.911,
+          "mean_threshold_distance": 6.129584475372117,
+          "minimum_threshold_distance": 0.001560414999815407,
+          "rule": "((overall_score > 18.47) AND (holder_score > 15.13))",
+          "seed": 8
+        },
+        {
+          "accuracy": 0.924,
+          "mean_threshold_distance": 6.325981127328684,
+          "minimum_threshold_distance": 0.011166159414759846,
+          "rule": "((overall_score > 17.07) AND (holder_score > 14.72))",
+          "seed": 9
+        }
+      ]
+    },
+    "TEST_9": {
+      "mean_counterfactual_sensitivity": 0.4004,
+      "pass": true,
+      "runs": [
+        {
+          "counterfactual_tests": 1000,
+          "prediction_changes": 439,
+          "rule": "((overall_score > 17.59) AND (holder_score > 15.05))",
+          "seed": 0,
+          "sensitivity": 0.439
+        },
+        {
+          "counterfactual_tests": 1000,
+          "prediction_changes": 429,
+          "rule": "((overall_score > 17.66) AND (holder_score > 14.56))",
+          "seed": 1,
+          "sensitivity": 0.429
+        },
+        {
+          "counterfactual_tests": 1000,
+          "prediction_changes": 408,
+          "rule": "((overall_score > 18.06) AND (holder_score > 14.78))",
+          "seed": 2,
+          "sensitivity": 0.408
+        },
+        {
+          "counterfactual_tests": 1000,
+          "prediction_changes": 378,
+          "rule": "((overall_score > 18.96) AND (holder_score > 14.28))",
+          "seed": 3,
+          "sensitivity": 0.378
+        },
+        {
+          "counterfactual_tests": 1000,
+          "prediction_changes": 408,
+          "rule": "((overall_score > 18.15) AND (holder_score > 14.78))",
+          "seed": 4,
+          "sensitivity": 0.408
+        },
+        {
+          "counterfactual_tests": 1000,
+          "prediction_changes": 409,
+          "rule": "((overall_score > 17.83) AND (holder_score > 15.16))",
+          "seed": 5,
+          "sensitivity": 0.409
+        },
+        {
+          "counterfactual_tests": 1000,
+          "prediction_changes": 368,
+          "rule": "((overall_score > 18.91) AND (holder_score > 14.88))",
+          "seed": 6,
+          "sensitivity": 0.368
+        },
+        {
+          "counterfactual_tests": 1000,
+          "prediction_changes": 368,
+          "rule": "((overall_score > 19.51) AND (holder_score > 13.58))",
+          "seed": 7,
+          "sensitivity": 0.368
+        },
+        {
+          "counterfactual_tests": 1000,
+          "prediction_changes": 368,
+          "rule": "((overall_score > 18.72) AND (holder_score > 14.82))",
+          "seed": 8,
+          "sensitivity": 0.368
+        },
+        {
+          "counterfactual_tests": 1000,
+          "prediction_changes": 429,
+          "rule": "((overall_score > 17.23) AND (holder_score > 14.35))",
+          "seed": 9,
+          "sensitivity": 0.429
+        }
+      ]
+    }
+  }
+}

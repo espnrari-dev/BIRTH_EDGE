@@ -1,0 +1,183 @@
+{
+  "basic_alignment": {
+    "full_convergence_rate": 0.5,
+    "model_reality_rate": 1.0,
+    "wisdom_reality_rate": 0.5
+  },
+  "case_diagnostics": [
+    {
+      "actual_alignment": 1,
+      "actual_outcome": 1,
+      "broken_paths": [],
+      "correct_field_consistency": 1,
+      "correct_raw": true,
+      "evidence_agreement": 1.0,
+      "evidence_strength": 0.6087949021823436,
+      "identity": "reflection_id=a0243b56a8eba579b10576f0",
+      "index": 0,
+      "model": 1,
+      "model_confidence": 0.09813986953602694,
+      "model_reality": 1,
+      "predicted_outcome": 1,
+      "prediction_error": 0.45093006523198653,
+      "reality": 1,
+      "reflection_score": 0.5903553105872037,
+      "state": "FULL_CONVERGENCE",
+      "three_way": 1,
+      "wisdom": 1,
+      "wisdom_correct_raw": true,
+      "wisdom_reality": 1,
+      "wisdom_score": 0.8488918956894682
+    },
+    {
+      "actual_alignment": 1,
+      "actual_outcome": 1,
+      "broken_paths": [
+        "WISDOM"
+      ],
+      "correct_field_consistency": 1,
+      "correct_raw": true,
+      "evidence_agreement": 0.0,
+      "evidence_strength": 0.3426273550308101,
+      "identity": "reflection_id=7908683e8ab5235e4f578a75",
+      "index": 1,
+      "model": 1,
+      "model_confidence": 0.007759875388714033,
+      "model_reality": 1,
+      "predicted_outcome": 1,
+      "prediction_error": 0.496120062305643,
+      "reality": 1,
+      "reflection_score": 0.3209323695343369,
+      "state": "MODEL_ANCHORED_DIVERGENCE",
+      "three_way": 0,
+      "wisdom": 0,
+      "wisdom_correct_raw": false,
+      "wisdom_reality": 0,
+      "wisdom_score": 0.22017720271047958
+    }
+  ],
+  "data_integrity": {
+    "analyzed_cases": 2,
+    "historical_data_modified": false,
+    "historical_records": 2,
+    "invalid_cases": 0,
+    "model_modified": false,
+    "synthetic_data_used": false,
+    "trading_performed": false
+  },
+  "data_source": "/data/data/com.termux/files/home/BIRTH_EDGE/data/ml_reflection.json",
+  "engine": "BIRTH_EDGE_RECONVERGENCE_PHENOMENON_VALIDATOR_V5",
+  "episodes": {
+    "closed": 0,
+    "closed_episodes": [],
+    "open": 1,
+    "open_episode": {
+      "broken_paths": [
+        "WISDOM"
+      ],
+      "closure": null,
+      "divergence_length": 1,
+      "divergence_signatures": [
+        "M1W0R1"
+      ],
+      "divergence_start_case": "reflection_id=7908683e8ab5235e4f578a75",
+      "divergence_start_index": 1,
+      "divergence_states": [
+        "MODEL_ANCHORED_DIVERGENCE"
+      ],
+      "episode_id": "RECONV-0001",
+      "episode_number": 1,
+      "full_path_recovery": false,
+      "recovered_paths": [],
+      "recovery_case": null,
+      "recovery_deltas": {},
+      "recovery_distance": null,
+      "recovery_index": null,
+      "recovery_signature": null,
+      "recovery_state": null,
+      "start_case": "reflection_id=a0243b56a8eba579b10576f0",
+      "start_index": 0,
+      "start_state": "FULL_CONVERGENCE",
+      "status": "OPEN",
+      "topology": null
+    },
+    "total": 0
+  },
+  "oscillation": {
+    "count": 0,
+    "patterns": []
+  },
+  "phenomenon": {
+    "classification": "PHENOMENON_NOT_YET_IDENTIFIABLE",
+    "closed_reconvergence_episodes": 0,
+    "confidence": "LOW",
+    "minimum_cases": 10,
+    "minimum_repeated_episodes": 3,
+    "minimum_strong_sample": 50,
+    "repeated_structure": false,
+    "sample_size": 2,
+    "strict_cdc_count": 0
+  },
+  "recovery": {
+    "full_path": 0,
+    "full_path_events": [],
+    "immediate": 0,
+    "immediate_events": [],
+    "nonadjacent": 0,
+    "nonadjacent_events": [],
+    "total_closed": 0
+  },
+  "recovery_precursors": {
+    "count": 0,
+    "events": [],
+    "mean_agreement_delta": null,
+    "mean_confidence_delta": null,
+    "mean_error_delta": null,
+    "mean_reflection_score_delta": null,
+    "mean_strength_delta": null,
+    "mean_wisdom_score_delta": null
+  },
+  "recurrence": {
+    "closed_episodes": 0,
+    "fingerprints": [],
+    "recurring_structure_observed": false,
+    "repeated_fingerprints": [],
+    "unique_fingerprints": 0
+  },
+  "research_question": {
+    "current_answer": "PHENOMENON_NOT_YET_IDENTIFIABLE",
+    "evidence_rule": "Only naturally occurring persisted historical cases may close episodes.",
+    "general_signature": "FULL_CONVERGENCE -> one_or_more_DIVERGENCE -> FULL_CONVERGENCE",
+    "question": "Does BIRTH_EDGE exhibit a recurring path-specific reality-alignment reconvergence phenomenon?",
+    "recurrence_rule": "Repeated episode fingerprints are required before recurrence claims.",
+    "strict_signature": "FULL_CONVERGENCE -> DIVERGENCE -> FULL_CONVERGENCE"
+  },
+  "semantic_status": {
+    "canonical_mapping": "LOCKED",
+    "invalid_cases": 0,
+    "valid_cases": 2
+  },
+  "state_transitions": {
+    "FULL_CONVERGENCE -> MODEL_ANCHORED_DIVERGENCE": 1
+  },
+  "strict_cdc": {
+    "count": 0,
+    "definition": "FULL_CONVERGENCE -> DIVERGENCE -> FULL_CONVERGENCE",
+    "events": []
+  },
+  "structural_signatures": {
+    "M1W0R1": 1,
+    "M1W1R1": 1
+  },
+  "topology": {
+    "broken_path_counts": {},
+    "closed_episode_count": 0,
+    "full_path_recovery_count": 0,
+    "mean_recovery_latency": null,
+    "median_recovery_latency": null,
+    "open_episode_count": 0,
+    "recovered_path_counts": {},
+    "topology_counts": {}
+  },
+  "version": 5
+}

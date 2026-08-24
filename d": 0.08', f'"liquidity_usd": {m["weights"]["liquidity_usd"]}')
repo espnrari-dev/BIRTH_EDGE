@@ -1,0 +1,10 @@
+[33m9c5bc06[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;33mtag: [m[1;33mv33-30-LOCKED[m[33m)[m LOCKED: 33/30 real - 130 rows 74.5% acc 91.7% spec - NOMINAL
+[33m3848e98[m L8 BILLED: reproducible L6 replication + prior-art log + originator evidence
+[33m46d3e71[m L8 prep: clean evidence, reproducible L6 script, prior-art log, DB backup for replication
+[33m55ba545[m[33m ([m[1;33mtag: [m[1;33mNOMINAL-SELF-HEAL-v1[m[33m)[m NOMINAL RECOGNIZER: self-healing based on 69 token baseline - auto fix? symbols, null time, restart hunter, model, api check, AEGIS events logged
+[33m2978dd3[m[33m ([m[1;33mtag: [m[1;33mLIVE-SPROUT-919-2026-08-22[m[33m)[m LIVE: 69 tokens 9 PASS 5 pumped 242-3454% SPROUT 90.48 919% MAPLE 3454% - real market validation
+[33m2879ec6[m WHITEPAPER: tripartite + clone + adversarial + hash - L7
+[33m941ffa6[m L7 BILLED: full invention disclosure + 10-system comparison + prior-art log + 3 novelties tripartite 7/10 + clone 8/10 + adversarial +0.1333 + hash chain b5bea41b + 219e8276
+[33ma5a8a43[m L6 PASS BILLED: 74 rows 14 pumped model 0.9333 vs baseline 0.8 +0.1333 seed0 adversarial high-score rugs + low-score pumps, hash 219e8276
+[33m1d92e60[m L7 BILLED: invention disclosure + 10-system comparison + formal novelty, L6 honest FAIL analysis 0 pumped samples
+[33mb5bfab6[m L6 Scientist BILLED: 66 rows 52/14 holdout model 0.5 vs baseline 0.857 FAIL honest - overpredicts, hash d61450cc, L7 invention disclosure

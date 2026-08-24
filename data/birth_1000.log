@@ -1,0 +1,30 @@
+nohup: ignoring input
+[2026-08-23 22:54:19.049080] BIRTH_EDGE REAL + IPO FIXED v4...
+filters: (token_data: dict)
+[2026-08-23 22:54:20] BIRTH_FILTERED hunting $5000+
+[2026-08-23 22:54:22] FILTERED MIRALIE 3Zogtb9A liq $49,637 overall 55.64 
+[2026-08-23 22:54:22] FILTERED FALCON 0xEdD207 liq $37,402 overall 68.6 
+[2026-08-23 22:54:23] FILTERED ELO 0xF7997e liq $20,295 overall 66.16 
+[2026-08-23 22:54:23] FILTERED BROKE 0x5f5D04 liq $9,035 overall 56.16 
+[2026-08-23 22:54:26] FILTERED NINJACAT 57pTdaUf liq $8,631 overall 40.63 
+[2026-08-23 22:54:27] FILTERED 梦 0xC46BC0 liq $22,271 overall 61.08 
+[2026-08-23 22:54:27] FILTERED DIB 0xf0C720 liq $19,110 overall 65.44 
+[2026-08-23 22:54:28] FILTERED VLED 0x6A58C2 liq $5,312 overall 59.24 
+[2026-08-23 22:54:31] FILTERED $giver 72vwsZXZ liq $9,392 overall 38.39 
+[2026-08-23 22:54:34] FILTERED Hobbes 7UuqhWmo liq $26,050 overall 47.05 
+[2026-08-23 22:54:35] FILTERED BUDDY 0x10a8de liq $17,655 overall 65.6 
+[2026-08-23 22:54:37] FILTERED LARRY 2QFVUpLt liq $30,314 overall 47.31 
+[2026-08-23 22:55:10] Watching 12 seen, no new >$5000
+[2026-08-23 22:55:44] Watching 12 seen, no new >$5000
+[2026-08-23 22:56:18] Watching 12 seen, no new >$5000
+[2026-08-23 22:56:52] Watching 12 seen, no new >$5000
+[2026-08-23 22:57:26] Watching 12 seen, no new >$5000
+[2026-08-23 22:57:59] Watching 12 seen, no new >$5000
+[2026-08-23 22:58:33] Watching 12 seen, no new >$5000
+[2026-08-23 22:59:06] Watching 12 seen, no new >$5000
+[2026-08-23 22:59:39] Watching 12 seen, no new >$5000
+[2026-08-23 23:00:14] Watching 12 seen, no new >$5000
+[2026-08-23 23:00:47] Watching 12 seen, no new >$5000
+[2026-08-23 23:01:21] Watching 12 seen, no new >$5000
+[2026-08-23 23:01:54] Watching 12 seen, no new >$5000
+[2026-08-23 23:02:27] Watching 12 seen, no new >$5000

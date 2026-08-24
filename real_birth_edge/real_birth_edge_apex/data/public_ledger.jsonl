@@ -1,0 +1,12 @@
+{"cycle": 1, "prev": "GENESIS", "hash": "057330c2cc90", "merkle": "0affde50b78a", "action": "BIRTH_ACCEPT x3", "sig": "969e1f83e4a91483..", "pub": "966be4f8f1f9aded", "int": 1.0}
+{"cycle": 2, "prev": "057330c2cc90", "hash": "67e747cfd991", "merkle": "41a4b9fd2aec", "action": "BIRTH_ACCEPT x2", "sig": "49423971df2ddd86..", "pub": "966be4f8f1f9aded", "int": 1.0}
+{"cycle": 3, "prev": "67e747cfd991", "hash": "aa5a16f44703", "merkle": "0b6a803a0f39", "action": "BIRTH_ACCEPT x1", "sig": "c4af130adcb5f5f4..", "pub": "966be4f8f1f9aded", "int": 1.0}
+{"cycle": 4, "prev": "aa5a16f44703", "hash": "4d2e81775b0e", "merkle": "796601cb3881", "action": "BIRTH_ACCEPT x1", "sig": "1811b1bec6902bb9..", "pub": "966be4f8f1f9aded", "int": 1.0}
+{"cycle": 5, "prev": "4d2e81775b0e", "hash": "2b8f4618b30e", "merkle": "32d90aeb0db3", "action": "BIRTH_ACCEPT x2", "sig": "cbe5c06805c36214..", "pub": "966be4f8f1f9aded", "int": 1.0}
+{"cycle": 6, "prev": "2b8f4618b30e", "hash": "f3b648e8b6ff", "merkle": "3d0e92e2ec05", "action": "BIRTH_ACCEPT x3", "sig": "8c682e585edbc40f..", "pub": "966be4f8f1f9aded", "int": 1.0}
+{"cycle": 7, "prev": "f3b648e8b6ff", "hash": "a991ae5749bf", "merkle": "628517c56081", "action": "BIRTH_ACCEPT x3", "sig": "48ee306f1c1c97a7..", "pub": "966be4f8f1f9aded", "int": 1.0}
+{"cycle": 8, "prev": "a991ae5749bf", "hash": "9d4dbb9241b7", "merkle": "e8ccab5bcfc6", "action": "BIRTH_ACCEPT x3", "sig": "06c3eb13d90a5869..", "pub": "966be4f8f1f9aded", "int": 1.0}
+{"cycle": 9, "prev": "9d4dbb9241b7", "hash": "b73fd7ec8950", "merkle": "3a43e4d6cd0a", "action": "BIRTH_ACCEPT x2", "sig": "5328fec2b90c1c9d..", "pub": "966be4f8f1f9aded", "int": 1.0}
+{"cycle": 10, "prev": "b73fd7ec8950", "hash": "8f29ea788d34", "merkle": "083d6acd6654", "action": "BIRTH_ACCEPT x2", "sig": "5335d3282234db3f..", "pub": "966be4f8f1f9aded", "int": 1.0}
+{"cycle": 11, "prev": "8f29ea788d34", "hash": "f567e7dac4c2", "merkle": "c73ca1089b24", "action": "BIRTH_ACCEPT x2", "sig": "228769a109e04e16..", "pub": "966be4f8f1f9aded", "int": 1.0}
+{"cycle": 12, "prev": "f567e7dac4c2", "hash": "f158ebf15af3", "merkle": "a2e8a1be6bf5", "action": "BIRTH_ACCEPT x2", "sig": "4cf1fe7fa3cbd14f..", "pub": "966be4f8f1f9aded", "int": 1.0}

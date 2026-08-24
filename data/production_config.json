@@ -1,0 +1,7 @@
+{
+  "mode": "logging",
+  "model": "data/ml_model_production.json",
+  "positive_examples_current": 5,
+  "positive_examples_needed": 30,
+  "note": "Collect real positives. No retrain until >=30. Lower labeling threshold only if you decide as business owner."
+}

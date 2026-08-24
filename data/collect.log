@@ -1,0 +1,126 @@
+/data/data/com.termux/files/home/BIRTH_EDGE/collect_gecko.py:21: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.datetime.utcnow().isoformat()+"Z",
+130 -> 139 total, positives 42/30  (+9 new)
+  + CYBERLEEK / SOL 118.938%
+  + MANEKI / WETH 1% 75.536%
+  + CHUMP / WETH 1% 55.651%
+  + CATALORIAN / SOL 2547.667%
+  + Index / WETH 1% 158.308%
+  + PONS / WETH 1% 61.558%
+  + Dinger / SOL 5653.787%
+  + AI / NVDA 65.862%
+  + CYBERCAT / SOL 860.955%
+/data/data/com.termux/files/home/BIRTH_EDGE/collect_gecko.py:21: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.datetime.utcnow().isoformat()+"Z",
+107 -> 116 total, positives 19/30  (+9 new)
+  + CYBERLEEK / SOL 90.007%
+  + MANEKI / WETH 1% 83.444%
+  + CHUMP / WETH 1% 50.308%
+  + CATALORIAN / SOL 2796.371%
+  + PONS / WETH 1% 52.918%
+  + Index / WETH 1% 167.027%
+  + Dinger / SOL 3301.376%
+  + AI / NVDA 77.857%
+  + CYBERCAT / SOL 837.944%
+/data/data/com.termux/files/home/BIRTH_EDGE/collect_gecko.py:21: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.datetime.utcnow().isoformat()+"Z",
+116 -> 126 total, positives 29/30  (+10 new)
+  + CYBERLEEK / SOL 53.396%
+  + MANEKI / WETH 1% 75.779%
+  + CHUMP / WETH 1% 56.985%
+  + CATALORIAN / SOL 2542.399%
+  + PONS / WETH 1% 55.221%
+  + Index / WETH 1% 102.347%
+  + OBS / WETH 75.563%
+  + Dinger / SOL 3056.154%
+  + CYBERCAT / SOL 948.576%
+  + AI / NVDA 72.497%
+/data/data/com.termux/files/home/BIRTH_EDGE/collect_gecko.py:21: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.datetime.utcnow().isoformat()+"Z",
+126 -> 134 total, positives 37/30  (+8 new)
+  + CYBERLEEK / SOL 101.76%
+  + MANEKI / WETH 1% 52.314%
+  + CATALORIAN / SOL 2472.381%
+  + CHUMP / WETH 1% 51.833%
+  + PONS / WETH 1% 58.221%
+  + Index / WETH 1% 138.305%
+  + Dinger / SOL 3926.471%
+  + CYBERCAT / SOL 838.593%
+/data/data/com.termux/files/home/BIRTH_EDGE/collect_gecko.py:21: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.datetime.utcnow().isoformat()+"Z",
+134 -> 142 total, positives 45/30  (+8 new)
+  + CYBERLEEK / SOL 84.787%
+  + CATALORIAN / SOL 2449.316%
+  + CHUMP / WETH 1% 55.826%
+  + PONS / WETH 1% 68.914%
+  + Index / WETH 1% 149.263%
+  + Dinger / SOL 2505.02%
+  + CYBERCAT / SOL 1035.927%
+  + AI / NVDA 71.04%
+/data/data/com.termux/files/home/BIRTH_EDGE/collect_gecko.py:21: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.datetime.utcnow().isoformat()+"Z",
+142 -> 151 total, positives 54/30  (+9 new)
+  + MANEKI / WETH 1% 61.897%
+  + CYBERLEEK / SOL 56.736%
+  + CATALORIAN / SOL 2387.033%
+  + CHUMP / WETH 1% 55.067%
+  + PONS / WETH 1% 79.195%
+  + Index / WETH 1% 161.599%
+  + Dinger / SOL 232.423%
+  + CYBERCAT / SOL 843.102%
+  + HOOKR / WETH 0.25% 204.844%
+/data/data/com.termux/files/home/BIRTH_EDGE/collect_gecko.py:21: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.datetime.utcnow().isoformat()+"Z",
+151 -> 160 total, positives 63/30  (+9 new)
+  + MANEKI / WETH 1% 56.193%
+  + CATALORIAN / SOL 780.31%
+  + CHUMP / WETH 1% 66.728%
+  + PONS / WETH 1% 73.364%
+  + Index / WETH 1% 161.764%
+  + HMM / WETH 1% 61.02%
+  + HOOKR / WETH 0.25% 165.867%
+  + CYBERCAT / SOL 824.97%
+  + Dinger / WETH 195280.159%
+/data/data/com.termux/files/home/BIRTH_EDGE/collect_gecko.py:21: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.datetime.utcnow().isoformat()+"Z",
+160 -> 169 total, positives 72/30  (+9 new)
+  + CATALORIAN / SOL 754.665%
+  + PONS / WETH 1% 80.034%
+  + CHUMP / WETH 1% 60.155%
+  + Index / WETH 1% 152.052%
+  + HMM / WETH 1% 62.939%
+  + HOOKR / WETH 0.25% 126.438%
+  + CYBERCAT / SOL 790.207%
+  + AI / NVDA 58.336%
+  + Dinger / SOL 80.455%
+/data/data/com.termux/files/home/BIRTH_EDGE/collect_gecko.py:21: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.datetime.utcnow().isoformat()+"Z",
+169 -> 176 total, positives 79/30  (+7 new)
+  + CYBERLEEK / SOL 52.288%
+  + CATALORIAN / SOL 948.958%
+  + PONS / WETH 1% 77.818%
+  + CHUMP / WETH 1% 58.87%
+  + Index / WETH 1% 161.679%
+  + HOOKR / WETH 0.25% 151.327%
+  + CYBERCAT / SOL 852.625%
+/data/data/com.termux/files/home/BIRTH_EDGE/collect_gecko.py:21: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.datetime.utcnow().isoformat()+"Z",
+176 -> 183 total, positives 86/30  (+7 new)
+  + PONS / WETH 1% 78.197%
+  + CATALORIAN / SOL 400.131%
+  + Index / WETH 1% 145.602%
+  + HOOKR / WETH 0.25% 160.555%
+  + CATCUS / SOL 255.442%
+  + CYBERCAT / SOL 656.737%
+  + BNBCAT / WBNB 484.386%
+/data/data/com.termux/files/home/BIRTH_EDGE/collect_gecko.py:21: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.datetime.utcnow().isoformat()+"Z",
+183 -> 191 total, positives 94/30  (+8 new)
+  + MANEKI / WETH 1% 50.166%
+  + CATALORIAN / SOL 304.884%
+  + PONS / WETH 1% 65.241%
+  + Index / WETH 1% 133.804%
+  + CATCUS / SOL 281.308%
+  + HOOKR / WETH 0.25% 149.48%
+  + CYBERCAT / SOL 395.408%
+  + BNBCAT / WBNB 421.639%

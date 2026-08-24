@@ -1,0 +1,151 @@
+{
+  "memory": [
+    {
+      "coverage": 1.0,
+      "features": {
+        "dev_score": 24.0,
+        "holder_score": 25.0,
+        "liquidity_usd": 18000.0,
+        "lp_lock_score": 28.0
+      },
+      "importance": 0.8953727679523042,
+      "label": null,
+      "memory_id": "6a0a3589d3f939455174654d",
+      "novelty": 0.0,
+      "outcome_magnitude": 919.0,
+      "outcome_significance": 0.9877863505121399,
+      "reflected": true,
+      "surprise": 0.704149615907946,
+      "target": 1,
+      "uncertainty": 0.591700768184108
+    },
+    {
+      "coverage": 1.0,
+      "features": {
+        "dev_score": 3.0,
+        "holder_score": 2.0,
+        "liquidity_usd": 300.0,
+        "lp_lock_score": 1.0
+      },
+      "importance": 0.7109406634212507,
+      "label": null,
+      "memory_id": "1d8335484e97c2eb7b6626f3",
+      "novelty": 0.0,
+      "outcome_magnitude": 250.0,
+      "outcome_significance": 0.0,
+      "reflected": true,
+      "surprise": 0.2587254665539523,
+      "target": 1,
+      "uncertainty": 0.5174509331079046
+    },
+    {
+      "coverage": 1.0,
+      "features": {
+        "dev_score": 15.0,
+        "holder_score": 20.0,
+        "liquidity_usd": 15000.0,
+        "lp_lock_score": 20.0
+      },
+      "importance": 0.5598674115374251,
+      "label": null,
+      "memory_id": "8c93a48879766157923088c9",
+      "novelty": 0.0,
+      "outcome_magnitude": 0.0,
+      "outcome_significance": 0.0,
+      "surprise": 0.7127864176440897,
+      "target": 1,
+      "uncertainty": 0.5744271647118206
+    },
+    {
+      "coverage": 1.0,
+      "features": {
+        "dev_score": 30.0,
+        "holder_score": 30.0,
+        "liquidity_usd": 30000.0,
+        "lp_lock_score": 30.0
+      },
+      "importance": 0.5520868369323143,
+      "label": null,
+      "memory_id": "56ff806f190b7727de6f7b34",
+      "novelty": 0.0,
+      "outcome_magnitude": 0.0,
+      "outcome_significance": 0.0,
+      "surprise": 0.5229836533175252,
+      "target": 1,
+      "uncertainty": 0.9540326933649497
+    },
+    {
+      "coverage": 1.0,
+      "features": {
+        "dev_score": 2.0,
+        "holder_score": 2.0,
+        "liquidity_usd": 100.0,
+        "lp_lock_score": 2.0
+      },
+      "importance": 0.5300223472835403,
+      "label": null,
+      "memory_id": "762c2452e2e17e536f5f2e99",
+      "novelty": 0.0,
+      "outcome_magnitude": 0.0,
+      "outcome_significance": 0.0,
+      "surprise": 0.2586002087960734,
+      "target": 0,
+      "uncertainty": 0.5172004175921469
+    },
+    {
+      "coverage": 1.0,
+      "features": {
+        "dev_score": 25.0,
+        "holder_score": 25.0,
+        "liquidity_usd": 25000.0,
+        "lp_lock_score": 25.0
+      },
+      "importance": 0.5295277383413999,
+      "label": null,
+      "memory_id": "779848b8d15dcf4d21a0bcb1",
+      "novelty": 0.0,
+      "outcome_magnitude": 0.0,
+      "outcome_significance": 0.0,
+      "surprise": 0.7045023655460325,
+      "target": 1,
+      "uncertainty": 0.5909952689079349
+    },
+    {
+      "coverage": 1.0,
+      "features": {
+        "dev_score": 3.0,
+        "holder_score": 1.0,
+        "liquidity_usd": 200.0,
+        "lp_lock_score": 1.0
+      },
+      "importance": 0.5283902659487035,
+      "label": null,
+      "memory_id": "f3fd3b2a9599ea9556eb03e8",
+      "novelty": 0.0,
+      "outcome_magnitude": 0.0,
+      "outcome_significance": 0.0,
+      "surprise": 0.2592000323300498,
+      "target": 0,
+      "uncertainty": 0.5184000646600996
+    },
+    {
+      "coverage": 1.0,
+      "features": {
+        "dev_score": 0.0,
+        "holder_score": 0.0,
+        "liquidity_usd": 0.0,
+        "lp_lock_score": 0.0
+      },
+      "importance": 0.5248992730543682,
+      "label": null,
+      "memory_id": "7b10146757477535b01bb5f3",
+      "novelty": 0.0,
+      "outcome_magnitude": 0.0,
+      "outcome_significance": 0.0,
+      "surprise": 0.27110144302194655,
+      "target": 0,
+      "uncertainty": 0.5422028860438931
+    }
+  ],
+  "version": 3
+}

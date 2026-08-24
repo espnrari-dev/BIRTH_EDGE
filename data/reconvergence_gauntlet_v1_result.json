@@ -1,0 +1,192 @@
+{
+  "adversarial_robustness": {
+    "episode_removal": [],
+    "leave_one_out_cdc": {
+      "all_values": [
+        0,
+        0
+      ],
+      "maximum": 0,
+      "mean": 0.0,
+      "minimum": 0
+    },
+    "original": {
+      "cdc": 0,
+      "n": 2,
+      "reconvergence": 0
+    }
+  },
+  "base_rate": {
+    "convergence_rate": 0.5,
+    "divergence_rate": 0.5,
+    "iid_expected_cdc": null,
+    "observed_cdc": 0,
+    "observed_to_expected_ratio": null,
+    "sample_size": 2
+  },
+  "bootstrap": {
+    "cdc": {
+      "iterations": 3000,
+      "lower_95": 0,
+      "mean": 0.0,
+      "median": 0.0,
+      "observed": 0,
+      "upper_95": 0
+    },
+    "reconvergence": {
+      "iterations": 3000,
+      "lower_95": 0,
+      "mean": 0.0,
+      "median": 0.0,
+      "observed": 0,
+      "upper_95": 0
+    }
+  },
+  "case_diagnostics": [
+    {
+      "broken_paths": [],
+      "evidence_agreement": 1.0,
+      "evidence_strength": 0.6087949021823436,
+      "identity": "reflection_id=a0243b56a8eba579b10576f0",
+      "index": 0,
+      "model": 1,
+      "model_confidence": 0.09813986953602694,
+      "prediction_error": 0.45093006523198653,
+      "reality": 1,
+      "reflection_score": 0.5903553105872037,
+      "state": "C",
+      "three_way": 1,
+      "wisdom": 1,
+      "wisdom_score": 0.8488918956894682
+    },
+    {
+      "broken_paths": [
+        "WISDOM"
+      ],
+      "evidence_agreement": 0.0,
+      "evidence_strength": 0.3426273550308101,
+      "identity": "reflection_id=7908683e8ab5235e4f578a75",
+      "index": 1,
+      "model": 1,
+      "model_confidence": 0.007759875388714033,
+      "prediction_error": 0.496120062305643,
+      "reality": 1,
+      "reflection_score": 0.3209323695343369,
+      "state": "D",
+      "three_way": 0,
+      "wisdom": 0,
+      "wisdom_score": 0.22017720271047958
+    }
+  ],
+  "chronological_replication": {
+    "eligible": false,
+    "reason": "Need at least 20 valid cases."
+  },
+  "configuration": {
+    "bootstraps": 3000,
+    "maximum_motif_length": 8,
+    "minimum_cases": 20,
+    "permutations": 5000,
+    "seed": 20260822
+  },
+  "data_source": "/data/data/com.termux/files/home/BIRTH_EDGE/data/ml_reflection.json",
+  "engine": "BIRTH_EDGE_RECONVERGENCE_GAUNTLET_V1",
+  "episodes": [],
+  "information_profile": {
+    "1": 0.0
+  },
+  "integrity": {
+    "historical_records": 2,
+    "model_modified": false,
+    "source_modified": false,
+    "synthetic_records_added_to_source": false,
+    "trading_performed": false,
+    "valid_cases": 2
+  },
+  "interpretation_rules": {
+    "recurrence": "Repeated observation alone is not sufficient; enrichment relative to null structure is required.",
+    "replication": "Chronological reappearance strengthens the case but is not required when sample size is insufficient.",
+    "small_sample": "Small historical samples are reported as insufficient rather than treated as negative evidence.",
+    "strong_signal": "Observed reconvergence must exceed appropriate null expectations and survive statistical testing.",
+    "temporal_claim": "A temporal phenomenon requires evidence that depends on ordering."
+  },
+  "leave_one_out": {
+    "cases": 0,
+    "maximum": null,
+    "mean": null,
+    "minimum": null,
+    "values": []
+  },
+  "markov": null,
+  "motif_discovery": {
+    "top_enriched": []
+  },
+  "null_tests": {
+    "generalized_reconvergence": {
+      "null_max": 0,
+      "null_mean": 0.0,
+      "null_median": 0.0,
+      "null_min": 0,
+      "observed": 0,
+      "p_value": 1.0,
+      "permutations": 5000
+    },
+    "iid_temporal_permutation": {
+      "null_max": 0,
+      "null_mean": 0.0,
+      "null_median": 0.0,
+      "null_min": 0,
+      "observed": 0,
+      "p_value": 1.0,
+      "permutations": 5000
+    },
+    "long_recovery": {
+      "null_max": 0,
+      "null_mean": 0.0,
+      "null_median": 0.0,
+      "null_min": 0,
+      "observed": 0,
+      "p_value": 1.0,
+      "permutations": 5000
+    }
+  },
+  "path_specific_recovery": [],
+  "raw_structure": {
+    "convergence_rate": 0.5,
+    "direct_cdc": 0,
+    "generalized_reconvergence": 0,
+    "latencies": [],
+    "sample_size": 2,
+    "state_sequence": "CD"
+  },
+  "recovery_hazard": {},
+  "research_question": "Does BIRTH_EDGE contain statistically nontrivial temporal reconvergence structure beyond what is explained by marginal base rates, temporal permutation, or simple Markov structure?",
+  "temporal_destruction": {
+    "destroyed": "CD",
+    "destroyed_cdc": 0,
+    "destroyed_reconvergence": 0,
+    "original": "CD",
+    "original_cdc": 0,
+    "original_reconvergence": 0
+  },
+  "transitions": {
+    "counts": {
+      "C->D": 1
+    },
+    "probabilities": {
+      "C": {
+        "to_C": 0.0,
+        "to_D": 1.0
+      }
+    }
+  },
+  "verdict": {
+    "classification": "INSUFFICIENT_DATA_FOR_PHENOMENON_CLAIM",
+    "confidence": "LOW",
+    "reasons": [
+      "INSUFFICIENT_HISTORICAL_SAMPLE",
+      "NO_DIRECT_CDC_OBSERVED"
+    ]
+  },
+  "version": 1
+}

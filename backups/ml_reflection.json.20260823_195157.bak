@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "count": 2,
+    "generated_at": 1787527195.3557613,
+    "schema": "BIRTH_EDGE_REAL_REFLECTION_V1",
+    "synthetic_data": false
+  },
+  "reflections": [
+    {
+      "actual_outcome": 1,
+      "calibration_quality": 0.5490699347680135,
+      "confidence_alignment": 0.09813986953602694,
+      "correct": true,
+      "decision": "WATCH",
+      "discernment_quality": 0.8043974510911718,
+      "evidence_agreement": 1.0,
+      "evidence_strength": 0.6087949021823436,
+      "memory_id": "6a0a3589d3f939455174654d",
+      "memory_novelty": 0.0,
+      "metadata": {
+        "test": "known_positive"
+      },
+      "model_confidence": 0.09813986953602694,
+      "outcome_class": "CORRECT_UNCERTAIN",
+      "outcome_magnitude": 919.0,
+      "predicted_outcome": 1,
+      "prediction_error": 0.45093006523198653,
+      "probability": 0.5490699347680135,
+      "reflection_id": "a0243b56a8eba579b10576f0",
+      "reflection_score": 0.5903553105872037,
+      "wisdom_correct": true,
+      "wisdom_score": 0.8488918956894682
+    },
+    {
+      "actual_outcome": 1,
+      "calibration_quality": 0.503879937694357,
+      "confidence_alignment": 0.007759875388714033,
+      "correct": true,
+      "decision": "PASS",
+      "discernment_quality": 0.671313677515405,
+      "evidence_agreement": 0.0,
+      "evidence_strength": 0.3426273550308101,
+      "memory_id": "1d8335484e97c2eb7b6626f3",
+      "memory_novelty": 0.0,
+      "metadata": {
+        "test": "unexpected_positive"
+      },
+      "model_confidence": 0.007759875388714033,
+      "outcome_class": "CORRECT_UNCERTAIN",
+      "outcome_magnitude": 250.0,
+      "predicted_outcome": 1,
+      "prediction_error": 0.496120062305643,
+      "probability": 0.503879937694357,
+      "reflection_id": "7908683e8ab5235e4f578a75",
+      "reflection_score": 0.3209323695343369,
+      "wisdom_correct": false,
+      "wisdom_score": 0.22017720271047958
+    }
+  ]
+}

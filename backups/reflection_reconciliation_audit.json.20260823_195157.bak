@@ -1,0 +1,15 @@
+{
+  "completed_at": 1787527195.3575535,
+  "engine": "BIRTH_EDGE_REFLECTION_RECONCILIATION",
+  "existing_reflection_count": 2,
+  "final_reflection_count": 2,
+  "new_valid_reflections": 0,
+  "read_audit": [],
+  "rejected_candidates": [],
+  "rejected_existing": [],
+  "source_record_count": 509,
+  "started_at": 1787527195.332331,
+  "synthetic_data": false,
+  "valid_existing_reflections": 2,
+  "version": 1
+}

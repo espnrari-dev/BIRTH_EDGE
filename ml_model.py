@@ -85,8 +85,7 @@ class OnlineLogisticRegression:
         }
 
         self.bias = -1.0731322204613212
-
-                defaults = {
+        defaults = {
             "holder_score": 0.07744178340212952,
             "dev_score": 0.07744178340212952,
             "lp_lock_score": 0.05808133755159735,
