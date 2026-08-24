@@ -105,23 +105,49 @@ To https://github.com/gothegadget-dot/Birthedge-.git
  M data/watch.log
 M data/event_log.jsonl
  M data/watch.log
+[main 605006b] auto-heal 2026-08-24 08:26
+ 2 files changed, 70 insertions(+), 10 deletions(-)
 To https://github.com/gothegadget-dot/Birthedge-.git
-   4109ca7..5819107  main -> main
-[08:24:46] [GIT] pushed
-[08:25:46] ## main...origin/main
+   582aec5..605006b  main -> main
+[GIT] pushed
+## main...origin/main
+ M aegis_rule_miner.py
+ M config.py
  M data/event_log.jsonl
  M data/treasury.jsonl
  M data/watch.log
-[08:25:46] M data/event_log.jsonl
+ M full_novelty_gauntlet.py
+ M ingestion.py
+M aegis_rule_miner.py
+ M config.py
+ M data/event_log.jsonl
  M data/treasury.jsonl
  M data/watch.log
-[08:25:46] [main 582aec5] auto-heal 2026-08-24 08:25
- 3 files changed, 88 insertions(+), 11 deletions(-)
-[08:25:48] To https://github.com/gothegadget-dot/Birthedge-.git
-   5819107..582aec5  main -> main
-[08:25:48] [GIT] pushed
+ M full_novelty_gauntlet.py
+ M ingestion.py
+ushed
 [08:26:48] ## main...origin/main
  M data/event_log.jsonl
  M data/watch.log
 [08:26:48] M data/event_log.jsonl
  M data/watch.log
+[08:26:48] [main 605006b] auto-heal 2026-08-24 08:26
+ 2 files changed, 70 insertions(+), 10 deletions(-)
+[08:26:50] To https://github.com/gothegadget-dot/Birthedge-.git
+   582aec5..605006b  main -> main
+[08:26:50] [GIT] pushed
+[08:27:50] ## main...origin/main
+ M aegis_rule_miner.py
+ M config.py
+ M data/event_log.jsonl
+ M data/treasury.jsonl
+ M data/watch.log
+ M full_novelty_gauntlet.py
+ M ingestion.py
+[08:27:50] M aegis_rule_miner.py
+ M config.py
+ M data/event_log.jsonl
+ M data/treasury.jsonl
+ M data/watch.log
+ M full_novelty_gauntlet.py
+ M ingestion.py
