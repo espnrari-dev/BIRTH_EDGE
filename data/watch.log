@@ -69,17 +69,32 @@ To https://github.com/gothegadget-dot/Birthedge-.git
 ## main...origin/main
  M data/watch.log
 M data/watch.log
-/gothegadget-dot/Birthedge-.git
-   3cc6902..600c9ff  main -> main
-[08:21:39] [GIT] pushed
-[08:22:39] ## main...origin/main
+[main 4109ca7] auto-heal 2026-08-24 08:23
+ 1 file changed, 16 insertions(+), 7 deletions(-)
+To https://github.com/gothegadget-dot/Birthedge-.git
+   736598a..4109ca7  main -> main
+[GIT] pushed
+## main...origin/main
  M data/watch.log
-[08:22:39] M data/watch.log
-[08:22:39] [main 736598a] auto-heal 2026-08-24 08:22
- 1 file changed, 16 insertions(+), 6 deletions(-)
-[08:22:41] To https://github.com/gothegadget-dot/Birthedge-.git
-   600c9ff..736598a  main -> main
+?? data/event_log.jsonl
+?? data/treasury.jsonl
+M data/watch.log
+?? data/event_log.jsonl
+?? data/treasury.jsonl
+9ff..736598a  main -> main
 [08:22:41] [GIT] pushed
 [08:23:41] ## main...origin/main
  M data/watch.log
 [08:23:41] M data/watch.log
+[08:23:41] [main 4109ca7] auto-heal 2026-08-24 08:23
+ 1 file changed, 16 insertions(+), 7 deletions(-)
+[08:23:44] To https://github.com/gothegadget-dot/Birthedge-.git
+   736598a..4109ca7  main -> main
+[08:23:44] [GIT] pushed
+[08:24:44] ## main...origin/main
+ M data/watch.log
+?? data/event_log.jsonl
+?? data/treasury.jsonl
+[08:24:44] M data/watch.log
+?? data/event_log.jsonl
+?? data/treasury.jsonl
