@@ -1,5 +1,0 @@
-AEGIS-TESSERA APEX v2 GENESIS
-Time: Mon Aug 24 00:11:32 2026
-Pubkey: 966be4f8f1f9aded6edfd71d3bfeca80ac841a04325431e6e2820727f71852b4
-Genesis Hash: 057330c2cc90165fa9501d4bec5ad56cfa50f2a5fb0cb8ded8f37021e2535b91
-Thesis: Homeostatic integrity + hash-chain verifiability

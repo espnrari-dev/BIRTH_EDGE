@@ -86,12 +86,6 @@ async def birth_filtered_loop():
                 chain=pair_obj.get('chainId','solana') if pair_obj and isinstance(pair_obj,dict) else 'solana'
                 symbol=pair_obj.get('baseToken',{}).get('symbol') if pair_obj and isinstance(pair_obj,dict) else t.get('symbol','?')
                 result=await call_filters(addr, chain, liq, pair_obj or t)
-                try:
-                    price = float((pair_obj or t).get('priceUsd',0) or (pair_obj or t).get('price_usd',0) or 0)
-                    if price>0:
-                        result['initial_price_usd']=price
-                        result['priceUsd']=price
-                except: pass
                 status="PASS" if result.get('pass') else "FILTERED"
                 print(f"[{now_str()}] {status} {symbol} {addr[:8]} liq ${liq:,.0f} overall {result.get('overall_score')} {result.get('reason','')}")
                 call_record(scoring, addr, chain, symbol, liq, result)

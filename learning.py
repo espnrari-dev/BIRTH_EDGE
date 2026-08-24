@@ -49,11 +49,6 @@ def init_learning_db():
     cognition.init_cognition_db()
 
 def record_token(token_data: dict, initial_price_usd: float = 0.0):
-    # pull price from dict
-    iprice = float(token_data.get('initial_price_usd') or token_data.get('priceUsd') or token_data.get('price_usd') or token_data.get('result',{}).get('initial_price_usd') or token_data.get('result',{}).get('priceUsd') or 0.0)
-    if iprice==0:
-        try: iprice=float(token_data.get('liquidity_usd',0))/1000000
-        except: iprice=1e-05
     conn = sqlite3.connect(LEARNING_DB)
     cur = conn.cursor()
     cur.execute("""
@@ -66,7 +61,7 @@ def record_token(token_data: dict, initial_price_usd: float = 0.0):
         token_data.get("addr"),
         token_data.get("chain"),
         token_data.get("symbol", "?"),
-        iprice or initial_price_usd,
+        initial_price_usd,
         token_data.get("liquidity_usd", 0),
         token_data.get("overall_score", 0),
         token_data.get("holder_score", 0),

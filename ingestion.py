@@ -12,6 +12,7 @@ def fetch_json(url):
     return None
 
 async def ingest_robinhood():
+    """Robinhood crypto poller (HTTP)."""
     print(f"[{now_str()}] Robinhood polling started.")
     while True:
         data = fetch_json("https://robinhood.com/api/crypto")
@@ -23,11 +24,14 @@ async def ingest_robinhood():
         await asyncio.sleep(30)
 
 async def ingest_stock_platforms():
+    """Placeholder for additional HTTP platform pollers."""
     print(f"[{now_str()}] Stock platforms poller started.")
     while True:
+        # Add more platform API polling here later
         await asyncio.sleep(60)
 
 async def labelbase_logger():
+    """Labelbase heartbeat logger."""
     print(f"[{now_str()}] Labelbase heartbeat started.")
     while True:
         log_jsonl("labelbase.jsonl", {"time": now_str(), "status": "alive"})

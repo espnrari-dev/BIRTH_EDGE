@@ -491,7 +491,7 @@ def predict(features):
 # ------------------------------------------------------------
 
 future = [
-    x
+    json.loads(x)
     for x in json.loads(
         sys.argv[4]
     )
