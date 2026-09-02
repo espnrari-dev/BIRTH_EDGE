@@ -1,15 +1,17 @@
-# BIRTH_EDGE - Dual Market Birth Radar
+# BIRTH_EDGE
 
-Running live on Termux in Kennesaw, GA. Crypto + IPO in one gather.
+## Description
+Edge agent – lightweight runtime for Aethel on IoT/mobile.
 
-## Live Log
-```
-[2026-08-21 22:58:55] Watching 18 seen, no new >$5000
-[2026-08-21 22:59:30] Watching 18 seen, no new >$5000
-[2026-08-21 23:00:04] Watching 18 seen, no new >$5000
-[2026-08-21 23:00:38] Watching 18 seen, no new >$5000
-[2026-08-21 23:01:11] Watching 18 seen, no new >$5000
-[2026-08-21 23:01:44] Watching 18 seen, no new >$5000
-```
+## Technology Stack
+Python
 
-## Stats - 40+ tokens scored, Words 85.48 top, built on a phone
+## Main Entry
+main.py
+
+## Quick Start
+- Start all services: `./start-all.sh`
+- Stop all services:  `./stop-all.sh`
+
+## Notes
+This repository is part of the [Aethel](https://github.com/espnrari-dev) ecosystem.
