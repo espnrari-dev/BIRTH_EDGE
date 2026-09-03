@@ -1,0 +1,8 @@
+{
+  "layer": 8,
+  "name": "STRUCTURAL",
+  "valid": true,
+  "note": "ledger_chain not in LOCKED tag - created after",
+  "final_hash": "GENESIS_LOCKED",
+  "hash": "14493f5f5470ed48c3f103d917ec52ae9005fa3913128031d0fac2a49ac3cc41"
+}

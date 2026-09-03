@@ -1,0 +1,2237 @@
+#!/usr/bin/env python3
+
+import json
+import math
+import os
+import tempfile
+import hashlib
+from typing import Dict, Iterable, List, Optional, Tuple, Union
+
+
+FEATURE_NAMES = [
+    "holder_score",
+    "dev_score",
+    "lp_lock_score",
+    "liquidity_usd",
+]
+
+MODEL_FILE = "data/ml_model.json"
+MEMORY_FILE = "data/ml_memory.json"
+REFLECTION_FILE = "data/ml_reflection.json"
+
+Number = Union[int, float]
+
+
+class OnlineLogisticRegression:
+    """
+    BIRTH_EDGE adaptive evidence intelligence engine.
+
+    Cognitive stack:
+
+        PREDICTION
+            ↓
+        MEMORY IMPORTANCE
+            ↓
+        WISDOM
+            ↓
+        DISCERNMENT
+            ↓
+        REFLECTION
+            ↓
+        EXPERIENCE / CALIBRATION
+
+    Reflection evaluates previous decisions against actual
+    outcomes without manufacturing evidence.
+    """
+
+    VERSION = 3
+
+    def __init__(
+        self,
+        feature_names: Optional[List[str]] = None,
+        lr: float = 0.01,
+        l2: float = 0.001,
+        memory_path: str = MEMORY_FILE,
+        reflection_path: str = REFLECTION_FILE,
+    ):
+        self.feature_names = list(
+            feature_names or FEATURE_NAMES
+        )
+
+        if not self.feature_names:
+            raise ValueError(
+                "feature_names cannot be empty"
+            )
+
+        self.lr = float(lr)
+        self.l2 = float(l2)
+
+        self.memory_path = memory_path
+        self.reflection_path = reflection_path
+
+        if not math.isfinite(self.lr) or self.lr <= 0:
+            raise ValueError(
+                "lr must be positive and finite"
+            )
+
+        if not math.isfinite(self.l2) or self.l2 < 0:
+            raise ValueError(
+                "l2 must be non-negative and finite"
+            )
+
+        self.weights = {
+            name: 0.0
+            for name in self.feature_names
+        }
+
+        self.bias = -1.0731322204613212
+
+    defaults = {
+        "holder_score": 0.07744178340212952,
+        "dev_score": 0.07744178340212952,
+        "lp_lock_score": 0.05808133755159735,
+        "liquidity_usd": 9.680222925266184e-06,
+    }
+
+    for name, value in defaults.items():
+        if name in self.weights:
+        self.weights[name] = float(value)
+
+        self.feature_scale = {
+            "holder_score": 30.0,
+            "dev_score": 30.0,
+            "lp_lock_score": 30.0,
+            "liquidity_usd": 30000.0,
+        }
+
+        self.memory = self._load_memory()
+        self.reflections = self._load_reflections()
+
+    # ============================================================
+    # SAFE NUMERIC HANDLING
+    # ============================================================
+
+    @staticmethod
+    def _safe_float(
+        value: object,
+        default: float = 0.0,
+    ) -> float:
+
+        try:
+            if value is None:
+                return default
+
+            if isinstance(value, str):
+                value = value.strip()
+
+                if not value:
+                    return default
+
+            number = float(value)
+
+            if not math.isfinite(number):
+                return default
+
+            return number
+
+        except (
+            TypeError,
+            ValueError,
+            OverflowError,
+        ):
+            return default
+
+    @staticmethod
+    def _clip(
+        value: float,
+        low: float,
+        high: float,
+    ) -> float:
+
+        return max(
+            low,
+            min(high, value),
+        )
+
+    # ============================================================
+    # FEATURE HANDLING
+    # ============================================================
+
+    def _raw_feats(
+        self,
+        data: Optional[dict],
+    ) -> List[float]:
+
+        if not isinstance(data, dict):
+            data = {}
+
+        return [
+            self._safe_float(
+                data.get(name),
+                0.0,
+            )
+            for name in self.feature_names
+        ]
+
+    def _feats(
+        self,
+        data: Optional[dict],
+    ) -> List[float]:
+
+        raw = self._raw_feats(data)
+
+        scaled = []
+
+        for name, value in zip(
+            self.feature_names,
+            raw,
+        ):
+            scale = self.feature_scale.get(
+                name,
+                1.0,
+            )
+
+            if scale <= 0:
+                scale = 1.0
+
+            value = self._clip(
+                value / scale,
+                -10.0,
+                10.0,
+            )
+
+            scaled.append(value)
+
+        return scaled
+
+    def feature_coverage(
+        self,
+        data: Optional[dict],
+    ) -> float:
+
+        if not isinstance(data, dict):
+            return 0.0
+
+        present = 0
+
+        for name in self.feature_names:
+            value = data.get(name)
+
+            if value is None:
+                continue
+
+            try:
+                value = float(value)
+
+                if math.isfinite(value):
+                    present += 1
+
+            except (
+                TypeError,
+                ValueError,
+                OverflowError,
+            ):
+                pass
+
+        return present / len(self.feature_names)
+
+    # ============================================================
+    # NUMERICAL CORE
+    # ============================================================
+
+    @staticmethod
+    def _sigmoid(z: float) -> float:
+
+        z = float(z)
+
+        if z >= 0:
+
+            try:
+                e = math.exp(-z)
+                return 1.0 / (1.0 + e)
+
+            except OverflowError:
+                return 1.0
+
+        try:
+            e = math.exp(z)
+            return e / (1.0 + e)
+
+        except OverflowError:
+            return 0.0
+
+    def _linear(
+        self,
+        features: List[float],
+    ) -> float:
+
+        return self.bias + sum(
+            self.weights[name] * value
+            for name, value in zip(
+                self.feature_names,
+                features,
+            )
+        )
+
+    # ============================================================
+    # PREDICTION
+    # ============================================================
+
+    def predict_proba(
+        self,
+        data: dict,
+    ) -> float:
+
+        probability = self._sigmoid(
+            self._linear(
+                self._feats(data)
+            )
+        )
+
+        return self._clip(
+            probability,
+            0.0,
+            1.0,
+        )
+
+    def predict(
+        self,
+        data: dict,
+        threshold: float = 0.5,
+    ) -> int:
+
+        threshold = self._clip(
+            self._safe_float(
+                threshold,
+                0.5,
+            ),
+            0.01,
+            0.99,
+        )
+
+        return int(
+            self.predict_proba(data)
+            >= threshold
+        )
+
+    def score(
+        self,
+        data: dict,
+    ) -> float:
+
+        return self.predict_proba(data)
+
+    # ============================================================
+    # MEMORY IDENTITY
+    # ============================================================
+
+    def _memory_id(
+        self,
+        data: dict,
+    ) -> str:
+
+        clean = {}
+
+        for name in self.feature_names:
+            clean[name] = round(
+                self._safe_float(
+                    data.get(name),
+                    0.0,
+                ),
+                8,
+            )
+
+        raw = json.dumps(
+            clean,
+            sort_keys=True,
+            separators=(",", ":"),
+        )
+
+        return hashlib.sha256(
+            raw.encode("utf-8")
+        ).hexdigest()[:24]
+
+    # ============================================================
+    # MEMORY IMPORTANCE
+    # ============================================================
+
+    def memory_importance(
+        self,
+        data: dict,
+        target: Optional[Number] = None,
+        outcome_magnitude: Optional[Number] = None,
+    ) -> Dict[str, float]:
+
+        coverage = self.feature_coverage(data)
+
+        probability = self.predict_proba(data)
+
+        uncertainty = (
+            1.0
+            - abs(probability - 0.5) * 2.0
+        )
+
+        uncertainty = self._clip(
+            uncertainty,
+            0.0,
+            1.0,
+        )
+
+        novelty = self._memory_novelty(data)
+
+        magnitude = self._safe_float(
+            outcome_magnitude,
+            0.0,
+        )
+
+        outcome_significance = 0.0
+
+        if magnitude != 0.0:
+            outcome_significance = self._clip(
+                math.log1p(
+                    abs(magnitude)
+                )
+                / math.log1p(1000.0),
+                0.0,
+                1.0,
+            )
+
+        target_signal = 0.0
+
+        if target is not None:
+
+            y = self._safe_float(
+                target,
+                0.0,
+            )
+
+            y = 1.0 if y >= 0.5 else 0.0
+
+            target_signal = abs(
+                y - probability
+            )
+
+        importance = (
+            0.25 * coverage
+            + 0.25 * novelty
+            + 0.20 * uncertainty
+            + 0.15 * outcome_significance
+            + 0.15 * target_signal
+        )
+
+        return {
+            "importance": self._clip(
+                importance,
+                0.0,
+                1.0,
+            ),
+            "coverage": coverage,
+            "novelty": novelty,
+            "uncertainty": uncertainty,
+            "outcome_significance":
+                outcome_significance,
+            "surprise": target_signal,
+        }
+
+    def _memory_novelty(
+        self,
+        data: dict,
+    ) -> float:
+
+        if not self.memory:
+            return 1.0
+
+        current = self._feats(data)
+
+        distances = []
+
+        for item in self.memory:
+
+            features = item.get(
+                "features",
+                {},
+            )
+
+            other = self._feats(features)
+
+            distance = math.sqrt(
+                sum(
+                    (a - b) ** 2
+                    for a, b in zip(
+                        current,
+                        other,
+                    )
+                )
+            )
+
+            distances.append(distance)
+
+        nearest = min(distances)
+
+        return self._clip(
+            nearest / 2.0,
+            0.0,
+            1.0,
+        )
+
+    # ============================================================
+    # MEMORY STORAGE
+    # ============================================================
+
+    def remember(
+        self,
+        data: dict,
+        target: Optional[Number] = None,
+        outcome_magnitude: Optional[Number] = None,
+        label: Optional[str] = None,
+    ) -> Dict[str, object]:
+
+        importance = self.memory_importance(
+            data,
+            target=target,
+            outcome_magnitude=outcome_magnitude,
+        )
+
+        memory_id = self._memory_id(data)
+
+        entry = {
+            "memory_id": memory_id,
+            "features": {
+                name: self._safe_float(
+                    data.get(name),
+                    0.0,
+                )
+                for name in self.feature_names
+            },
+            "target": (
+                None
+                if target is None
+                else int(
+                    self._safe_float(
+                        target,
+                        0.0,
+                    ) >= 0.5
+                )
+            ),
+            "outcome_magnitude":
+                self._safe_float(
+                    outcome_magnitude,
+                    0.0,
+                ),
+            "label": label,
+            "importance":
+                importance["importance"],
+            "coverage":
+                importance["coverage"],
+            "novelty":
+                importance["novelty"],
+            "uncertainty":
+                importance["uncertainty"],
+            "outcome_significance":
+                importance["outcome_significance"],
+            "surprise":
+                importance["surprise"],
+        }
+
+        replaced = False
+
+        for index, existing in enumerate(
+            self.memory
+        ):
+
+            if existing.get(
+                "memory_id"
+            ) == memory_id:
+
+                old_importance = self._safe_float(
+                    existing.get(
+                        "importance"
+                    ),
+                    0.0,
+                )
+
+                entry["importance"] = self._clip(
+                    max(
+                        old_importance,
+                        entry["importance"],
+                    ),
+                    0.0,
+                    1.0,
+                )
+
+                self.memory[index] = entry
+                replaced = True
+                break
+
+        if not replaced:
+            self.memory.append(entry)
+
+        self.memory.sort(
+            key=lambda x: self._safe_float(
+                x.get("importance"),
+                0.0,
+            ),
+            reverse=True,
+        )
+
+        self.memory = self.memory[:1000]
+
+        self._save_memory()
+
+        return entry
+
+    def _load_memory(self) -> List[dict]:
+
+        path = os.path.abspath(
+            self.memory_path
+        )
+
+        if not os.path.exists(path):
+            return []
+
+        try:
+
+            with open(
+                path,
+                "r",
+                encoding="utf-8",
+            ) as handle:
+
+                payload = json.load(handle)
+
+            if isinstance(payload, dict):
+                payload = payload.get(
+                    "memory",
+                    [],
+                )
+
+            if not isinstance(payload, list):
+                return []
+
+            return payload
+
+        except (
+            OSError,
+            ValueError,
+            json.JSONDecodeError,
+        ):
+            return []
+
+    def _save_memory(self):
+
+        path = os.path.abspath(
+            self.memory_path
+        )
+
+        directory = os.path.dirname(path)
+
+        if directory:
+            os.makedirs(
+                directory,
+                exist_ok=True,
+            )
+
+        payload = {
+            "version": self.VERSION,
+            "memory": self.memory,
+        }
+
+        self._atomic_json_write(
+            path,
+            payload,
+            ".ml_memory_",
+        )
+
+    # ============================================================
+    # WISDOM
+    # ============================================================
+
+    def wisdom(
+        self,
+        data: dict,
+    ) -> Dict[str, float]:
+
+        if not self.memory:
+
+            return {
+                "wisdom_score": 0.0,
+                "historical_support": 0.0,
+                "historical_conflict": 0.0,
+                "memory_count": 0.0,
+            }
+
+        current = self._feats(data)
+
+        support = 0.0
+        conflict = 0.0
+        total_weight = 0.0
+
+        for entry in self.memory:
+
+            features = entry.get(
+                "features",
+                {},
+            )
+
+            other = self._feats(features)
+
+            distance = math.sqrt(
+                sum(
+                    (a - b) ** 2
+                    for a, b in zip(
+                        current,
+                        other,
+                    )
+                )
+            )
+
+            similarity = math.exp(-distance)
+
+            importance = self._safe_float(
+                entry.get("importance"),
+                0.0,
+            )
+
+            target = entry.get("target")
+
+            if target is None:
+                continue
+
+            weight = (
+                similarity
+                * max(
+                    0.01,
+                    importance,
+                )
+            )
+
+            total_weight += weight
+
+            if int(target) == 1:
+                support += weight
+            else:
+                conflict += weight
+
+        if total_weight <= 0:
+
+            return {
+                "wisdom_score": 0.0,
+                "historical_support": 0.0,
+                "historical_conflict": 0.0,
+                "memory_count":
+                    float(len(self.memory)),
+            }
+
+        historical_support = (
+            support / total_weight
+        )
+
+        historical_conflict = (
+            conflict / total_weight
+        )
+
+        raw_wisdom = (
+            historical_support
+            - historical_conflict
+        )
+
+        return {
+            "wisdom_score":
+                self._clip(
+                    (raw_wisdom + 1.0) / 2.0,
+                    0.0,
+                    1.0,
+                ),
+            "historical_support":
+                historical_support,
+            "historical_conflict":
+                historical_conflict,
+            "memory_count":
+                float(len(self.memory)),
+        }
+
+    # ============================================================
+    # DISCERNMENT
+    # ============================================================
+
+    def discern(
+        self,
+        data: dict,
+        threshold: float = 0.5,
+    ) -> Dict[str, object]:
+
+        probability = self.predict_proba(data)
+
+        coverage = self.feature_coverage(data)
+
+        wisdom = self.wisdom(data)
+
+        memory = self.memory_importance(data)
+
+        model_confidence = abs(
+            probability - 0.5
+        ) * 2.0
+
+        historical_confidence = abs(
+            wisdom["historical_support"]
+            - wisdom["historical_conflict"]
+        )
+
+        model_direction = probability >= 0.5
+
+        wisdom_direction = (
+            wisdom["historical_support"]
+            >= wisdom["historical_conflict"]
+        )
+
+        agreement = (
+            1.0
+            if model_direction == wisdom_direction
+            else 0.0
+        )
+
+        evidence_strength = (
+            0.35 * model_confidence
+            + 0.25 * historical_confidence
+            + 0.20 * agreement
+            + 0.20 * coverage
+        )
+
+        evidence_strength = self._clip(
+            evidence_strength,
+            0.0,
+            1.0,
+        )
+
+        if coverage < 0.50:
+
+            decision = "HOLD"
+
+        elif (
+            agreement == 0.0
+            and historical_confidence > 0.30
+        ):
+
+            decision = "CONFLICT"
+
+        elif evidence_strength >= 0.75:
+
+            decision = (
+                "PUMP"
+                if probability >= threshold
+                else "PASS"
+            )
+
+        elif evidence_strength >= 0.50:
+
+            decision = "WATCH"
+
+        else:
+
+            decision = "HOLD"
+
+        return {
+            "probability":
+                probability,
+
+            "model_confidence":
+                model_confidence,
+
+            "wisdom_score":
+                wisdom["wisdom_score"],
+
+            "historical_support":
+                wisdom["historical_support"],
+
+            "historical_conflict":
+                wisdom["historical_conflict"],
+
+            "memory_importance":
+                memory["importance"],
+
+            "memory_novelty":
+                memory["novelty"],
+
+            "feature_coverage":
+                coverage,
+
+            "evidence_agreement":
+                agreement,
+
+            "evidence_strength":
+                evidence_strength,
+
+            "decision":
+                decision,
+        }
+
+    # ============================================================
+    # REFLECTION
+    # ============================================================
+
+    def reflect(
+        self,
+        data: dict,
+        actual_outcome: Number,
+        decision: Optional[str] = None,
+        outcome_magnitude: Optional[Number] = None,
+        metadata: Optional[dict] = None,
+    ) -> Dict[str, object]:
+
+        """
+        Evaluate a previous decision against reality.
+
+        actual_outcome:
+            1 = positive / desired outcome
+            0 = negative / undesired outcome
+
+        Reflection does NOT alter the outcome.
+        It records what happened and evaluates the quality
+        of the prior reasoning.
+        """
+
+        actual = (
+            1
+            if self._safe_float(
+                actual_outcome,
+                0.0,
+            ) >= 0.5
+            else 0
+        )
+
+        reasoning = self.discern(data)
+
+        probability = reasoning["probability"]
+
+        predicted = int(
+            probability >= 0.5
+        )
+
+        if decision is None:
+            decision = reasoning["decision"]
+
+        prediction_error = abs(
+            probability - actual
+        )
+
+        correct = (
+            predicted == actual
+        )
+
+        confidence = reasoning[
+            "model_confidence"
+        ]
+
+        wisdom_score = reasoning[
+            "wisdom_score"
+        ]
+
+        agreement = reasoning[
+            "evidence_agreement"
+        ]
+
+        evidence_strength = reasoning[
+            "evidence_strength"
+        ]
+
+        novelty = reasoning[
+            "memory_novelty"
+        ]
+
+        # --------------------------------------------------------
+        # CLASSIFY THE EXPERIENCE
+        # --------------------------------------------------------
+
+        if correct and confidence >= 0.75:
+            outcome_class = "CORRECT_CONFIDENT"
+
+        elif correct:
+            outcome_class = "CORRECT_UNCERTAIN"
+
+        elif not correct and novelty >= 0.50:
+            outcome_class = "NOVEL_CASE"
+
+        elif (
+            not correct
+            and agreement == 0.0
+        ):
+            outcome_class = "CONFLICT_WRONG"
+
+        elif (
+            not correct
+            and predicted == 1
+            and actual == 0
+        ):
+            outcome_class = "FALSE_POSITIVE"
+
+        else:
+            outcome_class = "FALSE_NEGATIVE"
+
+        # --------------------------------------------------------
+        # CALIBRATION QUALITY
+        # --------------------------------------------------------
+
+        calibration_quality = (
+            1.0 - prediction_error
+        )
+
+        calibration_quality = self._clip(
+            calibration_quality,
+            0.0,
+            1.0,
+        )
+
+        # Was confidence justified?
+        if correct:
+            confidence_alignment = confidence
+        else:
+            confidence_alignment = 1.0 - confidence
+
+        confidence_alignment = self._clip(
+            confidence_alignment,
+            0.0,
+            1.0,
+        )
+
+        # Historical wisdom was useful when its direction
+        # agreed with reality.
+        wisdom_direction = (
+            wisdom_score >= 0.5
+        )
+
+        wisdom_correct = (
+            wisdom_direction == bool(actual)
+        )
+
+        # Discernment quality evaluates whether the final
+        # evidence strength was appropriately cautious.
+        if correct:
+            discernment_quality = (
+                0.5
+                + 0.5 * evidence_strength
+            )
+        else:
+            discernment_quality = (
+                0.5
+                * (1.0 - evidence_strength)
+            )
+
+        discernment_quality = self._clip(
+            discernment_quality,
+            0.0,
+            1.0,
+        )
+
+        reflection_score = (
+            0.30 * calibration_quality
+            + 0.25 * confidence_alignment
+            + 0.20 * float(wisdom_correct)
+            + 0.25 * discernment_quality
+        )
+
+        reflection_score = self._clip(
+            reflection_score,
+            0.0,
+            1.0,
+        )
+
+        reflection_id = hashlib.sha256(
+            json.dumps(
+                {
+                    "features": {
+                        name: round(
+                            self._safe_float(
+                                data.get(name),
+                                0.0,
+                            ),
+                            8,
+                        )
+                        for name in self.feature_names
+                    },
+                    "actual": actual,
+                    "decision": decision,
+                    "probability": round(
+                        probability,
+                        8,
+                    ),
+                },
+                sort_keys=True,
+                separators=(",", ":"),
+            ).encode("utf-8")
+        ).hexdigest()[:24]
+
+        entry = {
+            "reflection_id":
+                reflection_id,
+
+            "memory_id":
+                self._memory_id(data),
+
+            "actual_outcome":
+                actual,
+
+            "predicted_outcome":
+                predicted,
+
+            "probability":
+                probability,
+
+            "prediction_error":
+                prediction_error,
+
+            "decision":
+                decision,
+
+            "correct":
+                correct,
+
+            "outcome_class":
+                outcome_class,
+
+            "model_confidence":
+                confidence,
+
+            "wisdom_score":
+                wisdom_score,
+
+            "evidence_agreement":
+                agreement,
+
+            "evidence_strength":
+                evidence_strength,
+
+            "memory_novelty":
+                novelty,
+
+            "calibration_quality":
+                calibration_quality,
+
+            "confidence_alignment":
+                confidence_alignment,
+
+            "wisdom_correct":
+                wisdom_correct,
+
+            "discernment_quality":
+                discernment_quality,
+
+            "reflection_score":
+                reflection_score,
+
+            "outcome_magnitude":
+                self._safe_float(
+                    outcome_magnitude,
+                    0.0,
+                ),
+
+            "metadata":
+                metadata or {},
+        }
+
+        # --------------------------------------------------------
+        # RECONVERGENCE
+        # --------------------------------------------------------
+
+        replaced = False
+
+        for index, old in enumerate(
+            self.reflections
+        ):
+
+            if old.get(
+                "reflection_id"
+            ) == reflection_id:
+
+                self.reflections[index] = entry
+                replaced = True
+                break
+
+        if not replaced:
+            self.reflections.append(entry)
+
+        self.reflections = (
+            self.reflections[-5000:]
+        )
+
+        self._save_reflections()
+
+        # Update corresponding memory with actual outcome.
+        self._update_memory_from_reflection(
+            data,
+            actual,
+            outcome_magnitude,
+        )
+
+        return entry
+
+    def _update_memory_from_reflection(
+        self,
+        data: dict,
+        actual: int,
+        outcome_magnitude: Optional[Number],
+    ):
+
+        memory_id = self._memory_id(data)
+
+        for entry in self.memory:
+
+            if entry.get(
+                "memory_id"
+            ) != memory_id:
+                continue
+
+            entry["target"] = actual
+
+            if outcome_magnitude is not None:
+                entry["outcome_magnitude"] = (
+                    self._safe_float(
+                        outcome_magnitude,
+                        0.0,
+                    )
+                )
+
+            entry["reflected"] = True
+
+            break
+
+        self._save_memory()
+
+    # ============================================================
+    # REFLECTION SUMMARY
+    # ============================================================
+
+    def reflection_summary(
+        self,
+    ) -> Dict[str, object]:
+
+        if not self.reflections:
+
+            return {
+                "reflection_count": 0,
+                "accuracy": 0.0,
+                "average_prediction_error": 0.0,
+                "average_reflection_score": 0.0,
+                "correct_confident": 0,
+                "correct_uncertain": 0,
+                "false_positive": 0,
+                "false_negative": 0,
+                "conflict_wrong": 0,
+                "novel_case": 0,
+            }
+
+        total = len(
+            self.reflections
+        )
+
+        correct = sum(
+            int(
+                bool(
+                    x.get("correct", False)
+                )
+            )
+            for x in self.reflections
+        )
+
+        errors = [
+            self._safe_float(
+                x.get(
+                    "prediction_error"
+                ),
+                0.0,
+            )
+            for x in self.reflections
+        ]
+
+        scores = [
+            self._safe_float(
+                x.get(
+                    "reflection_score"
+                ),
+                0.0,
+            )
+            for x in self.reflections
+        ]
+
+        counts = {}
+
+        for entry in self.reflections:
+
+            key = entry.get(
+                "outcome_class",
+                "UNKNOWN",
+            )
+
+            counts[key] = (
+                counts.get(key, 0) + 1
+            )
+
+        return {
+            "reflection_count":
+                total,
+
+            "accuracy":
+                correct / total,
+
+            "average_prediction_error":
+                sum(errors) / total,
+
+            "average_reflection_score":
+                sum(scores) / total,
+
+            "correct_confident":
+                counts.get(
+                    "CORRECT_CONFIDENT",
+                    0,
+                ),
+
+            "correct_uncertain":
+                counts.get(
+                    "CORRECT_UNCERTAIN",
+                    0,
+                ),
+
+            "false_positive":
+                counts.get(
+                    "FALSE_POSITIVE",
+                    0,
+                ),
+
+            "false_negative":
+                counts.get(
+                    "FALSE_NEGATIVE",
+                    0,
+                ),
+
+            "conflict_wrong":
+                counts.get(
+                    "CONFLICT_WRONG",
+                    0,
+                ),
+
+            "novel_case":
+                counts.get(
+                    "NOVEL_CASE",
+                    0,
+                ),
+        }
+
+    # ============================================================
+    # SGD
+    # ============================================================
+
+    def update(
+        self,
+        data: dict,
+        target: Number,
+    ) -> float:
+
+        features = self._feats(data)
+
+        y = self._safe_float(
+            target,
+            0.0,
+        )
+
+        y = (
+            1.0
+            if y >= 0.5
+            else 0.0
+        )
+
+        probability = self._sigmoid(
+            self._linear(features)
+        )
+
+        error = probability - y
+
+        for name, value in zip(
+            self.feature_names,
+            features,
+        ):
+
+            gradient = (
+                error * value
+                + self.l2
+                * self.weights[name]
+            )
+
+            new_weight = (
+                self.weights[name]
+                - self.lr
+                * gradient
+            )
+
+            if math.isfinite(new_weight):
+                self.weights[name] = new_weight
+
+        new_bias = (
+            self.bias
+            - self.lr
+            * error
+        )
+
+        if math.isfinite(new_bias):
+            self.bias = new_bias
+
+        return probability
+
+    # ============================================================
+    # LOSS
+    # ============================================================
+
+    @staticmethod
+    def _log_loss(
+        probability: float,
+        target: float,
+    ) -> float:
+
+        eps = 1e-15
+
+        p = max(
+            eps,
+            min(
+                1.0 - eps,
+                probability,
+            ),
+        )
+
+        y = (
+            1.0
+            if target >= 0.5
+            else 0.0
+        )
+
+        return -(
+            y * math.log(p)
+            + (1.0 - y)
+            * math.log(1.0 - p)
+        )
+
+    # ============================================================
+    # TRAIN ONE
+    # ============================================================
+
+    def train_one(
+        self,
+        data: dict,
+        target: Number,
+        remember: bool = True,
+        outcome_magnitude: Optional[Number] = None,
+    ) -> Dict[str, float]:
+
+        probability = self.update(
+            data,
+            target,
+        )
+
+        y = self._safe_float(
+            target,
+            0.0,
+        )
+
+        y = (
+            1.0
+            if y >= 0.5
+            else 0.0
+        )
+
+        loss = self._log_loss(
+            probability,
+            y,
+        )
+
+        prediction = int(
+            probability >= 0.5
+        )
+
+        if remember:
+
+            self.remember(
+                data,
+                target=target,
+                outcome_magnitude=outcome_magnitude,
+            )
+
+        return {
+            "probability":
+                probability,
+
+            "prediction":
+                float(prediction),
+
+            "target":
+                y,
+
+            "loss":
+                loss,
+        }
+
+    # ============================================================
+    # BATCH TRAINING
+    # ============================================================
+
+    def fit(
+        self,
+        rows: Iterable[
+            Tuple[dict, Number]
+        ],
+        epochs: int = 1,
+        shuffle: bool = False,
+        remember: bool = True,
+    ) -> Dict[str, float]:
+
+        rows = list(rows)
+
+        if not rows:
+
+            return {
+                "samples": 0.0,
+                "epochs": 0.0,
+                "loss": 0.0,
+                "accuracy": 0.0,
+            }
+
+        try:
+            epochs = int(epochs)
+        except (
+            TypeError,
+            ValueError,
+        ):
+            epochs = 1
+
+        epochs = max(1, epochs)
+
+        if shuffle:
+            import random
+
+        total_loss = 0.0
+        correct = 0
+        samples = 0
+
+        for _ in range(epochs):
+
+            working = list(rows)
+
+            if shuffle:
+                random.shuffle(working)
+
+            for data, target in working:
+
+                result = self.train_one(
+                    data,
+                    target,
+                    remember=remember,
+                )
+
+                total_loss += result["loss"]
+
+                correct += int(
+                    result["prediction"]
+                    == result["target"]
+                )
+
+                samples += 1
+
+        return {
+            "samples":
+                float(samples),
+
+            "epochs":
+                float(epochs),
+
+            "loss":
+                (
+                    total_loss / samples
+                    if samples
+                    else 0.0
+                ),
+
+            "accuracy":
+                (
+                    correct / samples
+                    if samples
+                    else 0.0
+                ),
+        }
+
+    # ============================================================
+    # EVALUATION
+    # ============================================================
+
+    def evaluate(
+        self,
+        rows: Iterable[
+            Tuple[dict, Number]
+        ],
+        threshold: float = 0.5,
+    ) -> Dict[str, float]:
+
+        rows = list(rows)
+
+        if not rows:
+
+            return {
+                "samples": 0.0,
+                "loss": 0.0,
+                "accuracy": 0.0,
+                "tp": 0.0,
+                "tn": 0.0,
+                "fp": 0.0,
+                "fn": 0.0,
+            }
+
+        total_loss = 0.0
+        correct = 0
+
+        tp = tn = fp = fn = 0
+
+        for data, target in rows:
+
+            probability = (
+                self.predict_proba(data)
+            )
+
+            y = self._safe_float(
+                target,
+                0.0,
+            )
+
+            y = (
+                1
+                if y >= 0.5
+                else 0
+            )
+
+            prediction = int(
+                probability >= threshold
+            )
+
+            total_loss += self._log_loss(
+                probability,
+                float(y),
+            )
+
+            correct += int(
+                prediction == y
+            )
+
+            if prediction == 1 and y == 1:
+                tp += 1
+
+            elif prediction == 0 and y == 0:
+                tn += 1
+
+            elif prediction == 1 and y == 0:
+                fp += 1
+
+            else:
+                fn += 1
+
+        n = len(rows)
+
+        return {
+            "samples":
+                float(n),
+
+            "loss":
+                total_loss / n,
+
+            "accuracy":
+                correct / n,
+
+            "tp":
+                float(tp),
+
+            "tn":
+                float(tn),
+
+            "fp":
+                float(fp),
+
+            "fn":
+                float(fn),
+        }
+
+    # ============================================================
+    # ATOMIC JSON PERSISTENCE
+    # ============================================================
+
+    @staticmethod
+    def _atomic_json_write(
+        path: str,
+        payload: dict,
+        prefix: str,
+    ):
+
+        directory = os.path.dirname(path)
+
+        if directory:
+            os.makedirs(
+                directory,
+                exist_ok=True,
+            )
+
+        fd, temp_path = tempfile.mkstemp(
+            prefix=prefix,
+            suffix=".tmp",
+            dir=directory or None,
+            text=True,
+        )
+
+        try:
+
+            with os.fdopen(
+                fd,
+                "w",
+                encoding="utf-8",
+            ) as handle:
+
+                json.dump(
+                    payload,
+                    handle,
+                    indent=2,
+                    sort_keys=True,
+                )
+
+                handle.write("\n")
+                handle.flush()
+                os.fsync(handle.fileno())
+
+            os.replace(
+                temp_path,
+                path,
+            )
+
+        except Exception:
+
+            try:
+                os.unlink(temp_path)
+            except OSError:
+                pass
+
+            raise
+
+    # ============================================================
+    # REFLECTION PERSISTENCE
+    # ============================================================
+
+    def _load_reflections(self) -> List[dict]:
+
+        path = os.path.abspath(
+            self.reflection_path
+        )
+
+        if not os.path.exists(path):
+            return []
+
+        try:
+
+            with open(
+                path,
+                "r",
+                encoding="utf-8",
+            ) as handle:
+
+                payload = json.load(handle)
+
+            if isinstance(payload, dict):
+                payload = payload.get(
+                    "reflections",
+                    [],
+                )
+
+            if not isinstance(payload, list):
+                return []
+
+            return payload
+
+        except (
+            OSError,
+            ValueError,
+            json.JSONDecodeError,
+        ):
+            return []
+
+    def _save_reflections(self):
+
+        path = os.path.abspath(
+            self.reflection_path
+        )
+
+        payload = {
+            "version": self.VERSION,
+            "reflections": self.reflections,
+        }
+
+        self._atomic_json_write(
+            path,
+            payload,
+            ".ml_reflection_",
+        )
+
+    # ============================================================
+    # SERIALIZATION
+    # ============================================================
+
+    def to_dict(self) -> dict:
+
+        return {
+            "version":
+                self.VERSION,
+
+            "feature_names":
+                list(self.feature_names),
+
+            "feature_scale":
+                dict(self.feature_scale),
+
+            "lr":
+                self.lr,
+
+            "l2":
+                self.l2,
+
+            "weights": {
+                name:
+                    self._safe_float(
+                        self.weights.get(name),
+                        0.0,
+                    )
+                for name in self.feature_names
+            },
+
+            "bias":
+                self._safe_float(
+                    self.bias,
+                    0.0,
+                ),
+
+            "memory_path":
+                self.memory_path,
+
+            "reflection_path":
+                self.reflection_path,
+        }
+
+    @classmethod
+    def from_dict(
+        cls,
+        payload: dict,
+    ):
+
+        if not isinstance(payload, dict):
+            raise ValueError(
+                "model payload must be dictionary"
+            )
+
+        feature_names = payload.get(
+            "feature_names",
+            FEATURE_NAMES,
+        )
+
+        if (
+            not isinstance(feature_names, list)
+            or not feature_names
+        ):
+            feature_names = FEATURE_NAMES
+
+        model = cls(
+            feature_names=feature_names,
+            lr=cls._safe_float_static(
+                payload.get("lr"),
+                0.01,
+            ),
+            l2=cls._safe_float_static(
+                payload.get("l2"),
+                0.001,
+            ),
+            memory_path=payload.get(
+                "memory_path",
+                MEMORY_FILE,
+            ),
+            reflection_path=payload.get(
+                "reflection_path",
+                REFLECTION_FILE,
+            ),
+        )
+
+        saved_scale = payload.get(
+            "feature_scale"
+        )
+
+        if isinstance(saved_scale, dict):
+
+            for name in model.feature_names:
+
+                if name in saved_scale:
+
+                    value = cls._safe_float_static(
+                        saved_scale[name],
+                        model.feature_scale.get(
+                            name,
+                            1.0,
+                        ),
+                    )
+
+                    if value > 0:
+
+                        model.feature_scale[
+                            name
+                        ] = value
+
+        weights = payload.get(
+            "weights",
+            {},
+        )
+
+        if isinstance(weights, dict):
+
+            for name in model.feature_names:
+
+                if name in weights:
+
+                    model.weights[name] = (
+                        model._safe_float(
+                            weights[name],
+                            model.weights[name],
+                        )
+                    )
+
+        model.bias = model._safe_float(
+            payload.get("bias"),
+            0.0,
+        )
+
+        model.memory = model._load_memory()
+        model.reflections = model._load_reflections()
+
+        return model
+
+    @staticmethod
+    def _safe_float_static(
+        value: object,
+        default: float,
+    ) -> float:
+
+        try:
+
+            if value is None:
+                return default
+
+            result = float(value)
+
+            if not math.isfinite(result):
+                return default
+
+            return result
+
+        except (
+            TypeError,
+            ValueError,
+            OverflowError,
+        ):
+            return default
+
+    # ============================================================
+    # MODEL PERSISTENCE
+    # ============================================================
+
+    def save(
+        self,
+        path: str = MODEL_FILE,
+    ) -> str:
+
+        path = os.path.abspath(path)
+
+        self._atomic_json_write(
+            path,
+            self.to_dict(),
+            ".ml_model_",
+        )
+
+        return path
+
+    @classmethod
+    def load(
+        cls,
+        path: str = MODEL_FILE,
+    ):
+
+        path = os.path.abspath(path)
+
+        if not os.path.exists(path):
+            return cls()
+
+        with open(
+            path,
+            "r",
+            encoding="utf-8",
+        ) as handle:
+
+            payload = json.load(handle)
+
+        return cls.from_dict(payload)
+
+    # ============================================================
+    # TRAIN + SAVE
+    # ============================================================
+
+    def train_and_save(
+        self,
+        rows: Iterable[
+            Tuple[dict, Number]
+        ],
+        epochs: int = 1,
+        shuffle: bool = False,
+        path: str = MODEL_FILE,
+        remember: bool = True,
+    ) -> Dict[str, float]:
+
+        metrics = self.fit(
+            rows,
+            epochs=epochs,
+            shuffle=shuffle,
+            remember=remember,
+        )
+
+        self.save(path)
+
+        return metrics
+
+
+# ================================================================
+# COMPATIBILITY HELPERS
+# ================================================================
+
+def load_model(
+    path: str = MODEL_FILE,
+):
+    return OnlineLogisticRegression.load(path)
+
+
+def save_model(
+    model: OnlineLogisticRegression,
+    path: str = MODEL_FILE,
+):
+    return model.save(path)
+
+
+def predict(
+    data: dict,
+    path: str = MODEL_FILE,
+    threshold: float = 0.5,
+) -> int:
+
+    model = load_model(path)
+
+    return model.predict(
+        data,
+        threshold=threshold,
+    )
+
+
+def predict_proba(
+    data: dict,
+    path: str = MODEL_FILE,
+) -> float:
+
+    model = load_model(path)
+
+    return model.predict_proba(data)
+
+
+def discern(
+    data: dict,
+    path: str = MODEL_FILE,
+) -> Dict[str, object]:
+
+    model = load_model(path)
+
+    return model.discern(data)
+
+
+def reflect(
+    data: dict,
+    actual_outcome: Number,
+    path: str = MODEL_FILE,
+    decision: Optional[str] = None,
+    outcome_magnitude: Optional[Number] = None,
+) -> Dict[str, object]:
+
+    model = load_model(path)
+
+    result = model.reflect(
+        data,
+        actual_outcome=actual_outcome,
+        decision=decision,
+        outcome_magnitude=outcome_magnitude,
+    )
+
+    model.save(path)
+
+    return result
+
+
+# ================================================================
+# SELF TEST
+# ================================================================
+
+if __name__ == "__main__":
+
+    print("=" * 72)
+    print("BIRTH_EDGE ML MODEL V3")
+    print("PREDICTION + MEMORY + WISDOM + DISCERNMENT + REFLECTION")
+    print("=" * 72)
+
+    model = OnlineLogisticRegression()
+
+    strong = {
+        "holder_score": 25,
+        "dev_score": 24,
+        "lp_lock_score": 28,
+        "liquidity_usd": 18000,
+    }
+
+    weak = {
+        "holder_score": 2,
+        "dev_score": 3,
+        "lp_lock_score": 1,
+        "liquidity_usd": 300,
+    }
+
+    print("\nSTRONG PROBABILITY:")
+    print(
+        model.predict_proba(strong)
+    )
+
+    print("\nWEAK PROBABILITY:")
+    print(
+        model.predict_proba(weak)
+    )
+
+    print("\nDISCERNMENT:")
+    print(
+        json.dumps(
+            model.discern(strong),
+            indent=2,
+        )
+    )
+
+    # Establish experience.
+    model.train_one(
+        strong,
+        1,
+        outcome_magnitude=919.0,
+    )
+
+    model.train_one(
+        weak,
+        0,
+        outcome_magnitude=0.0,
+    )
+
+    print("\nMEMORY COUNT:")
+    print(len(model.memory))
+
+    print("\nWISDOM:")
+    print(
+        json.dumps(
+            model.wisdom(strong),
+            indent=2,
+        )
+    )
+
+    # ------------------------------------------------------------
+    # REFLECTION TEST
+    # ------------------------------------------------------------
+
+    print("\nREFLECTION — CORRECT CASE:")
+
+    reflection_good = model.reflect(
+        strong,
+        actual_outcome=1,
+        decision="WATCH",
+        outcome_magnitude=919.0,
+        metadata={
+            "test": "known_positive"
+        },
+    )
+
+    print(
+        json.dumps(
+            reflection_good,
+            indent=2,
+        )
+    )
+
+    print("\nREFLECTION — INCORRECT CASE:")
+
+    reflection_bad = model.reflect(
+        weak,
+        actual_outcome=1,
+        decision="PASS",
+        outcome_magnitude=250.0,
+        metadata={
+            "test": "unexpected_positive"
+        },
+    )
+
+    print(
+        json.dumps(
+            reflection_bad,
+            indent=2,
+        )
+    )
+
+    print("\nREFLECTION SUMMARY:")
+
+    print(
+        json.dumps(
+            model.reflection_summary(),
+            indent=2,
+        )
+    )
+
+    # ------------------------------------------------------------
+    # PERSISTENCE
+    # ------------------------------------------------------------
+
+    model.save(MODEL_FILE)
+
+    restored = OnlineLogisticRegression.load(
+        MODEL_FILE
+    )
+
+    same_probability = (
+        restored.predict_proba(strong)
+        == model.predict_proba(strong)
+    )
+
+    same_memory = (
+        len(restored.memory)
+        == len(model.memory)
+    )
+
+    same_reflection = (
+        len(restored.reflections)
+        == len(model.reflections)
+    )
+
+    print("\nPERSISTENCE:")
+
+    print(
+        "MODEL:",
+        "OK" if same_probability else "FAIL",
+    )
+
+    print(
+        "MEMORY:",
+        "OK" if same_memory else "FAIL",
+    )
+
+    print(
+        "REFLECTION:",
+        "OK" if same_reflection else "FAIL",
+    )
+
+    print("\nSTATUS: READY")
