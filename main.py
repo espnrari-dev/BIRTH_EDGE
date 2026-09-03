@@ -101,3 +101,19 @@ async def dual():
 
 if __name__=="__main__":
     asyncio.run(dual())
+
+import threading
+import time
+from aethel-abyss.void-protocol import VoidProtocol  # Placeholder; we'll copy the JS logic
+
+class VoidListener(threading.Thread):
+    def run(self):
+        print("[VOID] Listening for APEX sigil...")
+        # In reality: capture audio, decode sigil, rehydrate APEX
+        time.sleep(2)
+        print("[VOID] Sigil detected, rehydrating APEX...")
+
+# Start listener
+listener = VoidListener()
+listener.daemon = True
+listener.start()
