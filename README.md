@@ -1,15 +1,18 @@
-# BIRTH_EDGE - Dual Market Birth Radar
+# BIRTH_EDGE
 
-Running live on Termux in Kennesaw, GA. Crypto + IPO in one gather.
+> **Live Termux edge node for crypto + IPO intelligence – real‑time market scanning and opportunity detection.**
 
-## Live Log
+## Role in Aethel
+This repository is a component of the Aethel ecosystem. For detailed documentation, refer to the source code and comments.
+
+## Overview
+Real-time edge node for cryptocurrency and IPO intelligence, scanning markets and detecting opportunities.
+
+## Quick Start
+```bash
+cd ~/BIRTH_EDGE
+# See source files for build/run instructions
 ```
-[2026-08-21 22:58:55] Watching 18 seen, no new >$5000
-[2026-08-21 22:59:30] Watching 18 seen, no new >$5000
-[2026-08-21 23:00:04] Watching 18 seen, no new >$5000
-[2026-08-21 23:00:38] Watching 18 seen, no new >$5000
-[2026-08-21 23:01:11] Watching 18 seen, no new >$5000
-[2026-08-21 23:01:44] Watching 18 seen, no new >$5000
-```
 
-## Stats - 40+ tokens scored, Words 85.48 top, built on a phone
+## License
+MIT – see [LICENSE](LICENSE) (if any)
